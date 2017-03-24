@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  WJDStudyLibrary
 //
 //  Created by wangjundong on 2017/3/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
