@@ -35,7 +35,7 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
                           @{@"title":@"第二行",@"ClassName":@"第一行"},
                           @{@"title":@"第三行",@"ClassName":@"第一行"}];
     _titleArray =[JDMainDataModel mj_objectArrayWithKeyValuesArray:dataArray];
-    
+
     _tableView =[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:tableViewCellIdentifer];
     _tableView.tableFooterView =[[UIView alloc]init];
@@ -47,8 +47,7 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
     };
     _arrayDataSource = [[ArrayDataSource alloc] initWithItems:_titleArray cellIdentifier:tableViewCellIdentifer configureCellBlock:configureCell];
     self.tableView.dataSource = _arrayDataSource;
-    
-    
+   
 }
 
 
@@ -62,6 +61,7 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     JDMainDataModel *model =[_titleArray objectAtIndex:indexPath.row];
     UIViewController *vc =[[NSClassFromString(model.ClassName) alloc] init];
