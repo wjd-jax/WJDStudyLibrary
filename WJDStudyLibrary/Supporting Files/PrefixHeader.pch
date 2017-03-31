@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  WJDStudyLibrary
+//
+//  Created by wangjundong on 2017/3/31.
+//  Copyright © 2017年 wangjundong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import "define.h"
+#import "JDBaseModel.h"
+#import "JDBaseViewController.h"
+
+#endif
+
+#endif /* PrefixHeader_pch */

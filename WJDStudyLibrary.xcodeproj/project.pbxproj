@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
+		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
+		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
+		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
+		F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */; };
+		F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
 		F55E55401E850BB100144D49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553F1E850BB100144D49 /* AppDelegate.m */; };
 		F55E55481E850BB100144D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E55471E850BB100144D49 /* Assets.xcassets */; };
@@ -19,6 +24,18 @@
 		4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
+		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
+		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseModel.h; sourceTree = "<group>"; };
+		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
+		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
+		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
+		F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKnowledgeViewController.h; sourceTree = "<group>"; };
+		F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKnowledgeViewController.m; sourceTree = "<group>"; };
+		F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		F55E55381E850BB100144D49 /* WJDStudyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJDStudyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E553C1E850BB100144D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,8 +43,8 @@
 		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55E554A1E850BB100144D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MainViewController.h; sourceTree = "<group>"; };
-		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MainViewController.m; sourceTree = "<group>"; };
+		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,32 @@
 				4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
+			);
+			path = WJDToolKit;
+			sourceTree = "<group>";
+		};
+		F51CF07E1E8E06220035EF7A /* MainDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */,
+				F51CF0801E8E06740035EF7A /* JDMainDataModel.m */,
+			);
+			path = MainDataModel;
+			sourceTree = "<group>";
+		};
+		F51CF0891E8E27960035EF7A /* knowledgeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */,
+				F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */,
+			);
+			name = knowledgeViewController;
 			sourceTree = "<group>";
 		};
 		F55E552F1E850BB100144D49 = {
@@ -97,6 +140,7 @@
 		F55E553B1E850BB100144D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
 				F55E553C1E850BB100144D49 /* main.m */,
 			);
 			path = "Supporting Files";
@@ -105,8 +149,8 @@
 		F55E55521E85166900144D49 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F55E55591E851B0D00144D49 /* MainViewController.h */,
-				F55E555A1E851B0D00144D49 /* MainViewController.m */,
+				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
+				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -114,6 +158,10 @@
 		F55E55531E85169700144D49 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
+				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
+				F51CF0831E8E20F10035EF7A /* JDBaseModel.h */,
+				F51CF0841E8E20F10035EF7A /* JDBaseModel.m */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -121,6 +169,7 @@
 		F55E55541E85171600144D49 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -128,6 +177,7 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF0891E8E27960035EF7A /* knowledgeViewController */,
 				F55E55581E85179400144D49 /* MainViewController */,
 			);
 			path = Section;
@@ -136,6 +186,9 @@
 		F55E55581E85179400144D49 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF07E1E8E06220035EF7A /* MainDataModel */,
+				F55E55591E851B0D00144D49 /* MainViewController.h */,
+				F55E555A1E851B0D00144D49 /* MainViewController.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -169,6 +222,7 @@
 		F55E55301E850BB100144D49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JD;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = wangjundong;
 				TargetAttributes = {
@@ -262,9 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
+				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
+				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
+				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
+				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
@@ -390,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;

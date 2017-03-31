@@ -1,18 +1,18 @@
 //
-//  MainViewController.m
+//  JDBaseViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/3/24.
+//  Created by wangjundong on 2017/3/31.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "JDBaseViewController.h"
 
-@interface MainViewController ()
+@interface JDBaseViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation JDBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
