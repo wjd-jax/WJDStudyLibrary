@@ -10,7 +10,7 @@
 #define Defintion_h
 //-------------------获取设备大小-------------------------
 //NavBar高度
-#define NavigationBar_HEIGHT 44
+#define NavigationBar_HEIGHT 64
 #define SCREEN_WIDHT ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
@@ -59,13 +59,17 @@
 #define JDWeakSelf(type) __weak typeof(type) weak##type = type;
 #define LRStrongSelf(type)  __strong typeof(type) type = weak##type;
 
-//设置 View 圆角和边框
-#define JDViewBorderRadius(View,Radius,Width,color)\
+//设置 View 边框粗细和颜色
+#define JDViewBorderRadius(View,Width,color)\
+\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+//设置圆角
+#define JDViewSetRadius(View,Radius)\
 \
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES];\
-[View.layer setBorderWidth:(Width)];\
-[View.layer setBorderColor:[Color CGColor]]
+
 
 //获取图片
 #define JDGetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]

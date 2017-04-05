@@ -13,10 +13,9 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #ifdef __OBJC__
 
-#import "define.h"
 #import "JDBaseModel.h"
 #import "JDBaseViewController.h"
-
+#import "JDHeader.h"
 #endif
 
 #endif /* PrefixHeader_pch */

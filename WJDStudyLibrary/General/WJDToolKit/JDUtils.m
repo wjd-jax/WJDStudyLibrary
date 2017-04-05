@@ -16,6 +16,7 @@
     UIView *view =[[UIView alloc]initWithFrame:frame];
     return view;
 }
+
 + (UILabel *)createLabelWithFrame:(CGRect)frame Font:(int)font Text:(NSString *)text
 {
     UILabel*label=[[UILabel alloc]initWithFrame:frame];
@@ -30,6 +31,7 @@
     return label;
     
 }
+
 + (UIButton *)createButtonWithFrame:(CGRect)frame ImageName:(NSString *)imageName Target:(id)target Action:(SEL)action Title:(NSString *)title
 {
     UIButton*button=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -41,6 +43,7 @@
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
+
 + (UITextField *)createTextFieldWithFrame:(CGRect)frame placeholder:(NSString*)placeholder passWord:(BOOL)YESorNO leftImageView:(UIView*)imageView rightImageView:(UIImageView*)rightImageView Font:(float)font
 {
     UITextField*textField=[[UITextField alloc]initWithFrame:frame];
@@ -69,11 +72,13 @@
     return textField ;
     
 }
+
 + (UIBarButtonItem *)createTextBarButtonWithTitle:(NSString *)title Target:(id)target Action:(SEL)action
 {
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
     return barButton;
 }
+
 + (UIBarButtonItem *)createImageBarButtonWithFrame:(CGRect)frame ImageName:(NSString *)imageName Target:(id)target Action:(SEL)action
 {
     UIButton *button =[self createButtonWithFrame:frame ImageName:imageName Target:target Action:action Title:nil];

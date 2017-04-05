@@ -32,7 +32,7 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
 {
     
     NSArray *dataArray =@[@{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
-                          @{@"title":@"第二行",@"ClassName":@"第一行"},
+                          @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
                           @{@"title":@"第三行",@"ClassName":@"第一行"}];
     _titleArray =[JDMainDataModel mj_objectArrayWithKeyValuesArray:dataArray];
 
