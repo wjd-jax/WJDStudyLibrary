@@ -32,8 +32,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    id cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier
-                                              forIndexPath:indexPath];
+    id cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
     id item = [self itemAtIndexPath:indexPath];
     _configureCellBlock(cell,item);
     return cell;
