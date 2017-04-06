@@ -63,7 +63,7 @@
 #define JDViewBorderRadius(View,Width,color)\
 \
 [View.layer setBorderWidth:(Width)];\
-[View.layer setBorderColor:[Color CGColor]]
+[View.layer setBorderColor:color]
 //设置圆角
 #define JDViewSetRadius(View,Radius)\
 \

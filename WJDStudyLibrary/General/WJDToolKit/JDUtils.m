@@ -16,6 +16,12 @@
     UIView *view =[[UIView alloc]initWithFrame:frame];
     return view;
 }
++ (UIImageView *)createImageViewWithFrame:(CGRect)frame ImageName:(NSString *)image
+{
+    UIImageView *imageView =[[UIImageView alloc]initWithFrame:frame];
+    imageView.image =[UIImage imageNamed:image];
+    return imageView;
+}
 
 + (UILabel *)createLabelWithFrame:(CGRect)frame Font:(int)font Text:(NSString *)text
 {

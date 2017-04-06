@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "JDBaseTableViewController.h"
 
-@interface JDViewListViewController : JDBaseTableViewController
+@interface JDViewListViewController : JDBaseTableViewController 
 
 @end

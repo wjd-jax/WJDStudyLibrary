@@ -13,6 +13,8 @@
 
 //快速创建控件
 + (UIView *)createViewWithFrame:(CGRect)frame;
++ (UIImageView *)createImageViewWithFrame:(CGRect)frame ImageName:(NSString *)image;
+
 + (UILabel *)createLabelWithFrame:(CGRect)frame Font:(int)font Text:(NSString *)text;
 + (UIButton *)createButtonWithFrame:(CGRect)frame ImageName:(NSString *)imageName Target:(id)target Action:(SEL)action Title:(NSString *)title;
 + (UITextField *)createTextFieldWithFrame:(CGRect)frame placeholder:(NSString*)placeholder passWord:(BOOL)YESorNO leftImageView:(UIView*)imageView rightImageView:(UIImageView*)rightImageView Font:(float)font;
