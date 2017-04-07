@@ -97,14 +97,9 @@
 - (void)addBackgroundViews
 {
     _backgroundViews = [self getImageViewArrayWithImageNameArray:_backgroundImageNames];
-    //    [[[[self backgroundImageNames] reverseObjectEnumerator] allObjects] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-    //        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:obj]];
-    //        imageView.frame = self.view.bounds;
-    //        [self.view addSubview:imageView];
-    //    }];
-    for (NSString *imageName in _backgroundImageNames) {
-        
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    
+    for (int i = 0; i<_backgroundViews.count; i++) {
+        UIImageView *imageView =[_backgroundViews objectAtIndex:_backgroundViews.count-i-1];
         imageView.frame = self.view.bounds;
         [self.view addSubview:imageView];
     }
@@ -139,6 +134,12 @@
         imageView.frame =CGRectOffset(imageView.frame, i*SCREEN_WIDHT, 0);
         [_pagingScrollView addSubview:imageView];
     }
+    
+    if (self.pageControl.numberOfPages == 1) {
+        self.enterButton.alpha = 1;
+        self.pageControl.alpha = 0;
+    }
+    
 }
 
 
@@ -171,20 +172,29 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     NSInteger index =scrollView.contentOffset.x/SCREEN_WIDHT;
-    CGFloat alpha = 1 - ((scrollView.contentOffset.x - index * self.view.frame.size.width) / self.view.frame.size.width);
+    CGFloat alpha = 1 - ((scrollView.contentOffset.x - index * SCREEN_WIDHT) / SCREEN_WIDHT);
     if (_backgroundViews.count >index) {
         
         UIImageView *imageView =[_backgroundViews objectAtIndex:index];
         
         if (imageView) {
             imageView.alpha =alpha;
-            DLog(@"第%ld 张图片的透明度为%f",(long)index,alpha);
         }
     }
     self.pageControl.currentPage = index;
     
     [self pagingScrollViewDidChangePages:scrollView];
     
+}
+-(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+    if (![self hasNext:self.pageControl]) {
+        [self enter:nil];
+    }
+}
+- (BOOL)hasNext:(UIPageControl*)pageControl
+{
+    return pageControl.numberOfPages > pageControl.currentPage + 1;
 }
 
 - (BOOL)isLast:(UIPageControl*)pageControl
