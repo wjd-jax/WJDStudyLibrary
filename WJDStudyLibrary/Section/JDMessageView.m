@@ -32,12 +32,14 @@
     UILabel *messageLabel =[JDUtils createLabelWithFrame:CGRectMake(0, 20, SCREEN_WIDHT, NavigationBar_HEIGHT-20) Font:14 Text:message];
     [showView addSubview:messageLabel];
     messageLabel.textAlignment =NSTextAlignmentCenter;
-    [UIView animateWithDuration:1 animations:^{
+    
+    
+    [UIView animateWithDuration:0.5 animations:^{
         showView.originY = 0;
         showView.alpha =1;
         
     }completion:^(BOOL finished) {
-        [UIView animateWithDuration:1 animations:^{
+        [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
             showView.sizeHeight =-NavigationBar_HEIGHT;
             showView.alpha =0;
 

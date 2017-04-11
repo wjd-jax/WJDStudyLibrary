@@ -14,12 +14,6 @@
 #import "JDAletView.h"
 
 
-@interface JDPopViewController ()<UITableViewDelegate>
-
-@property(nonatomic,retain)NSArray *dataArray;
-@property(nonatomic,retain)UITableView *tableView;
-@property(nonatomic,retain)ArrayDataSource *dataSource;
-@end
 @implementation JDPopViewController
 
 static NSString *tableViewCellIdentifer = @"TableViewCellID";
@@ -27,36 +21,10 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
 
 -(void)viewDidLoad
 {
-    [self initData];
-    
-    [self createUI];
-}
-- (void)initData
-{
-    
-    _dataArray =@[@"通用分享弹出视图",
-                  @"仿QQ导航栏弹出提示框",
-                  @"自定义AletView"];
-    
-}
-- (void)createUI
-{
-    _tableView =[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.delegate =self;
-    [self.view addSubview:_tableView];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:tableViewCellIdentifer];
-    
-    void (^configureCell)(UITableViewCell*, NSString *) = ^(UITableViewCell* cell, NSString *title) {
-        cell.textLabel.text =title;
-    };
-    _dataSource =[[ArrayDataSource alloc]initWithItems:_dataArray cellIdentifier:tableViewCellIdentifer configureCellBlock:configureCell];
-    _tableView.dataSource =_dataSource;
-    
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 70.f;
+    [super viewDidLoad];
+    self.dataSoureArray =@[@{@"title":@"通用分享弹出视图",@"ClassName":@"JDKnowledgeViewController"},
+                           @{@"title":@"仿QQ导航栏弹出提示框",@"ClassName":@"JDViewListViewController"},
+                           @{@"title":@"自定义AletView",@"ClassName":@"JDLayoutListViewController"}];
 }
 
 

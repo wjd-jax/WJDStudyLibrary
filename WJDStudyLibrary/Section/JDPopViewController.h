@@ -7,7 +7,8 @@
 //
 
 #import "JDBaseViewController.h"
+#import "JDBaseTableViewController.h"
 
-@interface JDPopViewController : JDBaseViewController
+@interface JDPopViewController : JDBaseTableViewController
 
 @end

@@ -51,6 +51,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     JDMainDataModel *model =[_dataArray objectAtIndex:indexPath.row];
 
     UIViewController *vc =[[NSClassFromString(model.ClassName) alloc] init];
+    vc.title =model.title;
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
     }

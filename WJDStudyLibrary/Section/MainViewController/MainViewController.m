@@ -16,13 +16,15 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
-   
+    
     [super viewDidLoad];
-
+    
     self.dataSoureArray =@[@{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
-                           @{@"title":@"第三行",@"ClassName":@"第一行"}];
-   
+                           @{@"title":@"布局视图",@"ClassName":@"JDLayoutListViewController"},
+                           @{@"title":@"小功能集合",@"ClassName":@"JDFunctionListViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDTestViewController"}];
+    
 }
 
 

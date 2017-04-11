@@ -32,6 +32,8 @@
     _gpvc.didSelectedEnter = ^(){
 //        weakself.view =nil;
         [weakself.navigationController popViewControllerAnimated:YES];
+        weakself.navigationController.navigationBarHidden = NO;
+
     
     };
 }
