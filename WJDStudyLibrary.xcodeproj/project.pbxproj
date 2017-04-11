@@ -31,6 +31,9 @@
 		F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55E55491E850BB100144D49 /* LaunchScreen.storyboard */; };
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
 		F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */; };
+		F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */; };
+		F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */; };
+		F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45771E9C7F280073F6D6 /* JDNetManager.m */; };
 		F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7191E9774450076CC78 /* JDTestViewController.m */; };
 		F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */; };
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
@@ -90,6 +93,13 @@
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F57D45641E9C601C0073F6D6 /* JDBruchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBruchViewController.h; sourceTree = "<group>"; };
 		F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBruchViewController.m; sourceTree = "<group>"; };
+		F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetWorkingViewController.h; sourceTree = "<group>"; };
+		F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetWorkingViewController.m; sourceTree = "<group>"; };
+		F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetClinet.h; sourceTree = "<group>"; };
+		F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetClinet.m; sourceTree = "<group>"; };
+		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefines.h; sourceTree = "<group>"; };
+		F57D45761E9C7F280073F6D6 /* JDNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetManager.h; sourceTree = "<group>"; };
+		F57D45771E9C7F280073F6D6 /* JDNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetManager.m; sourceTree = "<group>"; };
 		F5A1A7181E9774450076CC78 /* JDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTestViewController.h; sourceTree = "<group>"; };
 		F5A1A7191E9774450076CC78 /* JDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTestViewController.m; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
@@ -326,6 +336,7 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
 				F5A1A7171E97741B0076CC78 /* TestViewController */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
@@ -345,6 +356,28 @@
 				F55E555A1E851B0D00144D49 /* MainViewController.m */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */ = {
+			isa = PBXGroup;
+			children = (
+				F57D45711E9C78570073F6D6 /* NetWorkTool */,
+				F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */,
+				F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */,
+			);
+			name = "NetworkingViewController(网络封装)";
+			sourceTree = "<group>";
+		};
+		F57D45711E9C78570073F6D6 /* NetWorkTool */ = {
+			isa = PBXGroup;
+			children = (
+				F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */,
+				F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */,
+				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
+				F57D45761E9C7F280073F6D6 /* JDNetManager.h */,
+				F57D45771E9C7F280073F6D6 /* JDNetManager.m */,
+			);
+			name = NetWorkTool;
 			sourceTree = "<group>";
 		};
 		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
@@ -532,11 +565,13 @@
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
+				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
+				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
@@ -545,6 +580,7 @@
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
 				F52C45181E94BBEC00D8DF62 /* JDPopView.m in Sources */,
+				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
