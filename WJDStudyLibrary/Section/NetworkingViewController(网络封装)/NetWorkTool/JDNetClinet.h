@@ -8,6 +8,15 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+#if DEBUG
+
+static NSString* const BASEURL = @"";
+
+#else
+
+static NSString* const BASEURL = @"";
+
+#endif
 
 /**
  此方法设置测试跟正式服务器的 baseurl

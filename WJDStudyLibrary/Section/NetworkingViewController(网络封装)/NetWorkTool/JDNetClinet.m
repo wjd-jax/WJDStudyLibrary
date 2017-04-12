@@ -8,11 +8,7 @@
 
 #import "JDNetClinet.h"
 
-#if DEBUG
-static NSString *const BASEURL = @"";
-#else
-static NSString *const BASEURL = @"";
-#endif
+
 
 @implementation JDNetClinet
 
