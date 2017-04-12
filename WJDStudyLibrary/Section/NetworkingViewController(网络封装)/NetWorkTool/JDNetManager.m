@@ -93,17 +93,25 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     //url出现特殊字符处理
     url =[url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     if ([self DeBug])DLog(@"\n请求的 URL---%@\n",url);
-
+    
     JDNetClinet *client =[JDNetClinet sharedClient];
     [self dealParrameters:parameters];
     if ([self DeBug])DLog(@"\n参数列表%@",parameters);
-
+    
     
     switch (type) {
             
         case RequestTypeGet:
         {
             [client GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+               
+                [self returnDataWithRequestData:responseObject Success:^(id requestDic, NSDictionary *dataDict) {
+                    success(requestDic,dataDict);
+                    
+                } failure:^(ErroCode code, NSString *msg) {
+                    failure(ErroCode_RequestFaiure,requestFail);
+                    
+                }];
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
@@ -116,6 +124,14 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
         case RequestTypePost:
         {
             [client POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+               
+                [self returnDataWithRequestData:responseObject Success:^(id requestDic, NSDictionary *dataDict) {
+                    success(requestDic,dataDict);
+                    
+                } failure:^(ErroCode code, NSString *msg) {
+                    failure(ErroCode_RequestFaiure,requestFail);
+                    
+                }];
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 

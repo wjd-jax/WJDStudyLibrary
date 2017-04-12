@@ -150,12 +150,12 @@
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
+				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
 				F51CF0901E8E41390035EF7A /* JDUtils.h */,
 				F51CF0911E8E41390035EF7A /* JDUtils.m */,
 				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
 				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
-				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
 			path = WJDToolKit;
 			sourceTree = "<group>";
@@ -176,6 +176,7 @@
 				F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */,
 			);
 			name = "knowledgeViewController(知识库)";
+			path = "knowledgeViewController(知识库)";
 			sourceTree = "<group>";
 		};
 		F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */ = {
@@ -185,6 +186,7 @@
 				F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */,
 			);
 			name = "AboutUs(关于我)";
+			path = "AboutUs(关于我)";
 			sourceTree = "<group>";
 		};
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
@@ -196,18 +198,20 @@
 				F52C450F1E94B52D00D8DF62 /* JDViewListViewController.m */,
 			);
 			name = "ViewShowViewController(视图列表)";
+			path = "ViewShowViewController(视图列表)";
 			sourceTree = "<group>";
 		};
 		F52C45111E94BA3500D8DF62 /* popViewListViewController */ = {
 			isa = PBXGroup;
 			children = (
 				F52C45231E94C91D00D8DF62 /* popAletView(自定义AletView) */,
-				F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */,
 				F52C45151E94BBD500D8DF62 /* popViewStyle(通用分享视图) */,
+				F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */,
 				F52C45121E94BA5500D8DF62 /* JDPopViewController.h */,
 				F52C45131E94BA5500D8DF62 /* JDPopViewController.m */,
 			);
 			name = popViewListViewController;
+			path = popViewListViewController;
 			sourceTree = "<group>";
 		};
 		F52C45151E94BBD500D8DF62 /* popViewStyle(通用分享视图) */ = {
@@ -217,6 +221,7 @@
 				F52C45171E94BBEC00D8DF62 /* JDPopView.m */,
 			);
 			name = "popViewStyle(通用分享视图)";
+			path = "popViewStyle(通用分享视图)";
 			sourceTree = "<group>";
 		};
 		F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */ = {
@@ -226,6 +231,7 @@
 				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
 			);
 			name = "popViewStyle2(仿QQ提示)";
+			path = "popViewStyle2(仿QQ提示)";
 			sourceTree = "<group>";
 		};
 		F52C45231E94C91D00D8DF62 /* popAletView(自定义AletView) */ = {
@@ -235,17 +241,19 @@
 				F52C45251E94C95500D8DF62 /* JDAletView.m */,
 			);
 			name = "popAletView(自定义AletView)";
+			path = "popAletView(自定义AletView)";
 			sourceTree = "<group>";
 		};
 		F52C45271E96090A00D8DF62 /* GuideViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F52C45281E96093C00D8DF62 /* JDGuideViewController.h */,
-				F52C45291E96093C00D8DF62 /* JDGuideViewController.m */,
 				F52C452E1E96263500D8DF62 /* JDGuidePageViewController.h */,
 				F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */,
+				F52C45281E96093C00D8DF62 /* JDGuideViewController.h */,
+				F52C45291E96093C00D8DF62 /* JDGuideViewController.m */,
 			);
 			name = GuideViewController;
+			path = GuideViewController;
 			sourceTree = "<group>";
 		};
 		F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */ = {
@@ -256,6 +264,7 @@
 				F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */,
 			);
 			name = "LayoutViewList(布局视图列表)";
+			path = "LayoutViewList(布局视图列表)";
 			sourceTree = "<group>";
 		};
 		F52C45321E97343500D8DF62 /* New Group */ = {
@@ -263,6 +272,7 @@
 			children = (
 			);
 			name = "New Group";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F55E552F1E850BB100144D49 = {
@@ -312,10 +322,10 @@
 		F55E55521E85166900144D49 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
-				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 				F52C452B1E960B2200D8DF62 /* JDBaseTableViewController.h */,
 				F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */,
+				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
+				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -342,14 +352,14 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
-				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
-				F5A1A7171E97741B0076CC78 /* TestViewController */,
-				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
-				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
-				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
+				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
+				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F55E55581E85179400144D49 /* MainViewController */,
+				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
+				F5A1A7171E97741B0076CC78 /* TestViewController */,
+				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
+				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -372,6 +382,7 @@
 				F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */,
 			);
 			name = "NetworkingViewController(网络封装)";
+			path = "NetworkingViewController(网络封装)";
 			sourceTree = "<group>";
 		};
 		F57D45711E9C78570073F6D6 /* NetWorkTool */ = {
@@ -379,11 +390,12 @@
 			children = (
 				F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */,
 				F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */,
-				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 				F57D45761E9C7F280073F6D6 /* JDNetManager.h */,
 				F57D45771E9C7F280073F6D6 /* JDNetManager.m */,
+				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 			);
 			name = NetWorkTool;
+			path = NetWorkTool;
 			sourceTree = "<group>";
 		};
 		F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */ = {
@@ -395,6 +407,7 @@
 				F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */,
 			);
 			name = "SignListViewController(签字笔效果)";
+			path = "SignListViewController(签字笔效果)";
 			sourceTree = "<group>";
 		};
 		F57D457D1E9CC8910073F6D6 /* QRSanner(二维码扫描) */ = {
@@ -404,6 +417,7 @@
 				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
 			);
 			name = "QRSanner(二维码扫描)";
+			path = "QRSanner(二维码扫描)";
 			sourceTree = "<group>";
 		};
 		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
@@ -413,6 +427,7 @@
 				F5A1A7191E9774450076CC78 /* JDTestViewController.m */,
 			);
 			name = TestViewController;
+			path = TestViewController;
 			sourceTree = "<group>";
 		};
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
@@ -424,6 +439,7 @@
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
 			name = "FunctionViewList(小功能集合)";
+			path = "FunctionViewList(小功能集合)";
 			sourceTree = "<group>";
 		};
 		F5A1A71F1E977F030076CC78 /* Signer(自然签名) */ = {
@@ -434,6 +450,7 @@
 				F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */,
 			);
 			name = "Signer(自然签名)";
+			path = "Signer(自然签名)";
 			sourceTree = "<group>";
 		};
 		F5A1A7231E9780500076CC78 /* brush(毛笔效果) */ = {
@@ -444,6 +461,7 @@
 				F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */,
 			);
 			name = "brush(毛笔效果)";
+			path = "brush(毛笔效果)";
 			sourceTree = "<group>";
 		};
 		F5A1A72A1E9B2D330076CC78 /* View */ = {
@@ -453,6 +471,7 @@
 				F5A1A72F1E9B2D520076CC78 /* TZSignView.m */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F5A1A7311E9B2D610076CC78 /* View */ = {
@@ -462,6 +481,7 @@
 				F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
