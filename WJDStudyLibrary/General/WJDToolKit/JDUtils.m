@@ -81,7 +81,7 @@
 
 + (UIBarButtonItem *)createTextBarButtonWithTitle:(NSString *)title Target:(id)target Action:(SEL)action
 {
-    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:title style:UIBarButtonItemStylePlain target:self action:action];
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:title style:UIBarButtonItemStylePlain target:target action:action];
     return barButton;
 }
 

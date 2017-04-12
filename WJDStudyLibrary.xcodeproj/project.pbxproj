@@ -34,6 +34,8 @@
 		F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */; };
 		F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */; };
 		F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45771E9C7F280073F6D6 /* JDNetManager.m */; };
+		F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */; };
+		F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */; };
 		F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7191E9774450076CC78 /* JDTestViewController.m */; };
 		F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */; };
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
@@ -100,6 +102,10 @@
 		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefines.h; sourceTree = "<group>"; };
 		F57D45761E9C7F280073F6D6 /* JDNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetManager.h; sourceTree = "<group>"; };
 		F57D45771E9C7F280073F6D6 /* JDNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetManager.m; sourceTree = "<group>"; };
+		F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignListViewController.h; sourceTree = "<group>"; };
+		F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSignListViewController.m; sourceTree = "<group>"; };
+		F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRScannerViewController.h; sourceTree = "<group>"; };
+		F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRScannerViewController.m; sourceTree = "<group>"; };
 		F5A1A7181E9774450076CC78 /* JDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTestViewController.h; sourceTree = "<group>"; };
 		F5A1A7191E9774450076CC78 /* JDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTestViewController.m; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
@@ -380,6 +386,26 @@
 			name = NetWorkTool;
 			sourceTree = "<group>";
 		};
+		F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */ = {
+			isa = PBXGroup;
+			children = (
+				F5A1A71F1E977F030076CC78 /* Signer(自然签名) */,
+				F5A1A7231E9780500076CC78 /* brush(毛笔效果) */,
+				F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */,
+				F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */,
+			);
+			name = "SignListViewController(签字笔效果)";
+			sourceTree = "<group>";
+		};
+		F57D457D1E9CC8910073F6D6 /* QRSanner(二维码扫描) */ = {
+			isa = PBXGroup;
+			children = (
+				F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */,
+				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
+			);
+			name = "QRSanner(二维码扫描)";
+			sourceTree = "<group>";
+		};
 		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,8 +418,8 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F5A1A7231E9780500076CC78 /* brush(毛笔效果) */,
-				F5A1A71F1E977F030076CC78 /* Signer(自然签名) */,
+				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码扫描) */,
+				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
@@ -578,8 +604,10 @@
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
+				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
 				F52C45181E94BBEC00D8DF62 /* JDPopView.m in Sources */,
+				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,

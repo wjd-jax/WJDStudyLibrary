@@ -1,25 +1,24 @@
 //
-//  JDFunctionListViewController.m
+//  JDSignListViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/4/7.
+//  Created by wangjundong on 2017/4/11.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDFunctionListViewController.h"
+#import "JDSignListViewController.h"
 
-@interface JDFunctionListViewController ()
+@interface JDSignListViewController ()
 
 @end
 
-@implementation JDFunctionListViewController
+@implementation JDSignListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"签字效果",@"ClassName":@"JDSignListViewController"},
-                           @{@"title":@"二维码扫描",@"ClassName":@"JDSignListViewController"},
-                           ];
-}
+    self.dataSoureArray =@[@{@"title":@"自然签名",@"ClassName":@"JDSignViewController"},
+                           @{@"title":@"毛笔签名",@"ClassName":@"JDBruchViewController"},
+                           ];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
