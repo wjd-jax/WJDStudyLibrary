@@ -86,7 +86,7 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
         
         failure(ErroCode_NetNotReachable,badNet);
         
-        if ([self DeBug])DLog(@"\n错误状态%@---%@\n",@(ErroCode_NetNotReachable),badNet);
+        if ([self DeBug])DLog(@"错误状态%@---%@",@(ErroCode_NetNotReachable),badNet);
         
         return;
     }
@@ -95,13 +95,13 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     
     JDNetClinet *client =[JDNetClinet sharedClient];
     [self dealParrameters:parameters];
-    if ([self DeBug])DLog(@"\n参数列表%@",parameters);
+    if ([self DeBug])DLog(@"参数列表%@",parameters);
     
     switch (type) {
             
         case RequestTypeGet:
         {
-            if ([self DeBug])DLog(@"\n请求的 URL---%@\n",url);
+            if ([self DeBug])DLog(@"请求的 URL---%@",url);
 
             [client GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
@@ -116,14 +116,14 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
                 failure(ErroCode_RequestFaiure,requestFail);
-                if ([self DeBug])DLog(@"\n错误状态%@---%@\n",@(ErroCode_RequestFaiure),requestFail);
+                if ([self DeBug])DLog(@"错误状态%@---%@",@(ErroCode_RequestFaiure),requestFail);
                 
             }];
         }
             break;
         case RequestTypePost:
         {
-            if ([self DeBug])DLog(@"\n请求的 URL---%@%@\n",BASEURL,url);
+            if ([self DeBug])DLog(@"请求的 URL---%@%@",BASEURL,url);
 
             [client POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
@@ -137,7 +137,7 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
-                if ([self DeBug])DLog(@"\n错误状态%@---%@\n",@(ErroCode_RequestFaiure),requestFail);
+                if ([self DeBug])DLog(@"错误状态%@---%@",@(ErroCode_RequestFaiure),requestFail);
                 failure(ErroCode_RequestFaiure,requestFail);
             }];
         }
@@ -164,14 +164,14 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
         if (state) {
             //如果服务器返回的状态是成功则返回需要处理的数据,除去最外层的状态字段,比如requestDict[@"result"]
             success(resultData,requestDict);
-            if ([self DeBug])DLog(@"\n返回结果%@\n",resultData);
+            if ([self DeBug])DLog(@"返回结果%@",resultData);
             
         }
         else
         {
             //如果服务器返回的状态是失败,则告诉调用者返回失败,
             failure(ErroCode_DataStateError,requestDataStateError);
-            if ([self DeBug])DLog(@"\n错误状态%@---%@\n",@(ErroCode_DataStateError),requestDataStateError);
+            if ([self DeBug])DLog(@"错误状态%@---%@",@(ErroCode_DataStateError),requestDataStateError);
             
         }
     }
@@ -180,7 +180,7 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     else
     {
         success(resultData,nil);
-        if ([self DeBug])DLog(@"\n返回结果%@\n",resultData);
+        if ([self DeBug])DLog(@"返回结果%@",resultData);
     }
     //如果开启 debug 模式,则关闭
     if ([self DeBug]) {
