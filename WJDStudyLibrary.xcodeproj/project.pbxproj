@@ -25,6 +25,8 @@
 		F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */; };
 		F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */; };
 		F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */; };
+		F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */; };
+		F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
 		F55E55401E850BB100144D49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553F1E850BB100144D49 /* AppDelegate.m */; };
 		F55E55481E850BB100144D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E55471E850BB100144D49 /* Assets.xcassets */; };
@@ -84,6 +86,9 @@
 		F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuidePageViewController.m; sourceTree = "<group>"; };
 		F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLayoutListViewController.h; sourceTree = "<group>"; };
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
+		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
+		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
+		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
 		F55E55381E850BB100144D49 /* WJDStudyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJDStudyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E553C1E850BB100144D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,7 +180,6 @@
 				F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */,
 				F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */,
 			);
-			name = "knowledgeViewController(知识库)";
 			path = "knowledgeViewController(知识库)";
 			sourceTree = "<group>";
 		};
@@ -185,7 +189,6 @@
 				F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */,
 				F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */,
 			);
-			name = "AboutUs(关于我)";
 			path = "AboutUs(关于我)";
 			sourceTree = "<group>";
 		};
@@ -197,7 +200,6 @@
 				F52C450E1E94B52D00D8DF62 /* JDViewListViewController.h */,
 				F52C450F1E94B52D00D8DF62 /* JDViewListViewController.m */,
 			);
-			name = "ViewShowViewController(视图列表)";
 			path = "ViewShowViewController(视图列表)";
 			sourceTree = "<group>";
 		};
@@ -210,7 +212,6 @@
 				F52C45121E94BA5500D8DF62 /* JDPopViewController.h */,
 				F52C45131E94BA5500D8DF62 /* JDPopViewController.m */,
 			);
-			name = popViewListViewController;
 			path = popViewListViewController;
 			sourceTree = "<group>";
 		};
@@ -220,7 +221,6 @@
 				F52C45161E94BBEC00D8DF62 /* JDPopView.h */,
 				F52C45171E94BBEC00D8DF62 /* JDPopView.m */,
 			);
-			name = "popViewStyle(通用分享视图)";
 			path = "popViewStyle(通用分享视图)";
 			sourceTree = "<group>";
 		};
@@ -230,7 +230,6 @@
 				F52C45201E94C55200D8DF62 /* JDMessageView.h */,
 				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
 			);
-			name = "popViewStyle2(仿QQ提示)";
 			path = "popViewStyle2(仿QQ提示)";
 			sourceTree = "<group>";
 		};
@@ -240,7 +239,6 @@
 				F52C45241E94C95500D8DF62 /* JDAletView.h */,
 				F52C45251E94C95500D8DF62 /* JDAletView.m */,
 			);
-			name = "popAletView(自定义AletView)";
 			path = "popAletView(自定义AletView)";
 			sourceTree = "<group>";
 		};
@@ -252,7 +250,6 @@
 				F52C45281E96093C00D8DF62 /* JDGuideViewController.h */,
 				F52C45291E96093C00D8DF62 /* JDGuideViewController.m */,
 			);
-			name = GuideViewController;
 			path = GuideViewController;
 			sourceTree = "<group>";
 		};
@@ -263,7 +260,6 @@
 				F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */,
 				F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */,
 			);
-			name = "LayoutViewList(布局视图列表)";
 			path = "LayoutViewList(布局视图列表)";
 			sourceTree = "<group>";
 		};
@@ -271,8 +267,26 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group";
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
+			isa = PBXGroup;
+			children = (
+				F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */,
+				F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */,
+				F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */,
+			);
+			name = "QRImageMake(二维码生成)";
+			sourceTree = "<group>";
+		};
+		F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */ = {
+			isa = PBXGroup;
+			children = (
+				F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */,
+				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
+			);
+			name = "QRIScan(二维码扫描)";
 			sourceTree = "<group>";
 		};
 		F55E552F1E850BB100144D49 = {
@@ -381,7 +395,6 @@
 				F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */,
 				F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */,
 			);
-			name = "NetworkingViewController(网络封装)";
 			path = "NetworkingViewController(网络封装)";
 			sourceTree = "<group>";
 		};
@@ -394,7 +407,6 @@
 				F57D45771E9C7F280073F6D6 /* JDNetManager.m */,
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 			);
-			name = NetWorkTool;
 			path = NetWorkTool;
 			sourceTree = "<group>";
 		};
@@ -406,17 +418,16 @@
 				F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */,
 				F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */,
 			);
-			name = "SignListViewController(签字笔效果)";
 			path = "SignListViewController(签字笔效果)";
 			sourceTree = "<group>";
 		};
-		F57D457D1E9CC8910073F6D6 /* QRSanner(二维码扫描) */ = {
+		F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */ = {
 			isa = PBXGroup;
 			children = (
-				F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */,
-				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
+				F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */,
+				F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */,
 			);
-			name = "QRSanner(二维码扫描)";
+			name = "QRSanner(二维码)";
 			path = "QRSanner(二维码扫描)";
 			sourceTree = "<group>";
 		};
@@ -426,19 +437,17 @@
 				F5A1A7181E9774450076CC78 /* JDTestViewController.h */,
 				F5A1A7191E9774450076CC78 /* JDTestViewController.m */,
 			);
-			name = TestViewController;
 			path = TestViewController;
 			sourceTree = "<group>";
 		};
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码扫描) */,
+				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
-			name = "FunctionViewList(小功能集合)";
 			path = "FunctionViewList(小功能集合)";
 			sourceTree = "<group>";
 		};
@@ -449,7 +458,6 @@
 				F5A1A7201E977F3E0076CC78 /* JDSignViewController.h */,
 				F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */,
 			);
-			name = "Signer(自然签名)";
 			path = "Signer(自然签名)";
 			sourceTree = "<group>";
 		};
@@ -460,7 +468,6 @@
 				F57D45641E9C601C0073F6D6 /* JDBruchViewController.h */,
 				F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */,
 			);
-			name = "brush(毛笔效果)";
 			path = "brush(毛笔效果)";
 			sourceTree = "<group>";
 		};
@@ -470,7 +477,6 @@
 				F5A1A72E1E9B2D520076CC78 /* TZSignView.h */,
 				F5A1A72F1E9B2D520076CC78 /* TZSignView.m */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -480,7 +486,6 @@
 				F5A1A72B1E9B2D450076CC78 /* AFBrushBoard.h */,
 				F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -549,6 +554,7 @@
 			files = (
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
+				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +620,7 @@
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
+				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,

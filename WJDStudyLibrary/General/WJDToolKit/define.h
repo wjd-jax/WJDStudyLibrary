@@ -19,7 +19,8 @@
 //DEBUG 模式下打印日志,当前行
 #ifdef DEBUG
 
-# define DLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define DLog(format,...) printf("%s [Line %d]  \n%s\n",__PRETTY_FUNCTION__, __LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+
 #else
 
 # define DLog(...)

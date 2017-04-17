@@ -16,6 +16,8 @@
 #import "JDBaseModel.h"
 #import "JDBaseViewController.h"
 #import "JDHeader.h"
+#import "JDMessageView.h"
+
 #endif
 
 #endif /* PrefixHeader_pch */

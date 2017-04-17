@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, RequestState){
     
 };
 
-typedef void (^SuccessBlock)(id requestDic, NSDictionary *dataDict);
+typedef void (^SuccessBlock)(id requestData, NSDictionary *dataDict);
 typedef void (^FailureBlock)(ErroCode code , NSString *msg);
 typedef void (^LoadProgress)(float progress);
 

@@ -25,7 +25,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];
-   
+    
 }
 - (void)setDataSoureArray:(NSArray *)dataSoureArray
 {
@@ -49,12 +49,27 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     JDMainDataModel *model =[_dataArray objectAtIndex:indexPath.row];
-
+    
     UIViewController *vc =[[NSClassFromString(model.ClassName) alloc] init];
     vc.title =model.title;
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
+        return;
     }
+    NSRange range;
+    range = [model.ClassName rangeOfString:@"Storyboard"];
+    if (range.location != NSNotFound) {
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:model.ClassName bundle:nil];
+        
+        UIViewController  *cardVC = [storyBoard instantiateViewControllerWithIdentifier:model.ClassName];
+        if (cardVC) {
+            [self.navigationController pushViewController:cardVC animated:YES];
+            
+        }
+    }
+    else{
+    }
+    
     
 }
 

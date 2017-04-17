@@ -16,8 +16,6 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
 
 @interface JDNetManager ()
 
-@property(nonatomic,assign)BOOL debug;
-
 @end
 
 @implementation JDNetManager
@@ -54,9 +52,9 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
 
 +(void)getRequestUrlStr:(NSString *)urlStr withDic:(NSDictionary *)parmeters success:(SuccessBlock)success failure:(FailureBlock)failure{
     
-    [[self alloc] requestWithURL:urlStr WithDict:parmeters requestType:RequestTypeGet imageKey:nil withData:nil upLoadProgress:nil success:^(id requestDic,NSDictionary *dataDict) {
+    [[self alloc] requestWithURL:urlStr WithDict:parmeters requestType:RequestTypeGet imageKey:nil withData:nil upLoadProgress:nil success:^(id requestData,NSDictionary *dataDict) {
         
-        success(requestDic,dataDict);
+        success(requestData,dataDict);
         
     } failure:^(ErroCode code, NSString *msg) {
         
@@ -67,9 +65,9 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
 
 +(void)postRequestUrlStr:(NSString *)urlStr withDic:(NSDictionary *)parameters success:(SuccessBlock)success failure:(FailureBlock)failure{
     
-    [[self alloc] requestWithURL:urlStr WithDict:parameters requestType:RequestTypePost imageKey:nil withData:nil upLoadProgress:nil success:^(id requestDic,NSDictionary *dataDict) {
+    [[self alloc] requestWithURL:urlStr WithDict:parameters requestType:RequestTypePost imageKey:nil withData:nil upLoadProgress:nil success:^(id requestData,NSDictionary *dataDict) {
         
-        success(requestDic,dataDict);
+        success(requestData,dataDict);
         
     } failure:^(ErroCode code, NSString *msg) {
         
@@ -94,7 +92,7 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     url =[url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     JDNetClinet *client =[JDNetClinet sharedClient];
-    [self dealParrameters:parameters];
+    parameters = [self dealParrameters:parameters];
     if ([self DeBug])DLog(@"参数列表%@",parameters);
     
     switch (type) {
@@ -105,8 +103,8 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
 
             [client GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
-                [self returnDataWithRequestData:responseObject Success:^(id requestDic, NSDictionary *dataDict) {
-                    success(requestDic,dataDict);
+                [self returnDataWithRequestData:responseObject Success:^(id requestData, NSDictionary *dataDict) {
+                    success(requestData,dataDict);
                     
                 } failure:^(ErroCode code, NSString *msg) {
                     failure(ErroCode_RequestFaiure,requestFail);
@@ -127,8 +125,8 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
 
             [client POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
-                [self returnDataWithRequestData:responseObject Success:^(id requestDic, NSDictionary *dataDict) {
-                    success(requestDic,dataDict);
+                [self returnDataWithRequestData:responseObject Success:^(id requestData, NSDictionary *dataDict) {
+                    success(requestData,dataDict);
                     
                 } failure:^(ErroCode code, NSString *msg) {
                     failure(ErroCode_RequestFaiure,requestFail);
@@ -157,13 +155,13 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     //先判断是不是字典类型如果是,则添加通用处理方法,处理字典最外层数据基本的成功失败
     if ([resultData isKindOfClass:[NSDictionary class]]) {
         
-        NSDictionary *requestDict =(NSDictionary *)resultData;
+        NSDictionary *requestDatat =(NSDictionary *)resultData;
         
-        BOOL state = YES;       //APP 接口约定的返回数据成功或者失败的标志,比如requestDict[@"state"]
+        BOOL state = YES;       //APP 接口约定的返回数据成功或者失败的标志,比如requestDatat[@"state"]
         
         if (state) {
-            //如果服务器返回的状态是成功则返回需要处理的数据,除去最外层的状态字段,比如requestDict[@"result"]
-            success(resultData,requestDict);
+            //如果服务器返回的状态是成功则返回需要处理的数据,除去最外层的状态字段,比如requestDatat[@"result"]
+            success(resultData,requestDatat);
             if ([self DeBug])DLog(@"返回结果%@",resultData);
             
         }
@@ -194,9 +192,9 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
  
  @param parameters 接口请求的参数
  */
-- (void)dealParrameters:(NSDictionary *)parameters
+- (NSDictionary *)dealParrameters:(NSDictionary *)parameters
 {
-    
+    return parameters;
 }
 
 /**

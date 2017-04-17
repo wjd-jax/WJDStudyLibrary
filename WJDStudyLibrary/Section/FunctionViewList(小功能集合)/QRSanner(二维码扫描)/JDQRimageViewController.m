@@ -1,24 +1,22 @@
 //
-//  JDFunctionListViewController.m
+//  JDQRimageViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/4/7.
+//  Created by wangjundong on 2017/4/14.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDFunctionListViewController.h"
+#import "JDQRimageViewController.h"
 
-@interface JDFunctionListViewController ()
+@interface JDQRimageViewController ()
 
 @end
 
-@implementation JDFunctionListViewController
+@implementation JDQRimageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"签字效果",@"ClassName":@"JDSignListViewController"},
-                           @{@"title":@"二维码扫描",@"ClassName":@"JDQRScannerViewController"},
-                           ];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

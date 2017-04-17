@@ -8,6 +8,11 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+
+/**
+ 此方法设置测试跟正式服务器的 baseurl
+ */
+
 #if DEBUG
 
 static NSString* const BASEURL = @"";
@@ -18,9 +23,6 @@ static NSString* const BASEURL = @"";
 
 #endif
 
-/**
- 此方法设置测试跟正式服务器的 baseurl
- */
 @interface JDNetClinet : AFHTTPSessionManager
 
 /**
