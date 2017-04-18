@@ -43,6 +43,7 @@
     UIButton*button=[UIButton buttonWithType:UIButtonTypeCustom];
     button.frame=frame;
     [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //[button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button setImage:JDGetImage(imageName) forState:UIControlStateNormal];
     //[button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];

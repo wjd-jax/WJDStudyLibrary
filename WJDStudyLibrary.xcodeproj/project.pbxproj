@@ -14,6 +14,7 @@
 		F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */; };
 		F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUtils.m */; };
 		F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */; };
+		F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */; };
 		F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */; };
 		F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C450F1E94B52D00D8DF62 /* JDViewListViewController.m */; };
 		F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45131E94BA5500D8DF62 /* JDPopViewController.m */; };
@@ -43,6 +44,8 @@
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
+		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
+		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,8 @@
 		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
 		F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutUsViewController.m; sourceTree = "<group>"; };
+		F528DDFE1EA4875700F0E500 /* JDTimeFormatTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTimeFormatTool.h; sourceTree = "<group>"; };
+		F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTimeFormatTool.m; sourceTree = "<group>"; };
 		F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		F52C450E1E94B52D00D8DF62 /* JDViewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDViewListViewController.h; sourceTree = "<group>"; };
@@ -121,6 +126,9 @@
 		F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBrushBoard.m; sourceTree = "<group>"; };
 		F5A1A72E1E9B2D520076CC78 /* TZSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZSignView.h; sourceTree = "<group>"; };
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
+		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
+		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
+		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */,
 				385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +147,7 @@
 		1E97615D406F75866E9BCA8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */,
 				9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */,
 			);
 			name = Frameworks;
@@ -190,6 +200,16 @@
 				F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */,
 			);
 			path = "AboutUs(关于我)";
+			sourceTree = "<group>";
+		};
+		F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */ = {
+			isa = PBXGroup;
+			children = (
+				F528DDFE1EA4875700F0E500 /* JDTimeFormatTool.h */,
+				F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */,
+			);
+			name = "TimeFomatTool(时间格式转化)";
+			path = TimeFomatTool;
 			sourceTree = "<group>";
 		};
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
@@ -277,7 +297,7 @@
 				F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */,
 				F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */,
 			);
-			name = "QRImageMake(二维码生成)";
+			path = "QRImageMake(二维码生成)";
 			sourceTree = "<group>";
 		};
 		F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */ = {
@@ -286,7 +306,7 @@
 				F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */,
 				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
 			);
-			name = "QRIScan(二维码扫描)";
+			path = "QRIScan(二维码扫描)";
 			sourceTree = "<group>";
 		};
 		F55E552F1E850BB100144D49 = {
@@ -358,6 +378,7 @@
 		F55E55541E85171600144D49 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 			);
 			path = General;
@@ -427,8 +448,7 @@
 				F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */,
 				F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */,
 			);
-			name = "QRSanner(二维码)";
-			path = "QRSanner(二维码扫描)";
+			path = "QRSanner(二维码)";
 			sourceTree = "<group>";
 		};
 		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
@@ -443,6 +463,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
@@ -487,6 +508,15 @@
 				F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */,
+				F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */,
+			);
+			name = "TouchIDTest(TouchID 功能)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,9 +668,11 @@
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
+				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
+				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
