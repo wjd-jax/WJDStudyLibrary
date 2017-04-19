@@ -367,6 +367,7 @@
 		F55E55531E85169700144D49 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
 				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
 				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
 				F51CF0831E8E20F10035EF7A /* JDBaseModel.h */,
@@ -517,6 +518,13 @@
 				F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */,
 			);
 			name = "TouchIDTest(TouchID 功能)";
+			sourceTree = "<group>";
+		};
+		F5DB4C251EA6078A000D3A0F /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -792,6 +800,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Resource/Recognize4IOS/recognizeEngine/release",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -806,6 +818,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Resource/Recognize4IOS/recognizeEngine/release",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
