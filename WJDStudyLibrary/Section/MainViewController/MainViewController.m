@@ -25,7 +25,8 @@
                            @{@"title":@"布局视图",@"ClassName":@"JDLayoutListViewController"},
                            @{@"title":@"小功能集合",@"ClassName":@"JDFunctionListViewController"},
                            @{@"title":@"网络封装",@"ClassName":@"JDNetWorkingViewController"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDTouchIDViewController"}];
+                           @{@"title":@"加密解密",@"ClassName":@"JDEncryptionListViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDEvntyptionViewController"}];
     
 }
 

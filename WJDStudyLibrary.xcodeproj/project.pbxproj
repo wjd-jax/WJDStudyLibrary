@@ -33,6 +33,10 @@
 		F55E55481E850BB100144D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E55471E850BB100144D49 /* Assets.xcassets */; };
 		F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55E55491E850BB100144D49 /* LaunchScreen.storyboard */; };
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
+		F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */; };
+		F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57609121EADC4D2000D0176 /* EnvtyptionView.xib */; };
+		F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609151EADC51A000D0176 /* JDEntyptionView.m */; };
+		F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */; };
 		F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */; };
 		F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */; };
 		F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */; };
@@ -103,6 +107,13 @@
 		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEncryptionListViewController.h; sourceTree = "<group>"; };
+		F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEncryptionListViewController.m; sourceTree = "<group>"; };
+		F57609121EADC4D2000D0176 /* EnvtyptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvtyptionView.xib; sourceTree = "<group>"; };
+		F57609141EADC51A000D0176 /* JDEntyptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEntyptionView.h; sourceTree = "<group>"; };
+		F57609151EADC51A000D0176 /* JDEntyptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEntyptionView.m; sourceTree = "<group>"; };
+		F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEvntyptionViewController.h; sourceTree = "<group>"; };
+		F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEvntyptionViewController.m; sourceTree = "<group>"; };
 		F57D45641E9C601C0073F6D6 /* JDBruchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBruchViewController.h; sourceTree = "<group>"; };
 		F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBruchViewController.m; sourceTree = "<group>"; };
 		F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetWorkingViewController.h; sourceTree = "<group>"; };
@@ -388,6 +399,7 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
@@ -408,6 +420,36 @@
 				F55E555A1E851B0D00144D49 /* MainViewController.m */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		F576090D1EADA789000D0176 /* Encryption(加密解密) */ = {
+			isa = PBXGroup;
+			children = (
+				F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */,
+				F57609111EADC49C000D0176 /* View */,
+				F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */,
+				F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */,
+			);
+			name = "Encryption(加密解密)";
+			sourceTree = "<group>";
+		};
+		F57609111EADC49C000D0176 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F57609121EADC4D2000D0176 /* EnvtyptionView.xib */,
+				F57609141EADC51A000D0176 /* JDEntyptionView.h */,
+				F57609151EADC51A000D0176 /* JDEntyptionView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */ = {
+			isa = PBXGroup;
+			children = (
+				F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */,
+				F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */,
+			);
+			name = "EncryptionOrDecryption(加密解密)";
 			sourceTree = "<group>";
 		};
 		F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */ = {
@@ -592,6 +634,7 @@
 			files = (
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
+				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,6 +710,7 @@
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
+				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
@@ -681,6 +725,8 @@
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
+				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
+				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
