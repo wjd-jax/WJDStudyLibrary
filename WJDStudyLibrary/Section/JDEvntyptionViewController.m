@@ -11,7 +11,7 @@
 #import "JDMD5Util.h"
 #import "JDRSAUtil.h"
 #import "JDAESUtil.h"
-
+#import "JDDESUtil.h"
 
 #define ENCRYPT_KEY          @"MfsKyo8IEMb"
 
@@ -113,6 +113,8 @@
 #pragma mark -  加密
 -(void)encryption
 {
+    _key =[self randomKey];
+
     switch (_type) {
         case Encryption_MD5:
             _encryptionView.encryptionTextView.text = [JDMD5Util md5:_encryptionView.inputTextField.text];
@@ -128,8 +130,15 @@
         case Encryption_AES:
             //私钥加密
         {
-            _key =[self randomKey];
             _ret  =[JDAESUtil encrypt:_encryptionView.inputTextField.text password:_key];
+            _encryptionView.encryptionTextView.text =[NSString stringWithFormat:@"随机密码:%@\n加密结果:%@",_key,_ret];
+        }
+            break;
+        case Encryption_DES:
+            //私钥加密
+        {
+            _key =[self randomKey];
+            _ret  =[JDDESUtil encryptUseDES:_encryptionView.inputTextField.text key:_key];
             _encryptionView.encryptionTextView.text =[NSString stringWithFormat:@"随机密码:%@\n加密结果:%@",_key,_ret];
         }
             break;
@@ -156,6 +165,10 @@
         case Encryption_AES:
             
             _encryptionView.decryptTextView.text =[JDAESUtil decrypt:_ret password:_key];
+            break;
+        case Encryption_DES:
+            
+            _encryptionView.decryptTextView.text =[JDDESUtil decryptUseDES:_ret key:_key];
             break;
         default:
             break;

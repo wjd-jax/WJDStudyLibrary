@@ -24,7 +24,7 @@
                         <outlet property="delegate" destination="-1" id="VZh-Eo-2Cd"/>
                     </connections>
                 </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="加密后的结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8oD-sk-2Yb">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="加密后的结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8oD-sk-2Yb">
                     <rect key="frame" x="10" y="180" width="394" height="120"/>
                     <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -33,7 +33,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="解密后的结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-r2-3SS">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="解密后的结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9h6-r2-3SS">
                     <rect key="frame" x="10" y="350" width="394" height="120"/>
                     <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
