@@ -252,7 +252,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
 - (BOOL)saveImage
 {
     if (!self.hasSignature)
-        return nil;
+        return NO;
     
     UIImage *screenshot = [self snapshot];
     

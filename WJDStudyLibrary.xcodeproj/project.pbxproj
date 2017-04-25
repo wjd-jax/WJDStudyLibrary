@@ -37,6 +37,9 @@
 		F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57609121EADC4D2000D0176 /* EnvtyptionView.xib */; };
 		F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609151EADC51A000D0176 /* JDEntyptionView.m */; };
 		F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */; };
+		F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609211EADEF19000D0176 /* JDMD5Util.m */; };
+		F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609251EADF6D1000D0176 /* JDRSAUtil.m */; };
+		F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609291EAF16F7000D0176 /* JDAESUtil.m */; };
 		F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */; };
 		F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */; };
 		F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */; };
@@ -114,6 +117,12 @@
 		F57609151EADC51A000D0176 /* JDEntyptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEntyptionView.m; sourceTree = "<group>"; };
 		F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEvntyptionViewController.h; sourceTree = "<group>"; };
 		F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEvntyptionViewController.m; sourceTree = "<group>"; };
+		F57609201EADEF19000D0176 /* JDMD5Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMD5Util.h; sourceTree = "<group>"; };
+		F57609211EADEF19000D0176 /* JDMD5Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMD5Util.m; sourceTree = "<group>"; };
+		F57609241EADF6D1000D0176 /* JDRSAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRSAUtil.h; sourceTree = "<group>"; };
+		F57609251EADF6D1000D0176 /* JDRSAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRSAUtil.m; sourceTree = "<group>"; };
+		F57609281EAF16F7000D0176 /* JDAESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAESUtil.h; sourceTree = "<group>"; };
+		F57609291EAF16F7000D0176 /* JDAESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAESUtil.m; sourceTree = "<group>"; };
 		F57D45641E9C601C0073F6D6 /* JDBruchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBruchViewController.h; sourceTree = "<group>"; };
 		F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBruchViewController.m; sourceTree = "<group>"; };
 		F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetWorkingViewController.h; sourceTree = "<group>"; };
@@ -446,10 +455,40 @@
 		F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */ = {
 			isa = PBXGroup;
 			children = (
+				F57609271EAF16D9000D0176 /* AES */,
+				F57609231EADF6AB000D0176 /* RSA */,
+				F576091F1EADEE94000D0176 /* MD5 */,
 				F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */,
 				F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */,
 			);
 			name = "EncryptionOrDecryption(加密解密)";
+			sourceTree = "<group>";
+		};
+		F576091F1EADEE94000D0176 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				F57609201EADEF19000D0176 /* JDMD5Util.h */,
+				F57609211EADEF19000D0176 /* JDMD5Util.m */,
+			);
+			name = MD5;
+			sourceTree = "<group>";
+		};
+		F57609231EADF6AB000D0176 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				F57609241EADF6D1000D0176 /* JDRSAUtil.h */,
+				F57609251EADF6D1000D0176 /* JDRSAUtil.m */,
+			);
+			name = RSA;
+			sourceTree = "<group>";
+		};
+		F57609271EAF16D9000D0176 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				F57609281EAF16F7000D0176 /* JDAESUtil.h */,
+				F57609291EAF16F7000D0176 /* JDAESUtil.m */,
+			);
+			name = AES;
 			sourceTree = "<group>";
 		};
 		F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */ = {
@@ -702,6 +741,7 @@
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
+				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
@@ -712,6 +752,7 @@
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
+				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
@@ -727,6 +768,7 @@
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
+				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,

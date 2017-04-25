@@ -11,6 +11,7 @@ typedef NS_ENUM(NSInteger ,EncryptionType) {
     Encryption_MD5,
     Encryption_AES,
     Encryption_RSA,
+    Encryption_SIGN,    //签名
     Encryption_DES,
     Encryption_JavaServerORRSA,
 };

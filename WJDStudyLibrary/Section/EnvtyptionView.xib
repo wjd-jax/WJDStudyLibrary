@@ -61,13 +61,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuV-iR-l6c">
-                    <rect key="frame" x="20" y="676.33333333333337" width="138" height="30"/>
+                    <rect key="frame" x="20" y="676" width="138" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="138" id="A36-VO-KXh"/>
                         <constraint firstAttribute="height" constant="30" id="oVU-NP-wQP"/>
                     </constraints>
                     <state key="normal" title="加密">
                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="encryptClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="MAe-hu-YqE"/>
@@ -77,6 +80,9 @@
                     <rect key="frame" x="256" y="676" width="138" height="30"/>
                     <state key="normal" title="解密">
                         <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="decryptClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="buf-YI-mj9"/>
@@ -130,12 +136,14 @@
                 <constraint firstItem="8oD-sk-2Yb" firstAttribute="trailing" secondItem="Zv2-GR-mu3" secondAttribute="trailing" id="tMO-3K-Wbx"/>
             </constraints>
             <connections>
+                <outlet property="decryptButton" destination="HDI-SR-7jy" id="ePu-gh-Znb"/>
                 <outlet property="decryptTextView" destination="9h6-r2-3SS" id="AWL-Vx-r2g"/>
+                <outlet property="encryptButton" destination="nuV-iR-l6c" id="pOt-ql-Jv3"/>
                 <outlet property="encryptTypeLabel" destination="MqY-3L-XRP" id="POs-8e-uqy"/>
                 <outlet property="encryptionTextView" destination="8oD-sk-2Yb" id="OYC-cJ-jbq"/>
                 <outlet property="inputTextField" destination="fo9-jW-iwc" id="bZ0-Gg-Ngl"/>
             </connections>
-            <point key="canvasLocation" x="119.5" y="54.5"/>
+            <point key="canvasLocation" x="119" y="54"/>
         </view>
     </objects>
 </document>
