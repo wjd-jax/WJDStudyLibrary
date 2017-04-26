@@ -42,18 +42,18 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey/0";
     //
 }
 
-//- (NSString *)PEMFormatPublicKey:(RSA *)rsaPublic
-//{
-//    BIO *bio = BIO_new(BIO_s_mem());
-//    PEM_write_bio_RSA_PUBKEY(bio, rsaPublic);
-//
-//    BUF_MEM *bptr;
-//    BIO_get_mem_ptr(bio, &bptr);
-//    BIO_set_close(bio, BIO_NOCLOSE); /* So BIO_free() leaves BUF_MEM alone */
-//    BIO_free(bio);
-//
-//    return [NSString stringWithUTF8String:bptr->data];
-//}
+- (NSString *)PEMFormatPublicKey:(RSA *)rsaPublic
+{
+    BIO *bio = BIO_new(BIO_s_mem());
+    PEM_write_bio_RSA_PUBKEY(bio, rsaPublic);
+
+    BUF_MEM *bptr;
+    BIO_get_mem_ptr(bio, &bptr);
+    BIO_set_close(bio, BIO_NOCLOSE); /* So BIO_free() leaves BUF_MEM alone */
+    BIO_free(bio);
+
+    return [NSString stringWithUTF8String:bptr->data];
+}
 
 - (void)generateKeyPairPlease
 {

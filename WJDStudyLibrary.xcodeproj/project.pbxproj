@@ -913,6 +913,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -932,6 +933,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

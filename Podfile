@@ -5,6 +5,6 @@ target “WJDStudyLibrary” do
     pod 'MJExtension'
     pod 'AFNetworking'
     pod 'Reachability'
-    pod 'OpenSSL-for-iOS', '~> 1.0.2.d.1'
+    pod 'OpenSSL'
 end
 
