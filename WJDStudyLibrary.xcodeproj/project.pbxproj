@@ -41,6 +41,7 @@
 		F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609251EADF6D1000D0176 /* JDRSAUtil.m */; };
 		F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609291EAF16F7000D0176 /* JDAESUtil.m */; };
 		F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F576092D1EAF2A49000D0176 /* JDDESUtil.m */; };
+		F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609301EAF352D000D0176 /* JDKeyPairViewController.m */; };
 		F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */; };
 		F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */; };
 		F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */; };
@@ -126,6 +127,8 @@
 		F57609291EAF16F7000D0176 /* JDAESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAESUtil.m; sourceTree = "<group>"; };
 		F576092C1EAF2A49000D0176 /* JDDESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDESUtil.h; sourceTree = "<group>"; };
 		F576092D1EAF2A49000D0176 /* JDDESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDESUtil.m; sourceTree = "<group>"; };
+		F576092F1EAF352D000D0176 /* JDKeyPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyPairViewController.h; sourceTree = "<group>"; };
+		F57609301EAF352D000D0176 /* JDKeyPairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyPairViewController.m; sourceTree = "<group>"; };
 		F57D45641E9C601C0073F6D6 /* JDBruchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBruchViewController.h; sourceTree = "<group>"; };
 		F57D45651E9C601C0073F6D6 /* JDBruchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBruchViewController.m; sourceTree = "<group>"; };
 		F57D456E1E9C77D10073F6D6 /* JDNetWorkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetWorkingViewController.h; sourceTree = "<group>"; };
@@ -427,9 +430,9 @@
 		F55E55581E85179400144D49 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F51CF07E1E8E06220035EF7A /* MainDataModel */,
 				F55E55591E851B0D00144D49 /* MainViewController.h */,
 				F55E555A1E851B0D00144D49 /* MainViewController.m */,
+				F51CF07E1E8E06220035EF7A /* MainDataModel */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 		F576090D1EADA789000D0176 /* Encryption(加密解密) */ = {
 			isa = PBXGroup;
 			children = (
+				F57609321EAF3585000D0176 /* CreateKeyPair(动态生成密钥对) */,
 				F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */,
 				F57609111EADC49C000D0176 /* View */,
 				F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */,
@@ -502,6 +506,15 @@
 				F576092D1EAF2A49000D0176 /* JDDESUtil.m */,
 			);
 			name = DES;
+			sourceTree = "<group>";
+		};
+		F57609321EAF3585000D0176 /* CreateKeyPair(动态生成密钥对) */ = {
+			isa = PBXGroup;
+			children = (
+				F576092F1EAF352D000D0176 /* JDKeyPairViewController.h */,
+				F57609301EAF352D000D0176 /* JDKeyPairViewController.m */,
+			);
+			name = "CreateKeyPair(动态生成密钥对)";
 			sourceTree = "<group>";
 		};
 		F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */ = {
@@ -706,7 +719,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9BECD02103148093BEF25196 /* [CP] Embed Pods Frameworks */ = {
@@ -778,6 +791,7 @@
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
+				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,

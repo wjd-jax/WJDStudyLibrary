@@ -11,6 +11,7 @@
 
 @implementation JDDESUtil
 
+
 const Byte iv[] = {1,2,3,4,5,6,7,8};
 
 //Des加密

@@ -34,7 +34,7 @@ size_t const kKeySize = kCCKeySizeAES128;
     
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
                                           kCCAlgorithmAES,
-                                          kCCOptionPKCS7Padding,  // 系统默认使用 CBC，然后指明使用 PKCS7Padding
+                                          kCCOptionPKCS7Padding,  //系统默认使用 CBC，然后指明使用 PKCS7Padding
                                           keyPtr,
                                           kKeySize,
                                           initVector.bytes,

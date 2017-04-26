@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[@{@"title":@"加密解密",@"ClassName":@"JDEvntyptionViewController"},
-                           @{@"title":@"动态生成密钥对",@"ClassName":@"JDMD5EvntyptionViewController"}];
+                           @{@"title":@"动态生成密钥对",@"ClassName":@"JDKeyPairViewController"}];
     // Do any additional setup after loading the view.
 }
 
