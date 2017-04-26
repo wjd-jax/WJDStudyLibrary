@@ -9,7 +9,7 @@
 #import "JDKeyPairViewController.h"
 #import <openssl/rsa.h>
 #import <openssl/pem.h>
-//#import <openssl/bio.h>
+#import <openssl/bio.h>
 
 static const UInt8 publicKeyIdentifier[] = "com.apple.sample.publickey/0";
 static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey/0";
