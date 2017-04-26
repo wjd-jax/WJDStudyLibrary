@@ -53,7 +53,6 @@
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
-		F5BB6EDC1EB090B100A0BF6A /* DDRSAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB6EDB1EB090B100A0BF6A /* DDRSAWrapper.m */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
@@ -153,8 +152,6 @@
 		F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBrushBoard.m; sourceTree = "<group>"; };
 		F5A1A72E1E9B2D520076CC78 /* TZSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZSignView.h; sourceTree = "<group>"; };
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
-		F5BB6EDA1EB090B100A0BF6A /* DDRSAWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRSAWrapper.h; sourceTree = "<group>"; };
-		F5BB6EDB1EB090B100A0BF6A /* DDRSAWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRSAWrapper.m; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -408,8 +405,6 @@
 		F55E55541E85171600144D49 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				F5BB6EDA1EB090B100A0BF6A /* DDRSAWrapper.h */,
-				F5BB6EDB1EB090B100A0BF6A /* DDRSAWrapper.m */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 			);
@@ -803,7 +798,6 @@
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
-				F5BB6EDC1EB090B100A0BF6A /* DDRSAWrapper.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
