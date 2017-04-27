@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Key Pair View Controller-->
+        <scene sceneID="2FY-SP-G6Q">
+            <objects>
+                <viewController storyboardIdentifier="KeyPairStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UXA-9L-U2m" customClass="JDKeyPairViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zho-4P-sjb"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGG-v5-bQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eag-Kv-ylu">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seckey方式:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-GH-iRm">
+                                <rect key="frame" x="20" y="720" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenSSL 方式:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-6y-P9G">
+                                <rect key="frame" x="20" y="852" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nre-Ml-BZp">
+                                <rect key="frame" x="20" y="799" width="62" height="30"/>
+                                <state key="normal" title="生成公钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-cT-xTa">
+                                <rect key="frame" x="352.5" y="799" width="62" height="30"/>
+                                <state key="normal" title="生成私钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-oF-5fI">
+                                <rect key="frame" x="686" y="799" width="62" height="30"/>
+                                <state key="normal" title="生成公钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpM-NC-IfZ">
+                                <rect key="frame" x="20" y="962" width="62" height="30"/>
+                                <state key="normal" title="生成公钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBW-cy-bTE">
+                                <rect key="frame" x="352.5" y="962" width="62" height="30"/>
+                                <state key="normal" title="生成私钥"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hXs-mQ-hqs">
+                                <rect key="frame" x="20" y="37" width="728" height="620"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="0.35683326198630139" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C13-CJ-7kc">
+                                <rect key="frame" x="686" y="962" width="62" height="30"/>
+                                <state key="normal" title="生成公钥"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jpM-NC-IfZ" firstAttribute="top" secondItem="iTY-6y-P9G" secondAttribute="bottom" constant="89" id="29e-Za-G5n"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="centerX" secondItem="bZr-cT-xTa" secondAttribute="centerX" id="5aH-Rb-64e"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="9qU-oF-5fI" secondAttribute="trailing" id="78R-Sx-pSI"/>
+                            <constraint firstItem="XBW-cy-bTE" firstAttribute="baseline" secondItem="C13-CJ-7kc" secondAttribute="baseline" id="83Y-r1-kpB"/>
+                            <constraint firstItem="iTY-6y-P9G" firstAttribute="leading" secondItem="jpM-NC-IfZ" secondAttribute="leading" id="An0-ZI-M01"/>
+                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="top" secondItem="hXs-mQ-hqs" secondAttribute="bottom" constant="63" id="DUg-Uc-Wnw"/>
+                            <constraint firstItem="bZr-cT-xTa" firstAttribute="leading" secondItem="XBW-cy-bTE" secondAttribute="leading" id="HNb-rb-ej5"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="baseline" secondItem="bZr-cT-xTa" secondAttribute="baseline" id="PcS-IN-d43"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="leading" secondItem="iTY-6y-P9G" secondAttribute="leading" id="SnL-yu-u2B"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="top" secondItem="zho-4P-sjb" secondAttribute="bottom" constant="17" id="TiL-vQ-Msf"/>
+                            <constraint firstItem="9qU-oF-5fI" firstAttribute="leading" secondItem="C13-CJ-7kc" secondAttribute="leading" id="VVb-Xn-Wdp"/>
+                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="leading" secondItem="nre-Ml-BZp" secondAttribute="leading" id="YWH-i1-J6K"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="Mh0-GH-iRm" secondAttribute="leading" id="alP-7d-wH1"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="eag-Kv-ylu" secondAttribute="trailingMargin" id="ayu-cq-Nal"/>
+                            <constraint firstItem="bZr-cT-xTa" firstAttribute="baseline" secondItem="9qU-oF-5fI" secondAttribute="baseline" id="hVB-Af-kzZ"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="eag-Kv-ylu" secondAttribute="leadingMargin" id="kw4-zg-94h"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="top" secondItem="Mh0-GH-iRm" secondAttribute="bottom" constant="58" id="umq-MV-CrO"/>
+                            <constraint firstItem="iTY-6y-P9G" firstAttribute="top" secondItem="nre-Ml-BZp" secondAttribute="bottom" constant="23" id="uo2-gi-eWQ"/>
+                            <constraint firstItem="TGG-v5-bQI" firstAttribute="top" secondItem="jpM-NC-IfZ" secondAttribute="bottom" constant="32" id="w8n-cS-ZOL"/>
+                            <constraint firstItem="jpM-NC-IfZ" firstAttribute="baseline" secondItem="XBW-cy-bTE" secondAttribute="baseline" id="zj4-q1-dn6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showResultTextView" destination="hXs-mQ-hqs" id="ij0-U9-34s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvb-a0-wqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3911.1999999999998" y="-924.28785607196414"/>
+        </scene>
+    </scenes>
+</document>

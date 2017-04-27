@@ -10,4 +10,6 @@
 
 @interface JDKeyPairViewController : JDBaseViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *showResultTextView;
+
 @end
