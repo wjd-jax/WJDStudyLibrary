@@ -246,7 +246,7 @@
 				F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */,
 			);
 			name = "TimeFomatTool(时间格式转化)";
-			path = TimeFomatTool;
+			path = "TimeFomatTool(时间格式转化)";
 			sourceTree = "<group>";
 		};
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
@@ -367,7 +367,6 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 				F55E55541E85171600144D49 /* General */,
 				F55E55521E85166900144D49 /* Main */,
 				F55E55531E85169700144D49 /* Resource */,
@@ -378,6 +377,7 @@
 				F55E55471E850BB100144D49 /* Assets.xcassets */,
 				F55E554C1E850BB100144D49 /* Info.plist */,
 				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
+				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 			);
 			path = WJDStudyLibrary;
 			sourceTree = "<group>";
@@ -426,11 +426,11 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				F55E55581E85179400144D49 /* MainViewController */,
-				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
+				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
+				F55E55581E85179400144D49 /* MainViewController */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F5A1A7171E97741B0076CC78 /* TestViewController */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
@@ -442,9 +442,9 @@
 		F55E55581E85179400144D49 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF07E1E8E06220035EF7A /* MainDataModel */,
 				F55E55591E851B0D00144D49 /* MainViewController.h */,
 				F55E555A1E851B0D00144D49 /* MainViewController.m */,
-				F51CF07E1E8E06220035EF7A /* MainDataModel */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -452,14 +452,15 @@
 		F576090D1EADA789000D0176 /* Encryption(加密解密) */ = {
 			isa = PBXGroup;
 			children = (
-				F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */,
 				F57609321EAF3585000D0176 /* CreateKeyPair(动态生成密钥对) */,
 				F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */,
 				F57609111EADC49C000D0176 /* View */,
+				F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */,
 				F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */,
 				F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */,
 			);
 			name = "Encryption(加密解密)";
+			path = "Encryption(加密解密)";
 			sourceTree = "<group>";
 		};
 		F57609111EADC49C000D0176 /* View */ = {
@@ -470,19 +471,21 @@
 				F57609151EADC51A000D0176 /* JDEntyptionView.m */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F576091B1EADCB1A000D0176 /* EncryptionOrDecryption(加密解密) */ = {
 			isa = PBXGroup;
 			children = (
-				F576092B1EAF2A32000D0176 /* DES */,
 				F57609271EAF16D9000D0176 /* AES */,
-				F57609231EADF6AB000D0176 /* RSA */,
+				F576092B1EAF2A32000D0176 /* DES */,
 				F576091F1EADEE94000D0176 /* MD5 */,
+				F57609231EADF6AB000D0176 /* RSA */,
 				F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */,
 				F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */,
 			);
 			name = "EncryptionOrDecryption(加密解密)";
+			path = "EncryptionOrDecryption(加密解密)";
 			sourceTree = "<group>";
 		};
 		F576091F1EADEE94000D0176 /* MD5 */ = {
@@ -492,6 +495,7 @@
 				F57609211EADEF19000D0176 /* JDMD5Util.m */,
 			);
 			name = MD5;
+			path = MD5;
 			sourceTree = "<group>";
 		};
 		F57609231EADF6AB000D0176 /* RSA */ = {
@@ -501,6 +505,7 @@
 				F57609251EADF6D1000D0176 /* JDRSAUtil.m */,
 			);
 			name = RSA;
+			path = RSA;
 			sourceTree = "<group>";
 		};
 		F57609271EAF16D9000D0176 /* AES */ = {
@@ -510,6 +515,7 @@
 				F57609291EAF16F7000D0176 /* JDAESUtil.m */,
 			);
 			name = AES;
+			path = AES;
 			sourceTree = "<group>";
 		};
 		F576092B1EAF2A32000D0176 /* DES */ = {
@@ -519,6 +525,7 @@
 				F576092D1EAF2A49000D0176 /* JDDESUtil.m */,
 			);
 			name = DES;
+			path = DES;
 			sourceTree = "<group>";
 		};
 		F57609321EAF3585000D0176 /* CreateKeyPair(动态生成密钥对) */ = {
@@ -529,6 +536,7 @@
 				F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */,
 			);
 			name = "CreateKeyPair(动态生成密钥对)";
+			path = "CreateKeyPair(动态生成密钥对)";
 			sourceTree = "<group>";
 		};
 		F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */ = {
@@ -577,11 +585,12 @@
 			isa = PBXGroup;
 			children = (
 				F5A0A6F61EB1B6AE0084A032 /* keyChainWapper */,
+				F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */,
 				F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */,
 				F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */,
-				F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */,
 			);
 			name = "keyChian(钥匙串操作)";
+			path = "keyChian(钥匙串操作)";
 			sourceTree = "<group>";
 		};
 		F5A0A6F61EB1B6AE0084A032 /* keyChainWapper */ = {
@@ -591,6 +600,7 @@
 				F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */,
 			);
 			name = keyChainWapper;
+			path = keyChainWapper;
 			sourceTree = "<group>";
 		};
 		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
@@ -605,9 +615,9 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
+				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
@@ -659,6 +669,7 @@
 				F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */,
 			);
 			name = "TouchIDTest(TouchID 功能)";
+			path = "TouchIDTest(TouchID 功能)";
 			sourceTree = "<group>";
 		};
 		F5DB4C251EA6078A000D3A0F /* ThirdLibrary */ = {
@@ -666,6 +677,7 @@
 			children = (
 			);
 			name = ThirdLibrary;
+			path = ThirdLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
