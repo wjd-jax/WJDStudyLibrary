@@ -49,6 +49,8 @@
 		F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */; };
 		F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */; };
 		F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */; };
+		F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */; };
+		F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */; };
 		F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7191E9774450076CC78 /* JDTestViewController.m */; };
 		F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */; };
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
@@ -146,6 +148,10 @@
 		F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRScannerViewController.m; sourceTree = "<group>"; };
 		F5A0A6F71EB1B6CE0084A032 /* JDKeyChainWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChainWapper.h; sourceTree = "<group>"; };
 		F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChainWapper.m; sourceTree = "<group>"; };
+		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
+		F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChianTestViewController.m; sourceTree = "<group>"; };
+		F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDKeyChianTestStoryboard.storyboard; sourceTree = "<group>"; };
+		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
 		F5A1A7181E9774450076CC78 /* JDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTestViewController.h; sourceTree = "<group>"; };
 		F5A1A7191E9774450076CC78 /* JDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTestViewController.m; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
@@ -361,6 +367,7 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 				F55E55541E85171600144D49 /* General */,
 				F55E55521E85166900144D49 /* Main */,
 				F55E55531E85169700144D49 /* Resource */,
@@ -570,6 +577,9 @@
 			isa = PBXGroup;
 			children = (
 				F5A0A6F61EB1B6AE0084A032 /* keyChainWapper */,
+				F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */,
+				F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */,
+				F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */,
 			);
 			name = "keyChian(钥匙串操作)";
 			sourceTree = "<group>";
@@ -695,6 +705,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 33Y28YBGW2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -726,6 +744,7 @@
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
+				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +813,7 @@
 				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
+				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
@@ -938,6 +958,8 @@
 			baseConfigurationReference = 542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
@@ -950,6 +972,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -958,6 +982,8 @@
 			baseConfigurationReference = 4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
@@ -970,6 +996,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
