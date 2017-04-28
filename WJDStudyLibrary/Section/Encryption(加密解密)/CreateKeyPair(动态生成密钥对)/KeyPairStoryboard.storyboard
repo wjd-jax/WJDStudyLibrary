@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,78 +19,109 @@
                         <viewControllerLayoutGuide type="bottom" id="TGG-v5-bQI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eag-Kv-ylu">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seckey方式:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-GH-iRm">
-                                <rect key="frame" x="20" y="720" width="95" height="21"/>
+                                <rect key="frame" x="20" y="432" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenSSL 方式:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-6y-P9G">
-                                <rect key="frame" x="20" y="852" width="116" height="21"/>
+                                <rect key="frame" x="20" y="564" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nre-Ml-BZp">
-                                <rect key="frame" x="20" y="799" width="62" height="30"/>
-                                <state key="normal" title="生成公钥"/>
+                                <rect key="frame" x="20" y="511" width="92" height="30"/>
+                                <state key="normal" title="生成公密钥对"/>
+                                <connections>
+                                    <action selector="generateKeyPair:" destination="UXA-9L-U2m" eventType="touchUpInside" id="WEn-K3-jZB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-cT-xTa">
-                                <rect key="frame" x="352.5" y="799" width="62" height="30"/>
-                                <state key="normal" title="生成私钥"/>
+                                <rect key="frame" x="151" y="511" width="113" height="30"/>
+                                <state key="normal" title="保存到 keyChain"/>
+                                <connections>
+                                    <action selector="saveSeckeyToKeyChain:" destination="UXA-9L-U2m" eventType="touchUpInside" id="Htx-fi-8X3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-oF-5fI">
-                                <rect key="frame" x="686" y="799" width="62" height="30"/>
-                                <state key="normal" title="生成公钥"/>
+                                <rect key="frame" x="332" y="511" width="62" height="30"/>
+                                <state key="normal" title="读取私钥"/>
+                                <connections>
+                                    <action selector="readPrivateSeckey:" destination="UXA-9L-U2m" eventType="touchUpInside" id="krq-7G-aLf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpM-NC-IfZ">
-                                <rect key="frame" x="20" y="962" width="62" height="30"/>
-                                <state key="normal" title="生成公钥"/>
+                                <rect key="frame" x="20" y="674" width="77" height="30"/>
+                                <state key="normal" title="生成密钥对"/>
+                                <connections>
+                                    <action selector="crateKeyPairWithOpenSSl:" destination="UXA-9L-U2m" eventType="touchUpInside" id="wle-Ms-OqS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBW-cy-bTE">
-                                <rect key="frame" x="352.5" y="962" width="62" height="30"/>
-                                <state key="normal" title="生成私钥"/>
+                                <rect key="frame" x="151" y="674" width="111" height="30"/>
+                                <state key="normal" title="保存到 keychain"/>
+                                <connections>
+                                    <action selector="saveRASKeyToKeyChain:" destination="UXA-9L-U2m" eventType="touchUpInside" id="al4-6m-Jpm"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hXs-mQ-hqs">
-                                <rect key="frame" x="20" y="37" width="728" height="620"/>
+                                <rect key="frame" x="20" y="37" width="374" height="332"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="0.35683326198630139" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C13-CJ-7kc">
-                                <rect key="frame" x="686" y="962" width="62" height="30"/>
-                                <state key="normal" title="生成公钥"/>
+                                <rect key="frame" x="332" y="674" width="62" height="30"/>
+                                <state key="normal" title="读取私钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7x3-Yv-Q0E">
+                                <rect key="frame" x="332" y="623" width="62" height="30"/>
+                                <state key="normal" title="读取公钥"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEX-ec-H0w">
+                                <rect key="frame" x="332" y="456" width="62" height="30"/>
+                                <state key="normal" title="读取公钥"/>
+                                <connections>
+                                    <action selector="readSeckey:" destination="UXA-9L-U2m" eventType="touchUpInside" id="LUn-Uf-Uwg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jpM-NC-IfZ" firstAttribute="top" secondItem="iTY-6y-P9G" secondAttribute="bottom" constant="89" id="29e-Za-G5n"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="centerX" secondItem="bZr-cT-xTa" secondAttribute="centerX" id="5aH-Rb-64e"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="9qU-oF-5fI" secondAttribute="trailing" id="78R-Sx-pSI"/>
-                            <constraint firstItem="XBW-cy-bTE" firstAttribute="baseline" secondItem="C13-CJ-7kc" secondAttribute="baseline" id="83Y-r1-kpB"/>
-                            <constraint firstItem="iTY-6y-P9G" firstAttribute="leading" secondItem="jpM-NC-IfZ" secondAttribute="leading" id="An0-ZI-M01"/>
-                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="top" secondItem="hXs-mQ-hqs" secondAttribute="bottom" constant="63" id="DUg-Uc-Wnw"/>
-                            <constraint firstItem="bZr-cT-xTa" firstAttribute="leading" secondItem="XBW-cy-bTE" secondAttribute="leading" id="HNb-rb-ej5"/>
-                            <constraint firstItem="nre-Ml-BZp" firstAttribute="baseline" secondItem="bZr-cT-xTa" secondAttribute="baseline" id="PcS-IN-d43"/>
-                            <constraint firstItem="nre-Ml-BZp" firstAttribute="leading" secondItem="iTY-6y-P9G" secondAttribute="leading" id="SnL-yu-u2B"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="top" secondItem="zho-4P-sjb" secondAttribute="bottom" constant="17" id="TiL-vQ-Msf"/>
-                            <constraint firstItem="9qU-oF-5fI" firstAttribute="leading" secondItem="C13-CJ-7kc" secondAttribute="leading" id="VVb-Xn-Wdp"/>
-                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="leading" secondItem="nre-Ml-BZp" secondAttribute="leading" id="YWH-i1-J6K"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="Mh0-GH-iRm" secondAttribute="leading" id="alP-7d-wH1"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="eag-Kv-ylu" secondAttribute="trailingMargin" id="ayu-cq-Nal"/>
-                            <constraint firstItem="bZr-cT-xTa" firstAttribute="baseline" secondItem="9qU-oF-5fI" secondAttribute="baseline" id="hVB-Af-kzZ"/>
-                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="eag-Kv-ylu" secondAttribute="leadingMargin" id="kw4-zg-94h"/>
-                            <constraint firstItem="nre-Ml-BZp" firstAttribute="top" secondItem="Mh0-GH-iRm" secondAttribute="bottom" constant="58" id="umq-MV-CrO"/>
-                            <constraint firstItem="iTY-6y-P9G" firstAttribute="top" secondItem="nre-Ml-BZp" secondAttribute="bottom" constant="23" id="uo2-gi-eWQ"/>
-                            <constraint firstItem="TGG-v5-bQI" firstAttribute="top" secondItem="jpM-NC-IfZ" secondAttribute="bottom" constant="32" id="w8n-cS-ZOL"/>
-                            <constraint firstItem="jpM-NC-IfZ" firstAttribute="baseline" secondItem="XBW-cy-bTE" secondAttribute="baseline" id="zj4-q1-dn6"/>
+                            <constraint firstItem="C13-CJ-7kc" firstAttribute="top" secondItem="7x3-Yv-Q0E" secondAttribute="bottom" constant="21" id="2VM-8Z-t8w"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="leading" secondItem="iTY-6y-P9G" secondAttribute="leading" id="4fL-hX-zth"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="eag-Kv-ylu" secondAttribute="leadingMargin" id="9WV-QW-Mfa"/>
+                            <constraint firstItem="bZr-cT-xTa" firstAttribute="baseline" secondItem="9qU-oF-5fI" secondAttribute="baseline" id="C5L-3w-h2W"/>
+                            <constraint firstItem="7x3-Yv-Q0E" firstAttribute="leading" secondItem="C13-CJ-7kc" secondAttribute="leading" id="CrN-2o-Bai"/>
+                            <constraint firstItem="9qU-oF-5fI" firstAttribute="leading" secondItem="7x3-Yv-Q0E" secondAttribute="leading" id="D3R-zr-ucd"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="baseline" secondItem="bZr-cT-xTa" secondAttribute="baseline" id="Gkj-eW-VP0"/>
+                            <constraint firstItem="bZr-cT-xTa" firstAttribute="leading" secondItem="XBW-cy-bTE" secondAttribute="leading" id="H6m-7o-VMJ"/>
+                            <constraint firstItem="dEX-ec-H0w" firstAttribute="leading" secondItem="9qU-oF-5fI" secondAttribute="leading" id="HX8-Qx-SBb"/>
+                            <constraint firstItem="TGG-v5-bQI" firstAttribute="top" secondItem="jpM-NC-IfZ" secondAttribute="bottom" constant="32" id="K4y-6j-CSS"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="top" secondItem="zho-4P-sjb" secondAttribute="bottom" constant="17" id="MpO-eg-YGf"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="eag-Kv-ylu" secondAttribute="trailingMargin" id="PgJ-eV-95s"/>
+                            <constraint firstItem="iTY-6y-P9G" firstAttribute="top" secondItem="nre-Ml-BZp" secondAttribute="bottom" constant="23" id="Vgb-gN-NiG"/>
+                            <constraint firstItem="jpM-NC-IfZ" firstAttribute="baseline" secondItem="XBW-cy-bTE" secondAttribute="baseline" id="WBG-Na-dYz"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="trailing" secondItem="dEX-ec-H0w" secondAttribute="trailing" id="dRq-B5-yeJ"/>
+                            <constraint firstItem="nre-Ml-BZp" firstAttribute="top" secondItem="Mh0-GH-iRm" secondAttribute="bottom" constant="58" id="hKp-o9-2G4"/>
+                            <constraint firstItem="9qU-oF-5fI" firstAttribute="top" secondItem="dEX-ec-H0w" secondAttribute="bottom" constant="25" id="jDp-yQ-hB4"/>
+                            <constraint firstItem="XBW-cy-bTE" firstAttribute="baseline" secondItem="C13-CJ-7kc" secondAttribute="baseline" id="jlr-8H-xBU"/>
+                            <constraint firstItem="iTY-6y-P9G" firstAttribute="leading" secondItem="jpM-NC-IfZ" secondAttribute="leading" id="kvv-ND-wLl"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="centerX" secondItem="bZr-cT-xTa" secondAttribute="centerX" id="qJ4-Mb-Ckz"/>
+                            <constraint firstItem="7x3-Yv-Q0E" firstAttribute="top" secondItem="9qU-oF-5fI" secondAttribute="bottom" constant="82" id="vz0-aN-HyX"/>
+                            <constraint firstItem="hXs-mQ-hqs" firstAttribute="leading" secondItem="Mh0-GH-iRm" secondAttribute="leading" id="xUY-L7-IQA"/>
+                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="leading" secondItem="nre-Ml-BZp" secondAttribute="leading" id="yRn-Zl-Gl4"/>
+                            <constraint firstItem="Mh0-GH-iRm" firstAttribute="top" secondItem="hXs-mQ-hqs" secondAttribute="bottom" constant="63" id="ybE-Sh-V2g"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="showResultTextView" destination="hXs-mQ-hqs" id="ij0-U9-34s"/>
+                        <outlet property="textView" destination="hXs-mQ-hqs" id="4wO-di-VOb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvb-a0-wqy" userLabel="First Responder" sceneMemberID="firstResponder"/>

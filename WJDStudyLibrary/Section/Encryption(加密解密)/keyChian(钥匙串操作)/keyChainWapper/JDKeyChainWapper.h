@@ -42,4 +42,15 @@
  */
 + (void)deletePassWordClassDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup;
 
+/**
+ 保存密钥到 keychain
+
+ @param SecKey 密钥对象
+ @param identifier 保存的 tap
+ @param isPublickey 是否是公钥
+ @return 返回保存的内容
+ */
++ (BOOL)addKeyChainWithRSASecKey:(SecKeyRef)SecKey identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
++ (SecKeyRef)loadSecKeyRefWithIdentifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
+
 @end

@@ -12,6 +12,10 @@
 static NSString * const pubkeyTag =@"JDRSAUtil_PubKey";
 static NSString * const privateTag =@"RSAUtil_PrivKey";
 
+
+static const UInt8 publicKeyIdentifier[] = "com.apple.sample.publickey/0";
+static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey/0";
+
 @implementation JDRSAUtil
 
 #pragma mark - Base64编码
@@ -26,6 +30,56 @@ static NSData *base64_decode(NSString *str){
     return data;
 }
 #pragma mark -  =============苹果自带方法=====================
+
++ (void)getRSAKeyPairWithKeySize:(int)keySize keyPair:(keyPair)pair;
+{
+    
+    OSStatus status = noErr;
+    if (keySize == 512 || keySize == 1024 || keySize == 2048) {
+        
+        //定义dictionary，用于传递SecKeyGeneratePair函数中的第1个参数。
+        NSMutableDictionary *privateKeyAttr = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *publicKeyAttr = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *keyPairAttr = [[NSMutableDictionary alloc] init];
+        
+        //把第1步中定义的字符串转换为NSData对象。
+        NSData * publicTag = [NSData dataWithBytes:publicKeyIdentifier
+                                            length:strlen((const char *)publicKeyIdentifier)];
+        NSData * privateTag = [NSData dataWithBytes:privateKeyIdentifier
+                                             length:strlen((const char *)privateKeyIdentifier)];
+        //为公／私钥对准备SecKeyRef对象。
+        SecKeyRef publicKey = NULL;
+        SecKeyRef privateKey = NULL;
+        //
+        //设置密钥对的密钥类型为RSA。
+        [keyPairAttr setObject:(id)kSecAttrKeyTypeRSA forKey:(id)kSecAttrKeyType];
+        //设置密钥对的密钥长度为1024。
+        [keyPairAttr setObject:[NSNumber numberWithInt:keySize] forKey:(id)kSecAttrKeySizeInBits];
+        
+        //设置私钥的持久化属性（即是否存入钥匙串）为YES。
+        [privateKeyAttr setObject:[NSNumber numberWithBool:YES] forKey:(id)kSecAttrIsPermanent];
+        [privateKeyAttr setObject:privateTag forKey:(id)kSecAttrApplicationTag];
+        
+        //设置公钥的持久化属性（即是否存入钥匙串）为YES。
+        [publicKeyAttr setObject:[NSNumber numberWithBool:YES] forKey:(id)kSecAttrIsPermanent];
+        [publicKeyAttr setObject:publicTag forKey:(id)kSecAttrApplicationTag];
+        
+        // 把私钥的属性集（dictionary）加到密钥对的属性集（dictionary）中。
+        [keyPairAttr setObject:privateKeyAttr forKey:(id)kSecPrivateKeyAttrs];
+        [keyPairAttr setObject:publicKeyAttr forKey:(id)kSecPublicKeyAttrs];
+        
+        //生成密钥对
+        status = SecKeyGeneratePair((CFDictionaryRef)keyPairAttr,&publicKey, &privateKey); // 13
+        if (status == noErr && publicKey != NULL && privateKey != NULL) {
+            pair(publicKey,privateKey);
+        }
+        else
+            
+            pair(publicKey,privateKey);
+    }
+    
+}
+
 #pragma mark - 公钥加密
 +(NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey
 {
@@ -42,7 +96,7 @@ static NSData *base64_decode(NSString *str){
         DLog(@"原数据或者公钥字符串为 NULL--%@--%@",data,pubKey);
         return nil;
     }
-    SecKeyRef keyRef =[JDRSAUtil addPublickey:pubKey identifier:pubkeyTag];
+    SecKeyRef keyRef = [self addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES]; //[JDRSAUtil addPublickey:pubKey identifier:pubkeyTag];
     if (!keyRef) {
         DLog(@"公钥错误");
         return nil;
@@ -98,7 +152,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [JDRSAUtil addPrivateKey:privKey identifier:privateTag];
+    SecKeyRef keyRef = [self addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO];
     if(!keyRef){
         return nil;
     }
@@ -157,7 +211,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [JDRSAUtil addPrivateKey:privKey identifier:privateTag];
+    SecKeyRef keyRef = [self addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO]; //[JDRSAUtil addPrivateKey:privKey identifier:privateTag];
     if(!keyRef){
         return nil;
     }
@@ -181,7 +235,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !pubKey){
         return nil;
     }
-    SecKeyRef keyRef = [JDRSAUtil addPublickey:pubKey identifier:pubkeyTag];
+    SecKeyRef keyRef =  [self addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES];
     
     if(!keyRef){
         return nil;
@@ -190,85 +244,37 @@ static NSData *base64_decode(NSString *str){
 }
 #pragma mark - 向 keyChain 中添加密钥
 
-+ (SecKeyRef)addPrivateKey:(NSString *)key identifier:(NSString *)identifier{
-    NSRange spos = [key rangeOfString:@"-----BEGIN RSA PRIVATE KEY-----"];
-    NSRange epos = [key rangeOfString:@"-----END RSA PRIVATE KEY-----"];
-    if(spos.location != NSNotFound && epos.location != NSNotFound){
-        NSUInteger s = spos.location + spos.length;
-        NSUInteger e = epos.location;
-        NSRange range = NSMakeRange(s, e-s);
-        key = [key substringWithRange:range];
+//返回需要的 key 字符串
++ (NSString *)base64EncodedFromPEMFormat:(NSString *)PEMFormat
+{
+    /*
+     -----BEGIN RSA PRIVATE KEY-----
+     中间是需要的 key 的字符串
+     -----END RSA PRIVATE KEY----
+     */
+    
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@" "  withString:@""];
+    if (![PEMFormat containsString:@"-----"]) {
+        return PEMFormat;
     }
-    key = [key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-    key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-    key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
+    NSString *key = [[PEMFormat componentsSeparatedByString:@"-----"] objectAtIndex:2];
     
-    // This will be base64 encoded, decode it.
-    NSData *data = base64_decode(key);
-    data = [JDRSAUtil stripPrivateKeyHeader:data];
-    if(!data){
-        return nil;
-    }
     
-    //a tag to read/write keychain storage
-    NSString *tag = identifier;
-    NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
     
-    // Delete any old lingering key with the same tag
-    NSMutableDictionary *privateKey = [[NSMutableDictionary alloc] init];
-    [privateKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    [privateKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    SecItemDelete((__bridge CFDictionaryRef)privateKey);
-    
-    // Add persistent version of the key to system keychain
-    [privateKey setObject:data forKey:(__bridge id)kSecValueData];
-    [privateKey setObject:(__bridge id) kSecAttrKeyClassPrivate forKey:(__bridge id)
-     kSecAttrKeyClass];
-    [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
-     kSecReturnPersistentRef];
-    
-    CFTypeRef persistKey = nil;
-    OSStatus status = SecItemAdd((__bridge CFDictionaryRef)privateKey, &persistKey);
-    if (persistKey != nil){
-        CFRelease(persistKey);
-    }
-    if ((status != noErr) && (status != errSecDuplicateItem)) {
-        return nil;
-    }
-    
-    [privateKey removeObjectForKey:(__bridge id)kSecValueData];
-    [privateKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
-    [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
-    [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    
-    // Now fetch the SecKeyRef version of the key
-    SecKeyRef keyRef = nil;
-    status = SecItemCopyMatching((__bridge CFDictionaryRef)privateKey, (CFTypeRef *)&keyRef);
-    if(status != noErr){
-        return nil;
-    }
-    return keyRef;
+    return key?key:PEMFormat;
 }
 
-//向 keychain 中添加公钥
-+ (SecKeyRef)addPublickey:(NSString *)key identifier:(NSString *)identifier
+
+//向 keychain 添加密钥
++ (SecKeyRef)addKeyChainWithRSAkey:(NSString *)key identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey
 {
-    NSRange spos =[key rangeOfString:@"-----BEGIN PUBLIC KEY-----"];
-    NSRange epos = [key rangeOfString:@"-----END PUBLIC KEY-----"];
-    if (spos.location !=NSNotFound && epos.location != NSNotFound) {
-        NSUInteger s =spos.location +spos.length;
-        NSUInteger e =epos.location;
-        NSRange rang = NSMakeRange(s, e-s);
-        key =[key substringWithRange:rang];
-    }
-    key =[key stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-    key =[key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    key =[key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-    key =[key stringByReplacingOccurrencesOfString:@" " withString:@""];
+    key = [self base64EncodedFromPEMFormat:key];
+    
     NSData *data = base64_decode(key);
-    data =[JDRSAUtil stripPublicKeyHeader:data];
+    data = isPublickey?[self stripPublicKeyHeader:data]:[self stripPrivateKeyHeader:data];
     if (!data) {
         return nil;
     }
@@ -283,8 +289,8 @@ static NSData *base64_decode(NSString *str){
     
     // 向系统的 keychain 中 添加一个私有的 key
     [publickey setObject:data forKey:(__bridge id)kSecValueData];
-    [publickey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)kSecAttrKeyClass];
-    [publickey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id) kSecReturnRef];
+    [publickey setObject:(__bridge id) (isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(__bridge id)kSecAttrKeyClass];
+    [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
     
     CFTypeRef persistkey =nil;
     
@@ -296,18 +302,20 @@ static NSData *base64_decode(NSString *str){
         
     }
     if (status == errSecDuplicateItem) {        //如果已经存在则先删除或者直接取到或者更新
-        
+        DLog(@"已经存在");
         //取到原来的
-        SecKeyRef seckey = [self geSeckeyRefWithIdentifier:tag];
-        if (seckey) {
-            return seckey;
-        }        //删除
+        //        SecKeyRef seckey = [self geSeckeyRefWithIdentifier:tag isPublickey:isPublickey];
+        //        if (seckey) {
+        //            return seckey;
+        //        }        //删除
         [self deleSeckeyRefWithIdentifier:tag];
+        OSStatus sta = SecItemAdd((__bridge CFDictionaryRef)publickey, &persistkey);
+        DLog(@"重新写入%d",(int)sta);
         //update
         
     }
     
-    return [self geSeckeyRefWithIdentifier:tag];
+    return [self geSeckeyRefWithIdentifier:tag isPublickey:isPublickey];
     
     
 }
@@ -325,21 +333,19 @@ static NSData *base64_decode(NSString *str){
     }
 }
 
-+ (SecKeyRef)geSeckeyRefWithIdentifier:(NSString *)tag
++ (SecKeyRef)geSeckeyRefWithIdentifier:(NSString *)tag isPublickey:(BOOL)isPublickey
 {
     NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-    
     //组装一个字典类型的公钥 key
     NSMutableDictionary *publickey =[[NSMutableDictionary alloc]init];
     [publickey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
     [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id) kSecAttrKeyType];
     [publickey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    [publickey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)kSecAttrKeyClass];
-    [publickey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id) kSecReturnRef];
+    [publickey setObject:(__bridge id) (isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(__bridge id)kSecAttrKeyClass];
+    [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
     
     //    [publickey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
     
-    [publickey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
     [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
     SecKeyRef keyRef = nil;
     
@@ -454,6 +460,37 @@ static NSData *base64_decode(NSString *str){
 }
 
 #pragma mark - ==============OpenSSL 方式=================
+#pragma mark ---生成密钥对
++ (BOOL)generateRSAKeyPairWithKeySize:(int)keySize publicKey:(RSA **)publicKey privateKey:(RSA **)privateKey {
+    
+    if (keySize == 512 || keySize == 1024 || keySize == 2048) {
+        RSA *rsa = RSA_generate_key(keySize, RSA_F4, NULL, NULL);
+        if (rsa) {
+            *publicKey = RSAPublicKey_dup(rsa);
+            *privateKey = RSAPrivateKey_dup(rsa);
+            return YES;
+        }
+    }
+    return NO;
+}
 
-
++ (NSString *)PEMFormatRSAKey:(RSA *)rsaKey isPublic:(BOOL)isPublickey
+{
+    if (!rsaKey) {
+        return nil;
+    }
+    
+    BIO *bio = BIO_new(BIO_s_mem());
+    if (isPublickey)
+        PEM_write_bio_RSA_PUBKEY(bio, rsaKey);
+    else
+        PEM_write_bio_RSAPrivateKey(bio, rsaKey, NULL, NULL, 0, NULL, NULL);
+    
+    
+    BUF_MEM *bptr;
+    BIO_get_mem_ptr(bio, &bptr);
+    BIO_set_close(bio, BIO_NOCLOSE); /* So BIO_free() leaves BUF_MEM alone */
+    BIO_free(bio);
+    return [NSString stringWithUTF8String:bptr->data];
+}
 @end

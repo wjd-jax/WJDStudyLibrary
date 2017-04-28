@@ -45,7 +45,42 @@
 @implementation JDKeyChainWapper
 
 #pragma mark 写入
+
++ (BOOL)addKeyChainWithRSASecKey:(SecKeyRef)SecKey identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey{
+    
+    OSStatus status = noErr;
+    NSData * keyBits = nil;
+    
+    NSMutableDictionary * queryKey = [self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];
+    
+    [queryKey setObject:(__bridge id)SecKey forKey:(__bridge id)kSecValueRef];
+    
+    CFTypeRef result;
+    CFDataRef keyData = NULL;
+    
+    //如果已经存在,先删除原来的在重新写入
+    if (SecItemCopyMatching((__bridge CFDictionaryRef) queryKey, (CFTypeRef *)&keyData) == noErr) {
+        DLog(@"已经存在,更新SecKey");
+        (void)SecItemDelete((__bridge CFDictionaryRef) queryKey);
+        status = SecItemAdd((__bridge CFDictionaryRef) queryKey, &result);
+        if (status == errSecSuccess) {
+            keyBits = CFBridgingRelease(result);
+            DLog(@"保存SecKeyRef 到 keychian 成功---public %d",isPublickey);
+            return YES;
+
+        }
+    }
+    
+    status = SecItemAdd((__bridge CFDictionaryRef) queryKey, &result);
+    if (status == errSecSuccess) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 + (BOOL)savePassWordDataWithdIdentifier:(NSString *)identifier data:(id)data accessGroup:(NSString *) accessGroup{
+    
     //Get search dictionary
     NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:accessGroup];
     //Delete old item before add new item
@@ -82,15 +117,44 @@
         CFRelease(keyData);
     return ret;
 }
-
 #pragma mark 删除
 + (void)deletePassWordClassDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup
-{    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:accessGroup];
+{
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:accessGroup];
     SecItemDelete((CFDictionaryRef)keychainQuery);
 }
 
+
+
++ (SecKeyRef)loadSecKeyRefWithIdentifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
+{
+    
+    NSMutableDictionary *keychainQuery =[self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];    
+    CFDataRef keyData = NULL;
+    //如果已经存在,先删除原来的在重新写入
+    if (SecItemCopyMatching((__bridge CFDictionaryRef) keychainQuery, (CFTypeRef *)&keyData) == noErr) {
+        return (SecKeyRef)keyData;
+    }
+    DLog(@"读取失败");
+    return nil;
+}
+
++ (NSMutableDictionary *)getSecKeyRefKeychainQuery:(NSString *)identifier isPublicKey:(BOOL)isPublickey{
+    
+    NSData *d_tag = [NSData dataWithBytes:[identifier UTF8String] length:[identifier length]];
+    NSMutableDictionary *publickey =[[NSMutableDictionary alloc]init];
+    [publickey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
+    [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id) kSecAttrKeyType];
+    [publickey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
+    [publickey setObject:(id)(isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(id)kSecAttrKeyClass];
+    [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
+    
+    
+    return publickey;
+}
+
 //获取通用密码类型的一个查询体
-+ (NSMutableDictionary *)getKeychainQuery:(NSString *)identifier accessGroup:(NSString *) accessGroup
++ (NSMutableDictionary *)getKeychainQuery:(NSString *)identifier accessGroup:(NSString *)accessGroup
 {
     
     

@@ -245,7 +245,6 @@
 				F528DDFE1EA4875700F0E500 /* JDTimeFormatTool.h */,
 				F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */,
 			);
-			name = "TimeFomatTool(时间格式转化)";
 			path = "TimeFomatTool(时间格式转化)";
 			sourceTree = "<group>";
 		};
@@ -459,7 +458,6 @@
 				F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */,
 				F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */,
 			);
-			name = "Encryption(加密解密)";
 			path = "Encryption(加密解密)";
 			sourceTree = "<group>";
 		};
@@ -470,7 +468,6 @@
 				F57609141EADC51A000D0176 /* JDEntyptionView.h */,
 				F57609151EADC51A000D0176 /* JDEntyptionView.m */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -484,7 +481,6 @@
 				F576091C1EADCB67000D0176 /* JDEvntyptionViewController.h */,
 				F576091D1EADCB67000D0176 /* JDEvntyptionViewController.m */,
 			);
-			name = "EncryptionOrDecryption(加密解密)";
 			path = "EncryptionOrDecryption(加密解密)";
 			sourceTree = "<group>";
 		};
@@ -494,7 +490,6 @@
 				F57609201EADEF19000D0176 /* JDMD5Util.h */,
 				F57609211EADEF19000D0176 /* JDMD5Util.m */,
 			);
-			name = MD5;
 			path = MD5;
 			sourceTree = "<group>";
 		};
@@ -504,7 +499,6 @@
 				F57609241EADF6D1000D0176 /* JDRSAUtil.h */,
 				F57609251EADF6D1000D0176 /* JDRSAUtil.m */,
 			);
-			name = RSA;
 			path = RSA;
 			sourceTree = "<group>";
 		};
@@ -514,7 +508,6 @@
 				F57609281EAF16F7000D0176 /* JDAESUtil.h */,
 				F57609291EAF16F7000D0176 /* JDAESUtil.m */,
 			);
-			name = AES;
 			path = AES;
 			sourceTree = "<group>";
 		};
@@ -524,7 +517,6 @@
 				F576092C1EAF2A49000D0176 /* JDDESUtil.h */,
 				F576092D1EAF2A49000D0176 /* JDDESUtil.m */,
 			);
-			name = DES;
 			path = DES;
 			sourceTree = "<group>";
 		};
@@ -535,7 +527,6 @@
 				F57609301EAF352D000D0176 /* JDKeyPairViewController.m */,
 				F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */,
 			);
-			name = "CreateKeyPair(动态生成密钥对)";
 			path = "CreateKeyPair(动态生成密钥对)";
 			sourceTree = "<group>";
 		};
@@ -589,7 +580,6 @@
 				F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */,
 				F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */,
 			);
-			name = "keyChian(钥匙串操作)";
 			path = "keyChian(钥匙串操作)";
 			sourceTree = "<group>";
 		};
@@ -599,7 +589,6 @@
 				F5A0A6F71EB1B6CE0084A032 /* JDKeyChainWapper.h */,
 				F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */,
 			);
-			name = keyChainWapper;
 			path = keyChainWapper;
 			sourceTree = "<group>";
 		};
@@ -668,7 +657,6 @@
 				F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */,
 				F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */,
 			);
-			name = "TouchIDTest(TouchID 功能)";
 			path = "TouchIDTest(TouchID 功能)";
 			sourceTree = "<group>";
 		};
@@ -676,7 +664,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = ThirdLibrary;
 			path = ThirdLibrary;
 			sourceTree = "<group>";
 		};
@@ -978,10 +965,7 @@
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Resource/Recognize4IOS/recognizeEngine/release",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1002,10 +986,7 @@
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Resource/Recognize4IOS/recognizeEngine/release",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

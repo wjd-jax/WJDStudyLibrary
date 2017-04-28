@@ -33,8 +33,8 @@ static NSString *const passWord =@"com.pass.text";
 - (IBAction)readPassWordClick:(id)sender {
     
     NSDictionary *dic =[JDKeyChainWapper loadPassWordDataWithIdentifier:passWord accessGroup:nil];
-    _passwordLabel.text =dic[@"pass"];
-    _userLabel.text =dic[@"userName"];
+    _passwordLabel.text =[NSString stringWithFormat:@"读取的密码结果是:%@",dic[@"pass"]];
+    _userLabel.text =[NSString stringWithFormat:@"读取的用户名结果是:%@",dic[@"userName"]];
     
 }
 
