@@ -56,9 +56,6 @@ static NSData *base64_decode(NSString *str){
 
 + (BOOL)addKeyChainWithRSASecKey:(SecKeyRef)SecKey identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey{
     
-    OSStatus status = noErr;
-    NSData * keyBits = nil;
-    
     NSMutableDictionary * queryKey = [self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];
     
     [queryKey setObject:(__bridge id)SecKey forKey:(__bridge id)kSecValueRef];

@@ -38,4 +38,8 @@ static NSString *const passWord =@"com.pass.text";
     
 }
 
+- (IBAction)delete:(id)sender {
+    [JDKeyChainWapper deletePassWordClassDataWithIdentifier:passWord accessGroup:nil];
+    [self readPassWordClick:nil];
+}
 @end
