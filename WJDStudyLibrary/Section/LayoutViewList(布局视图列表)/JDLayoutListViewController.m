@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"浏览卡片",@"ClassName":@"JDKnowledgeViewController"},
+    self.dataSoureArray =@[@{@"title":@"浏览卡片",@"ClassName":@"JDCardLayoutStoryboard"},
                            @{@"title":@"布局视图",@"ClassName":@"第一行"}];
 
 }
