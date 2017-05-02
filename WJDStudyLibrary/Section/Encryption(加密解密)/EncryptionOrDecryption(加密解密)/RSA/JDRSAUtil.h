@@ -74,20 +74,17 @@ typedef void (^keyPair)(SecKeyRef publicKey ,SecKeyRef privateKey);
  */
 + (NSString *)PEMFormatRSAKey:(RSA *)rsaKey isPublic:(BOOL)isPublickey;
 
-/**
- 向钥匙串中添加公钥跟私钥
 
- @param key 公钥或者私钥的字符串
- @param identifier 公钥私钥的标志
- @param isPublickey 是否是公钥
- @return 如果添加成功,返回密钥对象
- */
-+ (SecKeyRef)addKeyChainWithRSAkey:(NSString *)key identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
 //公钥加密
 #pragma mark -  密钥对 Data 加密
 + (NSData *)encryptData:(NSData *)data withKeyRef:(SecKeyRef) keyRef isSign:(BOOL)isSign;
 + (NSData *)decryptData:(NSData *)data withKeyRef:(SecKeyRef) keyRef;
+#pragma mark -openSSL方式加密解密
++ (NSData *)encryptWithRSA:(RSA *)rasKey plainData:(NSData *)plainData isPublicKey:(BOOL)isPubulic ;
++ (NSData *)decryptWithRSAKey:(RSA *)rsaKey cipherData:(NSData *)cipherData :(BOOL)isPubulic;
 
++ (NSData *)stripPublicKeyHeader:(NSData *)d_key;
++ (NSData *)stripPrivateKeyHeader:(NSData *)d_key;
 
 
 @end

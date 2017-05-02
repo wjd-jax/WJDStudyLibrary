@@ -41,8 +41,16 @@
  上述钥匙串属于一个钥匙链访问组,感觉就像钥匙链访问集团(字段kSecAttrAccessGroup)是一个额外的字段主键。
  */
 #import "JDKeyChainWapper.h"
+#import "JDRSAUtil.h"
 
 @implementation JDKeyChainWapper
+
+#pragma mark - Base64编码
+
+static NSData *base64_decode(NSString *str){
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return data;
+}
 
 #pragma mark 写入
 
@@ -55,29 +63,51 @@
     
     [queryKey setObject:(__bridge id)SecKey forKey:(__bridge id)kSecValueRef];
     
+    return [self saveQueryKey:queryKey identfier:identifier isPublicKey:isPublickey];
+    
+}
+
++ (SecKeyRef)addKeyChainWithRSAkey:(NSString *)key identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey
+{
+    key = [self base64EncodedFromPEMFormat:key];
+    
+    NSData *data = base64_decode(key);
+    data = isPublickey?[JDRSAUtil stripPublicKeyHeader:data]:[JDRSAUtil stripPrivateKeyHeader:data];
+    if (!data) {
+        return nil;
+    }
+    
+    NSMutableDictionary *queryKey =[self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];
+    [queryKey setObject:data forKey:(__bridge id)kSecValueData];
+    
+    return [self saveQueryKey:queryKey identfier:identifier isPublicKey:isPublickey];
+}
+
++ (SecKeyRef)saveQueryKey:(NSDictionary *)dict identfier:(NSString *)identifier isPublicKey:(BOOL)isPublickey
+{
+    
+    OSStatus status = noErr;
     CFTypeRef result;
     CFDataRef keyData = NULL;
-    
     //如果已经存在,先删除原来的在重新写入
-    if (SecItemCopyMatching((__bridge CFDictionaryRef) queryKey, (CFTypeRef *)&keyData) == noErr) {
-        DLog(@"已经存在,更新SecKey");
-        (void)SecItemDelete((__bridge CFDictionaryRef) queryKey);
-        status = SecItemAdd((__bridge CFDictionaryRef) queryKey, &result);
+    if (SecItemCopyMatching((__bridge CFDictionaryRef) dict, (CFTypeRef *)&keyData) == noErr) {
+        
+        [self deleteRASKeyWithIdentifier:identifier isPublicKey:isPublickey];
+        status = SecItemAdd((__bridge CFDictionaryRef) dict, &result);
+        
         if (status == errSecSuccess) {
-            keyBits = CFBridgingRelease(result);
-            DLog(@"保存SecKeyRef 到 keychian 成功---public %d",isPublickey);
-            return YES;
-
+            return [self loadSecKeyRefWithIdentifier:identifier isPublicKey:isPublickey];
         }
     }
     
-    status = SecItemAdd((__bridge CFDictionaryRef) queryKey, &result);
+    status = SecItemAdd((__bridge CFDictionaryRef) dict, &result);
     if (status == errSecSuccess) {
-        return YES;
+        return [self loadSecKeyRefWithIdentifier:identifier isPublicKey:isPublickey];
     }
     
-    return NO;
+    return nil;
 }
+
 
 + (BOOL)savePassWordDataWithdIdentifier:(NSString *)identifier data:(id)data accessGroup:(NSString *) accessGroup{
     
@@ -117,19 +147,10 @@
         CFRelease(keyData);
     return ret;
 }
-#pragma mark 删除
-+ (void)deletePassWordClassDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup
-{
-    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:accessGroup];
-    SecItemDelete((CFDictionaryRef)keychainQuery);
-}
-
-
-
 + (SecKeyRef)loadSecKeyRefWithIdentifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
 {
     
-    NSMutableDictionary *keychainQuery =[self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];    
+    NSMutableDictionary *keychainQuery =[self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];
     CFDataRef keyData = NULL;
     //如果已经存在,先删除原来的在重新写入
     if (SecItemCopyMatching((__bridge CFDictionaryRef) keychainQuery, (CFTypeRef *)&keyData) == noErr) {
@@ -138,6 +159,24 @@
     DLog(@"读取失败");
     return nil;
 }
+#pragma mark 删除
++ (void)deletePassWordClassDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup
+{
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:accessGroup];
+    SecItemDelete((CFDictionaryRef)keychainQuery);
+}
++ (BOOL)deleteRASKeyWithIdentifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey;
+{
+    OSStatus status = noErr;
+    NSMutableDictionary * queryKey = [self getSecKeyRefKeychainQuery:identifier isPublicKey:isPublickey];
+    status = SecItemDelete((__bridge CFDictionaryRef) queryKey);
+    
+    DLog(@"删除%@",(int)status ==0?@"成功":@"失败");
+    return status ==noErr;
+    
+}
+
+#pragma mark - 通用方法
 
 + (NSMutableDictionary *)getSecKeyRefKeychainQuery:(NSString *)identifier isPublicKey:(BOOL)isPublickey{
     
@@ -149,9 +188,9 @@
     [publickey setObject:(id)(isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(id)kSecAttrKeyClass];
     [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
     
-    
     return publickey;
 }
+
 
 //获取通用密码类型的一个查询体
 + (NSMutableDictionary *)getKeychainQuery:(NSString *)identifier accessGroup:(NSString *)accessGroup
@@ -185,7 +224,28 @@
     return dic;
 }
 
-
+//返回需要的 key 字符串
++ (NSString *)base64EncodedFromPEMFormat:(NSString *)PEMFormat
+{
+    /*
+     -----BEGIN RSA PRIVATE KEY-----
+     中间是需要的 key 的字符串
+     -----END RSA PRIVATE KEY----
+     */
+    
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    PEMFormat = [PEMFormat stringByReplacingOccurrencesOfString:@" "  withString:@""];
+    if (![PEMFormat containsString:@"-----"]) {
+        return PEMFormat;
+    }
+    NSString *key = [[PEMFormat componentsSeparatedByString:@"-----"] objectAtIndex:2];
+    
+    
+    
+    return key?key:PEMFormat;
+}
 
 @end
 

@@ -8,9 +8,12 @@
 
 #import "JDRSAUtil.h"
 #import <Security/Security.h>
+#import <openssl/x509.h>
+#import "JDKeyChainWapper.h"
 
-static NSString * const pubkeyTag =@"JDRSAUtil_PubKey";
-static NSString * const privateTag =@"RSAUtil_PrivKey";
+
+static NSString * const pubkeyTag =@"JDRSAUtil_PubKey_Tag";
+static NSString * const privateTag =@"RSAUtil_PrivKey_Tag";
 
 
 static const UInt8 publicKeyIdentifier[] = "com.apple.sample.publickey/0";
@@ -25,10 +28,6 @@ static NSString *base64_encode_data(NSData *data){
     return ret;
 }
 
-static NSData *base64_decode(NSString *str){
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    return data;
-}
 #pragma mark -  =============苹果自带方法=====================
 
 + (void)getRSAKeyPairWithKeySize:(int)keySize keyPair:(keyPair)pair;
@@ -96,7 +95,7 @@ static NSData *base64_decode(NSString *str){
         DLog(@"原数据或者公钥字符串为 NULL--%@--%@",data,pubKey);
         return nil;
     }
-    SecKeyRef keyRef = [self addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES]; //[JDRSAUtil addPublickey:pubKey identifier:pubkeyTag];
+    SecKeyRef keyRef = [JDKeyChainWapper addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES]; //[JDRSAUtil addPublickey:pubKey identifier:pubkeyTag];
     if (!keyRef) {
         DLog(@"公钥错误");
         return nil;
@@ -106,38 +105,6 @@ static NSData *base64_decode(NSString *str){
 }
 
 
-+ (NSData *)stripPublicKeyHeader:(NSData *)d_key{
-    // Skip ASN.1 public key header
-    if (d_key == nil) return(nil);
-    
-    unsigned long len = [d_key length];
-    if (!len) return(nil);
-    
-    unsigned char *c_key = (unsigned char *)[d_key bytes];
-    unsigned int  idx	 = 0;
-    
-    if (c_key[idx++] != 0x30) return(nil);
-    
-    if (c_key[idx] > 0x80) idx += c_key[idx] - 0x80 + 1;
-    else idx++;
-    
-    // PKCS #1 rsaEncryption szOID_RSA_RSA
-    static unsigned char seqiod[] =
-    {0x30,0x0d,0x06,0x09,0x2a,0x86,0x48,0x86,0xf7,0x0d,0x01,0x01,0x01,0x05,0x00};
-    if (memcmp(&c_key[idx], seqiod, 15)) return(nil);
-    
-    idx += 15;
-    
-    if (c_key[idx++] != 0x03) return(nil);
-    
-    if (c_key[idx] > 0x80) idx += c_key[idx] - 0x80 + 1;
-    else idx++;
-    
-    if (c_key[idx++] != '\0') return(nil);
-    
-    // Now make a new NSData from this buffer
-    return([NSData dataWithBytes:&c_key[idx] length:len - idx]);
-}
 
 #pragma mark -  私钥解密
 +(NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey
@@ -152,7 +119,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [self addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO];
+    SecKeyRef keyRef = [JDKeyChainWapper addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO];
     if(!keyRef){
         return nil;
     }
@@ -160,43 +127,6 @@ static NSData *base64_decode(NSString *str){
 }
 
 
-+ (NSData *)stripPrivateKeyHeader:(NSData *)d_key{
-    // Skip ASN.1 private key header
-    if (d_key == nil) return(nil);
-    
-    unsigned long len = [d_key length];
-    if (!len) return(nil);
-    
-    unsigned char *c_key = (unsigned char *)[d_key bytes];
-    unsigned int  idx	 = 22; //magic byte at offset 22
-    
-    if (0x04 != c_key[idx++]) return nil;
-    
-    //calculate length of the key
-    unsigned int c_len = c_key[idx++];
-    int det = c_len & 0x80;
-    if (!det) {
-        c_len = c_len & 0x7f;
-    } else {
-        int byteCount = c_len & 0x7f;
-        if (byteCount + idx > len) {
-            //rsa length field longer than buffer
-            return nil;
-        }
-        unsigned int accum = 0;
-        unsigned char *ptr = &c_key[idx];
-        idx += byteCount;
-        while (byteCount) {
-            accum = (accum << 8) + *ptr;
-            ptr++;
-            byteCount--;
-        }
-        c_len = accum;
-    }
-    
-    // Now make a new NSData from this buffer
-    return [d_key subdataWithRange:NSMakeRange(idx, c_len)];
-}
 #pragma mark - 私钥签名
 +(NSString *)signatureString:(NSString *)str privateKey:(NSString *)privKey
 {
@@ -211,7 +141,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [self addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO]; //[JDRSAUtil addPrivateKey:privKey identifier:privateTag];
+    SecKeyRef keyRef = [JDKeyChainWapper addKeyChainWithRSAkey:privKey identifier:privateTag isPublicKey:NO]; //[JDRSAUtil addPrivateKey:privKey identifier:privateTag];
     if(!keyRef){
         return nil;
     }
@@ -235,7 +165,7 @@ static NSData *base64_decode(NSString *str){
     if(!data || !pubKey){
         return nil;
     }
-    SecKeyRef keyRef =  [self addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES];
+    SecKeyRef keyRef =  [JDKeyChainWapper addKeyChainWithRSAkey:pubKey identifier:pubkeyTag isPublicKey:YES];
     
     if(!keyRef){
         return nil;
@@ -268,57 +198,6 @@ static NSData *base64_decode(NSString *str){
 }
 
 
-//向 keychain 添加密钥
-+ (SecKeyRef)addKeyChainWithRSAkey:(NSString *)key identifier:(NSString *)identifier isPublicKey:(BOOL)isPublickey
-{
-    key = [self base64EncodedFromPEMFormat:key];
-    
-    NSData *data = base64_decode(key);
-    data = isPublickey?[self stripPublicKeyHeader:data]:[self stripPrivateKeyHeader:data];
-    if (!data) {
-        return nil;
-    }
-    NSString *tag = identifier;
-    NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-    
-    //组装一个字典类型的公钥 key
-    NSMutableDictionary *publickey =[[NSMutableDictionary alloc]init];
-    [publickey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id) kSecAttrKeyType];
-    [publickey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    
-    // 向系统的 keychain 中 添加一个私有的 key
-    [publickey setObject:data forKey:(__bridge id)kSecValueData];
-    [publickey setObject:(__bridge id) (isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(__bridge id)kSecAttrKeyClass];
-    [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
-    
-    CFTypeRef persistkey =nil;
-    
-    OSStatus status =SecItemAdd((__bridge CFDictionaryRef)publickey, &persistkey);
-    if (persistkey != nil) {
-        CFRelease(persistkey);
-    }
-    if ((status != noErr)&&(status != errSecDuplicateItem)) {
-        
-    }
-    if (status == errSecDuplicateItem) {        //如果已经存在则先删除或者直接取到或者更新
-        DLog(@"已经存在");
-        //取到原来的
-        //        SecKeyRef seckey = [self geSeckeyRefWithIdentifier:tag isPublickey:isPublickey];
-        //        if (seckey) {
-        //            return seckey;
-        //        }        //删除
-        [self deleSeckeyRefWithIdentifier:tag];
-        OSStatus sta = SecItemAdd((__bridge CFDictionaryRef)publickey, &persistkey);
-        DLog(@"重新写入%d",(int)sta);
-        //update
-        
-    }
-    
-    return [self geSeckeyRefWithIdentifier:tag isPublickey:isPublickey];
-    
-    
-}
 
 + (void)deleSeckeyRefWithIdentifier:(NSString *)tag
 {
@@ -331,29 +210,6 @@ static NSData *base64_decode(NSString *str){
     if (status ==noErr) {
         DLog(@"删除成功!");
     }
-}
-
-+ (SecKeyRef)geSeckeyRefWithIdentifier:(NSString *)tag isPublickey:(BOOL)isPublickey
-{
-    NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-    //组装一个字典类型的公钥 key
-    NSMutableDictionary *publickey =[[NSMutableDictionary alloc]init];
-    [publickey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id) kSecAttrKeyType];
-    [publickey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    [publickey setObject:(__bridge id) (isPublickey?kSecAttrKeyClassPublic:kSecAttrKeyClassPrivate) forKey:(__bridge id)kSecAttrKeyClass];
-    [publickey setObject:@YES forKey:(__bridge id) kSecReturnRef];
-    
-    //    [publickey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
-    
-    [publickey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    SecKeyRef keyRef = nil;
-    
-    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)publickey, (CFTypeRef *)&keyRef);
-    if(status != noErr){
-        return nil;
-    }
-    return keyRef;
 }
 
 
@@ -464,7 +320,17 @@ static NSData *base64_decode(NSString *str){
 + (BOOL)generateRSAKeyPairWithKeySize:(int)keySize publicKey:(RSA **)publicKey privateKey:(RSA **)privateKey {
     
     if (keySize == 512 || keySize == 1024 || keySize == 2048) {
-        RSA *rsa = RSA_generate_key(keySize, RSA_F4, NULL, NULL);
+        
+        /* 产生RSA密钥 */
+        RSA *rsa = RSA_new();
+        BIGNUM* e = BN_new();
+        
+        /* 设置随机数长度 */
+        BN_set_word(e, 65537);
+        
+        /* 生成RSA密钥对 */
+        RSA_generate_key_ex(rsa, keySize, e, NULL);
+        
         if (rsa) {
             *publicKey = RSAPublicKey_dup(rsa);
             *privateKey = RSAPrivateKey_dup(rsa);
@@ -483,14 +349,172 @@ static NSData *base64_decode(NSString *str){
     BIO *bio = BIO_new(BIO_s_mem());
     if (isPublickey)
         PEM_write_bio_RSA_PUBKEY(bio, rsaKey);
-    else
-        PEM_write_bio_RSAPrivateKey(bio, rsaKey, NULL, NULL, 0, NULL, NULL);
     
+    else
+    {
+        //此方法生成的是pkcs1格式的,IOS中需要pkcs8格式的,因此通过PEM_write_bio_PrivateKey 方法生成
+        // PEM_write_bio_RSAPrivateKey(bio, rsaKey, NULL, NULL, 0, NULL, NULL);
+        
+        EVP_PKEY* key = NULL;
+        key = EVP_PKEY_new();
+        EVP_PKEY_assign_RSA(key, rsaKey);
+        PEM_write_bio_PrivateKey(bio, key, NULL, NULL, 0, NULL, NULL);
+    }
     
     BUF_MEM *bptr;
     BIO_get_mem_ptr(bio, &bptr);
     BIO_set_close(bio, BIO_NOCLOSE); /* So BIO_free() leaves BUF_MEM alone */
     BIO_free(bio);
     return [NSString stringWithUTF8String:bptr->data];
+    
+}
+
+#pragma mark ---加解密
+
+
++ (NSData *)decryptWithRSAKey:(RSA *)rsaKey cipherData:(NSData *)cipherData :(BOOL)isPubulic
+{
+    if ([cipherData length]) {
+        
+        int RSALenght = RSA_size(rsaKey);
+        double totalLength = [cipherData length];
+        int blockSize = RSALenght;
+        int blockCount = ceil(totalLength / blockSize);
+        NSMutableData *decrypeData = [NSMutableData data];
+        for (int i = 0; i < blockCount; i++) {
+            NSUInteger loc = i * blockSize;
+            long dataSegmentRealSize = MIN(blockSize, totalLength - loc);
+            NSData *dataSegment = [cipherData subdataWithRange:NSMakeRange(loc, dataSegmentRealSize)];
+            const unsigned char *str = [dataSegment bytes];
+            unsigned char *decrypt = malloc(RSALenght);
+            memset(decrypt, 0, RSALenght);
+            if (isPubulic) {
+                if(RSA_public_decrypt(RSALenght,str,decrypt,rsaKey,RSA_PKCS1_PADDING)>=0){
+                    NSInteger length =strlen((char *)decrypt);
+                    NSData *data = [[NSData alloc] initWithBytes:decrypt length:length];
+                    [decrypeData appendData:data];
+                }
+                
+            }
+            else
+            {
+                if(RSA_private_decrypt(RSALenght,str,decrypt,rsaKey,RSA_PKCS1_PADDING)>=0){
+                    NSInteger length =strlen((char *)decrypt);
+                    NSData *data = [[NSData alloc] initWithBytes:decrypt length:length];
+                    [decrypeData appendData:data];
+                }
+            }
+            free(decrypt);
+        }
+        
+        return decrypeData;
+    }
+    
+    return nil;
+}
++ (NSData *)encryptWithRSA:(RSA *)rasKey plainData:(NSData *)plainData isPublicKey:(BOOL)isPubulic {
+    int privateRSALength = RSA_size(rasKey);
+    double totalLength = [plainData length];
+    int blockSize = privateRSALength - 11;
+    int blockCount = ceil(totalLength / blockSize);
+    size_t encryptSize = privateRSALength;
+    NSMutableData *encryptDate = [NSMutableData data];
+    for (int i = 0; i < blockCount; i++) {
+        NSUInteger loc = i * blockSize;
+        int dataSegmentRealSize = MIN(blockSize, totalLength - loc);
+        NSData *dataSegment = [plainData subdataWithRange:NSMakeRange(loc, dataSegmentRealSize)];
+        char *publicEncrypt = malloc(privateRSALength);
+        memset(publicEncrypt, 0, privateRSALength);
+        const unsigned char *str = [dataSegment bytes];
+        if (isPubulic) {
+            
+            if(RSA_public_encrypt(dataSegmentRealSize,str,(unsigned char*)publicEncrypt,rasKey,RSA_PKCS1_PADDING)>=0){
+                NSData *encryptData = [[NSData alloc] initWithBytes:publicEncrypt length:encryptSize];
+                [encryptDate appendData:encryptData];
+            }
+        }
+        else
+        {
+            if(RSA_private_encrypt(dataSegmentRealSize,str,(unsigned char*)publicEncrypt,rasKey,RSA_PKCS1_PADDING)>=0){
+                NSData *encryptData = [[NSData alloc] initWithBytes:publicEncrypt length:encryptSize];
+                [encryptDate appendData:encryptData];
+            }
+        }
+        free(publicEncrypt);
+        
+    }
+    return encryptDate;
+    
+}
+
++ (NSData *)stripPublicKeyHeader:(NSData *)d_key{
+    // Skip ASN.1 public key header
+    if (d_key == nil) return(nil);
+    
+    unsigned long len = [d_key length];
+    if (!len) return(nil);
+    
+    unsigned char *c_key = (unsigned char *)[d_key bytes];
+    unsigned int  idx	 = 0;
+    
+    if (c_key[idx++] != 0x30) return(nil);
+    
+    if (c_key[idx] > 0x80) idx += c_key[idx] - 0x80 + 1;
+    else idx++;
+    
+    // PKCS #1 rsaEncryption szOID_RSA_RSA
+    static unsigned char seqiod[] =
+    {0x30,0x0d,0x06,0x09,0x2a,0x86,0x48,0x86,0xf7,0x0d,0x01,0x01,0x01,0x05,0x00};
+    if (memcmp(&c_key[idx], seqiod, 15)) return(nil);
+    
+    idx += 15;
+    
+    if (c_key[idx++] != 0x03) return(nil);
+    
+    if (c_key[idx] > 0x80) idx += c_key[idx] - 0x80 + 1;
+    else idx++;
+    
+    if (c_key[idx++] != '\0') return(nil);
+    
+    // Now make a new NSData from this buffer
+    return([NSData dataWithBytes:&c_key[idx] length:len - idx]);
+}
+
++ (NSData *)stripPrivateKeyHeader:(NSData *)d_key{
+    // Skip ASN.1 private key header
+    if (d_key == nil) return(nil);
+    
+    unsigned long len = [d_key length];
+    if (!len) return(nil);
+    
+    unsigned char *c_key = (unsigned char *)[d_key bytes];
+    unsigned int  idx	 = 22; //magic byte at offset 22
+    
+    if (0x04 != c_key[idx++]) return nil;
+    
+    //calculate length of the key
+    unsigned int c_len = c_key[idx++];
+    int det = c_len & 0x80;
+    if (!det) {
+        c_len = c_len & 0x7f;
+    } else {
+        int byteCount = c_len & 0x7f;
+        if (byteCount + idx > len) {
+            //rsa length field longer than buffer
+            return nil;
+        }
+        unsigned int accum = 0;
+        unsigned char *ptr = &c_key[idx];
+        idx += byteCount;
+        while (byteCount) {
+            accum = (accum << 8) + *ptr;
+            ptr++;
+            byteCount--;
+        }
+        c_len = accum;
+    }
+    
+    // Now make a new NSData from this buffer
+    return [d_key subdataWithRange:NSMakeRange(idx, c_len)];
 }
 @end
