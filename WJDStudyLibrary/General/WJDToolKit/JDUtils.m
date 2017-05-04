@@ -51,6 +51,15 @@
     return button;
 }
 
++ (UIButton *)createSystemButtonWithFrame:(CGRect)frame Target:(id)target Action:(SEL)action Title:(NSString *)title;
+{
+    UIButton*button=[UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame=frame;
+    [button setTitle:title forState:UIControlStateNormal];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
+
 + (UITextField *)createTextFieldWithFrame:(CGRect)frame placeholder:(NSString*)placeholder passWord:(BOOL)YESorNO leftImageView:(UIView*)imageView rightImageView:(UIImageView*)rightImageView Font:(float)font
 {
     UITextField*textField=[[UITextField alloc]initWithFrame:frame];

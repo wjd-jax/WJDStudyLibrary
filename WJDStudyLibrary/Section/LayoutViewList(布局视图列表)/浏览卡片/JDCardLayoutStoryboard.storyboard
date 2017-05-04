@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="85W-Gx-TdT">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="85W-Gx-TdT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.68637628424657537" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZzA-Rb-fOk" customClass="JDCardFlowLayout">
                                     <size key="itemSize" width="364" height="609"/>
@@ -62,6 +61,12 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="dvl-JP-JUe" firstAttribute="top" secondItem="85W-Gx-TdT" secondAttribute="bottom" id="0JY-4J-8NZ"/>
+                            <constraint firstItem="85W-Gx-TdT" firstAttribute="top" secondItem="Fxs-jF-Tvu" secondAttribute="top" id="863-Bf-TRX"/>
+                            <constraint firstItem="85W-Gx-TdT" firstAttribute="leading" secondItem="Fxs-jF-Tvu" secondAttribute="leading" id="tnl-a5-2vf"/>
+                            <constraint firstAttribute="trailing" secondItem="85W-Gx-TdT" secondAttribute="trailing" id="yxd-O6-ZZn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uat-Ac-NCX" userLabel="First Responder" sceneMemberID="firstResponder"/>

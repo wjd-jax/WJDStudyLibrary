@@ -19,6 +19,8 @@
     self.dataSoureArray =@[@{@"title":@"签字效果",@"ClassName":@"JDSignListViewController"},
                            @{@"title":@"二维码扫描",@"ClassName":@"JDQRScannerViewController"},
                            @{@"title":@"touchID功能",@"ClassName":@"JDTouchIDViewController"},
+                           @{@"title":@"APP评分功能功能",@"ClassName":@"JDAppStoreScoreViewController"},
+
 
                            ];
 }

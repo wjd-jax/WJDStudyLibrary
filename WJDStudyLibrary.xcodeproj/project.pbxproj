@@ -69,6 +69,7 @@
 		F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
+		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,18 +116,18 @@
 		F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLayoutListViewController.h; sourceTree = "<group>"; };
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
 		F54BBB571EB8637600AB92CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = JDCardLayoutStoryboard.storyboard; path = WJDStudyLibrary/Section/JDCardLayoutStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
-		F54BBB5B1EB8695900AB92CC /* JDCardLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDCardLayoutViewController.h; path = WJDStudyLibrary/Section/JDCardLayoutViewController.h; sourceTree = SOURCE_ROOT; };
-		F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDCardLayoutViewController.m; path = WJDStudyLibrary/Section/JDCardLayoutViewController.m; sourceTree = SOURCE_ROOT; };
-		F54BBB5F1EB86AE600AB92CC /* JDCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardFlowLayout.h; sourceTree = SOURCE_ROOT; };
-		F54BBB601EB86AE600AB92CC /* JDCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardFlowLayout.m; sourceTree = SOURCE_ROOT; };
-		F54BBB631EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardLayoutCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
-		F54BBB641EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardLayoutCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
-		F54BBB681EB86E1200AB92CC /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = SOURCE_ROOT; };
-		F54BBB691EB86E1200AB92CC /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = SOURCE_ROOT; };
-		F54BBB6A1EB86E1200AB92CC /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = SOURCE_ROOT; };
-		F54BBB6B1EB86E1200AB92CC /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = SOURCE_ROOT; };
-		F54BBB6C1EB86E1200AB92CC /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = SOURCE_ROOT; };
+		F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDCardLayoutStoryboard.storyboard; sourceTree = "<group>"; };
+		F54BBB5B1EB8695900AB92CC /* JDCardLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardLayoutViewController.h; sourceTree = "<group>"; };
+		F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardLayoutViewController.m; sourceTree = "<group>"; };
+		F54BBB5F1EB86AE600AB92CC /* JDCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardFlowLayout.h; sourceTree = "<group>"; };
+		F54BBB601EB86AE600AB92CC /* JDCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardFlowLayout.m; sourceTree = "<group>"; };
+		F54BBB631EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardLayoutCollectionViewCell.h; sourceTree = "<group>"; };
+		F54BBB641EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardLayoutCollectionViewCell.m; sourceTree = "<group>"; };
+		F54BBB681EB86E1200AB92CC /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
+		F54BBB691EB86E1200AB92CC /* i2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpg; sourceTree = "<group>"; };
+		F54BBB6A1EB86E1200AB92CC /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
+		F54BBB6B1EB86E1200AB92CC /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
+		F54BBB6C1EB86E1200AB92CC /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
 		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
 		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
 		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -189,6 +190,8 @@
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAppStoreScoreViewController.h; sourceTree = "<group>"; };
+		F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppStoreScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,15 +348,14 @@
 		F52C45321E97343500D8DF62 /* 浏览卡片 */ = {
 			isa = PBXGroup;
 			children = (
-				F54BBB671EB86DFF00AB92CC /* image */,
 				F54BBB621EB86CB500AB92CC /* View */,
+				F54BBB671EB86DFF00AB92CC /* image */,
 				F54BBB5E1EB86A9F00AB92CC /* layout */,
 				F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */,
 				F54BBB5B1EB8695900AB92CC /* JDCardLayoutViewController.h */,
 				F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */,
 			);
-			name = "浏览卡片";
-			path = "New Group";
+			path = "浏览卡片";
 			sourceTree = "<group>";
 		};
 		F54BBB5E1EB86A9F00AB92CC /* layout */ = {
@@ -362,7 +364,7 @@
 				F54BBB5F1EB86AE600AB92CC /* JDCardFlowLayout.h */,
 				F54BBB601EB86AE600AB92CC /* JDCardFlowLayout.m */,
 			);
-			name = layout;
+			path = layout;
 			sourceTree = "<group>";
 		};
 		F54BBB621EB86CB500AB92CC /* View */ = {
@@ -371,7 +373,7 @@
 				F54BBB631EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.h */,
 				F54BBB641EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F54BBB671EB86DFF00AB92CC /* image */ = {
@@ -383,7 +385,7 @@
 				F54BBB6B1EB86E1200AB92CC /* i4.jpg */,
 				F54BBB6C1EB86E1200AB92CC /* i5.jpg */,
 			);
-			name = image;
+			path = image;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -444,8 +446,8 @@
 		F55E553B1E850BB100144D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F54BBB571EB8637600AB92CC /* icon.png */,
 				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
+				F54BBB571EB8637600AB92CC /* icon.png */,
 				F55E553C1E850BB100144D49 /* main.m */,
 			);
 			path = "Supporting Files";
@@ -665,6 +667,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
@@ -726,6 +729,15 @@
 			children = (
 			);
 			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */ = {
+			isa = PBXGroup;
+			children = (
+				F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */,
+				F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */,
+			);
+			name = "AppstoreScore(Appstore 打分)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -871,6 +883,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */,
+				F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */,
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,

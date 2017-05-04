@@ -197,14 +197,14 @@
     t.m34  = 1.0/-500;
     
     if (axis)
-    {
+        
         t = CATransform3DRotate(t,angle, 1, 1, 0);
-    }
+    
     else
-    {
+        
         t = CATransform3DRotate(t,angle, -1, 1, 0);
-    }
-    //  t = CATransform3DTranslate(t, 0, height, 0);
+    
+    //      t = CATransform3DTranslate(t, 0, height, 0);
     
     return t;
 }
