@@ -7,7 +7,7 @@
 //
 
 #import "JDBaseViewController.h"
-
-@interface JDKnowledgeViewController : JDBaseViewController
+#import "JDBaseTableViewController.h"
+@interface JDKnowledgeViewController : JDBaseTableViewController
 
 @end

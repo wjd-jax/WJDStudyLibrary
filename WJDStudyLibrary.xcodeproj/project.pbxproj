@@ -70,6 +70,7 @@
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
+		F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +193,8 @@
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAppStoreScoreViewController.h; sourceTree = "<group>"; };
 		F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppStoreScoreViewController.m; sourceTree = "<group>"; };
+		F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebBrowserViewController.h; sourceTree = "<group>"; };
+		F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,11 +491,11 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F55E55581E85179400144D49 /* MainViewController */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
-				F55E55581E85179400144D49 /* MainViewController */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F5A1A7171E97741B0076CC78 /* TestViewController */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
@@ -667,6 +670,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
@@ -738,6 +742,15 @@
 				F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */,
 			);
 			name = "AppstoreScore(Appstore 打分)";
+			sourceTree = "<group>";
+		};
+		F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */ = {
+			isa = PBXGroup;
+			children = (
+				F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */,
+				F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */,
+			);
+			name = "WebBrowser(浏览器封装)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -923,6 +936,7 @@
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
+				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,

@@ -34,6 +34,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
         
         cell.textLabel.text =model.title;
         cell.detailTextLabel.text =model.ClassName;
+        cell.contentView.backgroundColor =JDRandomColor;
         
     };
     _arrayDataSource = [[ArrayDataSource alloc] initWithItems:_dataArray cellIdentifier:mainCellIdentifier configureCellBlock:configureCell];

@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.dataSoureArray = @[@{@"title":@"小知识点",@"ClassName":@"JDPopViewntroller"},
+                            @{@"title":@"UI相关",@"ClassName":@"JDGuidewController"}];
 }
 
 - (void)didReceiveMemoryWarning {

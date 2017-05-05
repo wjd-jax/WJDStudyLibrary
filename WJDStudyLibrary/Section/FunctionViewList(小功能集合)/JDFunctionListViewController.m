@@ -20,8 +20,7 @@
                            @{@"title":@"二维码扫描",@"ClassName":@"JDQRScannerViewController"},
                            @{@"title":@"touchID功能",@"ClassName":@"JDTouchIDViewController"},
                            @{@"title":@"APP评分功能功能",@"ClassName":@"JDAppStoreScoreViewController"},
-
-
+                           @{@"title":@"浏览器封装",@"ClassName":@"JDWebBrowserViewController"},
                            ];
 }
 

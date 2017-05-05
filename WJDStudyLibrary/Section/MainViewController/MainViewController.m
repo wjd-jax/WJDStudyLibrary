@@ -21,13 +21,14 @@
     //
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
-                           @{@"title":@"临时页面",@"ClassName":@"JDAppStoreScoreViewController"},
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
                            @{@"title":@"布局视图",@"ClassName":@"JDLayoutListViewController"},
                            @{@"title":@"小功能集合",@"ClassName":@"JDFunctionListViewController"},
                            @{@"title":@"网络封装",@"ClassName":@"JDNetWorkingViewController"},
                            @{@"title":@"加密解密",@"ClassName":@"JDEncryptionListViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDWebBrowserViewController"},
+
                            ];
     
 }
