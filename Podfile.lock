@@ -17,19 +17,24 @@ PODS:
   - MJExtension (3.0.13)
   - OpenSSL (1.0.210)
   - Reachability (3.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
   - OpenSSL
   - Reachability
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 277a30b244a4336d2a6505f0652550ee85bbf73a
+PODFILE CHECKSUM: 51cf0a1259c534a406725da3afcf79e1f27c7cc2
 
 COCOAPODS: 1.2.1

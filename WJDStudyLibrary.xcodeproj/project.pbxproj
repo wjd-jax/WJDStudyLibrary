@@ -67,6 +67,13 @@
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
 		F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */; };
+		F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */; };
+		F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFB51EBC69BB00ACCC38 /* 1.plist */; };
+		F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFB61EBC69BB00ACCC38 /* 2.plist */; };
+		F5BBFFBA1EBC69BB00ACCC38 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFB71EBC69BB00ACCC38 /* 3.plist */; };
+		F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFBD1EBC6AC000ACCC38 /* JDShopModel.m */; };
+		F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */; };
+		F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
@@ -188,6 +195,17 @@
 		F5A1A72E1E9B2D520076CC78 /* TZSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZSignView.h; sourceTree = "<group>"; };
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
 		F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyPairStoryboard.storyboard; sourceTree = "<group>"; };
+		F5BBFFB11EBC68A000ACCC38 /* JDWaterFallLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFallLayoutViewController.h; sourceTree = "<group>"; };
+		F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFallLayoutViewController.m; sourceTree = "<group>"; };
+		F5BBFFB51EBC69BB00ACCC38 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		F5BBFFB61EBC69BB00ACCC38 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		F5BBFFB71EBC69BB00ACCC38 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		F5BBFFBC1EBC6AC000ACCC38 /* JDShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDShopModel.h; sourceTree = "<group>"; };
+		F5BBFFBD1EBC6AC000ACCC38 /* JDShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDShopModel.m; sourceTree = "<group>"; };
+		F5BBFFBF1EBC70E000ACCC38 /* JDWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFlowLayout.h; sourceTree = "<group>"; };
+		F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFlowLayout.m; sourceTree = "<group>"; };
+		F5BBFFC31EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFallLayoutCollectionViewCell.h; sourceTree = "<group>"; };
+		F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFallLayoutCollectionViewCell.m; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -341,6 +359,7 @@
 		F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */ = {
 			isa = PBXGroup;
 			children = (
+				F5BBFFB01EBC685A00ACCC38 /* WaterFall(瀑布流) */,
 				F52C45321E97343500D8DF62 /* 浏览卡片 */,
 				F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */,
 				F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */,
@@ -719,6 +738,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F5BBFFB01EBC685A00ACCC38 /* WaterFall(瀑布流) */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBFFC21EBC71BC00ACCC38 /* View */,
+				F5BBFFBB1EBC6AA200ACCC38 /* Model */,
+				F5BBFFB41EBC69BB00ACCC38 /* SupportingFiles */,
+				F5BBFFB11EBC68A000ACCC38 /* JDWaterFallLayoutViewController.h */,
+				F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */,
+			);
+			name = "WaterFall(瀑布流)";
+			sourceTree = "<group>";
+		};
+		F5BBFFB41EBC69BB00ACCC38 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBFFB51EBC69BB00ACCC38 /* 1.plist */,
+				F5BBFFB61EBC69BB00ACCC38 /* 2.plist */,
+				F5BBFFB71EBC69BB00ACCC38 /* 3.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F5BBFFBB1EBC6AA200ACCC38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBFFBC1EBC6AC000ACCC38 /* JDShopModel.h */,
+				F5BBFFBD1EBC6AC000ACCC38 /* JDShopModel.m */,
+				F5BBFFBF1EBC70E000ACCC38 /* JDWaterFlowLayout.h */,
+				F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5BBFFC21EBC71BC00ACCC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBFFC31EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.h */,
+				F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,11 +885,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */,
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
+				F5BBFFBA1EBC69BB00ACCC38 /* 3.plist in Resources */,
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
 				F54BBB581EB8637600AB92CC /* icon.png in Resources */,
+				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
@@ -905,6 +969,7 @@
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
 				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
+				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
 				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
@@ -926,16 +991,19 @@
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
 				F52C45181E94BBEC00D8DF62 /* JDPopView.m in Sources */,
 				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
+				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
 				F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
+				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
+				F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */,
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,

@@ -6,5 +6,7 @@ target “WJDStudyLibrary” do
     pod 'AFNetworking'
     pod 'Reachability'
     pod 'OpenSSL'
+    pod 'SDWebImage'
+
 end
 

@@ -60,7 +60,7 @@ static NSData *base64_decode(NSString *str){
     
     [queryKey setObject:(__bridge id)SecKey forKey:(__bridge id)kSecValueRef];
     
-    return [self saveQueryKey:queryKey identfier:identifier isPublicKey:isPublickey];
+    return [self saveQueryKey:queryKey identfier:identifier isPublicKey:isPublickey]?YES:NO;
     
 }
 
