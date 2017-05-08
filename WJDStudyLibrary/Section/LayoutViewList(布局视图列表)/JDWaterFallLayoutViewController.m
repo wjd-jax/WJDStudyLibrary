@@ -11,13 +11,14 @@
 #import "JDShopModel.h"
 #import "JDWaterFlowLayout.h"
 #import "JDWaterFallLayoutCollectionViewCell.h"
+#import "YFShopCell.h"
 
 static NSString * const CellId = @"shop";
 
 @interface JDWaterFallLayoutViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,JDWaterflowLayoutDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
-@property (weak, nonatomic) UICollectionView *collectionView;
+@property (nonatomic, weak) UICollectionView *collectionView;
 
 
 @end
@@ -26,6 +27,7 @@ static NSString * const CellId = @"shop";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title = @"流水布局展示";
     [self.dataArray addObjectsFromArray:[JDShopModel mj_objectArrayWithFilename:@"1.plist"]];
     
@@ -37,6 +39,8 @@ static NSString * const CellId = @"shop";
     collectionView.dataSource =self;
     collectionView.backgroundColor =[UIColor whiteColor];
     [collectionView registerClass:[JDWaterFallLayoutCollectionViewCell class] forCellWithReuseIdentifier:CellId];
+//    [collectionView registerNib:[UINib nibWithNibName:@"YFShopCell" bundle:nil] forCellWithReuseIdentifier:CellId];
+
     [self.view addSubview:collectionView];
     
     _collectionView =collectionView;
@@ -54,12 +58,13 @@ static NSString * const CellId = @"shop";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.dataArray.count;
+
 }
 
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    DLog(@"点击了");
 }
 
 #pragma mark - <YFWaterflowLayoutDelegate>

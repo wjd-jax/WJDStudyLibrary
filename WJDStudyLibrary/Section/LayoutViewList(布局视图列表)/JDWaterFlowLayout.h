@@ -15,6 +15,23 @@
 
 @optional
 
+/**
+ *  返回四边的间距, 默认是UIEdgeInsetsMake(10, 10, 10, 10)
+ */
+- (UIEdgeInsets)insetsInWaterflowLayout:(JDWaterFlowLayout *)waterflowLayout;
+/**
+ *  返回最大的列数, 默认是3
+ */
+- (int)maxColumnsInWaterflowLayout:(JDWaterFlowLayout *)waterflowLayout;
+/**
+ *  返回每行的间距, 默认是10
+ */
+- (CGFloat)rowMarginInWaterflowLayout:(JDWaterFlowLayout *)waterflowLayout;
+/**
+ *  返回每列的间距, 默认是10
+ */
+- (CGFloat)columnMarginInWaterflowLayout:(JDWaterFlowLayout *)waterflowLayout;
+
 @end
 
 @interface JDWaterFlowLayout : UICollectionViewLayout

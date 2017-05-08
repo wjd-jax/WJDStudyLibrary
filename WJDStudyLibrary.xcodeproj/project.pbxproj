@@ -74,6 +74,8 @@
 		F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFBD1EBC6AC000ACCC38 /* JDShopModel.m */; };
 		F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */; };
 		F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */; };
+		F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */; };
+		F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
@@ -206,6 +208,9 @@
 		F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFlowLayout.m; sourceTree = "<group>"; };
 		F5BBFFC31EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFallLayoutCollectionViewCell.h; sourceTree = "<group>"; };
 		F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFallLayoutCollectionViewCell.m; sourceTree = "<group>"; };
+		F5BBFFC91EC010E900ACCC38 /* YFShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFShopCell.h; sourceTree = "<group>"; };
+		F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFShopCell.m; sourceTree = "<group>"; };
+		F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -774,6 +779,9 @@
 		F5BBFFC21EBC71BC00ACCC38 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5BBFFC91EC010E900ACCC38 /* YFShopCell.h */,
+				F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */,
+				F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */,
 				F5BBFFC31EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.h */,
 				F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */,
 			);
@@ -893,6 +901,7 @@
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
 				F54BBB581EB8637600AB92CC /* icon.png in Resources */,
 				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
+				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
@@ -979,6 +988,7 @@
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */,
+				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,

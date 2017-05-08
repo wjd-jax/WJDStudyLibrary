@@ -8,7 +8,7 @@
 
 #import "JDWaterFlowLayout.h"
 
-static const int JDDefaultMaxColumns = 3;                       /** 每一行的最大列数 */
+static const int JDDefaultMaxColumns = 2;                       /** 每一行的最大列数 */
 static const CGFloat JDDefaultRowMargin = 10;                   /** 每一行的间距 */
 static const CGFloat JDDefaultColumnMargin = 10;                /** 每一列的间距 */
 static const UIEdgeInsets JDDefaultInsets = {10, 10, 10, 10};   /** 上下左右的间距 */
@@ -151,21 +151,36 @@ static const UIEdgeInsets JDDefaultInsets = {10, 10, 10, 10};   /** 上下左右
 
 - (int)maxColumns
 {
+    if ([self.delegate respondsToSelector:@selector(maxColumnsInWaterflowLayout:)]) {
+        return [self.delegate maxColumnsInWaterflowLayout:self];
+    }
+
     return JDDefaultMaxColumns;
 }
 
 - (CGFloat)rowMargin
 {
+    if ([self.delegate respondsToSelector:@selector(rowMarginInWaterflowLayout:)]) {
+        return [self.delegate rowMarginInWaterflowLayout:self];
+    }
+
     return JDDefaultRowMargin;
 }
 
 - (CGFloat)columnMargin
 {
+    if ([self.delegate respondsToSelector:@selector(columnMarginInWaterflowLayout:)]) {
+        return [self.delegate columnMarginInWaterflowLayout:self];
+    }
+
     return JDDefaultColumnMargin;
 }
 
 - (UIEdgeInsets)insets
 {
+    if ([self.delegate respondsToSelector:@selector(insetsInWaterflowLayout:)]) {
+        return [self.delegate insetsInWaterflowLayout:self];
+    }
     return JDDefaultInsets;
 }
 
