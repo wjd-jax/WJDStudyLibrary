@@ -61,11 +61,11 @@
 		F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */; };
 		F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */; };
 		F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */; };
-		F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7191E9774450076CC78 /* JDTestViewController.m */; };
 		F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */; };
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
+		F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */; };
 		F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */; };
 		F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */; };
 		F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFB51EBC69BB00ACCC38 /* 1.plist */; };
@@ -186,8 +186,6 @@
 		F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChianTestViewController.m; sourceTree = "<group>"; };
 		F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDKeyChianTestStoryboard.storyboard; sourceTree = "<group>"; };
 		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
-		F5A1A7181E9774450076CC78 /* JDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTestViewController.h; sourceTree = "<group>"; };
-		F5A1A7191E9774450076CC78 /* JDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTestViewController.m; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
 		F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFunctionListViewController.m; sourceTree = "<group>"; };
 		F5A1A7201E977F3E0076CC78 /* JDSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignViewController.h; sourceTree = "<group>"; };
@@ -196,6 +194,8 @@
 		F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBrushBoard.m; sourceTree = "<group>"; };
 		F5A1A72E1E9B2D520076CC78 /* TZSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZSignView.h; sourceTree = "<group>"; };
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
+		F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRCodeWapper.h; sourceTree = "<group>"; };
+		F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRCodeWapper.m; sourceTree = "<group>"; };
 		F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyPairStoryboard.storyboard; sourceTree = "<group>"; };
 		F5BBFFB11EBC68A000ACCC38 /* JDWaterFallLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFallLayoutViewController.h; sourceTree = "<group>"; };
 		F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFallLayoutViewController.m; sourceTree = "<group>"; };
@@ -521,7 +521,6 @@
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
-				F5A1A7171E97741B0076CC78 /* TestViewController */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
@@ -656,6 +655,7 @@
 		F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */ = {
 			isa = PBXGroup;
 			children = (
+				F5BB00141EC053DC00ACCC38 /* QRCodeWapper */,
 				F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */,
 				F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */,
 			);
@@ -680,15 +680,6 @@
 				F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */,
 			);
 			path = keyChainWapper;
-			sourceTree = "<group>";
-		};
-		F5A1A7171E97741B0076CC78 /* TestViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F5A1A7181E9774450076CC78 /* JDTestViewController.h */,
-				F5A1A7191E9774450076CC78 /* JDTestViewController.m */,
-			);
-			path = TestViewController;
 			sourceTree = "<group>";
 		};
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
@@ -741,6 +732,15 @@
 				F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F5BB00141EC053DC00ACCC38 /* QRCodeWapper */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */,
+				F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */,
+			);
+			name = QRCodeWapper;
 			sourceTree = "<group>";
 		};
 		F5BBFFB01EBC685A00ACCC38 /* WaterFall(瀑布流) */ = {
@@ -976,7 +976,6 @@
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
-				F5A1A71A1E9774450076CC78 /* JDTestViewController.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
@@ -989,6 +988,7 @@
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */,
 				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
+				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,

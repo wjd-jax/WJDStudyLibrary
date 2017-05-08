@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F67a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,18 +22,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-G8-fpy">
-                                <rect key="frame" x="28" y="106" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="生成二维码"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-gg-izZ">
+                                <rect key="frame" x="85" y="105" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Lrt-2A-zne"/>
+                                    <constraint firstAttribute="height" constant="150" id="MDw-Nk-rsM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-G8-fpy">
+                                <rect key="frame" x="16" y="502" width="108" height="30"/>
+                                <state key="normal" title="点击生成二维码"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="0DZ-cR-HE3" eventType="touchUpInside" id="217-8X-MvU"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="二维码生成测试!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="czT-yj-9sW">
+                                <rect key="frame" x="43" y="301" width="244" height="84"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="0.35683326199999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="cAT-mm-gZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-o1-sFe">
+                                <rect key="frame" x="196" y="502" width="108" height="30"/>
+                                <state key="normal" title="点击生成条形码"/>
+                                <connections>
+                                    <action selector="barCodeButtonClick:" destination="0DZ-cR-HE3" eventType="touchUpInside" id="3Wa-m4-D5L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duN-0b-PbQ">
+                                <rect key="frame" x="85" y="229" width="150" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="hil-3P-BzV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="duN-0b-PbQ" firstAttribute="top" secondItem="ks2-gg-izZ" secondAttribute="bottom" constant="-26" id="1WK-4Y-aa9"/>
+                            <constraint firstItem="ks2-gg-izZ" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" constant="69" id="1fx-MF-GgB"/>
+                            <constraint firstItem="ks2-gg-izZ" firstAttribute="top" secondItem="Rdz-jB-TID" secondAttribute="bottom" constant="85" id="4co-5i-pxd"/>
+                            <constraint firstItem="ks2-gg-izZ" firstAttribute="centerX" secondItem="ZbB-GM-R01" secondAttribute="centerX" id="FTF-Br-s24"/>
+                            <constraint firstItem="z9L-G8-fpy" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" id="HCo-xl-EPW"/>
+                            <constraint firstItem="czT-yj-9sW" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" constant="27" id="PPK-JX-mev"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czT-yj-9sW" secondAttribute="trailing" constant="17" id="SLO-cf-MKm"/>
+                            <constraint firstItem="ks2-gg-izZ" firstAttribute="centerX" secondItem="duN-0b-PbQ" secondAttribute="centerX" id="Uku-Yf-s56"/>
+                            <constraint firstItem="p1r-o1-sFe" firstAttribute="trailing" secondItem="ZbB-GM-R01" secondAttribute="trailingMargin" id="YtS-hO-e6f"/>
+                            <constraint firstItem="tYh-dk-eAA" firstAttribute="top" secondItem="z9L-G8-fpy" secondAttribute="bottom" constant="36" id="bEI-W9-LaU"/>
+                            <constraint firstItem="z9L-G8-fpy" firstAttribute="baseline" secondItem="p1r-o1-sFe" secondAttribute="baseline" id="qUV-Cn-und"/>
+                            <constraint firstItem="czT-yj-9sW" firstAttribute="top" secondItem="ks2-gg-izZ" secondAttribute="bottom" constant="46" id="tL4-wy-CAa"/>
+                            <constraint firstItem="duN-0b-PbQ" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" constant="69" id="tUM-5s-uWI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="QRImageView" destination="ks2-gg-izZ" id="FHB-cC-ynB"/>
+                        <outlet property="barLabel" destination="duN-0b-PbQ" id="YDJ-wW-fDz"/>
+                        <outlet property="inputTextView" destination="czT-yj-9sW" id="zlX-3u-8W9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMQ-cm-E7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014" y="-466"/>
+            <point key="canvasLocation" x="-950.625" y="-442.6056338028169"/>
         </scene>
     </scenes>
 </document>

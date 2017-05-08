@@ -7,8 +7,12 @@
 //
 
 #import "JDQRimageViewController.h"
+#import "JDQRCodeWapper.h"
 
 @interface JDQRimageViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *inputTextView;
+@property (weak, nonatomic) IBOutlet UILabel *barLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *QRImageView;
 
 @end
 
@@ -16,22 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+- (IBAction)buttonClick:(id)sender {
+    
+    _QRImageView.image =[JDQRCodeWapper generateQRCode:_inputTextView.text width:_QRImageView.sizeWidth height:_QRImageView.sizeHeight];
+    _barLabel.text =@"";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)barCodeButtonClick:(id)sender {
+    
+    _inputTextView.text =@"abcd12343535123";
+    _barLabel.text =_inputTextView.text;
+    _QRImageView.image =[JDQRCodeWapper generateBarCode:_inputTextView.text width:_QRImageView.sizeWidth height:_QRImageView.sizeHeight];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

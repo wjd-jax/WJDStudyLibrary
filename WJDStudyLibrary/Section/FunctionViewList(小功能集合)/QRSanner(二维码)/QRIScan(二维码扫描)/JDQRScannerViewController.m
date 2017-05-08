@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.dataSoureArray =@[@{@"title":@"二维码生成",@"ClassName":@"QRImageStoryboard"},
+                           @{@"title":@"二维码扫描",@"ClassName":@"JDQRScannerViewController"},
+                           @{@"title":@"条形码生成",@"ClassName":@"JDTouchIDViewController"},
+                           ];
+
     // Do any additional setup after loading the view.
 }
 
