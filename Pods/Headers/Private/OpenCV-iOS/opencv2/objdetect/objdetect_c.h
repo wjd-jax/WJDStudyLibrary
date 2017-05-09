@@ -1,1 +1,0 @@
-../../../../../OpenCV-iOS/install/include/opencv2/objdetect/objdetect_c.h

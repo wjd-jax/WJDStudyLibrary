@@ -7,8 +7,26 @@
 //
 
 #import "JDOpenCVCameraViewController.h"
+#import "opencv.hpp"
+#import "ios.h"
+#import "cap_ios.h"
 
-@interface JDOpenCVCameraViewController ()
+//#import "highgui.hpp"
+//#import "imgproc.hpp"
+//#import "core.hpp"
+//#import "objdetect.hpp"
+//#import "types_c.h"
+
+#import <stdio.h>
+#import <iostream>
+
+
+@interface JDOpenCVCameraViewController ()<CvVideoCameraDelegate>
+
+@property(nonatomic,retain)UIImageView *imageView;
+
+@property cv::Mat cvImage;
+@property CvVideoCamera *videoCamera;
 
 @end
 
@@ -16,22 +34,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.videoCamera =[[CvVideoCamera alloc]initWithParentView:self.view] ;
+//    self.videoCamera.delegate = self;
+//    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
+//    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
+//    self.videoCamera.defaultFPS = 30;
+//    [self.videoCamera start];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - CvVideoCameraDelegate
+-(void)processImage:(cv::Mat &)image {
+    
+//    cv::Mat gray;
+//    cv::cvtColor(image, gray, CV_RGBA2GRAY);
+//    cv::GaussianBlur(gray, gray, cv::Size(5,5), 1.2, 1.2);
+//    cv::Mat edges;
+//    cv::Canny(gray, edges, 0, 60);
+//    image.setTo(cv::Scalar::all(255));
+//    image.setTo(cv::Scalar(0,128,255,255), edges);
+//    self.imageView.image = MatToUIImage(image);
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

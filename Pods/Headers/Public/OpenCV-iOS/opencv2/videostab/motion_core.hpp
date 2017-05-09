@@ -1,1 +1,0 @@
-../../../../../OpenCV-iOS/install/include/opencv2/videostab/motion_core.hpp

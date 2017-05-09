@@ -1,3 +1,4 @@
+
 platform:ios, ‘8.0’
 
 target “WJDStudyLibrary” do
@@ -7,6 +8,7 @@ target “WJDStudyLibrary” do
     pod 'Reachability'
     pod 'OpenSSL'
     pod 'SDWebImage'
-    pod 'OpenCV-iOS'
+    #pod 'OpenCV-iOS'
+    #pod 'OpenCV-Dynamic'
 end
 
