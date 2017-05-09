@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - MJExtension (3.0.13)
+  - OpenCV-iOS (3.1.1)
   - OpenSSL (1.0.210)
   - Reachability (3.2)
   - SDWebImage (4.0.0):
@@ -24,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
+  - OpenCV-iOS
   - OpenSSL
   - Reachability
   - SDWebImage
@@ -31,10 +33,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  OpenCV-iOS: 257d4b484571baf3f4a160693fbc00603dd3ccf4
   OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 51cf0a1259c534a406725da3afcf79e1f27c7cc2
+PODFILE CHECKSUM: 26c4980d132fe0d32deaf54d969a18dfeced2db7
 
 COCOAPODS: 1.2.1

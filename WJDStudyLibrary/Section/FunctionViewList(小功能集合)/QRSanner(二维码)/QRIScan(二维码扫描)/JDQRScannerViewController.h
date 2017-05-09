@@ -6,8 +6,7 @@
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDBaseTableViewController.h"
 
-@interface JDQRScannerViewController : JDBaseTableViewController
+@interface JDQRScannerViewController : JDBaseViewController
 
 @end

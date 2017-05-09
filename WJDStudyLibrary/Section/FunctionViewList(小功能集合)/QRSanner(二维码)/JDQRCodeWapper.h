@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger,type)
 /**
  生成条形码
  
- @param code 输入的信息
+ @param code 输入的信息(不能是中文)
  @param width 需要生成图片的宽
  @param height 需要生成图的高
  @return 生成的 image

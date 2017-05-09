@@ -66,6 +66,9 @@
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
 		F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */; };
+		F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */; };
+		F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB001D1EC0693900ACCC38 /* ScanView.m */; };
+		F5BB00201EC06A1500ACCC38 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BB001F1EC06A1500ACCC38 /* line.png */; };
 		F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */; };
 		F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */; };
 		F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFB51EBC69BB00ACCC38 /* 1.plist */; };
@@ -76,6 +79,8 @@
 		F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */; };
 		F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */; };
 		F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */; };
+		F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */; };
+		F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
@@ -196,6 +201,11 @@
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
 		F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRCodeWapper.h; sourceTree = "<group>"; };
 		F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRCodeWapper.m; sourceTree = "<group>"; };
+		F5BB00181EC0667F00ACCC38 /* JDCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCodeImageViewController.h; sourceTree = "<group>"; };
+		F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCodeImageViewController.m; sourceTree = "<group>"; };
+		F5BB001C1EC0693900ACCC38 /* ScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		F5BB001D1EC0693900ACCC38 /* ScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		F5BB001F1EC06A1500ACCC38 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		F5BB6EDD1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyPairStoryboard.storyboard; sourceTree = "<group>"; };
 		F5BBFFB11EBC68A000ACCC38 /* JDWaterFallLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterFallLayoutViewController.h; sourceTree = "<group>"; };
 		F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterFallLayoutViewController.m; sourceTree = "<group>"; };
@@ -211,6 +221,10 @@
 		F5BBFFC91EC010E900ACCC38 /* YFShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFShopCell.h; sourceTree = "<group>"; };
 		F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFShopCell.m; sourceTree = "<group>"; };
 		F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
+		F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCameraFuctionViewController.h; sourceTree = "<group>"; };
+		F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCameraFuctionViewController.m; sourceTree = "<group>"; };
+		F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOpenCVCameraViewController.h; sourceTree = "<group>"; };
+		F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDOpenCVCameraViewController.mm; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -428,6 +442,7 @@
 		F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */ = {
 			isa = PBXGroup;
 			children = (
+				F5BB001B1EC0691B00ACCC38 /* View */,
 				F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */,
 				F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */,
 			);
@@ -658,6 +673,8 @@
 				F5BB00141EC053DC00ACCC38 /* QRCodeWapper */,
 				F555B46A1EA0C76400EF73BC /* QRIScan(二维码扫描) */,
 				F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */,
+				F5BB00181EC0667F00ACCC38 /* JDCodeImageViewController.h */,
+				F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */,
 			);
 			path = "QRSanner(二维码)";
 			sourceTree = "<group>";
@@ -685,6 +702,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5C94D1E1EC1689F004C1A1A /* Camera */,
 				F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
@@ -743,6 +761,16 @@
 			name = QRCodeWapper;
 			sourceTree = "<group>";
 		};
+		F5BB001B1EC0691B00ACCC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB001F1EC06A1500ACCC38 /* line.png */,
+				F5BB001C1EC0693900ACCC38 /* ScanView.h */,
+				F5BB001D1EC0693900ACCC38 /* ScanView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F5BBFFB01EBC685A00ACCC38 /* WaterFall(瀑布流) */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +814,25 @@
 				F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F5C94D1E1EC1689F004C1A1A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F5C94D221EC16AD2004C1A1A /* OpenCVCamera */,
+				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
+				F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		F5C94D221EC16AD2004C1A1A /* OpenCVCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */,
+				F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */,
+			);
+			name = OpenCVCamera;
 			sourceTree = "<group>";
 		};
 		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
@@ -904,6 +951,7 @@
 				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
+				F5BB00201EC06A1500ACCC38 /* line.png in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
@@ -988,11 +1036,13 @@
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */,
 				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
+				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
 				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
+				F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */,
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
@@ -1004,12 +1054,14 @@
 				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
 				F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
+				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
+				F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */,
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
@@ -1137,7 +1189,22 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SRCROOT}",
+				);
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1158,7 +1225,22 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SRCROOT}",
+				);
 				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

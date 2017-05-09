@@ -24,6 +24,7 @@
 - (IBAction)buttonClick:(id)sender {
     
     _QRImageView.image =[JDQRCodeWapper generateQRCode:_inputTextView.text width:_QRImageView.sizeWidth height:_QRImageView.sizeHeight];
+   
     _barLabel.text =@"";
 }
 

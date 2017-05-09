@@ -66,7 +66,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="duN-0b-PbQ" firstAttribute="top" secondItem="ks2-gg-izZ" secondAttribute="bottom" constant="-26" id="1WK-4Y-aa9"/>
-                            <constraint firstItem="ks2-gg-izZ" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" constant="69" id="1fx-MF-GgB"/>
                             <constraint firstItem="ks2-gg-izZ" firstAttribute="top" secondItem="Rdz-jB-TID" secondAttribute="bottom" constant="85" id="4co-5i-pxd"/>
                             <constraint firstItem="ks2-gg-izZ" firstAttribute="centerX" secondItem="ZbB-GM-R01" secondAttribute="centerX" id="FTF-Br-s24"/>
                             <constraint firstItem="z9L-G8-fpy" firstAttribute="leading" secondItem="ZbB-GM-R01" secondAttribute="leadingMargin" id="HCo-xl-EPW"/>

@@ -43,8 +43,13 @@
     if (type_QRCode ==type) {
         [filter setValue:@"H" forKey:@"inputCorrectionLevel"];
     }
-    barcodeImage = [filter outputImage];
-    
+    @try {
+        barcodeImage = [filter outputImage];
+
+    } @catch (NSException *exception) {
+        DLog(@"条形码输入信息错误");
+        return nil;
+    }
     // 消除模糊
     CGFloat scaleX = width / barcodeImage.extent.size.width; // extent 返回图片的frame
     CGFloat scaleY = height / barcodeImage.extent.size.height;
