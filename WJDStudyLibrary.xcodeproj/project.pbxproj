@@ -65,6 +65,9 @@
 		F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A7211E977F3E0076CC78 /* JDSignViewController.m */; };
 		F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */; };
 		F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A72F1E9B2D520076CC78 /* TZSignView.m */; };
+		F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */; };
+		F5A733161EC2A165006CB68D /* JDImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */; };
+		F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */; };
 		F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */; };
 		F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */; };
 		F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB001D1EC0693900ACCC38 /* ScanView.m */; };
@@ -79,14 +82,7 @@
 		F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFC41EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m */; };
 		F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */; };
 		F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */; };
-		F5BD73931EC1A95C0015E18F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD73921EC1A95C0015E18F /* CoreMedia.framework */; };
-		F5BD73951EC1A9670015E18F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD73941EC1A9670015E18F /* CoreImage.framework */; };
-		F5BD73971EC1A9730015E18F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD73961EC1A9730015E18F /* CoreGraphics.framework */; };
-		F5BD73991EC1A97F0015E18F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD73981EC1A97F0015E18F /* AVFoundation.framework */; };
-		F5BD739B1EC1A98F0015E18F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD739A1EC1A98F0015E18F /* Accelerate.framework */; };
-		F5BD739D1EC1A99A0015E18F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD739C1EC1A99A0015E18F /* CoreVideo.framework */; };
-		F5BD739F1EC1A9A80015E18F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD739E1EC1A9A80015E18F /* AssetsLibrary.framework */; };
-		F5BD73A11EC1A9C30015E18F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD73A01EC1A9C30015E18F /* opencv2.framework */; };
+		F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */; };
 		F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */; };
 		F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
@@ -207,6 +203,11 @@
 		F5A1A72C1E9B2D450076CC78 /* AFBrushBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBrushBoard.m; sourceTree = "<group>"; };
 		F5A1A72E1E9B2D520076CC78 /* TZSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZSignView.h; sourceTree = "<group>"; };
 		F5A1A72F1E9B2D520076CC78 /* TZSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZSignView.m; sourceTree = "<group>"; };
+		F5A733111EC29CA7006CB68D /* UIImage+JDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JDImage.h"; sourceTree = "<group>"; };
+		F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JDImage.m"; sourceTree = "<group>"; };
+		F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDImageProcessingViewController.h; sourceTree = "<group>"; };
+		F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDImageProcessingViewController.m; sourceTree = "<group>"; };
+		F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageProcessingStoryboard.storyboard; sourceTree = "<group>"; };
 		F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRCodeWapper.h; sourceTree = "<group>"; };
 		F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRCodeWapper.m; sourceTree = "<group>"; };
 		F5BB00181EC0667F00ACCC38 /* JDCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCodeImageViewController.h; sourceTree = "<group>"; };
@@ -229,15 +230,8 @@
 		F5BBFFC91EC010E900ACCC38 /* YFShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFShopCell.h; sourceTree = "<group>"; };
 		F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFShopCell.m; sourceTree = "<group>"; };
 		F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
-		F5BD73921EC1A95C0015E18F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		F5BD73941EC1A9670015E18F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		F5BD73961EC1A9730015E18F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F5BD73981EC1A97F0015E18F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F5BD739A1EC1A98F0015E18F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		F5BD739C1EC1A99A0015E18F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		F5BD739E1EC1A9A80015E18F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		F5BD73A01EC1A9C30015E18F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/OpenCVDemo/opencv2.framework; sourceTree = "<group>"; };
-		F5BF44FD1EC198DD00770A88 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F5BD73D61EC1C37A0015E18F /* JDFaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFaceRecognitionViewController.h; sourceTree = "<group>"; };
+		F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFaceRecognitionViewController.m; sourceTree = "<group>"; };
 		F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCameraFuctionViewController.h; sourceTree = "<group>"; };
 		F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCameraFuctionViewController.m; sourceTree = "<group>"; };
 		F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOpenCVCameraViewController.h; sourceTree = "<group>"; };
@@ -256,14 +250,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5BD739F1EC1A9A80015E18F /* AssetsLibrary.framework in Frameworks */,
-				F5BD73A11EC1A9C30015E18F /* opencv2.framework in Frameworks */,
-				F5BD73931EC1A95C0015E18F /* CoreMedia.framework in Frameworks */,
-				F5BD739D1EC1A99A0015E18F /* CoreVideo.framework in Frameworks */,
-				F5BD739B1EC1A98F0015E18F /* Accelerate.framework in Frameworks */,
-				F5BD73991EC1A97F0015E18F /* AVFoundation.framework in Frameworks */,
-				F5BD73971EC1A9730015E18F /* CoreGraphics.framework in Frameworks */,
-				F5BD73951EC1A9670015E18F /* CoreImage.framework in Frameworks */,
 				F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */,
 				385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */,
 			);
@@ -275,15 +261,6 @@
 		1E97615D406F75866E9BCA8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5BD73A01EC1A9C30015E18F /* opencv2.framework */,
-				F5BD739E1EC1A9A80015E18F /* AssetsLibrary.framework */,
-				F5BD739C1EC1A99A0015E18F /* CoreVideo.framework */,
-				F5BD739A1EC1A98F0015E18F /* Accelerate.framework */,
-				F5BD73981EC1A97F0015E18F /* AVFoundation.framework */,
-				F5BD73961EC1A9730015E18F /* CoreGraphics.framework */,
-				F5BD73941EC1A9670015E18F /* CoreImage.framework */,
-				F5BD73921EC1A95C0015E18F /* CoreMedia.framework */,
-				F5BF44FD1EC198DD00770A88 /* libc++.tbd */,
 				F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */,
 				9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */,
 			);
@@ -564,6 +541,7 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */,
 				F55E55581E85179400144D49 /* MainViewController */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
@@ -786,6 +764,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7330F1EC29C13006CB68D /* ImageExtension */,
+				F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */,
+				F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */,
+				F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */,
+			);
+			name = "ImageProcessing(图像处理)";
+			sourceTree = "<group>";
+		};
+		F5A7330F1EC29C13006CB68D /* ImageExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F5A733111EC29CA7006CB68D /* UIImage+JDImage.h */,
+				F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */,
+			);
+			name = ImageExtension;
+			sourceTree = "<group>";
+		};
 		F5BB00141EC053DC00ACCC38 /* QRCodeWapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,9 +848,19 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		F5BD73D51EC1C31C0015E18F /* FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				F5BD73D61EC1C37A0015E18F /* JDFaceRecognitionViewController.h */,
+				F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */,
+			);
+			name = FaceRecognition;
+			sourceTree = "<group>";
+		};
 		F5C94D1E1EC1689F004C1A1A /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				F5BD73D51EC1C31C0015E18F /* FaceRecognition */,
 				F5C94D221EC16AD2004C1A1A /* OpenCVCamera */,
 				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
 				F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */,
@@ -991,6 +999,7 @@
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
 				F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
+				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1057,6 +1066,7 @@
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
+				F5A733161EC2A165006CB68D /* JDImageProcessingViewController.m in Sources */,
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
@@ -1075,6 +1085,7 @@
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,
+				F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */,
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
@@ -1108,6 +1119,7 @@
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
+				F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

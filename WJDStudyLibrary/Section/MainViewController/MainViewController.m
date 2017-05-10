@@ -27,7 +27,8 @@
                            @{@"title":@"小功能集合",@"ClassName":@"JDFunctionListViewController"},
                            @{@"title":@"网络封装",@"ClassName":@"JDNetWorkingViewController"},
                            @{@"title":@"加密解密",@"ClassName":@"JDEncryptionListViewController"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDOpenCVCameraViewController"},
+                           @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDFaceRecognitionViewController"},
 
                            ];
     

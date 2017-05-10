@@ -7,9 +7,9 @@
 //
 
 #import "JDOpenCVCameraViewController.h"
-#import "opencv.hpp"
-#import "ios.h"
-#import "cap_ios.h"
+//#import <opencv2/opencv.hpp>
+//#import "ios.h"
+//#import "cap_ios.h"
 
 //#import "highgui.hpp"
 //#import "imgproc.hpp"
@@ -21,12 +21,12 @@
 #import <iostream>
 
 
-@interface JDOpenCVCameraViewController ()<CvVideoCameraDelegate>
+@interface JDOpenCVCameraViewController ()
 
 @property(nonatomic,retain)UIImageView *imageView;
 
-@property cv::Mat cvImage;
-@property CvVideoCamera *videoCamera;
+//@property cv::Mat cvImage;
+//@property CvVideoCamera *videoCamera;
 
 @end
 
@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.videoCamera =[[CvVideoCamera alloc]initWithParentView:self.view] ;
+//    self.videoCamera =[[CvVideoCamera alloc]initWithParentView:self.view] ;
 //    self.videoCamera.delegate = self;
 //    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
 //    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
@@ -45,8 +45,8 @@
 }
 
 #pragma mark - CvVideoCameraDelegate
--(void)processImage:(cv::Mat &)image {
-    
+//-(void)processImage:(cv::Mat &)image {
+
 //    cv::Mat gray;
 //    cv::cvtColor(image, gray, CV_RGBA2GRAY);
 //    cv::GaussianBlur(gray, gray, cv::Size(5,5), 1.2, 1.2);
@@ -56,5 +56,5 @@
 //    image.setTo(cv::Scalar(0,128,255,255), edges);
 //    self.imageView.image = MatToUIImage(image);
     
-}
+//}
 @end

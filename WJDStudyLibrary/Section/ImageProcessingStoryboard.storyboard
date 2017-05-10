@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F67a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Processing View Controller-->
+        <scene sceneID="4Wp-oM-GpF">
+            <objects>
+                <viewController storyboardIdentifier="ImageProcessingStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="no3-MQ-imu" customClass="JDImageProcessingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7S2-BQ-OLM"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEj-HI-RZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sVn-0d-BMG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ow7-CC-XNG">
+                                <rect key="frame" x="16" y="28" width="343" height="244"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-ng-V64">
+                                <rect key="frame" x="28" y="318" width="46" height="30"/>
+                                <state key="normal" title="二值化"/>
+                                <connections>
+                                    <action selector="coverToGrayScale:" destination="no3-MQ-imu" eventType="touchUpInside" id="oJD-Fi-xko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Au-l9-fGJ">
+                                <rect key="frame" x="280" y="318" width="31" height="30"/>
+                                <state key="normal" title="灰度"/>
+                                <connections>
+                                    <action selector="grayImage:" destination="no3-MQ-imu" eventType="touchUpInside" id="sEm-x3-Jkj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSD-7v-0jv">
+                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <state key="normal" title="还原"/>
+                                <connections>
+                                    <action selector="reset:" destination="no3-MQ-imu" eventType="touchUpInside" id="Kj0-dF-fAr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="centerY" secondItem="sVn-0d-BMG" secondAttribute="centerY" id="BYc-fP-eC7"/>
+                            <constraint firstItem="tSD-7v-0jv" firstAttribute="leading" secondItem="xeV-ng-V64" secondAttribute="trailing" constant="98" id="Ckb-Nb-T7u"/>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="top" secondItem="ow7-CC-XNG" secondAttribute="bottom" constant="46" id="K5o-7t-XsB"/>
+                            <constraint firstItem="tSD-7v-0jv" firstAttribute="baseline" secondItem="8Au-l9-fGJ" secondAttribute="baseline" id="Nn2-hY-S1e"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="leading" secondItem="sVn-0d-BMG" secondAttribute="leadingMargin" id="TJs-gQ-Jgg"/>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="baseline" secondItem="tSD-7v-0jv" secondAttribute="baseline" id="VSi-RQ-I4Y"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="top" secondItem="7S2-BQ-OLM" secondAttribute="bottom" constant="8" symbolic="YES" id="WRe-OP-zrQ"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="trailing" secondItem="sVn-0d-BMG" secondAttribute="trailingMargin" id="ZWG-lo-jbP"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="centerX" secondItem="tSD-7v-0jv" secondAttribute="centerX" id="khl-8W-RjW"/>
+                            <constraint firstItem="8Au-l9-fGJ" firstAttribute="leading" secondItem="tSD-7v-0jv" secondAttribute="trailing" constant="77" id="mGP-J6-1wV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ow7-CC-XNG" id="yMG-UP-CCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVO-fa-IId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263.19999999999999" y="96.7016491754123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="i2.jpg" width="1024" height="768"/>
+    </resources>
+</document>

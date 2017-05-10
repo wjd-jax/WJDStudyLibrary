@@ -1,27 +1,22 @@
 //
-//  JDCameraFuctionViewController.m
+//  JDFaceRecognitionViewController.m
 //  WJDStudyLibrary
 //
 //  Created by wangjundong on 2017/5/9.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDCameraFuctionViewController.h"
+#import "JDFaceRecognitionViewController.h"
 
-@interface JDCameraFuctionViewController ()
+@interface JDFaceRecognitionViewController ()
 
 @end
 
-@implementation JDCameraFuctionViewController
+@implementation JDFaceRecognitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"OpenCV实时图像处理",@"ClassName":@"JDOpenCVCameraViewController"},
-                           @{@"title":@"摄像头滤镜",@"ClassName":@"JDasdCodeImageViewController"},
-                           @{@"title":@"人脸识别功能(CIDetector)",@"ClassName":@"JDFaceRecognitionViewController"},
-                           
-                           
-                           ];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
