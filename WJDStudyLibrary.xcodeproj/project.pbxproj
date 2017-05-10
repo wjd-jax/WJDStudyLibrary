@@ -714,7 +714,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F5C94D1E1EC1689F004C1A1A /* Camera */,
+				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
@@ -857,7 +857,7 @@
 			name = FaceRecognition;
 			sourceTree = "<group>";
 		};
-		F5C94D1E1EC1689F004C1A1A /* Camera */ = {
+		F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */ = {
 			isa = PBXGroup;
 			children = (
 				F5BD73D51EC1C31C0015E18F /* FaceRecognition */,
@@ -865,7 +865,7 @@
 				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
 				F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */,
 			);
-			name = Camera;
+			name = "Camera(摄像头处理)";
 			sourceTree = "<group>";
 		};
 		F5C94D221EC16AD2004C1A1A /* OpenCVCamera */ = {
