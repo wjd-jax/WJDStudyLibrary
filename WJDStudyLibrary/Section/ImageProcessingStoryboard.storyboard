@@ -26,43 +26,69 @@
                                 <rect key="frame" x="16" y="28" width="343" height="244"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-ng-V64">
-                                <rect key="frame" x="28" y="318" width="46" height="30"/>
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
                                 <state key="normal" title="二值化"/>
                                 <connections>
                                     <action selector="coverToGrayScale:" destination="no3-MQ-imu" eventType="touchUpInside" id="oJD-Fi-xko"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Au-l9-fGJ">
-                                <rect key="frame" x="280" y="318" width="31" height="30"/>
+                                <rect key="frame" x="328" y="318" width="31" height="30"/>
                                 <state key="normal" title="灰度"/>
                                 <connections>
                                     <action selector="grayImage:" destination="no3-MQ-imu" eventType="touchUpInside" id="sEm-x3-Jkj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSD-7v-0jv">
-                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <rect key="frame" x="16" y="318" width="31" height="30"/>
                                 <state key="normal" title="还原"/>
                                 <connections>
                                     <action selector="reset:" destination="no3-MQ-imu" eventType="touchUpInside" id="Kj0-dF-fAr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltw-ng-3D2">
+                                <rect key="frame" x="156" y="382" width="62" height="30"/>
+                                <state key="normal" title="高斯模糊"/>
+                                <connections>
+                                    <action selector="gaosiBlur:" destination="no3-MQ-imu" eventType="touchUpInside" id="HkF-CR-pgR"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afG-5m-W4J">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="no3-MQ-imu" id="XnB-eS-z9l"/>
+                                    <outlet property="delegate" destination="no3-MQ-imu" id="4d2-VT-wpJ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9v-IL-f6c">
+                                <rect key="frame" x="16" y="382" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="滤镜"/>
+                                <connections>
+                                    <action selector="filterClick:" destination="no3-MQ-imu" eventType="touchUpInside" id="WN1-jd-5PL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xeV-ng-V64" firstAttribute="centerY" secondItem="sVn-0d-BMG" secondAttribute="centerY" id="BYc-fP-eC7"/>
-                            <constraint firstItem="tSD-7v-0jv" firstAttribute="leading" secondItem="xeV-ng-V64" secondAttribute="trailing" constant="98" id="Ckb-Nb-T7u"/>
-                            <constraint firstItem="xeV-ng-V64" firstAttribute="top" secondItem="ow7-CC-XNG" secondAttribute="bottom" constant="46" id="K5o-7t-XsB"/>
-                            <constraint firstItem="tSD-7v-0jv" firstAttribute="baseline" secondItem="8Au-l9-fGJ" secondAttribute="baseline" id="Nn2-hY-S1e"/>
-                            <constraint firstItem="ow7-CC-XNG" firstAttribute="leading" secondItem="sVn-0d-BMG" secondAttribute="leadingMargin" id="TJs-gQ-Jgg"/>
-                            <constraint firstItem="xeV-ng-V64" firstAttribute="baseline" secondItem="tSD-7v-0jv" secondAttribute="baseline" id="VSi-RQ-I4Y"/>
-                            <constraint firstItem="ow7-CC-XNG" firstAttribute="top" secondItem="7S2-BQ-OLM" secondAttribute="bottom" constant="8" symbolic="YES" id="WRe-OP-zrQ"/>
-                            <constraint firstItem="ow7-CC-XNG" firstAttribute="trailing" secondItem="sVn-0d-BMG" secondAttribute="trailingMargin" id="ZWG-lo-jbP"/>
-                            <constraint firstItem="ow7-CC-XNG" firstAttribute="centerX" secondItem="tSD-7v-0jv" secondAttribute="centerX" id="khl-8W-RjW"/>
-                            <constraint firstItem="8Au-l9-fGJ" firstAttribute="leading" secondItem="tSD-7v-0jv" secondAttribute="trailing" constant="77" id="mGP-J6-1wV"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="top" secondItem="7S2-BQ-OLM" secondAttribute="bottom" constant="8" symbolic="YES" id="1yh-RC-9fT"/>
+                            <constraint firstItem="8Au-l9-fGJ" firstAttribute="leading" secondItem="xeV-ng-V64" secondAttribute="trailing" constant="118" id="CuG-c4-LIs"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="trailing" secondItem="sVn-0d-BMG" secondAttribute="trailingMargin" id="IhS-Bx-ukN"/>
+                            <constraint firstItem="ltw-ng-3D2" firstAttribute="top" secondItem="xeV-ng-V64" secondAttribute="bottom" constant="34" id="Ir2-TL-UlR"/>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="baseline" secondItem="8Au-l9-fGJ" secondAttribute="baseline" id="Jgh-pb-oSf"/>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="leading" secondItem="tSD-7v-0jv" secondAttribute="trailing" constant="117" id="TLu-Xi-lz8"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="centerX" secondItem="xeV-ng-V64" secondAttribute="centerX" id="Z1D-Nl-m93"/>
+                            <constraint firstItem="tSD-7v-0jv" firstAttribute="baseline" secondItem="xeV-ng-V64" secondAttribute="baseline" id="eVA-Ps-hug"/>
+                            <constraint firstItem="tSD-7v-0jv" firstAttribute="centerY" secondItem="sVn-0d-BMG" secondAttribute="centerY" id="feI-za-nGP"/>
+                            <constraint firstItem="xeV-ng-V64" firstAttribute="centerX" secondItem="ltw-ng-3D2" secondAttribute="centerX" id="h0M-7p-edY"/>
+                            <constraint firstItem="ow7-CC-XNG" firstAttribute="leading" secondItem="sVn-0d-BMG" secondAttribute="leadingMargin" id="hgN-uO-q7V"/>
+                            <constraint firstItem="tSD-7v-0jv" firstAttribute="top" secondItem="ow7-CC-XNG" secondAttribute="bottom" constant="46" id="rfD-dO-g9r"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ow7-CC-XNG" id="yMG-UP-CCG"/>
+                        <outlet property="pickerView" destination="afG-5m-W4J" id="dpS-BT-jUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVO-fa-IId" userLabel="First Responder" sceneMemberID="firstResponder"/>

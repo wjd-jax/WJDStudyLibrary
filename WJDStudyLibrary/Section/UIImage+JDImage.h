@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,fileterType) {
+    CIPhotoEffectChrome,
+    CIPhotoEffectFade,
+    CIPhotoEffectInstant,
+    CIPhotoEffectMono,
+    CIPhotoEffectNoir,
+    CIPhotoEffectProcess,
+    CIPhotoEffectTonal,
+    CIPhotoEffectTransfer
+};
 @interface UIImage (JDImage)
 
 /**
@@ -19,4 +29,19 @@
  转化灰度
  */
 - (UIImage *)grayImage;
+
+/**
+ 高斯模糊
+ */
+- (UIImage *)gaussianBlur;
+
+/**
+ 图片添加滤镜
+
+ @param filterName 滤镜名字
+ @return 添加滤镜之后的效果
+ */
+- (UIImage *)setFilterWithFilterName:(NSString *)filterName;
+
+
 @end

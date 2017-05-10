@@ -96,5 +96,55 @@
     return grayImage;
 }
 
+#pragma mark - 高斯模糊
+- (UIImage *)gaussianBlur;
+{
 
+    //转换图片
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *midImage = [CIImage imageWithData:UIImagePNGRepresentation(self)];
+    //图片开始处理
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:midImage forKey:kCIInputImageKey];
+    //value 改变模糊效果值
+    [filter setValue:@10.0f forKey:@"inputRadius"];
+    CIImage *result =[filter valueForKey:kCIOutputImageKey];
+    
+    CGImageRef outImage =[context createCGImage:result fromRect:[result extent]];
+
+    //转化为 UIImage
+    UIImage *resultImage =[UIImage imageWithCGImage:outImage];
+    CGImageRelease(outImage);
+
+    return resultImage;
+}
+#pragma mark - 滤镜处理
+- (UIImage *)setFilterWithFilterName:(NSString *)filterName
+{
+    //转换图片
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *midImage = [CIImage imageWithData:UIImagePNGRepresentation(self)];
+    //图片开始处理
+    CIFilter *filter = [CIFilter filterWithName:filterName];
+    
+    @try {
+        [filter setValue:midImage forKey:kCIInputImageKey];
+
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+    
+    CIImage *result =[filter valueForKey:kCIOutputImageKey];
+    
+    CGImageRef outImage =[context createCGImage:result fromRect:[result extent]];
+    
+    //转化为 UIImage
+    UIImage *resultImage =[UIImage imageWithCGImage:outImage];
+    CGImageRelease(outImage);
+    
+    return resultImage;
+
+}
 @end
