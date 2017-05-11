@@ -1,26 +1,22 @@
 //
-//  JDAnimationListViewController.m
+//  JDCustomTransitionViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/5/10.
+//  Created by wangjundong on 2017/5/11.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDAnimationListViewController.h"
+#import "JDCustomTransitionViewController.h"
 
-@interface JDAnimationListViewController ()
+@interface JDCustomTransitionViewController ()
 
 @end
 
-@implementation JDAnimationListViewController
+@implementation JDCustomTransitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[
-                           @{@"title":@"水纹",@"ClassName":@"JDKnowledgeViewController"},
-                           @{@"title":@"转场效果",@"ClassName":@"JDCustomTransitionViewController"},
-                           
-                           ];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

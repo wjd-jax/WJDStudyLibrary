@@ -35,7 +35,7 @@ typedef void (^PrintLabelCompleteBlock)(void);
 /**
  打印完成的回调
  */
-@property(nonatomic,copy)PrintLabelCompleteBlock completeBlock;
+@property(nonatomic,assign)PrintLabelCompleteBlock completeBlock;
 
 - (void)startPrint;
 - (void)stopPrint;

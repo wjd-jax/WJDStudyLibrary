@@ -29,7 +29,7 @@
                            @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
                            @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
                            @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDPrintLabelViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDGuideTestViewController"},
 
                            ];
     

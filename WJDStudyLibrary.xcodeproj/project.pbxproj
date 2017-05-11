@@ -92,6 +92,11 @@
 		F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */; };
 		F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */; };
 		F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */; };
+		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
+		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
+		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
+		F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5C5DFC21EC4466200A436E0 /* guide3@2x.png */; };
+		F5C5DFC51EC4466200A436E0 /* guide3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5C5DFC31EC4466200A436E0 /* guide3@3x.png */; };
 		F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */; };
 		F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
@@ -258,6 +263,14 @@
 		F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
 		F5BD73D61EC1C37A0015E18F /* JDFaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFaceRecognitionViewController.h; sourceTree = "<group>"; };
 		F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFaceRecognitionViewController.m; sourceTree = "<group>"; };
+		F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransitionViewController.h; sourceTree = "<group>"; };
+		F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransitionViewController.m; sourceTree = "<group>"; };
+		F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideTestViewController.h; sourceTree = "<group>"; };
+		F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuideTestViewController.m; sourceTree = "<group>"; };
+		F5C5DFBE1EC43B0500A436E0 /* JDGuiewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuiewManager.h; sourceTree = "<group>"; };
+		F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuiewManager.m; sourceTree = "<group>"; };
+		F5C5DFC21EC4466200A436E0 /* guide3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide3@2x.png"; sourceTree = "<group>"; };
+		F5C5DFC31EC4466200A436E0 /* guide3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide3@3x.png"; sourceTree = "<group>"; };
 		F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCameraFuctionViewController.h; sourceTree = "<group>"; };
 		F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCameraFuctionViewController.m; sourceTree = "<group>"; };
 		F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOpenCVCameraViewController.h; sourceTree = "<group>"; };
@@ -771,6 +784,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
@@ -844,18 +858,20 @@
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
-				F5A7331A1EC2F054006CB68D /* New Group */,
+				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
 				F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */,
 				F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */,
 			);
 			name = "Animation(动画效果)";
 			sourceTree = "<group>";
 		};
-		F5A7331A1EC2F054006CB68D /* New Group */ = {
+		F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */ = {
 			isa = PBXGroup;
 			children = (
+				F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */,
+				F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */,
 			);
-			name = "New Group";
+			name = "CustomPushAnimation(自定义视图切换动画)";
 			sourceTree = "<group>";
 		};
 		F5A733211EC30437006CB68D /* CustomControls */ = {
@@ -979,6 +995,35 @@
 				F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */,
 			);
 			name = FaceRecognition;
+			sourceTree = "<group>";
+		};
+		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C5DFBD1EC43ACD00A436E0 /* GuideView */,
+				F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */,
+				F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */,
+			);
+			name = "CuideView(引导页封装)";
+			sourceTree = "<group>";
+		};
+		F5C5DFBD1EC43ACD00A436E0 /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				F5C5DFC11EC445E600A436E0 /* image */,
+				F5C5DFBE1EC43B0500A436E0 /* JDGuiewManager.h */,
+				F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */,
+			);
+			name = GuideView;
+			sourceTree = "<group>";
+		};
+		F5C5DFC11EC445E600A436E0 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				F5C5DFC21EC4466200A436E0 /* guide3@2x.png */,
+				F5C5DFC31EC4466200A436E0 /* guide3@3x.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 		F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */ = {
@@ -1110,12 +1155,14 @@
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
+				F5C5DFC51EC4466200A436E0 /* guide3@3x.png in Resources */,
 				F5BBFFBA1EBC69BB00ACCC38 /* 3.plist in Resources */,
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
 				F54BBB581EB8637600AB92CC /* icon.png in Resources */,
 				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
 				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
+				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
 				F5BB00201EC06A1500ACCC38 /* line.png in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
@@ -1221,6 +1268,7 @@
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F5A733311EC30C30006CB68D /* JDMarqueeView.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
+				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
@@ -1230,12 +1278,14 @@
 				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
 				F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
+				F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */,
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
+				F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */,
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,

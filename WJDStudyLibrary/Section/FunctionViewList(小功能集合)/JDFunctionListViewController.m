@@ -22,6 +22,7 @@
                            @{@"title":@"APP评分功能功能",@"ClassName":@"JDAppStoreScoreViewController"},
                            @{@"title":@"浏览器封装",@"ClassName":@"JDWebBrowserViewController"},
                            @{@"title":@"摄像头处理功能",@"ClassName":@"JDCameraFuctionViewController"},
+                           @{@"title":@"引导页封装",@"ClassName":@"JDGuideTestViewController"},
 
                            ];
 }

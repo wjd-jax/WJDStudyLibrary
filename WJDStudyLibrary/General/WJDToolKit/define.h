@@ -52,6 +52,11 @@
 //设置随机颜色
 #define JDRandomColor  [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:0.3];
 
+#define JDCOLOR_FROM_RGB_OxFF_ALPHA(rgbValue,al)                    \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
+
 //设置 RGBA 颜色
 #define JDRGBColor(R,G,B,A) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:A]
 #define JDClearColor [UIColor clearColor];
@@ -88,5 +93,27 @@
 
 //GCD - 开启异步线程
 #define JDDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+
+//单例
+#define JDSHAREINSTANCE_FOR_CLASS(__CLASSNAME__)            \
+                                                            \
+static __CLASSNAME__ *instance = nil;                       \
+                                                            \
+    + (__CLASSNAME__ *)sharedInstance{                      \
+        static dispatch_once_t onceToken;                   \
+        dispatch_once(&onceToken, ^{                        \
+            if (nil == instance){                           \
+                instance = [[__CLASSNAME__ alloc] init];    \
+            }                                               \
+        });                                                 \
+                                                            \
+    return instance;                                        \
+}                                                           \
+
+
+
+
+
 
 #endif /* Defintion_h */
