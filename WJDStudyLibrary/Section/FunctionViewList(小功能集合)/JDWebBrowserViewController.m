@@ -65,7 +65,7 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
     _webView.allowsBackForwardNavigationGestures = YES;    // 允许左右划手势导航，默认NO
     //监听进度
     [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:homeURL]];
+    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:_urlString?_urlString:homeURL]];
     [request setTimeoutInterval:10];
     _urlString =homeURL;
     [_webView loadRequest:request];
@@ -114,12 +114,18 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
 #pragma mark - Action
 
 #pragma mark -自定义API
-- (void)openUrl:(NSString *)urlString
++ (void)openUrl:(NSString *)urlString fromViewController:(UIViewController *)viewController
 {
-    _urlString =urlString;
-    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
-    [request setTimeoutInterval:10];
-    [_webView loadRequest:request];
+    JDWebBrowserViewController *vc =[[JDWebBrowserViewController alloc]init];
+    vc.urlString =urlString;
+    
+    if (viewController.navigationController) {
+        [viewController.navigationController pushViewController:vc animated:YES];
+    }
+    else
+    {
+        [viewController presentViewController:viewController animated:YES completion:nil];
+    }
 }
 
 #pragma mark - 配置WKWebViewConfiguration
@@ -154,7 +160,6 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
         }else {
             self.progressView.hidden = NO;
             [self.progressView setProgress:newprogress animated:YES];
-            DLog(@"%f",newprogress);
         }
     }
 }

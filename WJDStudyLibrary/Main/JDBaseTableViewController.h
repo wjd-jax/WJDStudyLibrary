@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDMainDataModel.h"
 
 /**
     优化通用tableView的显示,只需要一句话即可实现视图,点击实现可以重写 didselect 方法
@@ -16,6 +17,14 @@
  */
 @interface JDBaseTableViewController : UITableViewController
 
+/**
+ 数据源数组
+ */
 @property(nonatomic,strong)NSArray *dataSoureArray;
+
+/**
+ 模型数组
+ */
+@property(nonatomic,retain)NSArray *dataArray;
 
 @end

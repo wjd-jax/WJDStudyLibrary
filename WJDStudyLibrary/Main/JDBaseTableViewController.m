@@ -7,7 +7,6 @@
 //
 
 #import "JDBaseTableViewController.h"
-#import "JDMainDataModel.h"
 #import "ArrayDataSource.h"
 
 const int cellHeight = 60;
@@ -15,7 +14,6 @@ const int cellHeight = 60;
 @interface JDBaseTableViewController ()
 
 @property(nonatomic,retain)ArrayDataSource *arrayDataSource;
-@property(nonatomic,retain)NSArray *dataArray;
 @end
 
 static NSString *mainCellIdentifier = @"mainCellIdentifier";

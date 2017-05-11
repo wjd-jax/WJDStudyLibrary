@@ -10,5 +10,6 @@
 
 @interface JDWebBrowserViewController : JDBaseViewController
 
-- (void)openUrl:(NSString *)urlString;
++ (void)openUrl:(NSString *)urlString fromViewController:(UIViewController *)viewController;
+
 @end
