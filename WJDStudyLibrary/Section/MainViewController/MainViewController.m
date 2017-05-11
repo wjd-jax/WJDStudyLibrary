@@ -23,12 +23,13 @@
     self.dataSoureArray =@[
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
-                           @{@"title":@"布局视图",@"ClassName":@"JDLayoutListViewController"},
-                           @{@"title":@"小功能集合",@"ClassName":@"JDFunctionListViewController"},
+                           @{@"title":@"功能集合",@"ClassName":@"JDFunctionListViewController"},
                            @{@"title":@"网络封装",@"ClassName":@"JDNetWorkingViewController"},
                            @{@"title":@"加密解密",@"ClassName":@"JDEncryptionListViewController"},
                            @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDFaceRecognitionViewController"},
+                           @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
+                           @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDMarqueeViewController"},
 
                            ];
     

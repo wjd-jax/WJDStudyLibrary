@@ -68,6 +68,12 @@
 		F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */; };
 		F5A733161EC2A165006CB68D /* JDImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */; };
 		F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */; };
+		F5A7331D1EC2F07A006CB68D /* JDAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */; };
+		F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A7331F1EC30423006CB68D /* JDCustomControlsViewController.m */; };
+		F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733251EC30498006CB68D /* JDCustomButtonListViewController.m */; };
+		F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733281EC304DC006CB68D /* JDCustomLabelViewController.m */; };
+		F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A7332C1EC30585006CB68D /* JDMarqueeViewController.m */; };
+		F5A733311EC30C30006CB68D /* JDMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A733301EC30C30006CB68D /* JDMarqueeView.m */; };
 		F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */; };
 		F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */; };
 		F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB001D1EC0693900ACCC38 /* ScanView.m */; };
@@ -208,6 +214,18 @@
 		F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDImageProcessingViewController.h; sourceTree = "<group>"; };
 		F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDImageProcessingViewController.m; sourceTree = "<group>"; };
 		F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageProcessingStoryboard.storyboard; sourceTree = "<group>"; };
+		F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAnimationListViewController.h; sourceTree = "<group>"; };
+		F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAnimationListViewController.m; sourceTree = "<group>"; };
+		F5A7331E1EC30423006CB68D /* JDCustomControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomControlsViewController.h; sourceTree = "<group>"; };
+		F5A7331F1EC30423006CB68D /* JDCustomControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomControlsViewController.m; sourceTree = "<group>"; };
+		F5A733241EC30498006CB68D /* JDCustomButtonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomButtonListViewController.h; sourceTree = "<group>"; };
+		F5A733251EC30498006CB68D /* JDCustomButtonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomButtonListViewController.m; sourceTree = "<group>"; };
+		F5A733271EC304DC006CB68D /* JDCustomLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomLabelViewController.h; sourceTree = "<group>"; };
+		F5A733281EC304DC006CB68D /* JDCustomLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomLabelViewController.m; sourceTree = "<group>"; };
+		F5A7332B1EC30585006CB68D /* JDMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMarqueeViewController.h; sourceTree = "<group>"; };
+		F5A7332C1EC30585006CB68D /* JDMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMarqueeViewController.m; sourceTree = "<group>"; };
+		F5A7332F1EC30C30006CB68D /* JDMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMarqueeView.h; sourceTree = "<group>"; };
+		F5A733301EC30C30006CB68D /* JDMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMarqueeView.m; sourceTree = "<group>"; };
 		F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRCodeWapper.h; sourceTree = "<group>"; };
 		F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRCodeWapper.m; sourceTree = "<group>"; };
 		F5BB00181EC0667F00ACCC38 /* JDCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCodeImageViewController.h; sourceTree = "<group>"; };
@@ -328,6 +346,7 @@
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
 			isa = PBXGroup;
 			children = (
+				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F52C45271E96090A00D8DF62 /* GuideViewController */,
 				F52C45111E94BA3500D8DF62 /* popViewListViewController */,
 				F52C450E1E94B52D00D8DF62 /* JDViewListViewController.h */,
@@ -394,7 +413,8 @@
 				F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */,
 				F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */,
 			);
-			path = "LayoutViewList(布局视图列表)";
+			name = "LayoutViewList(布局视图列表)";
+			path = "../LayoutViewList(布局视图列表)";
 			sourceTree = "<group>";
 		};
 		F52C45321E97343500D8DF62 /* 浏览卡片 */ = {
@@ -463,10 +483,10 @@
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
+				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
 				F55E55391E850BB100144D49 /* Products */,
-				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -541,12 +561,13 @@
 		F55E55571E85178700144D49 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */,
+				F5A733211EC30437006CB68D /* CustomControls */,
 				F55E55581E85179400144D49 /* MainViewController */,
+				F5A733191EC2F03A006CB68D /* Animation(动画效果) */,
+				F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
-				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
@@ -782,6 +803,72 @@
 				F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */,
 			);
 			name = ImageExtension;
+			sourceTree = "<group>";
+		};
+		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7331A1EC2F054006CB68D /* New Group */,
+				F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */,
+				F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */,
+			);
+			name = "Animation(动画效果)";
+			sourceTree = "<group>";
+		};
+		F5A7331A1EC2F054006CB68D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		F5A733211EC30437006CB68D /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				F5A733231EC30480006CB68D /* CustomButton */,
+				F5A733221EC30472006CB68D /* CustomLabel */,
+				F5A7331E1EC30423006CB68D /* JDCustomControlsViewController.h */,
+				F5A7331F1EC30423006CB68D /* JDCustomControlsViewController.m */,
+			);
+			name = CustomControls;
+			sourceTree = "<group>";
+		};
+		F5A733221EC30472006CB68D /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7332A1EC304EE006CB68D /* marqueeLabel(跑马灯) */,
+				F5A733271EC304DC006CB68D /* JDCustomLabelViewController.h */,
+				F5A733281EC304DC006CB68D /* JDCustomLabelViewController.m */,
+			);
+			name = CustomLabel;
+			sourceTree = "<group>";
+		};
+		F5A733231EC30480006CB68D /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				F5A733241EC30498006CB68D /* JDCustomButtonListViewController.h */,
+				F5A733251EC30498006CB68D /* JDCustomButtonListViewController.m */,
+			);
+			name = CustomButton;
+			sourceTree = "<group>";
+		};
+		F5A7332A1EC304EE006CB68D /* marqueeLabel(跑马灯) */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7332E1EC30C12006CB68D /* MarqueeView */,
+				F5A7332B1EC30585006CB68D /* JDMarqueeViewController.h */,
+				F5A7332C1EC30585006CB68D /* JDMarqueeViewController.m */,
+			);
+			name = "marqueeLabel(跑马灯)";
+			sourceTree = "<group>";
+		};
+		F5A7332E1EC30C12006CB68D /* MarqueeView */ = {
+			isa = PBXGroup;
+			children = (
+				F5A7332F1EC30C30006CB68D /* JDMarqueeView.h */,
+				F5A733301EC30C30006CB68D /* JDMarqueeView.m */,
+			);
+			name = MarqueeView;
 			sourceTree = "<group>";
 		};
 		F5BB00141EC053DC00ACCC38 /* QRCodeWapper */ = {
@@ -1062,6 +1149,8 @@
 				F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */,
 				F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */,
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
+				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
+				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
@@ -1075,6 +1164,7 @@
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
+				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
@@ -1088,7 +1178,9 @@
 				F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */,
+				F5A7331D1EC2F07A006CB68D /* JDAnimationListViewController.m in Sources */,
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
+				F5A733311EC30C30006CB68D /* JDMarqueeView.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
@@ -1118,6 +1210,7 @@
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
+				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
 				F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */,
 			);

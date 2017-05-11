@@ -10,6 +10,8 @@
 #import "JDMainDataModel.h"
 #import "ArrayDataSource.h"
 
+const int cellHeight = 60;
+
 @interface JDBaseTableViewController ()
 
 @property(nonatomic,retain)ArrayDataSource *arrayDataSource;
@@ -24,14 +26,14 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];
+//  [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];
     
 }
 - (void)setDataSoureArray:(NSArray *)dataSoureArray
 {
     _dataArray =[JDMainDataModel mj_objectArrayWithKeyValuesArray:dataSoureArray];
     void (^configureCell)(UITableViewCell*, JDMainDataModel *) = ^(UITableViewCell* cell, JDMainDataModel *model) {
-        
+
         cell.textLabel.text =model.title;
         cell.detailTextLabel.text =model.ClassName;
         cell.contentView.backgroundColor =JDRandomColor;
@@ -43,7 +45,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 70;
+    return cellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

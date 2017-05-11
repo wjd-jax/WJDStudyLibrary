@@ -18,8 +18,10 @@
 {
     [super viewDidLoad];
 
-    self.dataSoureArray = @[@{@"title":@"弹出视图",@"ClassName":@"JDPopViewController"},
-                            @{@"title":@"引导页视图",@"ClassName":@"JDGuideViewController"}
+    self.dataSoureArray = @[@{@"title":@"自定义弹出视图",@"ClassName":@"JDPopViewController"},
+                            @{@"title":@"引导页视图",@"ClassName":@"JDGuideViewController"},
+                            @{@"title":@"布局视图",@"ClassName":@"JDLayoutListViewController"},
+
                             ];
 }
 
