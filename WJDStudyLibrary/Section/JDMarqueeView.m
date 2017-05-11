@@ -29,6 +29,8 @@ const int num = 3;
     if (self) {
         self.clipsToBounds =YES;
         _msg = [NSString stringWithFormat:@"    %@      ",message];
+        self.backgroundColor =[[UIColor yellowColor] colorWithAlphaComponent:0.5];
+
         [self createUI];
     }
     return self;

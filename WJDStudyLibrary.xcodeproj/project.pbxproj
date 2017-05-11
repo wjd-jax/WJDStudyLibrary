@@ -14,6 +14,9 @@
 		F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */; };
 		F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUtils.m */; };
 		F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */; };
+		F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */; };
+		F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */; };
+		F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5223EF01EC4006800CDCBD8 /* printerVoice.wav */; };
 		F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */; };
 		F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */; };
 		F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C450F1E94B52D00D8DF62 /* JDViewListViewController.m */; };
@@ -115,6 +118,11 @@
 		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
 		F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutUsViewController.m; sourceTree = "<group>"; };
+		F5223EE81EC3FE1700CDCBD8 /* JDPrintLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabelViewController.h; sourceTree = "<group>"; };
+		F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPrintLabelViewController.m; sourceTree = "<group>"; };
+		F5223EEC1EC3FE3D00CDCBD8 /* JDPrintLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabel.h; sourceTree = "<group>"; };
+		F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPrintLabel.m; sourceTree = "<group>"; };
+		F5223EF01EC4006800CDCBD8 /* printerVoice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = printerVoice.wav; sourceTree = "<group>"; };
 		F528DDFE1EA4875700F0E500 /* JDTimeFormatTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTimeFormatTool.h; sourceTree = "<group>"; };
 		F528DDFF1EA4875700F0E500 /* JDTimeFormatTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTimeFormatTool.m; sourceTree = "<group>"; };
 		F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
@@ -332,6 +340,34 @@
 				F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */,
 			);
 			path = "AboutUs(关于我)";
+			sourceTree = "<group>";
+		};
+		F5223EE71EC3FDC500CDCBD8 /* PrinterLabel(打字机) */ = {
+			isa = PBXGroup;
+			children = (
+				F5223EEB1EC3FE2700CDCBD8 /* PrinterLabel */,
+				F5223EE81EC3FE1700CDCBD8 /* JDPrintLabelViewController.h */,
+				F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */,
+			);
+			name = "PrinterLabel(打字机)";
+			sourceTree = "<group>";
+		};
+		F5223EEB1EC3FE2700CDCBD8 /* PrinterLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F5223EEF1EC4004E00CDCBD8 /* voice */,
+				F5223EEC1EC3FE3D00CDCBD8 /* JDPrintLabel.h */,
+				F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */,
+			);
+			name = PrinterLabel;
+			sourceTree = "<group>";
+		};
+		F5223EEF1EC4004E00CDCBD8 /* voice */ = {
+			isa = PBXGroup;
+			children = (
+				F5223EF01EC4006800CDCBD8 /* printerVoice.wav */,
+			);
+			name = voice;
 			sourceTree = "<group>";
 		};
 		F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */ = {
@@ -836,6 +872,7 @@
 		F5A733221EC30472006CB68D /* CustomLabel */ = {
 			isa = PBXGroup;
 			children = (
+				F5223EE71EC3FDC500CDCBD8 /* PrinterLabel(打字机) */,
 				F5A7332A1EC304EE006CB68D /* marqueeLabel(跑马灯) */,
 				F5A733271EC304DC006CB68D /* JDCustomLabelViewController.h */,
 				F5A733281EC304DC006CB68D /* JDCustomLabelViewController.m */,
@@ -1086,6 +1123,7 @@
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
 				F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
+				F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
@@ -1159,6 +1197,7 @@
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
+				F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
 				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
@@ -1202,6 +1241,7 @@
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
+				F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */,
 				F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */,
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,

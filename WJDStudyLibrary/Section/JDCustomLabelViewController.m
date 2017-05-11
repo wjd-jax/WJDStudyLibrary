@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.dataSoureArray =@[
                            @{@"title":@"跑马灯",@"ClassName":@"JDMarqueeViewController"},
-                           @{@"title":@"待续",@"ClassName":@"q"},
+                           @{@"title":@"打字机",@"ClassName":@"JDPrintLabelViewController"},
                            ];
 }
 
