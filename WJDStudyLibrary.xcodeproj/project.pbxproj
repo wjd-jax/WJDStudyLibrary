@@ -61,6 +61,9 @@
 		F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45771E9C7F280073F6D6 /* JDNetManager.m */; };
 		F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */; };
 		F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */; };
+		F59A5AEC1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */; };
+		F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */; };
+		F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */; };
 		F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */; };
 		F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */; };
 		F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */; };
@@ -209,6 +212,12 @@
 		F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSignListViewController.m; sourceTree = "<group>"; };
 		F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRScannerViewController.h; sourceTree = "<group>"; };
 		F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRScannerViewController.m; sourceTree = "<group>"; };
+		F59A5AEA1EC54ABB003D1E59 /* JDWaterAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterAnimationListViewController.h; sourceTree = "<group>"; };
+		F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterAnimationListViewController.m; sourceTree = "<group>"; };
+		F59A5AEE1EC54B1E003D1E59 /* JDWaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterWaveViewController.h; sourceTree = "<group>"; };
+		F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterWaveViewController.m; sourceTree = "<group>"; };
+		F59A5AF21EC556FE003D1E59 /* JDWaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterWaveView.h; sourceTree = "<group>"; };
+		F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterWaveView.m; sourceTree = "<group>"; };
 		F5A0A6F71EB1B6CE0084A032 /* JDKeyChainWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChainWapper.h; sourceTree = "<group>"; };
 		F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChainWapper.m; sourceTree = "<group>"; };
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
@@ -365,7 +374,6 @@
 				F5223EE81EC3FE1700CDCBD8 /* JDPrintLabelViewController.h */,
 				F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */,
 			);
-			name = "PrinterLabel(打字机)";
 			path = "PrinterLabel(打字机)";
 			sourceTree = "<group>";
 		};
@@ -376,7 +384,6 @@
 				F5223EEC1EC3FE3D00CDCBD8 /* JDPrintLabel.h */,
 				F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */,
 			);
-			name = PrinterLabel;
 			path = PrinterLabel;
 			sourceTree = "<group>";
 		};
@@ -385,7 +392,6 @@
 			children = (
 				F5223EF01EC4006800CDCBD8 /* printerVoice.wav */,
 			);
-			name = voice;
 			path = voice;
 			sourceTree = "<group>";
 		};
@@ -468,7 +474,6 @@
 				F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */,
 				F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */,
 			);
-			name = "LayoutViewList(布局视图列表)";
 			path = "LayoutViewList(布局视图列表)";
 			sourceTree = "<group>";
 		};
@@ -538,10 +543,10 @@
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
+				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
 				F55E55391E850BB100144D49 /* Products */,
-				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -768,6 +773,35 @@
 			path = "QRSanner(二维码)";
 			sourceTree = "<group>";
 		};
+		F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AED1EC54AD1003D1E59 /* WaterWave(一条水纹) */,
+				F59A5AEA1EC54ABB003D1E59 /* JDWaterAnimationListViewController.h */,
+				F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */,
+			);
+			name = "WarterAnimation(水纹)";
+			sourceTree = "<group>";
+		};
+		F59A5AED1EC54AD1003D1E59 /* WaterWave(一条水纹) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AF11EC556C7003D1E59 /* WaterWaveView */,
+				F59A5AEE1EC54B1E003D1E59 /* JDWaterWaveViewController.h */,
+				F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */,
+			);
+			name = "WaterWave(一条水纹)";
+			sourceTree = "<group>";
+		};
+		F59A5AF11EC556C7003D1E59 /* WaterWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AF21EC556FE003D1E59 /* JDWaterWaveView.h */,
+				F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */,
+			);
+			name = WaterWaveView;
+			sourceTree = "<group>";
+		};
 		F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,7 +884,6 @@
 				F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */,
 				F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */,
 			);
-			name = "ImageProcessing(图像处理)";
 			path = "ImageProcessing(图像处理)";
 			sourceTree = "<group>";
 		};
@@ -860,18 +893,17 @@
 				F5A733111EC29CA7006CB68D /* UIImage+JDImage.h */,
 				F5A733121EC29CA7006CB68D /* UIImage+JDImage.m */,
 			);
-			name = ImageExtension;
 			path = ImageExtension;
 			sourceTree = "<group>";
 		};
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
+				F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */,
 				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
 				F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */,
 				F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */,
 			);
-			name = "Animation(动画效果)";
 			path = "Animation(动画效果)";
 			sourceTree = "<group>";
 		};
@@ -881,7 +913,6 @@
 				F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */,
 				F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */,
 			);
-			name = "CustomPushAnimation(自定义视图切换动画)";
 			path = "CustomPushAnimation(自定义视图切换动画)";
 			sourceTree = "<group>";
 		};
@@ -893,7 +924,6 @@
 				F5A7331E1EC30423006CB68D /* JDCustomControlsViewController.h */,
 				F5A7331F1EC30423006CB68D /* JDCustomControlsViewController.m */,
 			);
-			name = CustomControls;
 			path = CustomControls;
 			sourceTree = "<group>";
 		};
@@ -905,7 +935,6 @@
 				F5A733271EC304DC006CB68D /* JDCustomLabelViewController.h */,
 				F5A733281EC304DC006CB68D /* JDCustomLabelViewController.m */,
 			);
-			name = CustomLabel;
 			path = CustomLabel;
 			sourceTree = "<group>";
 		};
@@ -915,7 +944,6 @@
 				F5A733241EC30498006CB68D /* JDCustomButtonListViewController.h */,
 				F5A733251EC30498006CB68D /* JDCustomButtonListViewController.m */,
 			);
-			name = CustomButton;
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
@@ -926,7 +954,6 @@
 				F5A7332B1EC30585006CB68D /* JDMarqueeViewController.h */,
 				F5A7332C1EC30585006CB68D /* JDMarqueeViewController.m */,
 			);
-			name = "marqueeLabel(跑马灯)";
 			path = "marqueeLabel(跑马灯)";
 			sourceTree = "<group>";
 		};
@@ -936,7 +963,6 @@
 				F5A7332F1EC30C30006CB68D /* JDMarqueeView.h */,
 				F5A733301EC30C30006CB68D /* JDMarqueeView.m */,
 			);
-			name = MarqueeView;
 			path = MarqueeView;
 			sourceTree = "<group>";
 		};
@@ -946,7 +972,6 @@
 				F5BB00151EC0543F00ACCC38 /* JDQRCodeWapper.h */,
 				F5BB00161EC0543F00ACCC38 /* JDQRCodeWapper.m */,
 			);
-			name = QRCodeWapper;
 			path = QRCodeWapper;
 			sourceTree = "<group>";
 		};
@@ -957,7 +982,6 @@
 				F5BB001D1EC0693900ACCC38 /* ScanView.m */,
 				F5BB001F1EC06A1500ACCC38 /* line.png */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -970,7 +994,6 @@
 				F5BBFFB11EBC68A000ACCC38 /* JDWaterFallLayoutViewController.h */,
 				F5BBFFB21EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m */,
 			);
-			name = "WaterFall(瀑布流)";
 			path = "WaterFall(瀑布流)";
 			sourceTree = "<group>";
 		};
@@ -992,7 +1015,6 @@
 				F5BBFFBF1EBC70E000ACCC38 /* JDWaterFlowLayout.h */,
 				F5BBFFC01EBC70E000ACCC38 /* JDWaterFlowLayout.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -1005,7 +1027,6 @@
 				F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */,
 				F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1015,7 +1036,6 @@
 				F5BD73D61EC1C37A0015E18F /* JDFaceRecognitionViewController.h */,
 				F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */,
 			);
-			name = FaceRecognition;
 			path = FaceRecognition;
 			sourceTree = "<group>";
 		};
@@ -1026,7 +1046,6 @@
 				F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */,
 				F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */,
 			);
-			name = "CuideView(引导页封装)";
 			path = "CuideView(引导页封装)";
 			sourceTree = "<group>";
 		};
@@ -1037,7 +1056,6 @@
 				F5C5DFBE1EC43B0500A436E0 /* JDGuiewManager.h */,
 				F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */,
 			);
-			name = GuideView;
 			path = GuideView;
 			sourceTree = "<group>";
 		};
@@ -1047,7 +1065,6 @@
 				F5C5DFC21EC4466200A436E0 /* guide3@2x.png */,
 				F5C5DFC31EC4466200A436E0 /* guide3@3x.png */,
 			);
-			name = image;
 			path = image;
 			sourceTree = "<group>";
 		};
@@ -1057,7 +1074,6 @@
 				F5C5DFC71EC45C9600A436E0 /* JDStudyWebListViewController.h */,
 				F5C5DFC81EC45C9600A436E0 /* JDStudyWebListViewController.m */,
 			);
-			name = "BBS_Web(学习网站)";
 			path = "BBS_Web(学习网站)";
 			sourceTree = "<group>";
 		};
@@ -1069,7 +1085,6 @@
 				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
 				F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */,
 			);
-			name = "Camera(摄像头处理)";
 			path = "Camera(摄像头处理)";
 			sourceTree = "<group>";
 		};
@@ -1079,7 +1094,6 @@
 				F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */,
 				F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */,
 			);
-			name = OpenCVCamera;
 			path = OpenCVCamera;
 			sourceTree = "<group>";
 		};
@@ -1105,7 +1119,6 @@
 				F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */,
 				F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */,
 			);
-			name = "AppstoreScore(Appstore 打分)";
 			path = "AppstoreScore(Appstore 打分)";
 			sourceTree = "<group>";
 		};
@@ -1115,7 +1128,6 @@
 				F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */,
 				F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */,
 			);
-			name = "WebBrowser(浏览器封装)";
 			path = "WebBrowser(浏览器封装)";
 			sourceTree = "<group>";
 		};
@@ -1281,6 +1293,7 @@
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A733161EC2A165006CB68D /* JDImageProcessingViewController.m in Sources */,
 				F5C5DFC91EC45C9600A436E0 /* JDStudyWebListViewController.m in Sources */,
+				F59A5AEC1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m in Sources */,
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
@@ -1324,6 +1337,7 @@
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
+				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
@@ -1338,6 +1352,7 @@
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
+				F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,

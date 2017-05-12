@@ -1,27 +1,26 @@
 //
-//  JDAnimationListViewController.m
+//  JDWaterAnimationListViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/5/10.
+//  Created by wangjundong on 2017/5/12.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDAnimationListViewController.h"
+#import "JDWaterAnimationListViewController.h"
 
-@interface JDAnimationListViewController ()
+@interface JDWaterAnimationListViewController ()
 
 @end
 
-@implementation JDAnimationListViewController
+@implementation JDWaterAnimationListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"水纹",@"ClassName":@"JDWaterAnimationListViewController"},
-                           @{@"title":@"转场效果",@"ClassName":@"JDCustomTransitionViewController"},
+                           @{@"title":@"一条波纹",@"ClassName":@"JDWaterWaveViewController"},
+                           @{@"title":@"待续",@"ClassName":@"JDConViewController"},
                            
-                           ];
-}
+                           ];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
