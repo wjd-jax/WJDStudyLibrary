@@ -30,7 +30,7 @@
                            @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
                            @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
                            @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDWaterWaveViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDBaseAnimationViewController"},
                            @{@"title":@"学习网站",@"ClassName":@"JDStudyWebListViewController"},
                            @{@"title":@"音视频播放",@"ClassName":@"JDStudyWebListViewController"},
 

@@ -11,17 +11,17 @@
 @interface JDWaterWaveView : UIView
 
 /**
- 水纹速度
+ 水纹速度,defaut 0.05
  */
 @property(nonatomic,assign)CGFloat waveSpeed;
 
 /**
- 水纹振幅
+ 水纹振幅 defaut 10
  */
 @property(nonatomic,assign)CGFloat waveA;
 
 /**
- 水纹周期
+ 水纹周期defaut  (2 * M_PI) / self.bounds.size.width
  */
 @property(nonatomic,assign)CGFloat waveW;
 

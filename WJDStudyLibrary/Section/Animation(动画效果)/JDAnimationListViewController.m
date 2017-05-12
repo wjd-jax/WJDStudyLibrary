@@ -19,6 +19,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"水纹",@"ClassName":@"JDWaterAnimationListViewController"},
                            @{@"title":@"转场效果",@"ClassName":@"JDCustomTransitionViewController"},
+                           @{@"title":@"基本动画",@"ClassName":@"JDBaseAnimationViewController"},
                            
                            ];
 }

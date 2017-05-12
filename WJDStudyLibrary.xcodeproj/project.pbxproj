@@ -64,6 +64,8 @@
 		F59A5AEC1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */; };
 		F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */; };
 		F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */; };
+		F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */; };
+		F59A5AFC1EC56889003D1E59 /* UIFont+JDRuntimeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */; };
 		F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */; };
 		F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */; };
 		F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */; };
@@ -218,6 +220,10 @@
 		F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterWaveViewController.m; sourceTree = "<group>"; };
 		F59A5AF21EC556FE003D1E59 /* JDWaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterWaveView.h; sourceTree = "<group>"; };
 		F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWaterWaveView.m; sourceTree = "<group>"; };
+		F59A5AF61EC56666003D1E59 /* JDBaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseAnimationViewController.h; sourceTree = "<group>"; };
+		F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseAnimationViewController.m; sourceTree = "<group>"; };
+		F59A5AFA1EC56889003D1E59 /* UIFont+JDRuntimeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JDRuntimeFont.h"; sourceTree = "<group>"; };
+		F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JDRuntimeFont.m"; sourceTree = "<group>"; };
 		F5A0A6F71EB1B6CE0084A032 /* JDKeyChainWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChainWapper.h; sourceTree = "<group>"; };
 		F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChainWapper.m; sourceTree = "<group>"; };
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
@@ -612,6 +618,7 @@
 		F55E55541E85171600144D49 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 			);
@@ -802,6 +809,24 @@
 			name = WaterWaveView;
 			sourceTree = "<group>";
 		};
+		F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AF61EC56666003D1E59 /* JDBaseAnimationViewController.h */,
+				F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */,
+			);
+			name = "BaseAnimation(基础动画)";
+			sourceTree = "<group>";
+		};
+		F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AFA1EC56889003D1E59 /* UIFont+JDRuntimeFont.h */,
+				F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */,
+			);
+			name = "RuntimeAdjustFont(字体适配)";
+			sourceTree = "<group>";
+		};
 		F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +924,7 @@
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
+				F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */,
 				F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */,
 				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
 				F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */,
@@ -1326,6 +1352,7 @@
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
+				F59A5AFC1EC56889003D1E59 /* UIFont+JDRuntimeFont.m in Sources */,
 				F52C45181E94BBEC00D8DF62 /* JDPopView.m in Sources */,
 				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
 				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
@@ -1338,6 +1365,7 @@
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
+				F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
