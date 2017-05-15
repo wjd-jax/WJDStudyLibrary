@@ -23,8 +23,10 @@
                            @{@"title":@"浏览器封装",@"ClassName":@"JDWebBrowserViewController"},
                            @{@"title":@"摄像头处理功能",@"ClassName":@"JDCameraFuctionViewController"},
                            @{@"title":@"引导页封装",@"ClassName":@"JDGuideTestViewController"},
+                           @{@"title":@"系统新版本功能封装",@"ClassName":@"JDNewFunctionViewController"},
 
                            ];
+
 }
 
 - (void)didReceiveMemoryWarning {

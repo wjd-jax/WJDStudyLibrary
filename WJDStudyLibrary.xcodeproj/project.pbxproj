@@ -29,6 +29,24 @@
 		F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */; };
 		F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */; };
 		F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */; };
+		F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */; };
+		F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54136121EC98667009E96B0 /* JDChangeIconViewController.m */; };
+		F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136381EC986DD009E96B0 /* 晴20x20@2x.png */; };
+		F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136391EC986DD009E96B0 /* 晴20x20@3x.png */; };
+		F54136421EC986DD009E96B0 /* 晴29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363A1EC986DD009E96B0 /* 晴29x29@2x.png */; };
+		F54136431EC986DD009E96B0 /* 晴29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363B1EC986DD009E96B0 /* 晴29x29@3x.png */; };
+		F54136441EC986DD009E96B0 /* 晴40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363C1EC986DD009E96B0 /* 晴40x40@2x.png */; };
+		F54136451EC986DD009E96B0 /* 晴40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363D1EC986DD009E96B0 /* 晴40x40@3x.png */; };
+		F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363E1EC986DD009E96B0 /* 晴60x60@2x.png */; };
+		F54136471EC986DD009E96B0 /* 晴60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541363F1EC986DD009E96B0 /* 晴60x60@3x.png */; };
+		F541364F1EC98704009E96B0 /* 天气20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136481EC98704009E96B0 /* 天气20x20@2x.png */; };
+		F54136501EC98704009E96B0 /* 天气20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136491EC98704009E96B0 /* 天气20x20@3x.png */; };
+		F54136511EC98704009E96B0 /* 天气29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364A1EC98704009E96B0 /* 天气29x29@2x.png */; };
+		F54136521EC98704009E96B0 /* 天气29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364B1EC98704009E96B0 /* 天气29x29@3x.png */; };
+		F54136531EC98704009E96B0 /* 天气40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364C1EC98704009E96B0 /* 天气40x40@2x.png */; };
+		F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364D1EC98704009E96B0 /* 天气60x60@2x.png */; };
+		F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364E1EC98704009E96B0 /* 天气60x60@3x.png */; };
+		F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136581EC99454009E96B0 /* 天气40x40@3x.png */; };
 		F54BBB581EB8637600AB92CC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB571EB8637600AB92CC /* icon.png */; };
 		F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */; };
 		F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */; };
@@ -66,6 +84,12 @@
 		F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */; };
 		F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */; };
 		F59A5AFC1EC56889003D1E59 /* UIFont+JDRuntimeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */; };
+		F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */; };
+		F59A5B041EC58F71003D1E59 /* JDFireEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5B031EC58F71003D1E59 /* JDFireEmitterView.m */; };
+		F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */; };
+		F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5B0A1EC59847003D1E59 /* JDDrawLineViewController.m */; };
+		F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5B0E1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m */; };
+		F59A5B131EC59E53003D1E59 /* JDHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5B121EC59E53003D1E59 /* JDHeadView.m */; };
 		F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */; };
 		F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */; };
 		F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */; };
@@ -159,6 +183,26 @@
 		F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuidePageViewController.m; sourceTree = "<group>"; };
 		F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLayoutListViewController.h; sourceTree = "<group>"; };
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
+		F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewFunctionViewController.h; sourceTree = "<group>"; };
+		F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewFunctionViewController.m; sourceTree = "<group>"; };
+		F54136111EC98667009E96B0 /* JDChangeIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDChangeIconViewController.h; sourceTree = "<group>"; };
+		F54136121EC98667009E96B0 /* JDChangeIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDChangeIconViewController.m; sourceTree = "<group>"; };
+		F54136381EC986DD009E96B0 /* 晴20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴20x20@2x.png"; sourceTree = "<group>"; };
+		F54136391EC986DD009E96B0 /* 晴20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴20x20@3x.png"; sourceTree = "<group>"; };
+		F541363A1EC986DD009E96B0 /* 晴29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴29x29@2x.png"; sourceTree = "<group>"; };
+		F541363B1EC986DD009E96B0 /* 晴29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴29x29@3x.png"; sourceTree = "<group>"; };
+		F541363C1EC986DD009E96B0 /* 晴40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴40x40@2x.png"; sourceTree = "<group>"; };
+		F541363D1EC986DD009E96B0 /* 晴40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴40x40@3x.png"; sourceTree = "<group>"; };
+		F541363E1EC986DD009E96B0 /* 晴60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴60x60@2x.png"; sourceTree = "<group>"; };
+		F541363F1EC986DD009E96B0 /* 晴60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴60x60@3x.png"; sourceTree = "<group>"; };
+		F54136481EC98704009E96B0 /* 天气20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气20x20@2x.png"; sourceTree = "<group>"; };
+		F54136491EC98704009E96B0 /* 天气20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气20x20@3x.png"; sourceTree = "<group>"; };
+		F541364A1EC98704009E96B0 /* 天气29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@2x.png"; sourceTree = "<group>"; };
+		F541364B1EC98704009E96B0 /* 天气29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@3x.png"; sourceTree = "<group>"; };
+		F541364C1EC98704009E96B0 /* 天气40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@2x.png"; sourceTree = "<group>"; };
+		F541364D1EC98704009E96B0 /* 天气60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@2x.png"; sourceTree = "<group>"; };
+		F541364E1EC98704009E96B0 /* 天气60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@3x.png"; sourceTree = "<group>"; };
+		F54136581EC99454009E96B0 /* 天气40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@3x.png"; sourceTree = "<group>"; };
 		F54BBB571EB8637600AB92CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDCardLayoutStoryboard.storyboard; sourceTree = "<group>"; };
 		F54BBB5B1EB8695900AB92CC /* JDCardLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardLayoutViewController.h; sourceTree = "<group>"; };
@@ -224,6 +268,18 @@
 		F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseAnimationViewController.m; sourceTree = "<group>"; };
 		F59A5AFA1EC56889003D1E59 /* UIFont+JDRuntimeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JDRuntimeFont.h"; sourceTree = "<group>"; };
 		F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JDRuntimeFont.m"; sourceTree = "<group>"; };
+		F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireEmitterViewController.h; sourceTree = "<group>"; };
+		F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireEmitterViewController.m; sourceTree = "<group>"; };
+		F59A5B021EC58F71003D1E59 /* JDFireEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireEmitterView.h; sourceTree = "<group>"; };
+		F59A5B031EC58F71003D1E59 /* JDFireEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireEmitterView.m; sourceTree = "<group>"; };
+		F59A5B051EC59602003D1E59 /* JDEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEmitterViewController.h; sourceTree = "<group>"; };
+		F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEmitterViewController.m; sourceTree = "<group>"; };
+		F59A5B091EC59847003D1E59 /* JDDrawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDrawLineViewController.h; sourceTree = "<group>"; };
+		F59A5B0A1EC59847003D1E59 /* JDDrawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDrawLineViewController.m; sourceTree = "<group>"; };
+		F59A5B0D1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCAKeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		F59A5B0E1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCAKeyframeAnimationViewController.m; sourceTree = "<group>"; };
+		F59A5B111EC59E53003D1E59 /* JDHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHeadView.h; sourceTree = "<group>"; };
+		F59A5B121EC59E53003D1E59 /* JDHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHeadView.m; sourceTree = "<group>"; };
 		F5A0A6F71EB1B6CE0084A032 /* JDKeyChainWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChainWapper.h; sourceTree = "<group>"; };
 		F5A0A6F81EB1B6CE0084A032 /* JDKeyChainWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChainWapper.m; sourceTree = "<group>"; };
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
@@ -496,6 +552,48 @@
 			path = "浏览卡片";
 			sourceTree = "<group>";
 		};
+		F541360C1EC985A6009E96B0 /* NewFunction(新功能) */ = {
+			isa = PBXGroup;
+			children = (
+				F54136101EC98631009E96B0 /* ChangeIconFunction(10.3更换图标功能) */,
+				F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */,
+				F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */,
+			);
+			name = "NewFunction(新功能)";
+			sourceTree = "<group>";
+		};
+		F54136101EC98631009E96B0 /* ChangeIconFunction(10.3更换图标功能) */ = {
+			isa = PBXGroup;
+			children = (
+				F54136111EC98667009E96B0 /* JDChangeIconViewController.h */,
+				F54136121EC98667009E96B0 /* JDChangeIconViewController.m */,
+			);
+			name = "ChangeIconFunction(10.3更换图标功能)";
+			sourceTree = "<group>";
+		};
+		F54136371EC986D2009E96B0 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F54136481EC98704009E96B0 /* 天气20x20@2x.png */,
+				F54136491EC98704009E96B0 /* 天气20x20@3x.png */,
+				F541364A1EC98704009E96B0 /* 天气29x29@2x.png */,
+				F541364B1EC98704009E96B0 /* 天气29x29@3x.png */,
+				F541364C1EC98704009E96B0 /* 天气40x40@2x.png */,
+				F54136581EC99454009E96B0 /* 天气40x40@3x.png */,
+				F541364D1EC98704009E96B0 /* 天气60x60@2x.png */,
+				F541364E1EC98704009E96B0 /* 天气60x60@3x.png */,
+				F54136381EC986DD009E96B0 /* 晴20x20@2x.png */,
+				F54136391EC986DD009E96B0 /* 晴20x20@3x.png */,
+				F541363A1EC986DD009E96B0 /* 晴29x29@2x.png */,
+				F541363B1EC986DD009E96B0 /* 晴29x29@3x.png */,
+				F541363C1EC986DD009E96B0 /* 晴40x40@2x.png */,
+				F541363D1EC986DD009E96B0 /* 晴40x40@3x.png */,
+				F541363E1EC986DD009E96B0 /* 晴60x60@2x.png */,
+				F541363F1EC986DD009E96B0 /* 晴60x60@3x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		F54BBB5E1EB86A9F00AB92CC /* layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +683,7 @@
 		F55E553B1E850BB100144D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F54136371EC986D2009E96B0 /* Icons */,
 				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
 				F54BBB571EB8637600AB92CC /* icon.png */,
 				F55E553C1E850BB100144D49 /* main.m */,
@@ -827,6 +926,55 @@
 			name = "RuntimeAdjustFont(字体适配)";
 			sourceTree = "<group>";
 		};
+		F59A5AFD1EC58DCC003D1E59 /* EmiterAnimation(粒子动画) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5B011EC58F3E003D1E59 /* FireEmiterVIew */,
+				F59A5B051EC59602003D1E59 /* JDEmitterViewController.h */,
+				F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */,
+			);
+			name = "EmiterAnimation(粒子动画)";
+			sourceTree = "<group>";
+		};
+		F59A5B011EC58F3E003D1E59 /* FireEmiterVIew */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */,
+				F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */,
+				F59A5B021EC58F71003D1E59 /* JDFireEmitterView.h */,
+				F59A5B031EC58F71003D1E59 /* JDFireEmitterView.m */,
+			);
+			name = FireEmiterVIew;
+			sourceTree = "<group>";
+		};
+		F59A5B081EC59821003D1E59 /* DrawLineAnimation(划线动画) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5B091EC59847003D1E59 /* JDDrawLineViewController.h */,
+				F59A5B0A1EC59847003D1E59 /* JDDrawLineViewController.m */,
+			);
+			name = "DrawLineAnimation(划线动画)";
+			sourceTree = "<group>";
+		};
+		F59A5B0C1EC59D92003D1E59 /* CAkeyframeAnimation(轨迹动画) */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5B101EC59E37003D1E59 /* HeardView */,
+				F59A5B0D1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.h */,
+				F59A5B0E1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m */,
+			);
+			name = "CAkeyframeAnimation(轨迹动画)";
+			sourceTree = "<group>";
+		};
+		F59A5B101EC59E37003D1E59 /* HeardView */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5B111EC59E53003D1E59 /* JDHeadView.h */,
+				F59A5B121EC59E53003D1E59 /* JDHeadView.m */,
+			);
+			name = HeardView;
+			sourceTree = "<group>";
+		};
 		F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,6 +998,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F541360C1EC985A6009E96B0 /* NewFunction(新功能) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
@@ -924,6 +1073,9 @@
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
+				F59A5B0C1EC59D92003D1E59 /* CAkeyframeAnimation(轨迹动画) */,
+				F59A5B081EC59821003D1E59 /* DrawLineAnimation(划线动画) */,
+				F59A5AFD1EC58DCC003D1E59 /* EmiterAnimation(粒子动画) */,
 				F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */,
 				F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */,
 				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
@@ -1228,26 +1380,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */,
+				F54136441EC986DD009E96B0 /* 晴40x40@2x.png in Resources */,
+				F54136511EC98704009E96B0 /* 天气29x29@2x.png in Resources */,
 				F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */,
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
+				F54136521EC98704009E96B0 /* 天气29x29@3x.png in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
 				F5C5DFC51EC4466200A436E0 /* guide3@3x.png in Resources */,
+				F54136471EC986DD009E96B0 /* 晴60x60@3x.png in Resources */,
 				F5BBFFBA1EBC69BB00ACCC38 /* 3.plist in Resources */,
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
 				F54BBB581EB8637600AB92CC /* icon.png in Resources */,
 				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
 				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
+				F54136531EC98704009E96B0 /* 天气40x40@2x.png in Resources */,
+				F54136451EC986DD009E96B0 /* 晴40x40@3x.png in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
+				F54136421EC986DD009E96B0 /* 晴29x29@2x.png in Resources */,
+				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
+				F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */,
+				F54136431EC986DD009E96B0 /* 晴29x29@3x.png in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
 				F5BB00201EC06A1500ACCC38 /* line.png in Resources */,
+				F54136501EC98704009E96B0 /* 天气20x20@3x.png in Resources */,
+				F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */,
+				F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
+				F541364F1EC98704009E96B0 /* 天气20x20@2x.png in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
 				F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
 				F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */,
+				F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
@@ -1315,7 +1483,9 @@
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
+				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
+				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
 				F5A733161EC2A165006CB68D /* JDImageProcessingViewController.m in Sources */,
 				F5C5DFC91EC45C9600A436E0 /* JDStudyWebListViewController.m in Sources */,
@@ -1338,7 +1508,9 @@
 				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
 				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
+				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
+				F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,
 				F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
@@ -1363,6 +1535,7 @@
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
+				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
 				F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */,
@@ -1377,10 +1550,13 @@
 				F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */,
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
+				F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
+				F59A5B041EC58F71003D1E59 /* JDFireEmitterView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */,
+				F59A5B131EC59E53003D1E59 /* JDHeadView.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,

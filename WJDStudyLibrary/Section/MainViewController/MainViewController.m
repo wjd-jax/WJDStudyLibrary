@@ -22,6 +22,8 @@
     //
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
+                           @{@"title":@"临时页面",@"ClassName":@"JDChangeIconViewController"},  //用于测试的页面
+                           
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
                            @{@"title":@"功能集合",@"ClassName":@"JDFunctionListViewController"},
@@ -30,10 +32,8 @@
                            @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
                            @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
                            @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
-                           @{@"title":@"临时页面",@"ClassName":@"JDBaseAnimationViewController"},
                            @{@"title":@"学习网站",@"ClassName":@"JDStudyWebListViewController"},
                            @{@"title":@"音视频播放",@"ClassName":@"JDStudyWebListViewController"},
-
 
                            ];
     UIBarButtonItem *rightButton =[JDUtils createTextBarButtonWithTitle:@"关于" Target:self Action:@selector(aboutClick)];
