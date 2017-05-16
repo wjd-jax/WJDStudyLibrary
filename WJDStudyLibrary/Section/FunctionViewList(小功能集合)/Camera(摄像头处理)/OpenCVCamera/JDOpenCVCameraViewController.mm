@@ -7,54 +7,60 @@
 //
 
 #import "JDOpenCVCameraViewController.h"
-//#import <opencv2/opencv.hpp>
-//#import "ios.h"
-//#import "cap_ios.h"
+#import <opencv2/opencv.hpp>
+#import <opencv2/imgproc/types_c.h>
+#import <opencv2/imgcodecs/ios.h>
+#import <opencv2/videoio/cap_ios.h>
+#import <opencv2/highgui/highgui.hpp>
+#import <opencv2/imgproc/imgproc.hpp>
+#import <opencv2/core/core.hpp>
+#import <opencv2/objdetect/objdetect.hpp>
 
-//#import "highgui.hpp"
-//#import "imgproc.hpp"
-//#import "core.hpp"
-//#import "objdetect.hpp"
-//#import "types_c.h"
+using namespace cv;
 
-#import <stdio.h>
-#import <iostream>
-
-
-@interface JDOpenCVCameraViewController ()
+@interface JDOpenCVCameraViewController ()<CvVideoCameraDelegate>
 
 @property(nonatomic,retain)UIImageView *imageView;
 
-//@property cv::Mat cvImage;
-//@property CvVideoCamera *videoCamera;
+@property cv::Mat cvImage;
+@property CvVideoCamera *videoCamera;
 
 @end
 
 @implementation JDOpenCVCameraViewController
 
+- (void)open:(UISwitch *)sender {
+    
+    [self.videoCamera start];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.videoCamera =[[CvVideoCamera alloc]initWithParentView:self.view] ;
-//    self.videoCamera.delegate = self;
-//    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
-//    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
-//    self.videoCamera.defaultFPS = 30;
-//    [self.videoCamera start];
-
+    self.imageView =[[UIImageView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:self.imageView];
+    
+    self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.imageView];
+    self.videoCamera.delegate = self;
+    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
+    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
+    self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+    //self.videoCamera.rotateVideo =YES; //设置是旋转
+    self.videoCamera.defaultFPS = 30;
+    [self performSelector:@selector(open:) withObject:nil afterDelay:0.1];
+    
 }
 
 #pragma mark - CvVideoCameraDelegate
-//-(void)processImage:(cv::Mat &)image {
+-(void)processImage:(cv::Mat &)image {
 
-//    cv::Mat gray;
-//    cv::cvtColor(image, gray, CV_RGBA2GRAY);
-//    cv::GaussianBlur(gray, gray, cv::Size(5,5), 1.2, 1.2);
-//    cv::Mat edges;
-//    cv::Canny(gray, edges, 0, 60);
-//    image.setTo(cv::Scalar::all(255));
-//    image.setTo(cv::Scalar(0,128,255,255), edges);
-//    self.imageView.image = MatToUIImage(image);
+    cv::Mat gray;
+    cv::cvtColor(image, gray, CV_RGBA2GRAY);
+    cv::GaussianBlur(gray, gray, cv::Size(5,5), 1.2, 1.2);
+    cv::Mat edges;
+    cv::Canny(gray, edges, 0, 60);
+    image.setTo(cv::Scalar::all(255));
+    image.setTo(cv::Scalar(0,128,255,255), edges);
     
-//}
+}
 @end
