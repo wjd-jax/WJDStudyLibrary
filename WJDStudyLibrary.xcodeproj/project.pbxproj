@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
+		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
@@ -121,6 +122,10 @@
 		F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBFFCA1EC010E900ACCC38 /* YFShopCell.m */; };
 		F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */; };
 		F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */; };
+		F5C29F131ECC391000835E26 /* JDSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F121ECC391000835E26 /* JDSnowView.m */; };
+		F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F151ECC39E700835E26 /* JDSnowViewController.m */; };
+		F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F181ECC3F0300835E26 /* JDFireworksView.m */; };
+		F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */; };
 		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
 		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
 		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
@@ -139,6 +144,7 @@
 		4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
@@ -335,6 +341,14 @@
 		F5BBFFCB1EC010E900ACCC38 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
 		F5BD73D61EC1C37A0015E18F /* JDFaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFaceRecognitionViewController.h; sourceTree = "<group>"; };
 		F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFaceRecognitionViewController.m; sourceTree = "<group>"; };
+		F5C29F111ECC391000835E26 /* JDSnowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSnowView.h; sourceTree = "<group>"; };
+		F5C29F121ECC391000835E26 /* JDSnowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSnowView.m; sourceTree = "<group>"; };
+		F5C29F141ECC39E700835E26 /* JDSnowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSnowViewController.h; sourceTree = "<group>"; };
+		F5C29F151ECC39E700835E26 /* JDSnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSnowViewController.m; sourceTree = "<group>"; };
+		F5C29F171ECC3F0300835E26 /* JDFireworksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireworksView.h; sourceTree = "<group>"; };
+		F5C29F181ECC3F0300835E26 /* JDFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireworksView.m; sourceTree = "<group>"; };
+		F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireworksViewController.h; sourceTree = "<group>"; };
+		F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireworksViewController.m; sourceTree = "<group>"; };
 		F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransitionViewController.h; sourceTree = "<group>"; };
 		F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransitionViewController.m; sourceTree = "<group>"; };
 		F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideTestViewController.h; sourceTree = "<group>"; };
@@ -929,22 +943,25 @@
 		F59A5AFD1EC58DCC003D1E59 /* EmiterAnimation(粒子动画) */ = {
 			isa = PBXGroup;
 			children = (
-				F59A5B011EC58F3E003D1E59 /* FireEmiterVIew */,
+				F5C29F101ECC38C100835E26 /* ViewController */,
+				F59A5B011EC58F3E003D1E59 /* EmiterVIew */,
 				F59A5B051EC59602003D1E59 /* JDEmitterViewController.h */,
 				F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */,
 			);
 			name = "EmiterAnimation(粒子动画)";
 			sourceTree = "<group>";
 		};
-		F59A5B011EC58F3E003D1E59 /* FireEmiterVIew */ = {
+		F59A5B011EC58F3E003D1E59 /* EmiterVIew */ = {
 			isa = PBXGroup;
 			children = (
-				F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */,
-				F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */,
 				F59A5B021EC58F71003D1E59 /* JDFireEmitterView.h */,
 				F59A5B031EC58F71003D1E59 /* JDFireEmitterView.m */,
+				F5C29F111ECC391000835E26 /* JDSnowView.h */,
+				F5C29F121ECC391000835E26 /* JDSnowView.m */,
+				F5C29F171ECC3F0300835E26 /* JDFireworksView.h */,
+				F5C29F181ECC3F0300835E26 /* JDFireworksView.m */,
 			);
-			name = FireEmiterVIew;
+			name = EmiterVIew;
 			sourceTree = "<group>";
 		};
 		F59A5B081EC59821003D1E59 /* DrawLineAnimation(划线动画) */ = {
@@ -1055,6 +1072,7 @@
 			children = (
 				F5A7330F1EC29C13006CB68D /* ImageExtension */,
 				F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */,
+				F50D14D51ECAEC970076D84E /* sig1.jpg */,
 				F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */,
 				F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */,
 			);
@@ -1215,6 +1233,19 @@
 				F5BD73D71EC1C37A0015E18F /* JDFaceRecognitionViewController.m */,
 			);
 			path = FaceRecognition;
+			sourceTree = "<group>";
+		};
+		F5C29F101ECC38C100835E26 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */,
+				F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */,
+				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
+				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
+				F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */,
+				F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
@@ -1387,6 +1418,7 @@
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
 				F54136521EC98704009E96B0 /* 天气29x29@3x.png in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
+				F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
 				F5C5DFC51EC4466200A436E0 /* guide3@3x.png in Resources */,
 				F54136471EC986DD009E96B0 /* 晴60x60@3x.png in Resources */,
@@ -1481,6 +1513,7 @@
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
+				F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
@@ -1508,6 +1541,7 @@
 				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
 				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
+				F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */,
 				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */,
@@ -1534,6 +1568,7 @@
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
+				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
@@ -1551,6 +1586,7 @@
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */,
+				F5C29F131ECC391000835E26 /* JDSnowView.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F59A5B041EC58F71003D1E59 /* JDFireEmitterView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,

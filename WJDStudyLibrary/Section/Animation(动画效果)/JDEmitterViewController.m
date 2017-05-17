@@ -19,7 +19,9 @@
     self.dataSoureArray =@[
                            @{@"title":@"蜡烛火焰",@"ClassName":@"JDFireEmitterViewController"},
                            @{@"title":@"下雨",@"ClassName":@"JDCus2tomTransitionViewController"},
-                           @{@"title":@"下雪动画",@"ClassName":@"JDBas2eAnimationViewController"},
+                           @{@"title":@"下雪动画",@"ClassName":@"JDSnowViewController"},
+                           @{@"title":@"烟花动画",@"ClassName":@"JDFireworksViewController.h"},
+
                            ];}
 
 - (void)didReceiveMemoryWarning {
