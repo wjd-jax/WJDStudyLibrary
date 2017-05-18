@@ -1,28 +1,25 @@
 //
-//  JDEmitterViewController.m
+//  JDRainViewController.m
 //  WJDStudyLibrary
 //
-//  Created by wangjundong on 2017/5/12.
+//  Created by wangjundong on 2017/5/18.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDEmitterViewController.h"
+#import "JDRainViewController.h"
+#import "JDRainView.h"
 
-@interface JDEmitterViewController ()
+@interface JDRainViewController ()
 
 @end
 
-@implementation JDEmitterViewController
+@implementation JDRainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[
-                           @{@"title":@"蜡烛火焰",@"ClassName":@"JDFireEmitterViewController"},
-                           @{@"title":@"下雨",@"ClassName":@"JDRainViewController"},
-                           @{@"title":@"下雪动画",@"ClassName":@"JDSnowViewController"},
-                           @{@"title":@"烟花动画",@"ClassName":@"JDFireworksViewController"},
-
-                           ];}
+    JDRainView *rainView =[[JDRainView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDHT, SCREEN_HEIGHT-64)];
+    [self.view addSubview:rainView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

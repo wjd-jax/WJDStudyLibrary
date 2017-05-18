@@ -29,7 +29,7 @@
     
     //创建火箭cell
     CAEmitterCell *rocket = [CAEmitterCell emitterCell];
-    rocket.birthRate = 0.8;
+    rocket.birthRate = 1;
     rocket.emissionRange = 0.25 *M_PI;
     rocket.velocity = 300;
     rocket.velocityRange = 75;

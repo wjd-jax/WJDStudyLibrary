@@ -65,6 +65,8 @@
 		F55E55481E850BB100144D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E55471E850BB100144D49 /* Assets.xcassets */; };
 		F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55E55491E850BB100144D49 /* LaunchScreen.storyboard */; };
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
+		F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A916F1ECD2B7C00DA3388 /* JDRainView.m */; };
+		F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A91721ECD2D8500DA3388 /* JDRainViewController.m */; };
 		F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */; };
 		F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57609121EADC4D2000D0176 /* EnvtyptionView.xib */; };
 		F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609151EADC51A000D0176 /* JDEntyptionView.m */; };
@@ -234,6 +236,10 @@
 		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F56A916E1ECD2B7C00DA3388 /* JDRainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainView.h; sourceTree = "<group>"; };
+		F56A916F1ECD2B7C00DA3388 /* JDRainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainView.m; sourceTree = "<group>"; };
+		F56A91711ECD2D8500DA3388 /* JDRainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainViewController.h; sourceTree = "<group>"; };
+		F56A91721ECD2D8500DA3388 /* JDRainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainViewController.m; sourceTree = "<group>"; };
 		F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEncryptionListViewController.h; sourceTree = "<group>"; };
 		F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEncryptionListViewController.m; sourceTree = "<group>"; };
 		F57609121EADC4D2000D0176 /* EnvtyptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvtyptionView.xib; sourceTree = "<group>"; };
@@ -960,6 +966,8 @@
 				F5C29F121ECC391000835E26 /* JDSnowView.m */,
 				F5C29F171ECC3F0300835E26 /* JDFireworksView.h */,
 				F5C29F181ECC3F0300835E26 /* JDFireworksView.m */,
+				F56A916E1ECD2B7C00DA3388 /* JDRainView.h */,
+				F56A916F1ECD2B7C00DA3388 /* JDRainView.m */,
 			);
 			name = EmiterVIew;
 			sourceTree = "<group>";
@@ -1244,6 +1252,8 @@
 				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
 				F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */,
 				F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */,
+				F56A91711ECD2D8500DA3388 /* JDRainViewController.h */,
+				F56A91721ECD2D8500DA3388 /* JDRainViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -1532,6 +1542,7 @@
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
+				F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */,
 				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
@@ -1563,6 +1574,7 @@
 				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
 				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
 				F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */,
+				F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */,
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
