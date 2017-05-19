@@ -36,6 +36,8 @@
                            @{@"title":@"音视频播放",@"ClassName":@"JDStudyWebListViewController"},
 
                            ];
+    
+    
     UIBarButtonItem *rightButton =[JDUtils createTextBarButtonWithTitle:@"关于" Target:self Action:@selector(aboutClick)];
     self.navigationItem.rightBarButtonItem =rightButton;
 }
