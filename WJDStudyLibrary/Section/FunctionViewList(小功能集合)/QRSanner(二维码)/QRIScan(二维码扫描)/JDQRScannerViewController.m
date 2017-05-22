@@ -149,8 +149,8 @@
         
         CIQRCodeFeature *feature = [features objectAtIndex:0];
         NSString *scannedResult = feature.messageString;
-        NSLog(@"相册二维码---%@",scannedResult);
-        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:scannedResult delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        [alert show];
     }else{
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"未扫描出结果" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];

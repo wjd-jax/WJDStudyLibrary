@@ -8,10 +8,6 @@
 
 #import "JDBaseViewController.h"
 #import <UIKit/UIKit.h>
-
-
-
-
 @interface JDOpenCVCameraViewController : JDBaseViewController
 
 

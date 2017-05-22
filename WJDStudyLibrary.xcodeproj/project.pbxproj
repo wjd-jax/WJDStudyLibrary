@@ -580,6 +580,7 @@
 				F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */,
 			);
 			name = "NewFunction(新功能)";
+			path = "NewFunction(新功能)";
 			sourceTree = "<group>";
 		};
 		F54136101EC98631009E96B0 /* ChangeIconFunction(10.3更换图标功能) */ = {
@@ -589,6 +590,7 @@
 				F54136121EC98667009E96B0 /* JDChangeIconViewController.m */,
 			);
 			name = "ChangeIconFunction(10.3更换图标功能)";
+			path = "ChangeIconFunction(10.3更换图标功能)";
 			sourceTree = "<group>";
 		};
 		F54136371EC986D2009E96B0 /* Icons */ = {
@@ -667,10 +669,10 @@
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
-				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
 				F55E55391E850BB100144D49 /* Products */,
+				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -907,6 +909,7 @@
 				F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */,
 			);
 			name = "WarterAnimation(水纹)";
+			path = "WarterAnimation(水纹)";
 			sourceTree = "<group>";
 		};
 		F59A5AED1EC54AD1003D1E59 /* WaterWave(一条水纹) */ = {
@@ -917,6 +920,7 @@
 				F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */,
 			);
 			name = "WaterWave(一条水纹)";
+			path = "WaterWave(一条水纹)";
 			sourceTree = "<group>";
 		};
 		F59A5AF11EC556C7003D1E59 /* WaterWaveView */ = {
@@ -926,6 +930,7 @@
 				F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */,
 			);
 			name = WaterWaveView;
+			path = WaterWaveView;
 			sourceTree = "<group>";
 		};
 		F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */ = {
@@ -935,6 +940,7 @@
 				F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */,
 			);
 			name = "BaseAnimation(基础动画)";
+			path = "BaseAnimation(基础动画)";
 			sourceTree = "<group>";
 		};
 		F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */ = {
@@ -944,17 +950,19 @@
 				F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */,
 			);
 			name = "RuntimeAdjustFont(字体适配)";
+			path = "RuntimeAdjustFont(字体适配)";
 			sourceTree = "<group>";
 		};
 		F59A5AFD1EC58DCC003D1E59 /* EmiterAnimation(粒子动画) */ = {
 			isa = PBXGroup;
 			children = (
-				F5C29F101ECC38C100835E26 /* ViewController */,
 				F59A5B011EC58F3E003D1E59 /* EmiterVIew */,
+				F5C29F101ECC38C100835E26 /* ViewController */,
 				F59A5B051EC59602003D1E59 /* JDEmitterViewController.h */,
 				F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */,
 			);
 			name = "EmiterAnimation(粒子动画)";
+			path = "EmiterAnimation(粒子动画)";
 			sourceTree = "<group>";
 		};
 		F59A5B011EC58F3E003D1E59 /* EmiterVIew */ = {
@@ -962,14 +970,15 @@
 			children = (
 				F59A5B021EC58F71003D1E59 /* JDFireEmitterView.h */,
 				F59A5B031EC58F71003D1E59 /* JDFireEmitterView.m */,
-				F5C29F111ECC391000835E26 /* JDSnowView.h */,
-				F5C29F121ECC391000835E26 /* JDSnowView.m */,
 				F5C29F171ECC3F0300835E26 /* JDFireworksView.h */,
 				F5C29F181ECC3F0300835E26 /* JDFireworksView.m */,
 				F56A916E1ECD2B7C00DA3388 /* JDRainView.h */,
 				F56A916F1ECD2B7C00DA3388 /* JDRainView.m */,
+				F5C29F111ECC391000835E26 /* JDSnowView.h */,
+				F5C29F121ECC391000835E26 /* JDSnowView.m */,
 			);
 			name = EmiterVIew;
+			path = EmiterVIew;
 			sourceTree = "<group>";
 		};
 		F59A5B081EC59821003D1E59 /* DrawLineAnimation(划线动画) */ = {
@@ -979,6 +988,7 @@
 				F59A5B0A1EC59847003D1E59 /* JDDrawLineViewController.m */,
 			);
 			name = "DrawLineAnimation(划线动画)";
+			path = "DrawLineAnimation(划线动画)";
 			sourceTree = "<group>";
 		};
 		F59A5B0C1EC59D92003D1E59 /* CAkeyframeAnimation(轨迹动画) */ = {
@@ -989,6 +999,7 @@
 				F59A5B0E1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m */,
 			);
 			name = "CAkeyframeAnimation(轨迹动画)";
+			path = "CAkeyframeAnimation(轨迹动画)";
 			sourceTree = "<group>";
 		};
 		F59A5B101EC59E37003D1E59 /* HeardView */ = {
@@ -998,6 +1009,7 @@
 				F59A5B121EC59E53003D1E59 /* JDHeadView.m */,
 			);
 			name = HeardView;
+			path = HeardView;
 			sourceTree = "<group>";
 		};
 		F5A0A6F51EB1B67A0084A032 /* keyChian(钥匙串操作) */ = {
@@ -1023,10 +1035,10 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F541360C1EC985A6009E96B0 /* NewFunction(新功能) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
+				F541360C1EC985A6009E96B0 /* NewFunction(新功能) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
@@ -1080,9 +1092,9 @@
 			children = (
 				F5A7330F1EC29C13006CB68D /* ImageExtension */,
 				F5A733171EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard */,
-				F50D14D51ECAEC970076D84E /* sig1.jpg */,
 				F5A733141EC2A165006CB68D /* JDImageProcessingViewController.h */,
 				F5A733151EC2A165006CB68D /* JDImageProcessingViewController.m */,
+				F50D14D51ECAEC970076D84E /* sig1.jpg */,
 			);
 			path = "ImageProcessing(图像处理)";
 			sourceTree = "<group>";
@@ -1099,12 +1111,12 @@
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
+				F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */,
 				F59A5B0C1EC59D92003D1E59 /* CAkeyframeAnimation(轨迹动画) */,
+				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
 				F59A5B081EC59821003D1E59 /* DrawLineAnimation(划线动画) */,
 				F59A5AFD1EC58DCC003D1E59 /* EmiterAnimation(粒子动画) */,
-				F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */,
 				F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */,
-				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
 				F5A7331B1EC2F07A006CB68D /* JDAnimationListViewController.h */,
 				F5A7331C1EC2F07A006CB68D /* JDAnimationListViewController.m */,
 			);
@@ -1248,14 +1260,15 @@
 			children = (
 				F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */,
 				F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */,
-				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
-				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
 				F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */,
 				F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */,
 				F56A91711ECD2D8500DA3388 /* JDRainViewController.h */,
 				F56A91721ECD2D8500DA3388 /* JDRainViewController.m */,
+				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
+				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
 			);
 			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {

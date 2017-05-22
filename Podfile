@@ -1,5 +1,5 @@
-
 platform:ios, ‘8.0’
+inhibit_all_warnings!
 
 target “WJDStudyLibrary” do
     
@@ -8,7 +8,7 @@ target “WJDStudyLibrary” do
     pod 'Reachability'
     pod 'OpenSSL'
     pod 'SDWebImage'
-    pod 'OpenCV', '~> 3.0.0'
+    pod 'OpenCV', '~> 3.0.0' inhibit_warnings => true
     #pod 'OpenCV-Dynamic'
 end
 
