@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface JDMessageView : NSObject
+
 + (void)showMessage:(NSString *)message;
+
 @end

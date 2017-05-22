@@ -136,6 +136,7 @@
 		F5C5DFC91EC45C9600A436E0 /* JDStudyWebListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFC81EC45C9600A436E0 /* JDStudyWebListViewController.m */; };
 		F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */; };
 		F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */; };
+		F5D2F83B1ED2D6A10063F18F /* JDStatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
@@ -369,6 +370,8 @@
 		F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCameraFuctionViewController.m; sourceTree = "<group>"; };
 		F5C94D231EC16AFA004C1A1A /* JDOpenCVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOpenCVCameraViewController.h; sourceTree = "<group>"; };
 		F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDOpenCVCameraViewController.mm; sourceTree = "<group>"; };
+		F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarMessageView.h; sourceTree = "<group>"; };
+		F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarMessageView.m; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -501,6 +504,7 @@
 		F52C45111E94BA3500D8DF62 /* popViewListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F5D2F8381ED2D6260063F18F /* StatusBarMessageView */,
 				F52C45231E94C91D00D8DF62 /* popAletView(自定义AletView) */,
 				F52C45151E94BBD500D8DF62 /* popViewStyle(通用分享视图) */,
 				F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */,
@@ -579,7 +583,6 @@
 				F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */,
 				F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */,
 			);
-			name = "NewFunction(新功能)";
 			path = "NewFunction(新功能)";
 			sourceTree = "<group>";
 		};
@@ -589,7 +592,6 @@
 				F54136111EC98667009E96B0 /* JDChangeIconViewController.h */,
 				F54136121EC98667009E96B0 /* JDChangeIconViewController.m */,
 			);
-			name = "ChangeIconFunction(10.3更换图标功能)";
 			path = "ChangeIconFunction(10.3更换图标功能)";
 			sourceTree = "<group>";
 		};
@@ -669,10 +671,10 @@
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
+				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
 				F55E55391E850BB100144D49 /* Products */,
-				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -908,7 +910,6 @@
 				F59A5AEA1EC54ABB003D1E59 /* JDWaterAnimationListViewController.h */,
 				F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */,
 			);
-			name = "WarterAnimation(水纹)";
 			path = "WarterAnimation(水纹)";
 			sourceTree = "<group>";
 		};
@@ -919,7 +920,6 @@
 				F59A5AEE1EC54B1E003D1E59 /* JDWaterWaveViewController.h */,
 				F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */,
 			);
-			name = "WaterWave(一条水纹)";
 			path = "WaterWave(一条水纹)";
 			sourceTree = "<group>";
 		};
@@ -929,7 +929,6 @@
 				F59A5AF21EC556FE003D1E59 /* JDWaterWaveView.h */,
 				F59A5AF31EC556FE003D1E59 /* JDWaterWaveView.m */,
 			);
-			name = WaterWaveView;
 			path = WaterWaveView;
 			sourceTree = "<group>";
 		};
@@ -939,7 +938,6 @@
 				F59A5AF61EC56666003D1E59 /* JDBaseAnimationViewController.h */,
 				F59A5AF71EC56666003D1E59 /* JDBaseAnimationViewController.m */,
 			);
-			name = "BaseAnimation(基础动画)";
 			path = "BaseAnimation(基础动画)";
 			sourceTree = "<group>";
 		};
@@ -949,7 +947,6 @@
 				F59A5AFA1EC56889003D1E59 /* UIFont+JDRuntimeFont.h */,
 				F59A5AFB1EC56889003D1E59 /* UIFont+JDRuntimeFont.m */,
 			);
-			name = "RuntimeAdjustFont(字体适配)";
 			path = "RuntimeAdjustFont(字体适配)";
 			sourceTree = "<group>";
 		};
@@ -961,7 +958,6 @@
 				F59A5B051EC59602003D1E59 /* JDEmitterViewController.h */,
 				F59A5B061EC59602003D1E59 /* JDEmitterViewController.m */,
 			);
-			name = "EmiterAnimation(粒子动画)";
 			path = "EmiterAnimation(粒子动画)";
 			sourceTree = "<group>";
 		};
@@ -977,7 +973,6 @@
 				F5C29F111ECC391000835E26 /* JDSnowView.h */,
 				F5C29F121ECC391000835E26 /* JDSnowView.m */,
 			);
-			name = EmiterVIew;
 			path = EmiterVIew;
 			sourceTree = "<group>";
 		};
@@ -987,7 +982,6 @@
 				F59A5B091EC59847003D1E59 /* JDDrawLineViewController.h */,
 				F59A5B0A1EC59847003D1E59 /* JDDrawLineViewController.m */,
 			);
-			name = "DrawLineAnimation(划线动画)";
 			path = "DrawLineAnimation(划线动画)";
 			sourceTree = "<group>";
 		};
@@ -998,7 +992,6 @@
 				F59A5B0D1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.h */,
 				F59A5B0E1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m */,
 			);
-			name = "CAkeyframeAnimation(轨迹动画)";
 			path = "CAkeyframeAnimation(轨迹动画)";
 			sourceTree = "<group>";
 		};
@@ -1008,7 +1001,6 @@
 				F59A5B111EC59E53003D1E59 /* JDHeadView.h */,
 				F59A5B121EC59E53003D1E59 /* JDHeadView.m */,
 			);
-			name = HeardView;
 			path = HeardView;
 			sourceTree = "<group>";
 		};
@@ -1267,7 +1259,6 @@
 				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
 				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
 			);
-			name = ViewController;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -1327,6 +1318,15 @@
 				F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */,
 			);
 			path = OpenCVCamera;
+			sourceTree = "<group>";
+		};
+		F5D2F8381ED2D6260063F18F /* StatusBarMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */,
+				F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */,
+			);
+			name = StatusBarMessageView;
 			sourceTree = "<group>";
 		};
 		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
@@ -1554,6 +1554,7 @@
 				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
+				F5D2F83B1ED2D6A10063F18F /* JDStatusBarMessageView.m in Sources */,
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
 				F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */,
 				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,

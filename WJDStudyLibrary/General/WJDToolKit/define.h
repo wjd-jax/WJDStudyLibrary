@@ -10,6 +10,8 @@
 #define Defintion_h
 //-------------------获取设备大小-------------------------
 //NavBar高度
+
+#define StatusBar_HEIGHT 20
 #define NavigationBar_HEIGHT 64
 #define SCREEN_WIDHT ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
