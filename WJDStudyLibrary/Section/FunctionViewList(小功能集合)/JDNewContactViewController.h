@@ -10,4 +10,4 @@
 
 @interface JDNewContactViewController : JDBaseViewController
 
-@end
+@end 

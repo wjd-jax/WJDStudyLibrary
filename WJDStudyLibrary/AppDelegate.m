@@ -20,17 +20,39 @@
     
     _window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor =[UIColor whiteColor];
-    
+        
     MainViewController *mVC =[[MainViewController alloc]init];
     UINavigationController *rootVC =[[UINavigationController alloc]initWithRootViewController:mVC];
     
     _window.rootViewController =rootVC;
     
     [_window makeKeyAndVisible];
-
+    
+    //给 launch 添加动画
+    [self addLaunchAnimation];
+    
     return YES;
 }
 
+#pragma mark - 添加启动动画
+- (void)addLaunchAnimation
+{
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
+    
+    //UIView *launchView = viewController.view;
+    UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
+    //viewController.view.frame = [UIApplication sharedApplication].keyWindow.frame;
+    [mainWindow addSubview:viewController.view];
+    [self.window bringSubviewToFront:viewController.view];
+    
+    [UIView animateWithDuration:0.6f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        viewController.view.alpha = 0.0f;
+        viewController.view.layer.transform = CATransform3DScale(CATransform3DIdentity, 2.0f, 2.0f, 1.0f);
+    } completion:^(BOOL finished) {
+        [viewController.view removeFromSuperview];
+    }];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

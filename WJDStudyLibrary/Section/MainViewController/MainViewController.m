@@ -22,7 +22,7 @@
     //
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
-                           @{@"title":@"临时页面",@"ClassName":@"JDNewContactViewController"},  //用于测试的页面
+                           @{@"title":@"临时页面",@"ClassName":@"ContactsStoryboard"},  //用于测试的页面
                            
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
@@ -41,6 +41,9 @@
     UIBarButtonItem *rightButton =[JDUtils createTextBarButtonWithTitle:@"关于" Target:self Action:@selector(aboutClick)];
     self.navigationItem.rightBarButtonItem =rightButton;
 }
+
+
+
 - (void)aboutClick {
     JDAboutUsViewController *avc =[[JDAboutUsViewController alloc]init];
     [self.navigationController pushViewController:avc animated:YES];

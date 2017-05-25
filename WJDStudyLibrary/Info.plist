@@ -82,6 +82,8 @@
 	<string>需要访问设备相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问设备相册</string>
+	<key>NSContactsUsageDescription</key>
+	<string>需要访问通讯录</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

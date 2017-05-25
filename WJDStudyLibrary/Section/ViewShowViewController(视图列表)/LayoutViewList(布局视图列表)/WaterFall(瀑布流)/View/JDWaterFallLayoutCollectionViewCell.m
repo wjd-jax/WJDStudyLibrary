@@ -28,7 +28,6 @@
 - (void)createUI {
     
     _imageView =[[UIImageView alloc]initWithFrame:self.contentView.bounds];
-    _imageView.backgroundColor =[UIColor blueColor];
     
     [self.contentView addSubview:_imageView];
 }

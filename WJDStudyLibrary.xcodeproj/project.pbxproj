@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
+		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
@@ -48,7 +49,6 @@
 		F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364D1EC98704009E96B0 /* 天气60x60@2x.png */; };
 		F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F541364E1EC98704009E96B0 /* 天气60x60@3x.png */; };
 		F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136581EC99454009E96B0 /* 天气40x40@3x.png */; };
-		F54BBB581EB8637600AB92CC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB571EB8637600AB92CC /* icon.png */; };
 		F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */; };
 		F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */; };
 		F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F54BBB601EB86AE600AB92CC /* JDCardFlowLayout.m */; };
@@ -151,6 +151,7 @@
 		4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
@@ -216,7 +217,6 @@
 		F541364D1EC98704009E96B0 /* 天气60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@2x.png"; sourceTree = "<group>"; };
 		F541364E1EC98704009E96B0 /* 天气60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@3x.png"; sourceTree = "<group>"; };
 		F54136581EC99454009E96B0 /* 天气40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@3x.png"; sourceTree = "<group>"; };
-		F54BBB571EB8637600AB92CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F54BBB591EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDCardLayoutStoryboard.storyboard; sourceTree = "<group>"; };
 		F54BBB5B1EB8695900AB92CC /* JDCardLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardLayoutViewController.h; sourceTree = "<group>"; };
 		F54BBB5C1EB8695900AB92CC /* JDCardLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardLayoutViewController.m; sourceTree = "<group>"; };
@@ -718,7 +718,6 @@
 				F55E55471E850BB100144D49 /* Assets.xcassets */,
 				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
-				F54BBB571EB8637600AB92CC /* icon.png */,
 				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
 				F55E554C1E850BB100144D49 /* Info.plist */,
 				F54136371EC986D2009E96B0 /* Icons */,
@@ -1430,6 +1429,7 @@
 			children = (
 				F5FE81A41ED67ADC008BD4F3 /* JDNewContactViewController.h */,
 				F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */,
+				F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */,
 			);
 			name = IOS9Contact;
 			sourceTree = "<group>";
@@ -1518,7 +1518,6 @@
 				F54136471EC986DD009E96B0 /* 晴60x60@3x.png in Resources */,
 				F5BBFFBA1EBC69BB00ACCC38 /* 3.plist in Resources */,
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
-				F54BBB581EB8637600AB92CC /* icon.png in Resources */,
 				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
 				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
 				F54136531EC98704009E96B0 /* 天气40x40@2x.png in Resources */,
@@ -1535,6 +1534,7 @@
 				F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */,
 				F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */,
 				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
+				F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */,
 				F541364F1EC98704009E96B0 /* 天气20x20@2x.png in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
 				F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */,
