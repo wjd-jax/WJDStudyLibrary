@@ -24,6 +24,8 @@
                            @{@"title":@"摄像头处理功能",@"ClassName":@"JDCameraFuctionViewController"},
                            @{@"title":@"引导页封装",@"ClassName":@"JDGuideTestViewController"},
                            @{@"title":@"系统新版本功能封装",@"ClassName":@"JDNewFunctionViewController"},
+                           @{@"title":@"获取手机信息",@"ClassName":@"IPhoneInfoStoryboard"},
+                           @{@"title":@"通讯录封装",@"ClassName":@"JDContactsViewController"},
 
                            ];
 

@@ -32,7 +32,6 @@
     UILabel *messageLabel =[JDUtils createLabelWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, StatusBar_HEIGHT) Font:12 Text:message];
     messageLabel.textAlignment =NSTextAlignmentCenter;
     messageLabel.font =[UIFont boldSystemFontOfSize:12];
-//    messageLabel.textColor =[UIColor whiteColor];
     [showView addSubview:messageLabel];
     
     

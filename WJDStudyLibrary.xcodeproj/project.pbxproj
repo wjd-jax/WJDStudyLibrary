@@ -141,6 +141,10 @@
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
 		F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */; };
+		F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */; };
+		F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */; };
+		F5FE81A21ED67A54008BD4F3 /* JDContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */; };
+		F5FE81A61ED67ADC008BD4F3 /* JDNewContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,12 +152,12 @@
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseModel.h; sourceTree = "<group>"; };
-		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
+		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDBaseModel.h; path = ../Resource/JDBaseModel.h; sourceTree = "<group>"; };
+		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDBaseModel.m; path = ../Resource/JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
 		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
 		F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKnowledgeViewController.h; sourceTree = "<group>"; };
@@ -232,9 +236,9 @@
 		F55E553C1E850BB100144D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55E553F1E850BB100144D49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		F55E554A1E850BB100144D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F56A916E1ECD2B7C00DA3388 /* JDRainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainView.h; sourceTree = "<group>"; };
@@ -264,7 +268,7 @@
 		F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetWorkingViewController.m; sourceTree = "<group>"; };
 		F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetClinet.h; sourceTree = "<group>"; };
 		F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetClinet.m; sourceTree = "<group>"; };
-		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefines.h; sourceTree = "<group>"; };
+		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetDefines.h; path = "Section/NetworkingViewController(网络封装)/NetWorkTool/NetDefines.h"; sourceTree = "<group>"; };
 		F57D45761E9C7F280073F6D6 /* JDNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetManager.h; sourceTree = "<group>"; };
 		F57D45771E9C7F280073F6D6 /* JDNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetManager.m; sourceTree = "<group>"; };
 		F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignListViewController.h; sourceTree = "<group>"; };
@@ -298,7 +302,7 @@
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
 		F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChianTestViewController.m; sourceTree = "<group>"; };
 		F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDKeyChianTestStoryboard.storyboard; sourceTree = "<group>"; };
-		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
+		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WJDStudyLibrary.entitlements; path = ../WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
 		F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFunctionListViewController.m; sourceTree = "<group>"; };
 		F5A1A7201E977F3E0076CC78 /* JDSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignViewController.h; sourceTree = "<group>"; };
@@ -379,6 +383,13 @@
 		F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppStoreScoreViewController.m; sourceTree = "<group>"; };
 		F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebBrowserViewController.h; sourceTree = "<group>"; };
 		F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebBrowserViewController.m; sourceTree = "<group>"; };
+		F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhoneInfoStoryboard.storyboard; sourceTree = "<group>"; };
+		F5FE819C1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDIPhoneInfoViewController.h; sourceTree = "<group>"; };
+		F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIPhoneInfoViewController.m; sourceTree = "<group>"; };
+		F5FE81A01ED67A54008BD4F3 /* JDContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactsViewController.h; sourceTree = "<group>"; };
+		F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactsViewController.m; sourceTree = "<group>"; };
+		F5FE81A41ED67ADC008BD4F3 /* JDNewContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewContactViewController.h; sourceTree = "<group>"; };
+		F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,7 +431,6 @@
 				F51CF0911E8E41390035EF7A /* JDUtils.m */,
 				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
 				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
 			path = WJDToolKit;
 			sourceTree = "<group>";
@@ -689,17 +699,15 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				F55E55541E85171600144D49 /* General */,
-				F55E55521E85166900144D49 /* Main */,
+				F5FE81981ED554A7008BD4F3 /* Manager */,
+				F5FE81971ED553BA008BD4F3 /* Define */,
+				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
+				F5FE81961ED55064008BD4F3 /* AppDelegate */,
+				F55E55541E85171600144D49 /* Utils */,
+				F55E55521E85166900144D49 /* BaseClass */,
 				F55E55531E85169700144D49 /* Resource */,
-				F55E55571E85178700144D49 /* Section */,
+				F55E55571E85178700144D49 /* Modules */,
 				F55E553B1E850BB100144D49 /* Supporting Files */,
-				F55E553E1E850BB100144D49 /* AppDelegate.h */,
-				F55E553F1E850BB100144D49 /* AppDelegate.m */,
-				F55E55471E850BB100144D49 /* Assets.xcassets */,
-				F55E554C1E850BB100144D49 /* Info.plist */,
-				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
-				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 			);
 			path = WJDStudyLibrary;
 			sourceTree = "<group>";
@@ -707,48 +715,53 @@
 		F55E553B1E850BB100144D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F54136371EC986D2009E96B0 /* Icons */,
-				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
+				F55E55471E850BB100144D49 /* Assets.xcassets */,
+				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
+				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
 				F54BBB571EB8637600AB92CC /* icon.png */,
+				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
+				F55E554C1E850BB100144D49 /* Info.plist */,
+				F54136371EC986D2009E96B0 /* Icons */,
 				F55E553C1E850BB100144D49 /* main.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F55E55521E85166900144D49 /* Main */ = {
+		F55E55521E85166900144D49 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF0831E8E20F10035EF7A /* JDBaseModel.h */,
+				F51CF0841E8E20F10035EF7A /* JDBaseModel.m */,
 				F52C452B1E960B2200D8DF62 /* JDBaseTableViewController.h */,
 				F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */,
 				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
 				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
+			name = BaseClass;
 			path = Main;
 			sourceTree = "<group>";
 		};
 		F55E55531E85169700144D49 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
 				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
 				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
-				F51CF0831E8E20F10035EF7A /* JDBaseModel.h */,
-				F51CF0841E8E20F10035EF7A /* JDBaseModel.m */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		F55E55541E85171600144D49 /* General */ = {
+		F55E55541E85171600144D49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 			);
+			name = Utils;
 			path = General;
 			sourceTree = "<group>";
 		};
-		F55E55571E85178700144D49 /* Section */ = {
+		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
@@ -756,13 +769,14 @@
 				F5C5DFC61EC45C6100A436E0 /* BBS_Web(学习网站) */,
 				F5A733211EC30437006CB68D /* CustomControls */,
 				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
-				F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */,
+				F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */,
 				F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */,
 				F55E55581E85179400144D49 /* MainViewController */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
+			name = Modules;
 			path = Section;
 			sourceTree = "<group>";
 		};
@@ -875,7 +889,6 @@
 				F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */,
 				F57D45761E9C7F280073F6D6 /* JDNetManager.h */,
 				F57D45771E9C7F280073F6D6 /* JDNetManager.m */,
-				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 			);
 			path = NetWorkTool;
 			sourceTree = "<group>";
@@ -1024,9 +1037,11 @@
 			path = keyChainWapper;
 			sourceTree = "<group>";
 		};
-		F5A1A71B1E977E540076CC78 /* FunctionViewList(小功能集合) */ = {
+		F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */,
+				F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
@@ -1038,6 +1053,7 @@
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
+			name = "FunctionViewList(功能集合)";
 			path = "FunctionViewList(小功能集合)";
 			sourceTree = "<group>";
 		};
@@ -1342,7 +1358,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = ThirdLibrary;
+			name = ThirdLibrary;
+			path = Resource/ThirdLibrary;
 			sourceTree = "<group>";
 		};
 		F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */ = {
@@ -1361,6 +1378,60 @@
 				F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */,
 			);
 			path = "WebBrowser(浏览器封装)";
+			sourceTree = "<group>";
+		};
+		F5FE81961ED55064008BD4F3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F55E553E1E850BB100144D49 /* AppDelegate.h */,
+				F55E553F1E850BB100144D49 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F5FE81971ED553BA008BD4F3 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
+				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
+		F5FE81981ED554A7008BD4F3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */,
+				F5FE819C1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.h */,
+				F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */,
+			);
+			name = "iPhoneInfo(手机信息)";
+			sourceTree = "<group>";
+		};
+		F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE81A31ED67AAB008BD4F3 /* IOS9Contact */,
+				F5FE81A01ED67A54008BD4F3 /* JDContactsViewController.h */,
+				F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */,
+			);
+			name = "Contacts(通讯录信息)";
+			sourceTree = "<group>";
+		};
+		F5FE81A31ED67AAB008BD4F3 /* IOS9Contact */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE81A41ED67ADC008BD4F3 /* JDNewContactViewController.h */,
+				F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */,
+			);
+			name = IOS9Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1472,6 +1543,7 @@
 				F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */,
 				F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
+				F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1540,6 +1612,7 @@
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
+				F5FE81A21ED67A54008BD4F3 /* JDContactsViewController.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
@@ -1578,6 +1651,7 @@
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F5A733311EC30C30006CB68D /* JDMarqueeView.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,
+				F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */,
 				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
@@ -1619,6 +1693,7 @@
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */,
 				F59A5B131EC59E53003D1E59 /* JDHeadView.m in Sources */,
+				F5FE81A61ED67ADC008BD4F3 /* JDNewContactViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
@@ -1636,7 +1711,7 @@
 				F55E554A1E850BB100144D49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = .;
+			path = ../.;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1736,6 +1811,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
@@ -1774,6 +1850,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
