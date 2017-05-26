@@ -1,13 +1,13 @@
 //
-//  JDContactsViewController.h
+//  JDNewContactViewController.h
 //  WJDStudyLibrary
 //
 //  Created by wangjundong on 2017/5/25.
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDBaseTableViewController.h"
+#import "JDBaseViewController.h"
 
-@interface JDContactsViewController : JDBaseTableViewController
+@interface JDContactsViewController : JDBaseViewController
 
-@end
+@end 

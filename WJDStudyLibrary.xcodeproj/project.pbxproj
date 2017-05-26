@@ -31,6 +31,7 @@
 		F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */; };
 		F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */; };
 		F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */; };
+		F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F538BF001ED7C28100CBD96F /* JDContactManager.m */; };
 		F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */; };
 		F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54136121EC98667009E96B0 /* JDChangeIconViewController.m */; };
 		F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136381EC986DD009E96B0 /* 晴20x20@2x.png */; };
@@ -143,8 +144,7 @@
 		F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */; };
 		F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */; };
 		F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */; };
-		F5FE81A21ED67A54008BD4F3 /* JDContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */; };
-		F5FE81A61ED67ADC008BD4F3 /* JDNewContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */; };
+		F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,6 +197,8 @@
 		F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuidePageViewController.m; sourceTree = "<group>"; };
 		F52C45331E97345700D8DF62 /* JDLayoutListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLayoutListViewController.h; sourceTree = "<group>"; };
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
+		F538BEFF1ED7C28100CBD96F /* JDContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactManager.h; sourceTree = "<group>"; };
+		F538BF001ED7C28100CBD96F /* JDContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactManager.m; sourceTree = "<group>"; };
 		F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewFunctionViewController.h; sourceTree = "<group>"; };
 		F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewFunctionViewController.m; sourceTree = "<group>"; };
 		F54136111EC98667009E96B0 /* JDChangeIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDChangeIconViewController.h; sourceTree = "<group>"; };
@@ -386,10 +388,8 @@
 		F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhoneInfoStoryboard.storyboard; sourceTree = "<group>"; };
 		F5FE819C1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDIPhoneInfoViewController.h; sourceTree = "<group>"; };
 		F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIPhoneInfoViewController.m; sourceTree = "<group>"; };
-		F5FE81A01ED67A54008BD4F3 /* JDContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactsViewController.h; sourceTree = "<group>"; };
-		F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactsViewController.m; sourceTree = "<group>"; };
-		F5FE81A41ED67ADC008BD4F3 /* JDNewContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewContactViewController.h; sourceTree = "<group>"; };
-		F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewContactViewController.m; sourceTree = "<group>"; };
+		F5FE81A41ED67ADC008BD4F3 /* JDContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactsViewController.h; sourceTree = "<group>"; };
+		F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1417,21 +1417,21 @@
 		F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */ = {
 			isa = PBXGroup;
 			children = (
-				F5FE81A31ED67AAB008BD4F3 /* IOS9Contact */,
-				F5FE81A01ED67A54008BD4F3 /* JDContactsViewController.h */,
-				F5FE81A11ED67A54008BD4F3 /* JDContactsViewController.m */,
+				F5FE81A41ED67ADC008BD4F3 /* JDContactsViewController.h */,
+				F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */,
+				F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */,
+				F5FE81A31ED67AAB008BD4F3 /* Contacts */,
 			);
 			name = "Contacts(通讯录信息)";
 			sourceTree = "<group>";
 		};
-		F5FE81A31ED67AAB008BD4F3 /* IOS9Contact */ = {
+		F5FE81A31ED67AAB008BD4F3 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				F5FE81A41ED67ADC008BD4F3 /* JDNewContactViewController.h */,
-				F5FE81A51ED67ADC008BD4F3 /* JDNewContactViewController.m */,
-				F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */,
+				F538BEFF1ED7C28100CBD96F /* JDContactManager.h */,
+				F538BF001ED7C28100CBD96F /* JDContactManager.m */,
 			);
-			name = IOS9Contact;
+			name = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1612,7 +1612,6 @@
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
-				F5FE81A21ED67A54008BD4F3 /* JDContactsViewController.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
@@ -1670,6 +1669,7 @@
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
+				F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */,
 				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
@@ -1693,7 +1693,7 @@
 				F55E553D1E850BB100144D49 /* main.m in Sources */,
 				F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */,
 				F59A5B131EC59E53003D1E59 /* JDHeadView.m in Sources */,
-				F5FE81A61ED67ADC008BD4F3 /* JDNewContactViewController.m in Sources */,
+				F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,

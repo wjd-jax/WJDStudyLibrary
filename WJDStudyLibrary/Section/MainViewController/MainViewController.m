@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "ArrayDataSource.h"
 #import "JDMainDataModel.h"
 #import "JDAboutUsViewController.h"
 
@@ -22,7 +21,7 @@
     //
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
-                           @{@"title":@"临时页面",@"ClassName":@"ContactsStoryboard"},  //用于测试的页面
+                           @{@"title":@"临时页面",@"ClassName":@"JDContactsViewController"},  //用于测试的页面
                            
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
