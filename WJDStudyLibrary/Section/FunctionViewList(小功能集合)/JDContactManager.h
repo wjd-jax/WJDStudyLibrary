@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^Cancel)();
+
 @interface JDContactManager : NSObject
 
 /**
@@ -17,6 +19,6 @@
  */
 + (instancetype)manager;
 
-- (void)presentContactUIWithViewController:(UIViewController *)vc;
+- (void)presentContactUIWithViewController:(UIViewController *)vc cancel:(Cancel)cancel;
 
 @end

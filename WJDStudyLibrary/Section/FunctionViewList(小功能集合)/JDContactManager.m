@@ -31,10 +31,11 @@
 }
 
 
-- (void)presentContactUIWithViewController:(UIViewController *)vc
+- (void)presentContactUIWithViewController:(UIViewController *)vc cancel:(Cancel)cancel;
 {
     _vn =vc;
     if (__IPHONE_9_0) {
+       
         [self requestContactAuthorAfterSystemVersion9];
     }
     else

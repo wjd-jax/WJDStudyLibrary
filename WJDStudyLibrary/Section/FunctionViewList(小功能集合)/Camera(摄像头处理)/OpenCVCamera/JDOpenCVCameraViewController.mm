@@ -26,7 +26,22 @@ using namespace cv;
 
 - (void)open:(UISwitch *)sender {
     
-    [self.videoCamera start];
+    
+    NSString * mediaType = AVMediaTypeVideo;
+    AVAuthorizationStatus  authorizationStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
+    
+    if (authorizationStatus == AVAuthorizationStatusRestricted|| authorizationStatus == AVAuthorizationStatusDenied) {
+       
+        UIAlertController * alertC = [UIAlertController alertControllerWithTitle:@"摄像头访问受限" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertC animated:YES completion:nil];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [alertC addAction:action];
+    }else{
+        [self.videoCamera start];
+
+    }
 }
 
 - (void)viewDidLoad {

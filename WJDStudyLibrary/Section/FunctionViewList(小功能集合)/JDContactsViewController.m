@@ -49,7 +49,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
 - (void)requestContact
 {
     JDContactManager *manager =[JDContactManager manager];
-    [manager presentContactUIWithViewController:self];
+//    [manager presentContactUIWithViewController:self];
 }
 
 -(void)dealloc
