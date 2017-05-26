@@ -39,6 +39,16 @@
 
 #endif
 
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define iOS9 ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+#define iOS10_3 ([[UIDevice currentDevice].systemVersion doubleValue] >= 10.3)
+
+#define JDiPhone4_OR_4s    (YYSCREEN_H == 480)
+#define JDiPhone5_OR_5c_OR_5s   (YYSCREEN_H == 568)
+#define JDiPhone6_OR_6s   (YYSCREEN_H == 667)
+#define JDiPhonePlus   (YYSCREEN_H == 736)
+#define JDiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 //----------------------沙盒目录文件----------------------------
 //获取Temp 目录
 #define kPathTem NSTemporaryDirectory()
@@ -99,18 +109,18 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
 
 //单例
 #define JDSHAREINSTANCE_FOR_CLASS(__CLASSNAME__)            \
-                                                            \
+\
 static __CLASSNAME__ *instance = nil;                       \
-                                                            \
-    + (__CLASSNAME__ *)sharedInstance{                      \
-        static dispatch_once_t onceToken;                   \
-        dispatch_once(&onceToken, ^{                        \
-            if (nil == instance){                           \
-                instance = [[__CLASSNAME__ alloc] init];    \
-            }                                               \
-        });                                                 \
-                                                            \
-    return instance;                                        \
+\
++ (__CLASSNAME__ *)sharedInstance{                      \
+static dispatch_once_t onceToken;                   \
+dispatch_once(&onceToken, ^{                        \
+if (nil == instance){                           \
+instance = [[__CLASSNAME__ alloc] init];    \
+}                                               \
+});                                                 \
+\
+return instance;                                        \
 }                                                           \
 
 

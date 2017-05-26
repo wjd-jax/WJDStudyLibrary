@@ -37,7 +37,9 @@
     //第一个枚举LAPolicyDeviceOwnerAuthenticationWithBiometrics就是说，用的是手指指纹去验证的；iOS8 可用
     //第二个枚举LAPolicyDeviceOwnerAuthentication少了WithBiometrics则是使用TouchID或者密码验证,默认是错误两次指纹或者锁定后,弹出输入密码界面;iOS 9可用
     //注意如果采用第二种,    context.localizedFallbackTitle = @"使用密码登录";这个设置无效因为会直接跳转到输入密码界面
-    LAPolicy lapolicy = __IPHONE_9_0?LAPolicyDeviceOwnerAuthentication:LAPolicyDeviceOwnerAuthenticationWithBiometrics;
+    
+    
+    LAPolicy lapolicy = iOS9?LAPolicyDeviceOwnerAuthentication:LAPolicyDeviceOwnerAuthenticationWithBiometrics;
     
     /*
      localizedFallbackTitle可以设置验证TouchID时弹出Alert的输入密码按钮的标题

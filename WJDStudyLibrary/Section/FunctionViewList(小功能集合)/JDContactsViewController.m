@@ -49,7 +49,11 @@ static NSString *cellIdentifier = @"CellIdentifier";
 - (void)requestContact
 {
     JDContactManager *manager =[JDContactManager manager];
-//    [manager presentContactUIWithViewController:self];
+    [manager presentContactUIWithViewController:self selectModel:^(JDContactModel *model) {
+        
+    } cancel:^{
+        [JDMessageView showMessage:@"取消选择"];
+    }];
 }
 
 -(void)dealloc

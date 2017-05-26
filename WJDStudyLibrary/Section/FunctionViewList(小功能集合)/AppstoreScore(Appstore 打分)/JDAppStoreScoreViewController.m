@@ -73,7 +73,7 @@
 - (void)buttonClick3 {
     
     
-    if (__IPHONE_10_3)
+    if (iOS10_3)
         //至此就实现在App内直接评论了。然而需要注意的是：打开次数一年不能多于3次。（当然开发期间可以无限制弹出，方便测试）
         [SKStoreReviewController requestReview];
     else

@@ -13,10 +13,15 @@
 + (void)showMessage:(NSString *)message
 {
     
-    UIWindow * window = [UIApplication sharedApplication].keyWindow;
-    [self showMessage:message withView:window];
-  
+    JDDISPATCH_MAIN_THREAD(^{
 
+        UIWindow * window = [UIApplication sharedApplication].keyWindow;
+        [self showMessage:message withView:window];
+        
+    });
+    
+    
+    
 }
 +(void)showMessage:(NSString *)message withView:(UIView *)view
 {
@@ -42,12 +47,12 @@
         [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
             showView.sizeHeight =-NavigationBar_HEIGHT;
             showView.alpha =0;
-
+            
         } completion:^(BOOL finished) {
             
             [showView removeFromSuperview];
         }];
     }];
-
+    
 }
 @end

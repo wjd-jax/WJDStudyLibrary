@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^Cancel)();
 
+@interface JDContactModel :NSObject
+
+@property(nonatomic,copy)NSString *name;
+@property(nonatomic,retain)NSArray *phoneNumArray;
+
+@end
+
+typedef void (^Cancel)();
+typedef void (^SelectBlock)(JDContactModel *model);
 @interface JDContactManager : NSObject
 
 /**
@@ -19,6 +27,6 @@ typedef void (^Cancel)();
  */
 + (instancetype)manager;
 
-- (void)presentContactUIWithViewController:(UIViewController *)vc cancel:(Cancel)cancel;
+- (void)presentContactUIWithViewController:(UIViewController *)vc selectModel:(SelectBlock)selectBlock cancel:(Cancel)cancel;
 
 @end
