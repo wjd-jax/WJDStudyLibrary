@@ -46,4 +46,11 @@ typedef void (^ContactsArrayBlock)(NSArray *contactsArray);
  */
 - (void)getContacts:(ContactsArrayBlock)contactsArrayBlock;
 
+/**
+ 添加联系人(目前仅支持 IOS9)
+
+ @param model 联系人模型
+ */
+- (BOOL)addPersionToContact:(JDContactModel *)model;
+
 @end

@@ -40,18 +40,50 @@ static NSString *cellIdentifier = @"CellIdentifier";
     
     
     [[JDContactManager manager] getContacts:^(NSArray *contactsArray) {
-       
+        
         [_arrayDataSource setDataSourceArray:contactsArray];
         JDDISPATCH_MAIN_THREAD(^{
             [_tableView reloadData];
         });
     }];
     
-    
+    UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(SCREEN_WIDHT-100, SCREEN_HEIGHT-100, 80, 80) ImageName:nil Target:self Action:@selector(addPersion) Title:@"添加"];
+    JDViewSetRadius(button, button.sizeWidth/2);
+    [button setBackgroundImage:[self buttonImageFromColor:JDCOLOR_FROM_RGB_OxFF_ALPHA(0xdae8a6, 1)] forState:UIControlStateNormal];
+    [self.view addSubview:button];
     
 }
 
-
+- (void)addPersion
+{
+    JDContactModel *model =[[JDContactModel alloc]init];
+    model.name =@"aaa";
+    model.phoneNumArray =@[@"123"];
+    if([[JDContactManager manager] addPersionToContact:model])
+    {
+        [JDMessageView showMessage:@"添加成功"];
+        [[JDContactManager manager] getContacts:^(NSArray *contactsArray) {
+            
+            [_arrayDataSource setDataSourceArray:contactsArray];
+            JDDISPATCH_MAIN_THREAD(^{
+                [_tableView reloadData];
+            });
+        }];
+    }
+    
+}
+//通过颜色来生成一个纯色图片
+- (UIImage *)buttonImageFromColor:(UIColor *)color{
+    
+    CGRect rect = CGRectMake(0, 0, 100, 100);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

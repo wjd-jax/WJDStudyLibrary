@@ -64,6 +64,7 @@
 //设置随机颜色
 #define JDRandomColor  [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:0.3];
 
+//格式0xdae8a6
 #define JDCOLOR_FROM_RGB_OxFF_ALPHA(rgbValue,al)                    \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \

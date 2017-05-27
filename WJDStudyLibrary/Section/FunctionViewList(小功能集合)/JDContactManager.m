@@ -117,7 +117,7 @@
 {
     
     NSMutableArray *contactListArray =[NSMutableArray array];
-
+    
     //创建通信录对象
     ABAddressBookRef addressBook = ABAddressBookCreate();
     
@@ -141,13 +141,13 @@
         NSMutableArray *array =[[NSMutableArray alloc]init];
         //遍历拿到每一个电话号码
         for (int i = 0; i < phoneCount; i++) {
-
+            
             //获取电话对应的key
-//            NSString *phoneLabel = (__bridge_transfer NSString *)ABMultiValueCopyLabelAtIndex(phones, i);
+            //            NSString *phoneLabel = (__bridge_transfer NSString *)ABMultiValueCopyLabelAtIndex(phones, i);
             //获取电话号码
             NSString *phoneValue = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phones, i);
             [array addObject:phoneValue];
-
+            
         }
         JDContactModel *model = [[JDContactModel alloc]init];
         NSString *name = [NSString stringWithFormat:@"%@%@",lastName,firstName];
@@ -163,7 +163,7 @@
     _contactsArrayBlock(contactListArray);
     
     [self restMemaory];
-
+    
 }
 #pragma mark - IOS9 - later
 - (void)requestContactAuthorAfterSystemVersion9{
@@ -262,6 +262,45 @@
     [self restMemaory];
 }
 
+- (BOOL)addPersionToContact:(JDContactModel *)model;
+{
+    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+    if (status == CNAuthorizationStatusAuthorized)
+    {
+        //创建联系人
+        CNMutableContact *contact = [[CNMutableContact alloc] init];
+        
+        //设置名字
+        contact.givenName = model.name;
+        
+        //电话
+        contact.phoneNumbers = @[[CNLabeledValue labeledValueWithLabel:CNLabelPhoneNumberiPhone value:[CNPhoneNumber phoneNumberWithStringValue:model.phoneNumArray.firstObject]]];
+        /*
+         //设置姓氏
+         contact.familyName = @"zhang";
+         //邮箱
+         CNLabeledValue *homeEmail = [CNLabeledValue labeledValueWithLabel:CNLabelHome value:@"422736262@qq.com"];
+         CNLabeledValue *workEmail = [CNLabeledValue labeledValueWithLabel:CNLabelWork value:@"1045270931@qq.com"];
+         contact.emailAddresses = @[homeEmail,workEmail];
+         //设置头像
+         //contact.imageData = UIImagePNGRepresentation([UIImage imageNamed:@"Icon-114.png"]);
+         
+         */
+        //初始化方法
+        CNSaveRequest *saveRequest = [[CNSaveRequest alloc] init];
+        //添加联系人
+        [saveRequest addContact:contact toContainerWithIdentifier:nil];
+        //进行联系人的写入操作
+        CNContactStore *store = [[CNContactStore alloc] init];
+        return  [store executeSaveRequest:saveRequest error:nil];
+        
+    }
+    else
+    {
+        [JDMessageView showMessage:@"无权访问通讯录"];
+    }
+    return NO;
+}
 
 #pragma mark - CNContactPickerDelegate
 - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact{
