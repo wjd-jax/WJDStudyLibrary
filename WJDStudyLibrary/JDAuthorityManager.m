@@ -58,13 +58,16 @@ static NSString *authorityStr =@"authority";
         
         [[[CLLocationManager alloc]init] requestWhenInUseAuthorization];
         [[[CLLocationManager alloc]init] requestAlwaysAuthorization];
-
+        
     }
     
     //通讯录 ios9之前
     ABAuthorizationStatus abstatus =ABAddressBookGetAuthorizationStatus();
     if (abstatus  == kABAuthorizationStatusNotDetermined) {
-        
+        ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
+        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+            
+        });
     }
     
     //日历或者备忘录

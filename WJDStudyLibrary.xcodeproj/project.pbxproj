@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
 		F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */; };
+		F503735B1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -154,6 +155,8 @@
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthorityManager.h; sourceTree = "<group>"; };
 		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
+		F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDPropertyCode.h"; sourceTree = "<group>"; };
+		F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDPropertyCode.m"; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
@@ -424,6 +427,15 @@
 				4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */ = {
+			isa = PBXGroup;
+			children = (
+				F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */,
+				F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */,
+			);
+			name = "propertyCode(自动生成model 属性)";
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -755,6 +767,7 @@
 		F55E55541E85171600144D49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */,
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
@@ -1629,6 +1642,7 @@
 				F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
 				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
+				F503735B1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m in Sources */,
 				F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */,
 				F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */,
 				F5D2F83B1ED2D6A10063F18F /* JDStatusBarMessageView.m in Sources */,
