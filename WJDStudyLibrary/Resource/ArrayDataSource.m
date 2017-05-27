@@ -27,9 +27,15 @@
     return self;
 }
 
+- (void)setDataSourceArray:(NSArray *)arry;
+{
+    _items = arry;
+}
+
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath{
     return [_items objectAtIndex:indexPath.row];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
@@ -40,6 +46,7 @@
     _configureCellBlock(cell,item);
     return cell;
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _items.count;

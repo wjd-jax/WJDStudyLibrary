@@ -18,6 +18,8 @@
 
 typedef void (^Cancel)();
 typedef void (^SelectBlock)(JDContactModel *model);
+typedef void (^ContactsArrayBlock)(NSArray *contactsArray);
+
 @interface JDContactManager : NSObject
 
 /**
@@ -27,6 +29,21 @@ typedef void (^SelectBlock)(JDContactModel *model);
  */
 + (instancetype)manager;
 
+/**
+ 通过系统通讯录界面选择联系人
+
+ @param vc 需要 push 的 viewController
+ @param selectBlock 选择后的 model 回调
+ @param cancel 取消回调
+ */
 - (void)presentContactUIWithViewController:(UIViewController *)vc selectModel:(SelectBlock)selectBlock cancel:(Cancel)cancel;
+
+
+/**
+ 获取通讯录数组
+
+ @param contactsArrayBlock 返回的通讯录 model 数组
+ */
+- (void)getContacts:(ContactsArrayBlock)contactsArrayBlock;
 
 @end

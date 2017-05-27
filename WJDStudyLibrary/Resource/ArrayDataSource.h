@@ -11,5 +11,8 @@
 typedef void (^configureCell)(UITableViewCell*, id);
 
 @interface ArrayDataSource : NSObject <UITableViewDataSource>
+
 - (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)identifier configureCellBlock:(configureCell)configureCellBlock;
+- (void)setDataSourceArray:(NSArray *)array;
+
 @end
