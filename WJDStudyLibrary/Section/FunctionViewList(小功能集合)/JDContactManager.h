@@ -29,6 +29,7 @@ typedef void (^ContactsArrayBlock)(NSArray *contactsArray);
  */
 + (instancetype)manager;
 
+
 /**
  通过系统通讯录界面选择联系人
 

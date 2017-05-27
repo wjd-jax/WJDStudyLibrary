@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
+		F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -151,6 +152,8 @@
 		4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthorityManager.h; sourceTree = "<group>"; };
+		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
@@ -1400,6 +1403,8 @@
 		F5FE81981ED554A7008BD4F3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */,
+				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -1687,6 +1692,7 @@
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */,
 				F5C29F131ECC391000835E26 /* JDSnowView.m in Sources */,
+				F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,
 				F59A5B041EC58F71003D1E59 /* JDFireEmitterView.m in Sources */,
 				F57609261EADF6D1000D0176 /* JDRSAUtil.m in Sources */,

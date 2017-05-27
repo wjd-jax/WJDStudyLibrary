@@ -21,7 +21,7 @@
 
 @interface JDContactManager ()<CNContactPickerDelegate,ABPeoplePickerNavigationControllerDelegate>
 
-@property(nonatomic,retain)UIViewController *vc;
+@property(nonatomic,retain)UIViewController *vc;  //需要跳转的页面
 @property(nonatomic,weak)Cancel cancelBlock;
 @property(nonatomic,copy)SelectBlock selectBlock;
 @property(nonatomic,copy)ContactsArrayBlock contactsArrayBlock;
@@ -54,6 +54,7 @@
     iOS9?[self requestContactAuthorAfterSystemVersion9]: [self requestContactAuthorBeforeSystemVersion9];
     
 }
+
 #pragma mark - 获取通讯录对象数组
 - (void)getContacts:(ContactsArrayBlock)contactsArrayBlock;
 {
@@ -62,8 +63,12 @@
     iOS9?[self requestContactAuthorAfterSystemVersion9]: [self requestContactAuthorBeforeSystemVersion9];
 }
 
-#pragma mark - IOS7-IOS9 -
+- (BOOL)addPersionToContact:(JDContactModel *)model
+{
+    return iOS9?[self addPersionToContactIsIOS9Later:model]:[self addPersionToContactIsIOS9Before:model];
+}
 
+#pragma mark - IOS7-IOS9 -
 - (void)requestContactAuthorBeforeSystemVersion9{
     
     ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus();
@@ -165,6 +170,71 @@
     [self restMemaory];
     
 }
+
+- (BOOL)addPersionToContactIsIOS9Before:(JDContactModel *)model
+{
+    ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus();
+    
+    if (authStatus != kABAuthorizationStatusAuthorized)
+    {
+        [JDMessageView showMessage:@"没有权限"];
+        return NO;
+    }
+    
+    ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
+    //创建一个联系人
+    ABRecordRef person = ABPersonCreate();
+    //新增姓名
+    NSString *Name = model.name;
+    //转换为CFString
+    CFStringRef lastName = (__bridge_retained CFStringRef)Name;
+    //设置属性
+    ABRecordSetValue(person, kABPersonLastNameProperty, lastName, NULL);
+    CFRelease(lastName);
+    //新增电话
+    ABMultiValueRef phones = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    //手机标签设置值
+    CFStringRef mobile = (__bridge_retained CFStringRef)model.phoneNumArray.firstObject;
+    ABMultiValueAddValueAndLabel(phones, mobile, kABPersonPhoneMobileLabel, NULL);
+    CFRelease(mobile);
+    ABRecordSetValue(person, kABPersonPhoneProperty, phones, NULL);
+    
+    /*
+     //住宅标签设置值
+     CFStringRef homeTel = (__bridge_retained CFStringRef)iPerson.HomeTel;
+     ABMultiValueAddValueAndLabel(phones, homeTel, kABHomeLabel, NULL);
+     CFRelease(homeTel);
+     //工作标签设置值
+     CFStringRef workTel = (__bridge_retained CFStringRef)iPerson.WorkTel;
+     ABMultiValueAddValueAndLabel(phones, workTel, kABWorkLabel, NULL);
+     CFRelease(workTel);
+     //其他标签设置值
+     CFStringRef otherTel = (__bridge_retained CFStringRef)iPerson.OtherTel;
+     ABMultiValueAddValueAndLabel(phones, otherTel, kABOtherLabel, NULL);
+     CFRelease(otherTel);
+     //为联系人的电话多值 设置值
+     ABRecordSetValue(person, kABPersonPhoneProperty, phones, NULL);
+     
+     //新增邮箱
+     ABMultiValueRef emails = ABMultiValueCreateMutable(kABPersonEmailProperty);
+     //住宅邮箱设置值
+     CFStringRef email = (__bridge_retained CFStringRef)iPerson.Email;
+     ABMultiValueAddValueAndLabel(emails, email, kABHomeLabel, NULL);
+     CFRelease(email);
+     //为联系人添加邮箱多值
+     ABRecordSetValue(person, kABPersonEmailProperty, emails, NULL);
+     */
+    //给通讯录添加联系人
+    ABAddressBookAddRecord(addressBook, person, NULL);
+    CFRelease(person);
+    CFRelease(phones);
+    //    CFRelease(emails);
+    //保存通讯录，一定要保存
+    BOOL save = ABAddressBookSave(addressBook, NULL);
+    CFRelease(addressBook);
+    
+    return save;
+}
 #pragma mark - IOS9 - later
 - (void)requestContactAuthorAfterSystemVersion9{
     
@@ -262,7 +332,7 @@
     [self restMemaory];
 }
 
-- (BOOL)addPersionToContact:(JDContactModel *)model;
+- (BOOL)addPersionToContactIsIOS9Later:(JDContactModel *)model;
 {
     CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
     if (status == CNAuthorizationStatusAuthorized)
@@ -297,7 +367,7 @@
     }
     else
     {
-        [JDMessageView showMessage:@"无权访问通讯录"];
+        iOS9?[JDMessageView showMessage:@"无权访问通讯录"]:[JDMessageView showMessage:@"低于 IOS9版本暂不支持"];
     }
     return NO;
 }
@@ -401,6 +471,7 @@
     [self restMemaory];
 }
 
+#pragma mark - 销毁引用对象
 /**
  销毁引用对象
  */

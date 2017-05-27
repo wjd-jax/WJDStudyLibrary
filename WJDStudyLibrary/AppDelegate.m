@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "JDAuthorityManager.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,10 @@
     
     _window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor =[UIColor whiteColor];
-        
+    
+    //请求权限
+    [JDAuthorityManager requestAuthority];
+    
     MainViewController *mVC =[[MainViewController alloc]init];
     UINavigationController *rootVC =[[UINavigationController alloc]initWithRootViewController:mVC];
     
