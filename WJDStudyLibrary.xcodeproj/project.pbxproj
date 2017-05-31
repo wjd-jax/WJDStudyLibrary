@@ -14,6 +14,9 @@
 		F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */; };
 		F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */; };
 		F50373721EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */; };
+		F50373761EDEACD0004EB2EB /* JDCustomToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */; };
+		F503737A1EDEAD40004EB2EB /* JDCodeCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */; };
+		F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -169,6 +172,11 @@
 		F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSystemTransTestViewController.m; sourceTree = "<group>"; };
 		F50373701EDE9286004EB2EB /* JDSystemPresentAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSystemPresentAnimationViewController.h; sourceTree = "<group>"; };
 		F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSystemPresentAnimationViewController.m; sourceTree = "<group>"; };
+		F50373741EDEACD0004EB2EB /* JDCustomToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomToolViewController.h; sourceTree = "<group>"; };
+		F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomToolViewController.m; sourceTree = "<group>"; };
+		F50373781EDEAD40004EB2EB /* JDCodeCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCodeCountViewController.h; sourceTree = "<group>"; };
+		F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCodeCountViewController.m; sourceTree = "<group>"; };
+		F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CodeCountStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
@@ -470,6 +478,26 @@
 				F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */,
 			);
 			name = CustomTransAnimation;
+			sourceTree = "<group>";
+		};
+		F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */ = {
+			isa = PBXGroup;
+			children = (
+				F50373771EDEAD11004EB2EB /* CodeCount(代码统计) */,
+				F50373741EDEACD0004EB2EB /* JDCustomToolViewController.h */,
+				F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */,
+			);
+			name = "CustomTool(常用工具)";
+			sourceTree = "<group>";
+		};
+		F50373771EDEAD11004EB2EB /* CodeCount(代码统计) */ = {
+			isa = PBXGroup;
+			children = (
+				F50373781EDEAD40004EB2EB /* JDCodeCountViewController.h */,
+				F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */,
+				F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */,
+			);
+			name = "CodeCount(代码统计)";
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -813,6 +841,7 @@
 		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F5A733191EC2F03A006CB68D /* Animation(动画效果) */,
 				F5C5DFC61EC45C6100A436E0 /* BBS_Web(学习网站) */,
@@ -1577,6 +1606,7 @@
 				F54136531EC98704009E96B0 /* 天气40x40@2x.png in Resources */,
 				F54136451EC986DD009E96B0 /* 晴40x40@3x.png in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
+				F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */,
 				F54136421EC986DD009E96B0 /* 晴29x29@2x.png in Resources */,
 				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
@@ -1666,6 +1696,7 @@
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */,
+				F50373761EDEACD0004EB2EB /* JDCustomToolViewController.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
@@ -1703,6 +1734,7 @@
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */,
 				F5A7331D1EC2F07A006CB68D /* JDAnimationListViewController.m in Sources */,
+				F503737A1EDEAD40004EB2EB /* JDCodeCountViewController.m in Sources */,
 				F576091E1EADCB67000D0176 /* JDEvntyptionViewController.m in Sources */,
 				F5A733311EC30C30006CB68D /* JDMarqueeView.m in Sources */,
 				F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */,

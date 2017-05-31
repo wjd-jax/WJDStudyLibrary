@@ -22,7 +22,7 @@
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"临时页面",@"ClassName":@"JDSystemPresentAnimationViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"CodeCountStoryboard"},
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
                            @{@"title":@"功能集合",@"ClassName":@"JDFunctionListViewController"},
@@ -33,6 +33,7 @@
                            @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
                            @{@"title":@"学习网站",@"ClassName":@"JDStudyWebListViewController"},
                            @{@"title":@"音视频播放",@"ClassName":@"JDStudyWebListViewController"},
+                           @{@"title":@"常用工具集合",@"ClassName":@"JDCustomToolViewController"},
 
                            ];
     
