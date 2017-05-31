@@ -6,8 +6,8 @@
 //  Copyright © 2017年 wangjundong. All rights reserved.
 //
 
-#import "JDBaseViewController.h"
+#import "JDBaseTableViewController.h"
 
-@interface JDCustomTransitionViewController : JDBaseViewController
+@interface JDCustomTransitionViewController : JDBaseTableViewController
 
 @end

@@ -20,7 +20,7 @@
     /**------------------------旋转动画-------------------------------------*/
     
     //以 中心x 轴 翻转
-    UIImageView *rorationImageViewX =[JDUtils createImageViewWithFrame:CGRectMake(20, 100, 70, 70) ImageName:@"icon"];
+    UIImageView *rorationImageViewX =[JDUtils createImageViewWithFrame:CGRectMake(20, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationImageViewX];
     //设置layer坐标系的中心点默认是(0.5,0.5)
     //rorationImageViewX.layer.anchorPoint =CGPointMake(0, 0.5);
@@ -33,7 +33,7 @@
     [rorationImageViewX.layer addAnimation:rorationAnimX forKey:@"rotationAnimX"];
     
     //以 中心y 轴 翻转
-    UIImageView *rorationImageViewY =[JDUtils createImageViewWithFrame:CGRectMake(150, 100, 70, 70) ImageName:@"icon"];
+    UIImageView *rorationImageViewY =[JDUtils createImageViewWithFrame:CGRectMake(150, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationImageViewY];
     
     CABasicAnimation *rorationAnimY =[CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
@@ -45,7 +45,7 @@
     [rorationImageViewY.layer addAnimation:rorationAnimY forKey:@"rotationAnimX"];
     
     //以 中心 z 轴 翻转
-    UIImageView *rorationViewZ = [JDUtils createImageViewWithFrame:CGRectMake(280, 100, 70, 70) ImageName:@"icon"];
+    UIImageView *rorationViewZ = [JDUtils createImageViewWithFrame:CGRectMake(280, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationViewZ];
     
     CABasicAnimation *rotationAnimZ = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -56,7 +56,7 @@
     [rorationViewZ.layer addAnimation:rotationAnimZ forKey:@"rotationAnimZ"];
     
     /**------------------------移动动画-------------------------------------*/
-    UIImageView *moveView = [JDUtils createImageViewWithFrame:CGRectMake(20, 240, 70, 70) ImageName:@"icon"];
+    UIImageView *moveView = [JDUtils createImageViewWithFrame:CGRectMake(20, 240, 70, 70) ImageName:@"apple"];
     [self.view addSubview:moveView];
     
     CABasicAnimation *moveAnimation =[CABasicAnimation animationWithKeyPath:@"position"];
@@ -82,7 +82,7 @@
     
     /**------------------------内容变化动画-------------------------------------*/
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(150, 310, 70, 70)];
-    imageView.image = [UIImage imageNamed:@"icon"];
+    imageView.image = [UIImage imageNamed:@"apple"];
     [self.view addSubview:imageView];
     CABasicAnimation *contentsAnim = [CABasicAnimation animationWithKeyPath:@"contents"];
     contentsAnim.toValue = (id)[UIImage imageNamed:@"img_index_01bg"].CGImage;

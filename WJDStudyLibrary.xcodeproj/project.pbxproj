@@ -10,6 +10,10 @@
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
 		F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */; };
 		F503735B1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */; };
+		F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */; };
+		F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */; };
+		F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */; };
+		F50373721EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -157,6 +161,14 @@
 		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
 		F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDPropertyCode.h"; sourceTree = "<group>"; };
 		F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JDPropertyCode.m"; sourceTree = "<group>"; };
+		F50373671EDE6E18004EB2EB /* JDSystemTransAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSystemTransAnimationViewController.h; sourceTree = "<group>"; };
+		F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSystemTransAnimationViewController.m; sourceTree = "<group>"; };
+		F503736A1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransAnimationViewController.h; sourceTree = "<group>"; };
+		F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransAnimationViewController.m; sourceTree = "<group>"; };
+		F503736D1EDE762E004EB2EB /* JDSystemTransTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSystemTransTestViewController.h; sourceTree = "<group>"; };
+		F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSystemTransTestViewController.m; sourceTree = "<group>"; };
+		F50373701EDE9286004EB2EB /* JDSystemPresentAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSystemPresentAnimationViewController.h; sourceTree = "<group>"; };
+		F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSystemPresentAnimationViewController.m; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
@@ -436,6 +448,28 @@
 				F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */,
 			);
 			name = "propertyCode(自动生成model 属性)";
+			sourceTree = "<group>";
+		};
+		F50373651EDE6D3D004EB2EB /* SystemTransAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F50373671EDE6E18004EB2EB /* JDSystemTransAnimationViewController.h */,
+				F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */,
+				F503736D1EDE762E004EB2EB /* JDSystemTransTestViewController.h */,
+				F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */,
+				F50373701EDE9286004EB2EB /* JDSystemPresentAnimationViewController.h */,
+				F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */,
+			);
+			name = SystemTransAnimation;
+			sourceTree = "<group>";
+		};
+		F50373661EDE6D57004EB2EB /* CustomTransAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F503736A1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.h */,
+				F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */,
+			);
+			name = CustomTransAnimation;
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -1149,6 +1183,8 @@
 		F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */ = {
 			isa = PBXGroup;
 			children = (
+				F50373661EDE6D57004EB2EB /* CustomTransAnimation */,
+				F50373651EDE6D3D004EB2EB /* SystemTransAnimation */,
 				F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */,
 				F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */,
 			);
@@ -1629,6 +1665,7 @@
 				F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
+				F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
@@ -1673,8 +1710,10 @@
 				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
+				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
+				F50373721EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m in Sources */,
 				F59A5AFC1EC56889003D1E59 /* UIFont+JDRuntimeFont.m in Sources */,
 				F52C45181E94BBEC00D8DF62 /* JDPopView.m in Sources */,
 				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
@@ -1684,6 +1723,7 @@
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */,
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
+				F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,

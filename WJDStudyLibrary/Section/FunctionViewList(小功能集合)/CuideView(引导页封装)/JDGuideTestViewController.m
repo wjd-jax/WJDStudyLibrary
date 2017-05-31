@@ -34,7 +34,7 @@
     UIView *view =[[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, SCREEN_HEIGHT/2)];
     [self.view addSubview:view];
     
-    _firstImageView =[JDUtils createImageViewWithFrame:CGRectMake(300, 100, 40, 40) ImageName:@"icon"];
+    _firstImageView =[JDUtils createImageViewWithFrame:CGRectMake(300, 100, 40, 40) ImageName:@"apple"];
     [view addSubview:_firstImageView];
     
     _secondButton =[JDUtils createSystemButtonWithFrame:CGRectMake(100, 400, 150, 30) Target:self Action:@selector(buttonclick) Title:@"这是一个按钮"];
