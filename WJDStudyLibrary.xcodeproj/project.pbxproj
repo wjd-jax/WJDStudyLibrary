@@ -179,12 +179,12 @@
 		F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CodeCountStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDBaseModel.h; path = JDBaseModel.h; sourceTree = "<group>"; };
-		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDBaseModel.m; path = JDBaseModel.m; sourceTree = "<group>"; };
+		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseModel.h; sourceTree = "<group>"; };
+		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
 		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
 		F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKnowledgeViewController.h; sourceTree = "<group>"; };
@@ -264,9 +264,9 @@
 		F55E553C1E850BB100144D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55E553F1E850BB100144D49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
+		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55E554A1E850BB100144D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F56A916E1ECD2B7C00DA3388 /* JDRainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainView.h; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 		F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetWorkingViewController.m; sourceTree = "<group>"; };
 		F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetClinet.h; sourceTree = "<group>"; };
 		F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetClinet.m; sourceTree = "<group>"; };
-		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetDefines.h; path = NetDefines.h; sourceTree = "<group>"; };
+		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefines.h; sourceTree = "<group>"; };
 		F57D45761E9C7F280073F6D6 /* JDNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetManager.h; sourceTree = "<group>"; };
 		F57D45771E9C7F280073F6D6 /* JDNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetManager.m; sourceTree = "<group>"; };
 		F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignListViewController.h; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
 		F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChianTestViewController.m; sourceTree = "<group>"; };
 		F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDKeyChianTestStoryboard.storyboard; sourceTree = "<group>"; };
-		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WJDStudyLibrary.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
+		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
 		F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFunctionListViewController.m; sourceTree = "<group>"; };
 		F5A1A7201E977F3E0076CC78 /* JDSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignViewController.h; sourceTree = "<group>"; };
@@ -455,7 +455,6 @@
 				F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */,
 				F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */,
 			);
-			name = "propertyCode(自动生成model 属性)";
 			path = "propertyCode(自动生成model 属性)";
 			sourceTree = "<group>";
 		};
@@ -469,7 +468,6 @@
 				F503736D1EDE762E004EB2EB /* JDSystemTransTestViewController.h */,
 				F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */,
 			);
-			name = SystemTransAnimation;
 			path = SystemTransAnimation;
 			sourceTree = "<group>";
 		};
@@ -479,7 +477,6 @@
 				F503736A1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.h */,
 				F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */,
 			);
-			name = CustomTransAnimation;
 			path = CustomTransAnimation;
 			sourceTree = "<group>";
 		};
@@ -490,7 +487,6 @@
 				F50373741EDEACD0004EB2EB /* JDCustomToolViewController.h */,
 				F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */,
 			);
-			name = "CustomTool(常用工具)";
 			path = "CustomTool(常用工具)";
 			sourceTree = "<group>";
 		};
@@ -501,7 +497,6 @@
 				F50373781EDEAD40004EB2EB /* JDCodeCountViewController.h */,
 				F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */,
 			);
-			name = "CodeCount(代码统计)";
 			path = "CodeCount(代码统计)";
 			sourceTree = "<group>";
 		};
@@ -818,7 +813,6 @@
 				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
 				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
-			name = BaseClass;
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
@@ -839,7 +833,6 @@
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 				F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -859,7 +852,6 @@
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -1136,7 +1128,6 @@
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
-			name = "FunctionViewList(功能集合)";
 			path = "FunctionViewList(功能集合)";
 			sourceTree = "<group>";
 		};
@@ -1427,7 +1418,6 @@
 				F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */,
 				F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */,
 			);
-			name = StatusBarMessageView;
 			path = StatusBarMessageView;
 			sourceTree = "<group>";
 		};
@@ -1444,7 +1434,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = ThirdLibrary;
 			path = ThirdLibrary;
 			sourceTree = "<group>";
 		};
@@ -1472,7 +1461,6 @@
 				F55E553E1E850BB100144D49 /* AppDelegate.h */,
 				F55E553F1E850BB100144D49 /* AppDelegate.m */,
 			);
-			name = AppDelegate;
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
@@ -1482,7 +1470,6 @@
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
-			name = Define;
 			path = Define;
 			sourceTree = "<group>";
 		};
@@ -1492,7 +1479,6 @@
 				F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */,
 				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
 			);
-			name = Manager;
 			path = Manager;
 			sourceTree = "<group>";
 		};
@@ -1503,7 +1489,6 @@
 				F5FE819C1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.h */,
 				F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */,
 			);
-			name = "iPhoneInfo(手机信息)";
 			path = "iPhoneInfo(手机信息)";
 			sourceTree = "<group>";
 		};
@@ -1515,7 +1500,6 @@
 				F5FE81A41ED67ADC008BD4F3 /* JDContactsViewController.h */,
 				F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */,
 			);
-			name = "Contacts(通讯录信息)";
 			path = "Contacts(通讯录信息)";
 			sourceTree = "<group>";
 		};
@@ -1525,7 +1509,6 @@
 				F538BEFF1ED7C28100CBD96F /* JDContactManager.h */,
 				F538BF001ED7C28100CBD96F /* JDContactManager.m */,
 			);
-			name = Contacts;
 			path = Contacts;
 			sourceTree = "<group>";
 		};
@@ -1916,7 +1899,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
@@ -1935,7 +1918,7 @@
 					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
-				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
+				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -1955,7 +1938,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CODE_SIGN_ENTITLEMENTS = WJDStudyLibrary/WJDStudyLibrary.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
@@ -1974,7 +1957,7 @@
 					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
-				INFOPLIST_FILE = WJDStudyLibrary/Info.plist;
+				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
