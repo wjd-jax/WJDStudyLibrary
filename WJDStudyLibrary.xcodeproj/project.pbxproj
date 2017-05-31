@@ -179,12 +179,12 @@
 		F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CodeCountStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = General/WJDToolKit/define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDBaseModel.h; path = ../Resource/JDBaseModel.h; sourceTree = "<group>"; };
-		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDBaseModel.m; path = ../Resource/JDBaseModel.m; sourceTree = "<group>"; };
+		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDBaseModel.h; path = JDBaseModel.h; sourceTree = "<group>"; };
+		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDBaseModel.m; path = JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
 		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
 		F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKnowledgeViewController.h; sourceTree = "<group>"; };
@@ -264,9 +264,9 @@
 		F55E553C1E850BB100144D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55E553F1E850BB100144D49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55E554A1E850BB100144D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F56A916E1ECD2B7C00DA3388 /* JDRainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainView.h; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 		F57D456F1E9C77D10073F6D6 /* JDNetWorkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetWorkingViewController.m; sourceTree = "<group>"; };
 		F57D45721E9C7AF30073F6D6 /* JDNetClinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetClinet.h; sourceTree = "<group>"; };
 		F57D45731E9C7AF30073F6D6 /* JDNetClinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetClinet.m; sourceTree = "<group>"; };
-		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetDefines.h; path = "Section/NetworkingViewController(网络封装)/NetWorkTool/NetDefines.h"; sourceTree = "<group>"; };
+		F57D45751E9C7EDF0073F6D6 /* NetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetDefines.h; path = NetDefines.h; sourceTree = "<group>"; };
 		F57D45761E9C7F280073F6D6 /* JDNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetManager.h; sourceTree = "<group>"; };
 		F57D45771E9C7F280073F6D6 /* JDNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetManager.m; sourceTree = "<group>"; };
 		F57D457A1E9CC80F0073F6D6 /* JDSignListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignListViewController.h; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		F5A0A6FA1EB1D6410084A032 /* JDKeyChianTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKeyChianTestViewController.h; sourceTree = "<group>"; };
 		F5A0A6FB1EB1D6410084A032 /* JDKeyChianTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKeyChianTestViewController.m; sourceTree = "<group>"; };
 		F5A0A6FD1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDKeyChianTestStoryboard.storyboard; sourceTree = "<group>"; };
-		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WJDStudyLibrary.entitlements; path = ../WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
+		F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WJDStudyLibrary.entitlements; path = WJDStudyLibrary.entitlements; sourceTree = "<group>"; };
 		F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFunctionListViewController.h; sourceTree = "<group>"; };
 		F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFunctionListViewController.m; sourceTree = "<group>"; };
 		F5A1A7201E977F3E0076CC78 /* JDSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSignViewController.h; sourceTree = "<group>"; };
@@ -456,19 +456,21 @@
 				F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */,
 			);
 			name = "propertyCode(自动生成model 属性)";
+			path = "propertyCode(自动生成model 属性)";
 			sourceTree = "<group>";
 		};
 		F50373651EDE6D3D004EB2EB /* SystemTransAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F50373701EDE9286004EB2EB /* JDSystemPresentAnimationViewController.h */,
+				F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */,
 				F50373671EDE6E18004EB2EB /* JDSystemTransAnimationViewController.h */,
 				F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */,
 				F503736D1EDE762E004EB2EB /* JDSystemTransTestViewController.h */,
 				F503736E1EDE762E004EB2EB /* JDSystemTransTestViewController.m */,
-				F50373701EDE9286004EB2EB /* JDSystemPresentAnimationViewController.h */,
-				F50373711EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m */,
 			);
 			name = SystemTransAnimation;
+			path = SystemTransAnimation;
 			sourceTree = "<group>";
 		};
 		F50373661EDE6D57004EB2EB /* CustomTransAnimation */ = {
@@ -478,6 +480,7 @@
 				F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */,
 			);
 			name = CustomTransAnimation;
+			path = CustomTransAnimation;
 			sourceTree = "<group>";
 		};
 		F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */ = {
@@ -488,16 +491,18 @@
 				F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */,
 			);
 			name = "CustomTool(常用工具)";
+			path = "CustomTool(常用工具)";
 			sourceTree = "<group>";
 		};
 		F50373771EDEAD11004EB2EB /* CodeCount(代码统计) */ = {
 			isa = PBXGroup;
 			children = (
+				F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */,
 				F50373781EDEAD40004EB2EB /* JDCodeCountViewController.h */,
 				F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */,
-				F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */,
 			);
 			name = "CodeCount(代码统计)";
+			path = "CodeCount(代码统计)";
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -758,10 +763,10 @@
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
-				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
 				F55E55391E850BB100144D49 /* Products */,
+				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -776,15 +781,15 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				F5FE81981ED554A7008BD4F3 /* Manager */,
-				F5FE81971ED553BA008BD4F3 /* Define */,
-				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
 				F5FE81961ED55064008BD4F3 /* AppDelegate */,
-				F55E55541E85171600144D49 /* Utils */,
 				F55E55521E85166900144D49 /* BaseClass */,
-				F55E55531E85169700144D49 /* Resource */,
+				F5FE81971ED553BA008BD4F3 /* Define */,
+				F5FE81981ED554A7008BD4F3 /* Manager */,
 				F55E55571E85178700144D49 /* Modules */,
+				F55E55531E85169700144D49 /* Resource */,
 				F55E553B1E850BB100144D49 /* Supporting Files */,
+				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
+				F55E55541E85171600144D49 /* Utils */,
 			);
 			path = WJDStudyLibrary;
 			sourceTree = "<group>";
@@ -792,12 +797,12 @@
 		F55E553B1E850BB100144D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F54136371EC986D2009E96B0 /* Icons */,
 				F55E55471E850BB100144D49 /* Assets.xcassets */,
-				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
+				F55E554C1E850BB100144D49 /* Info.plist */,
 				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
 				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
-				F55E554C1E850BB100144D49 /* Info.plist */,
-				F54136371EC986D2009E96B0 /* Icons */,
+				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 				F55E553C1E850BB100144D49 /* main.m */,
 			);
 			path = "Supporting Files";
@@ -814,7 +819,7 @@
 				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
 			name = BaseClass;
-			path = Main;
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		F55E55531E85169700144D49 /* Resource */ = {
@@ -829,23 +834,23 @@
 		F55E55541E85171600144D49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */,
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
+				F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */,
 			);
 			name = Utils;
-			path = General;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F5A733191EC2F03A006CB68D /* Animation(动画效果) */,
 				F5C5DFC61EC45C6100A436E0 /* BBS_Web(学习网站) */,
 				F5A733211EC30437006CB68D /* CustomControls */,
+				F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */,
 				F576090D1EADA789000D0176 /* Encryption(加密解密) */,
 				F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */,
 				F5A7330E1EC29BE5006CB68D /* ImageProcessing(图像处理) */,
@@ -855,7 +860,7 @@
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
 			name = Modules;
-			path = Section;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		F55E55581E85179400144D49 /* MainViewController */ = {
@@ -1118,21 +1123,21 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */,
-				F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
+				F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */,
 				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
 				F541360C1EC985A6009E96B0 /* NewFunction(新功能) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
 				F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */,
 				F5E58BA11EBB1B4B00BA60AB /* WebBrowser(浏览器封装) */,
+				F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */,
 				F5A1A71C1E977EAD0076CC78 /* JDFunctionListViewController.h */,
 				F5A1A71D1E977EAD0076CC78 /* JDFunctionListViewController.m */,
 			);
 			name = "FunctionViewList(功能集合)";
-			path = "FunctionViewList(小功能集合)";
+			path = "FunctionViewList(功能集合)";
 			sourceTree = "<group>";
 		};
 		F5A1A71F1E977F030076CC78 /* Signer(自然签名) */ = {
@@ -1423,6 +1428,7 @@
 				F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */,
 			);
 			name = StatusBarMessageView;
+			path = StatusBarMessageView;
 			sourceTree = "<group>";
 		};
 		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
@@ -1439,7 +1445,7 @@
 			children = (
 			);
 			name = ThirdLibrary;
-			path = Resource/ThirdLibrary;
+			path = ThirdLibrary;
 			sourceTree = "<group>";
 		};
 		F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */ = {
@@ -1467,15 +1473,17 @@
 				F55E553F1E850BB100144D49 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		F5FE81971ED553BA008BD4F3 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
 			name = Define;
+			path = Define;
 			sourceTree = "<group>";
 		};
 		F5FE81981ED554A7008BD4F3 /* Manager */ = {
@@ -1485,6 +1493,7 @@
 				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
 			);
 			name = Manager;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */ = {
@@ -1495,17 +1504,19 @@
 				F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */,
 			);
 			name = "iPhoneInfo(手机信息)";
+			path = "iPhoneInfo(手机信息)";
 			sourceTree = "<group>";
 		};
 		F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */ = {
 			isa = PBXGroup;
 			children = (
+				F5FE81A31ED67AAB008BD4F3 /* Contacts */,
+				F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */,
 				F5FE81A41ED67ADC008BD4F3 /* JDContactsViewController.h */,
 				F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */,
-				F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */,
-				F5FE81A31ED67AAB008BD4F3 /* Contacts */,
 			);
 			name = "Contacts(通讯录信息)";
+			path = "Contacts(通讯录信息)";
 			sourceTree = "<group>";
 		};
 		F5FE81A31ED67AAB008BD4F3 /* Contacts */ = {
@@ -1515,6 +1526,7 @@
 				F538BF001ED7C28100CBD96F /* JDContactManager.m */,
 			);
 			name = Contacts;
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1803,7 +1815,7 @@
 				F55E554A1E850BB100144D49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ../.;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
