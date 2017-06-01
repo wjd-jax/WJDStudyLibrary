@@ -17,6 +17,8 @@
 		F50373761EDEACD0004EB2EB /* JDCustomToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */; };
 		F503737A1EDEAD40004EB2EB /* JDCodeCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */; };
 		F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */; };
+		F50373821EDEBDCD004EB2EB /* JDCustomPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */; };
+		F50373851EDF9EA6004EB2EB /* JDCustomPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -177,6 +179,10 @@
 		F50373781EDEAD40004EB2EB /* JDCodeCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCodeCountViewController.h; sourceTree = "<group>"; };
 		F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCodeCountViewController.m; sourceTree = "<group>"; };
 		F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CodeCountStoryboard.storyboard; sourceTree = "<group>"; };
+		F50373801EDEBDCD004EB2EB /* JDCustomPushAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomPushAnimation.h; sourceTree = "<group>"; };
+		F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomPushAnimation.m; sourceTree = "<group>"; };
+		F50373831EDF9EA6004EB2EB /* JDCustomPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomPopAnimation.h; sourceTree = "<group>"; };
+		F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomPopAnimation.m; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
@@ -474,6 +480,7 @@
 		F50373661EDE6D57004EB2EB /* CustomTransAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F503737F1EDEBC75004EB2EB /* CustomTrans */,
 				F503736A1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.h */,
 				F503736B1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m */,
 			);
@@ -498,6 +505,17 @@
 				F50373791EDEAD40004EB2EB /* JDCodeCountViewController.m */,
 			);
 			path = "CodeCount(代码统计)";
+			sourceTree = "<group>";
+		};
+		F503737F1EDEBC75004EB2EB /* CustomTrans */ = {
+			isa = PBXGroup;
+			children = (
+				F50373801EDEBDCD004EB2EB /* JDCustomPushAnimation.h */,
+				F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */,
+				F50373831EDF9EA6004EB2EB /* JDCustomPopAnimation.h */,
+				F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */,
+			);
+			name = CustomTrans;
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -1683,6 +1701,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */,
+				F50373851EDF9EA6004EB2EB /* JDCustomPopAnimation.m in Sources */,
 				F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */,
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
@@ -1758,6 +1777,7 @@
 				F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */,
 				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,
 				F5BBFFC11EBC70E000ACCC38 /* JDWaterFlowLayout.m in Sources */,
+				F50373821EDEBDCD004EB2EB /* JDCustomPushAnimation.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
 				F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,

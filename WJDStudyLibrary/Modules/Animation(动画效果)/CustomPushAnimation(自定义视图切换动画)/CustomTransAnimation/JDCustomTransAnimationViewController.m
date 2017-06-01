@@ -7,8 +7,10 @@
 //
 
 #import "JDCustomTransAnimationViewController.h"
-
-@interface JDCustomTransAnimationViewController ()
+#import "JDSystemTransTestViewController.h"
+#import "JDCustomPushAnimation.h"
+#import "JDCustomPopAnimation.h"
+@interface JDCustomTransAnimationViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -16,22 +18,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.dataSoureArray =@[
+                           @{@"title":@"不带交互的转场动画",@"ClassName":@""},
+                           @{@"title":@"带交互转场动画",@"ClassName":@""},
+                           
+                           ];
+    self.navigationController.delegate = self;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    JDSystemTransTestViewController *vc =[[JDSystemTransTestViewController alloc]init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -- 实现导航控制器的代理方法
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    //判断当前是push还是pop
+    if (operation == UINavigationControllerOperationPush)
+    
+        return [[JDCustomPushAnimation alloc]init];
+    else
+    //如果我们写了pop的动画工具类的话，这里就填pop的
+        return [[JDCustomPopAnimation alloc]init];
 }
-*/
-
 @end
