@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "JDAuthorityManager.h"
+#import "AppDelegate+JDPush.h"
 
 @interface AppDelegate ()
 
@@ -25,9 +26,12 @@
     //请求权限
     [JDAuthorityManager requestAuthority];
     
+    
+    [self regisNotification];
+    
+    //设置 rootViewController
     MainViewController *mVC =[[MainViewController alloc]init];
     UINavigationController *rootVC =[[UINavigationController alloc]initWithRootViewController:mVC];
-    
     _window.rootViewController =rootVC;
     
     [_window makeKeyAndVisible];
@@ -67,6 +71,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
 }
 
 

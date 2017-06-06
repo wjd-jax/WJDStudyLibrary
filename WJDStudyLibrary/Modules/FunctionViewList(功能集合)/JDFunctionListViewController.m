@@ -26,7 +26,7 @@
                            @{@"title":@"系统新版本功能封装",@"ClassName":@"JDNewFunctionViewController"},
                            @{@"title":@"获取手机信息",@"ClassName":@"IPhoneInfoStoryboard"},
                            @{@"title":@"通讯录封装",@"ClassName":@"ContactsStoryboard"},
-
+                           @{@"title":@"本地推送(闹钟)",@"ClassName":@"JDLocaNotificationViewController"},
                            ];
 
 }

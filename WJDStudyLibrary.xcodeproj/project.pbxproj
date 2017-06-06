@@ -45,6 +45,8 @@
 		F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */; };
 		F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */; };
 		F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F538BF001ED7C28100CBD96F /* JDContactManager.m */; };
+		F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */ = {isa = PBXBuildFile; fileRef = F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */; };
+		F540CD351EE6898900A9FCDA /* JDLocaNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F540CD341EE6898900A9FCDA /* JDLocaNotificationViewController.m */; };
 		F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */; };
 		F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54136121EC98667009E96B0 /* JDChangeIconViewController.m */; };
 		F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54136381EC986DD009E96B0 /* 晴20x20@2x.png */; };
@@ -236,6 +238,10 @@
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
 		F538BEFF1ED7C28100CBD96F /* JDContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactManager.h; sourceTree = "<group>"; };
 		F538BF001ED7C28100CBD96F /* JDContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactManager.m; sourceTree = "<group>"; };
+		F540CD2F1EE674CD00A9FCDA /* AppDelegate+JDPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDPush.h"; sourceTree = "<group>"; };
+		F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDPush.m"; sourceTree = "<group>"; };
+		F540CD331EE6898900A9FCDA /* JDLocaNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLocaNotificationViewController.h; sourceTree = "<group>"; };
+		F540CD341EE6898900A9FCDA /* JDLocaNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLocaNotificationViewController.m; sourceTree = "<group>"; };
 		F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewFunctionViewController.h; sourceTree = "<group>"; };
 		F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewFunctionViewController.m; sourceTree = "<group>"; };
 		F54136111EC98667009E96B0 /* JDChangeIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDChangeIconViewController.h; sourceTree = "<group>"; };
@@ -697,6 +703,15 @@
 			path = "浏览卡片";
 			sourceTree = "<group>";
 		};
+		F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */ = {
+			isa = PBXGroup;
+			children = (
+				F540CD331EE6898900A9FCDA /* JDLocaNotificationViewController.h */,
+				F540CD341EE6898900A9FCDA /* JDLocaNotificationViewController.m */,
+			);
+			name = "LocaNotification(本地推送)";
+			sourceTree = "<group>";
+		};
 		F541360C1EC985A6009E96B0 /* NewFunction(新功能) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1164,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */,
@@ -1494,6 +1510,8 @@
 			children = (
 				F55E553E1E850BB100144D49 /* AppDelegate.h */,
 				F55E553F1E850BB100144D49 /* AppDelegate.m */,
+				F540CD2F1EE674CD00A9FCDA /* AppDelegate+JDPush.h */,
+				F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1585,6 +1603,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
 							com.apple.Keychain = {
@@ -1803,6 +1824,7 @@
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
 				F5C94D211EC169C9004C1A1A /* JDCameraFuctionViewController.m in Sources */,
 				F57609311EAF352D000D0176 /* JDKeyPairViewController.m in Sources */,
+				F540CD351EE6898900A9FCDA /* JDLocaNotificationViewController.m in Sources */,
 				F57D45661E9C601C0073F6D6 /* JDBruchViewController.m in Sources */,
 				F528DE001EA4875700F0E500 /* JDTimeFormatTool.m in Sources */,
 				F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */,
@@ -1821,6 +1843,7 @@
 				F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
+				F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
 				F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */,
