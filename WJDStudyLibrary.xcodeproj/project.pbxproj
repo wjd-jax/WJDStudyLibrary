@@ -19,6 +19,8 @@
 		F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F503737B1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard */; };
 		F50373821EDEBDCD004EB2EB /* JDCustomPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */; };
 		F50373851EDF9EA6004EB2EB /* JDCustomPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */; };
+		F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373881EDFB3C3004EB2EB /* JDRealRandomViewController.m */; };
+		F503738D1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
@@ -183,6 +185,9 @@
 		F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomPushAnimation.m; sourceTree = "<group>"; };
 		F50373831EDF9EA6004EB2EB /* JDCustomPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomPopAnimation.h; sourceTree = "<group>"; };
 		F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomPopAnimation.m; sourceTree = "<group>"; };
+		F50373871EDFB3C3004EB2EB /* JDRealRandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRealRandomViewController.h; sourceTree = "<group>"; };
+		F50373881EDFB3C3004EB2EB /* JDRealRandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRealRandomViewController.m; sourceTree = "<group>"; };
+		F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealRandomStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
@@ -490,6 +495,7 @@
 		F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */ = {
 			isa = PBXGroup;
 			children = (
+				F50373861EDFB377004EB2EB /* Random(随机数) */,
 				F50373771EDEAD11004EB2EB /* CodeCount(代码统计) */,
 				F50373741EDEACD0004EB2EB /* JDCustomToolViewController.h */,
 				F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */,
@@ -516,6 +522,16 @@
 				F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */,
 			);
 			name = CustomTrans;
+			sourceTree = "<group>";
+		};
+		F50373861EDFB377004EB2EB /* Random(随机数) */ = {
+			isa = PBXGroup;
+			children = (
+				F50373871EDFB3C3004EB2EB /* JDRealRandomViewController.h */,
+				F50373881EDFB3C3004EB2EB /* JDRealRandomViewController.m */,
+				F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */,
+			);
+			name = "Random(随机数)";
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
@@ -1607,6 +1623,7 @@
 				F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */,
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
 				F54136521EC98704009E96B0 /* 天气29x29@3x.png in Resources */,
+				F503738D1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
@@ -1773,6 +1790,7 @@
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
+				F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */,
 				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,

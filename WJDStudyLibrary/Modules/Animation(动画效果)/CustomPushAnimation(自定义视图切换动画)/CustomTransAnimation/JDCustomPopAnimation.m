@@ -32,14 +32,15 @@
 //        fromView.center = CGPointMake([UIScreen mainScreen].bounds.size.width * 2, fromView.center.y);
         //from 页面缩小到消失
         fromView.transform = CGAffineTransformMakeScale(0.01, 0.01);
-
         //将这个恢复其形变属性
         toView.transform = CGAffineTransformIdentity;
         
     } completion:^(BOOL finished) {
         
+
         [fromView removeFromSuperview];
-        
+        //将这个恢复其形变属性
+        toView.transform = CGAffineTransformIdentity;
         [transitionContext completeTransition:YES];
         
     }];

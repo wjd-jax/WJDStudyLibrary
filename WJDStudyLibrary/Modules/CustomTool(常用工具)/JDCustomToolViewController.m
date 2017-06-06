@@ -19,7 +19,7 @@
     self.dataSoureArray =@[
                            //用于测试的页面
                            @{@"title":@"代码统计",@"ClassName":@"CodeCountStoryboard"},
-                           @{@"title":@"待续",@"ClassName":@"JDVi dfsewListViewController"},
+                           @{@"title":@"随机数",@"ClassName":@"RealRandomStoryboard"},
                            ];
     
 }
