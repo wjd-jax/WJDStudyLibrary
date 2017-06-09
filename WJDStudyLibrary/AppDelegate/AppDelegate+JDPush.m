@@ -16,7 +16,7 @@
     /***策略1****/
     //按钮1
     UIMutableUserNotificationAction * action1 = [[UIMutableUserNotificationAction alloc] init];
-    action1.identifier = @"action1";  //事件ID
+    action1.identifier = @"action1"; //事件ID
     action1.title=@"推迟";
     
     //前台执行还是后台执行
@@ -94,6 +94,22 @@
         noti.category = @"categoryTwo";
         [[UIApplication sharedApplication]  scheduleLocalNotification:noti];
 
+    }
+    else
+    {
+        //取消本地推送
+        NSArray * array = [[UIApplication sharedApplication] scheduledLocalNotifications];
+        DLog(@"%@",array);
+        //便利这个数组 根据 key 拿到我们想要的 UILocalNotification
+        for (UILocalNotification * loc in array) {
+            if ([[loc.userInfo objectForKey:@"key"] isEqualToString:[notification.userInfo objectForKey:@"key"]]) {
+                //取消 本地推送
+                DLog(@"取消本地推送");
+                [[UIApplication sharedApplication] cancelLocalNotification:loc];
+            }
+        }
+        
+//        [[UIApplication sharedApplication] cancelAllLocalNotifications];
     }
     
     completionHandler();//处理完消息，最后一定要调用这个代码块
