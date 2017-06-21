@@ -12,6 +12,17 @@
 @interface JDKeyChainWapper : NSObject
 
 
++ (BOOL)saveStringWithdIdentifier:(NSString *)identifier data:(NSString *)str;
++ (NSString *)loadStringDataWithIdentifier:(NSString *)identifier;
+
+/**
+ 获取一个保存在keyChain中的IDFV(uuid),如果不存在,就创建一个,然后返回
+ 
+ @return idfv字符串
+ */
++ (NSString *)getIDFV;
++ (BOOL)resetUUID;
+
 /**
  save username and password to keychain
  

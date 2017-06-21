@@ -39,6 +39,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
+    
+    //如果是自定义的cell必须在原来的tablView处调用
+    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];
+    //否则会无法执行自定义cell的方法
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:_cellIdentifier];
     }

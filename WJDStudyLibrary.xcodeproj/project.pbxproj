@@ -193,7 +193,7 @@
 		F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealRandomStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = ../../Define/define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -546,6 +546,7 @@
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
 				F51CF0901E8E41390035EF7A /* JDUtils.h */,
 				F51CF0911E8E41390035EF7A /* JDUtils.m */,
@@ -1525,7 +1526,6 @@
 			isa = PBXGroup;
 			children = (
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
 			path = Define;
 			sourceTree = "<group>";

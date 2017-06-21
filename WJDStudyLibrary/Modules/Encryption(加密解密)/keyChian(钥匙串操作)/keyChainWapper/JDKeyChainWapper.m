@@ -51,6 +51,24 @@ static NSData *base64_decode(NSString *str){
     NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
     return data;
 }
+#pragma mark - 保存在Keychian中的IDFV
++(NSString *)getIDFV
+{
+    NSString *uuid =[self loadStringDataWithIdentifier:@"JD_UUID"];
+    if (!uuid) {
+        NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [self saveStringWithdIdentifier:@"JD_UUID" data:idfv];
+        uuid =idfv;
+    }
+    return uuid;
+}
++ (BOOL)resetUUID
+{
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:@"JD_UUID" accessGroup:nil];
+    SecItemDelete((CFDictionaryRef)keychainQuery);
+    return YES;
+}
+
 
 #pragma mark 写入
 
@@ -122,6 +140,23 @@ static NSData *base64_decode(NSString *str){
     return YES;
 }
 
++ (BOOL)saveStringWithdIdentifier:(NSString *)identifier data:(NSString *)str;
+{
+    
+    //Get search dictionary
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:nil];
+    //Delete old item before add new item
+    SecItemDelete((CFDictionaryRef)keychainQuery);
+    //Add new object to search dictionary(Attention:the data format)
+    [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:str] forKey:(id)kSecValueData];
+    //Add item to keychain with the search dictionary
+    OSStatus status =  SecItemAdd((CFDictionaryRef)keychainQuery, NULL);
+    if (status != noErr) {
+        return NO;
+    }
+    return YES;
+
+}
 #pragma mark 读取
 + (id)loadPassWordDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup
 {
@@ -156,6 +191,29 @@ static NSData *base64_decode(NSString *str){
     DLog(@"读取失败");
     return nil;
 }
+
++ (NSString *)loadStringDataWithIdentifier:(NSString *)identifier
+{
+    NSString *ret = nil;
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:identifier accessGroup:nil];
+    //Configure the search setting
+    //Since in our simple case we are expecting only a single attribute to be returned (the password) we can set the attribute kSecReturnData to kCFBooleanTrue
+    [keychainQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
+    [keychainQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+    CFDataRef keyData = NULL;
+    if (SecItemCopyMatching((CFDictionaryRef)keychainQuery, (CFTypeRef *)&keyData) == noErr) {
+        @try {
+            ret = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)keyData];
+        } @catch (NSException *e) {
+            DLog(@"Unarchive of %@ failed: %@", identifier, e);
+        } @finally {
+        }
+    }
+    if (keyData)
+        CFRelease(keyData);
+    return ret;
+}
+
 #pragma mark 删除
 + (void)deletePassWordClassDataWithIdentifier:(NSString *)identifier accessGroup:(NSString *) accessGroup
 {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-typedef void (^configureCell)(UITableViewCell*, id);
+typedef void (^configureCell)(id cell, id item);
 
 @interface ArrayDataSource : NSObject <UITableViewDataSource>
 
