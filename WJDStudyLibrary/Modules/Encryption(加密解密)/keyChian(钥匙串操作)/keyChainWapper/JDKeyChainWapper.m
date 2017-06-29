@@ -62,6 +62,7 @@ static NSData *base64_decode(NSString *str){
     }
     return uuid;
 }
+
 + (BOOL)resetUUID
 {
     NSMutableDictionary *keychainQuery = [self getKeychainQuery:@"JD_UUID" accessGroup:nil];

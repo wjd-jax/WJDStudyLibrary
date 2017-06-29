@@ -24,7 +24,7 @@
         _shareClient.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html", nil];
         //移除 NULL 值
         ((AFJSONResponseSerializer *)_shareClient.responseSerializer).removesKeysWithNullValues = YES;
-        //证书相关
+        //证书相关(这里有的时候设置了之后,后台会拿不到参数,如果出现,删除下列设置证书语句)
         AFSecurityPolicy *securityPolicy = [[AFSecurityPolicy alloc] init];
         _shareClient.securityPolicy = securityPolicy;
         //超时时间

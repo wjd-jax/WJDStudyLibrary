@@ -10,7 +10,7 @@
 #import "MainViewController.h"
 #import "JDAuthorityManager.h"
 #import "AppDelegate+JDPush.h"
-
+#import "JDCustomNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -31,7 +31,7 @@
     
     //设置 rootViewController
     MainViewController *mVC =[[MainViewController alloc]init];
-    UINavigationController *rootVC =[[UINavigationController alloc]initWithRootViewController:mVC];
+    JDCustomNavigationController *rootVC =[[JDCustomNavigationController alloc]initWithRootViewController:mVC];
     _window.rootViewController =rootVC;
     
     [_window makeKeyAndVisible];

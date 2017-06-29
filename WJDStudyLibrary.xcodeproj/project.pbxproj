@@ -83,6 +83,7 @@
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
 		F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A916F1ECD2B7C00DA3388 /* JDRainView.m */; };
 		F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A91721ECD2D8500DA3388 /* JDRainViewController.m */; };
+		F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5757EFE1F04A41200A8871F /* JDCustomNavigationController.m */; };
 		F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */; };
 		F57609131EADC4D2000D0176 /* EnvtyptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57609121EADC4D2000D0176 /* EnvtyptionView.xib */; };
 		F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57609151EADC51A000D0176 /* JDEntyptionView.m */; };
@@ -291,6 +292,8 @@
 		F56A916F1ECD2B7C00DA3388 /* JDRainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainView.m; sourceTree = "<group>"; };
 		F56A91711ECD2D8500DA3388 /* JDRainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainViewController.h; sourceTree = "<group>"; };
 		F56A91721ECD2D8500DA3388 /* JDRainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainViewController.m; sourceTree = "<group>"; };
+		F5757EFD1F04A41200A8871F /* JDCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomNavigationController.h; sourceTree = "<group>"; };
+		F5757EFE1F04A41200A8871F /* JDCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomNavigationController.m; sourceTree = "<group>"; };
 		F576090E1EADA805000D0176 /* JDEncryptionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDEncryptionListViewController.h; sourceTree = "<group>"; };
 		F576090F1EADA805000D0176 /* JDEncryptionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDEncryptionListViewController.m; sourceTree = "<group>"; };
 		F57609121EADC4D2000D0176 /* EnvtyptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvtyptionView.xib; sourceTree = "<group>"; };
@@ -543,6 +546,13 @@
 			name = "Random(随机数)";
 			sourceTree = "<group>";
 		};
+		F513ED6A1F009ACC001C044C /* HubMessage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HubMessage;
+			sourceTree = "<group>";
+		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,7 +645,8 @@
 		F52C45111E94BA3500D8DF62 /* popViewListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F5D2F8381ED2D6260063F18F /* StatusBarMessageView */,
+				F513ED6A1F009ACC001C044C /* HubMessage */,
+				F5D2F8381ED2D6260063F18F /* StatusBarMessageView(状态栏提示信息) */,
 				F52C45231E94C91D00D8DF62 /* popAletView(自定义AletView) */,
 				F52C45151E94BBD500D8DF62 /* popViewStyle(通用分享视图) */,
 				F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */,
@@ -865,6 +876,8 @@
 				F52C452C1E960B2200D8DF62 /* JDBaseTableViewController.m */,
 				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
 				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
+				F5757EFD1F04A41200A8871F /* JDCustomNavigationController.h */,
+				F5757EFE1F04A41200A8871F /* JDCustomNavigationController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -1466,12 +1479,13 @@
 			path = OpenCVCamera;
 			sourceTree = "<group>";
 		};
-		F5D2F8381ED2D6260063F18F /* StatusBarMessageView */ = {
+		F5D2F8381ED2D6260063F18F /* StatusBarMessageView(状态栏提示信息) */ = {
 			isa = PBXGroup;
 			children = (
 				F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */,
 				F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */,
 			);
+			name = "StatusBarMessageView(状态栏提示信息)";
 			path = StatusBarMessageView;
 			sourceTree = "<group>";
 		};
@@ -1817,6 +1831,7 @@
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
+				F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */,
 				F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */,

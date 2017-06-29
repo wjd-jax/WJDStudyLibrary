@@ -92,7 +92,9 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
     url =[url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     JDNetClinet *client =[JDNetClinet sharedClient];
+    //通用参数处理,这里可以添加所有接口通用的参数
     parameters = [self dealParrameters:parameters];
+    
     if ([self DeBug])DLog(@"参数列表%@",parameters);
     
     switch (type) {
