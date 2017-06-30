@@ -89,9 +89,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES];\
 
-
-//获取图片
-#define JDGetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+//定义UIImage对象
+#define ImageWithFile(_pointer) [UIImage imageWithContentsOfFile:([[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@@%dx", _pointer, (int)[UIScreen mainScreen].nativeScale] ofType:@"png"])]
+#define IMAGE_NAMED(name) [UIImage imageNamed:name]
 
 //获取当前语言
 #define JDCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])

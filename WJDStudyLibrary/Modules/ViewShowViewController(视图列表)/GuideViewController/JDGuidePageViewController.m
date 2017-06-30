@@ -23,8 +23,15 @@
 
 @implementation JDGuidePageViewController
 
+- (void)dealloc
+{
+    _backgroundViews = nil;
+    _coverImageNames = nil;
+    _backgroundImageNames = nil;
+    _scrollViewPages =nil;
+    self.view = nil;
 
-
+}
 - (id)initWithCoverImageNames:(NSArray *)coverNames
 {
     if (self = [super init]) {
@@ -70,6 +77,8 @@
     
     if (!_enterButton) {
         _enterButton =[JDUtils createButtonWithFrame:[self frameOfEnterButton] ImageName:nil Target:self Action:@selector(enter:) Title:NSLocalizedString(@"Enter", @"进入应用")];
+        JDViewSetRadius(_enterButton, 5);
+        [_enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     JDViewBorderRadius(_enterButton, 0.5, [UIColor whiteColor].CGColor);
     _enterButton.alpha =0;
@@ -114,8 +123,8 @@
     NSMutableArray *tmpArray = [NSMutableArray new];
     
     for (int i = 0; i<names.count; i++) {
-        UIImageView *imageView =[JDUtils createImageViewWithFrame:self.view.bounds ImageName:[names objectAtIndex:i]];
         
+        UIImageView *imageView =[JDUtils createImageViewWithFrame:self.view.bounds ImageName:[names objectAtIndex:i]];
         [tmpArray addObject:imageView];
     }
     
@@ -153,13 +162,20 @@
 {
     CGSize size = self.enterButton.bounds.size;
     if (CGSizeEqualToSize(size, CGSizeZero)) {
-        size = CGSizeMake(self.view.frame.size.width * 0.6, 40);
+        size = CGSizeMake(self.view.frame.size.width * 0.6, 35);
     }
     return CGRectMake(self.view.frame.size.width / 2 - size.width / 2, self.pageControl.frame.origin.y - size.height, size.width, size.height);
 }
-
+#pragma mark - 退出引导页事件
 - (void)enter:(UIButton *)button
 {
+    CATransition *transition =[CATransition animation];
+    transition.type =@"rippleEffect";
+    transition.duration =0.8;
+    [self.view.layer addAnimation:transition forKey:nil];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
     if (_didSelectedEnter) {
         
         _didSelectedEnter();
@@ -222,9 +238,6 @@
         }
     }
 }
-- (void)dealloc
-{
-    self.view = nil;
-}
+
 
 @end

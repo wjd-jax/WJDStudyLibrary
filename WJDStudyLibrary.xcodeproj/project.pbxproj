@@ -29,6 +29,7 @@
 		F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */; };
 		F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUtils.m */; };
 		F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */; };
+		F51FA13B1F04D2E300CC7041 /* JDGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */; };
 		F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */; };
 		F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */; };
 		F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5223EF01EC4006800CDCBD8 /* printerVoice.wav */; };
@@ -74,6 +75,12 @@
 		F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6A1EB86E1200AB92CC /* i3.jpg */; };
 		F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6B1EB86E1200AB92CC /* i4.jpg */; };
 		F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6C1EB86E1200AB92CC /* i5.jpg */; };
+		F55069761F05D9A100977235 /* img_index_01bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069751F05D9A100977235 /* img_index_01bg@2x.png */; };
+		F55069781F05D9AA00977235 /* img_index_01txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069771F05D9AA00977235 /* img_index_01txt@2x.png */; };
+		F550697A1F05D9B000977235 /* img_index_02bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069791F05D9B000977235 /* img_index_02bg@2x.png */; };
+		F550697C1F05D9BF00977235 /* img_index_02txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */; };
+		F550697E1F05D9C700977235 /* img_index_03bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697D1F05D9C700977235 /* img_index_03bg@2x.png */; };
+		F55069801F05D9D000977235 /* img_index_03txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697F1F05D9D000977235 /* img_index_03txt@2x.png */; };
 		F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */; };
 		F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
@@ -194,7 +201,7 @@
 		F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealRandomStoryboard.storyboard; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define.h; path = ../../Define/define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -208,6 +215,8 @@
 		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
 		F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutUsViewController.m; sourceTree = "<group>"; };
+		F51FA1391F04D2E300CC7041 /* JDGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JDGuidePageView.h; path = WJDStudyLibrary/BaseClass/JDGuidePageView.h; sourceTree = SOURCE_ROOT; };
+		F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JDGuidePageView.m; path = WJDStudyLibrary/BaseClass/JDGuidePageView.m; sourceTree = SOURCE_ROOT; };
 		F5223EE81EC3FE1700CDCBD8 /* JDPrintLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabelViewController.h; sourceTree = "<group>"; };
 		F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPrintLabelViewController.m; sourceTree = "<group>"; };
 		F5223EEC1EC3FE3D00CDCBD8 /* JDPrintLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabel.h; sourceTree = "<group>"; };
@@ -276,6 +285,12 @@
 		F54BBB6A1EB86E1200AB92CC /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
 		F54BBB6B1EB86E1200AB92CC /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
 		F54BBB6C1EB86E1200AB92CC /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
+		F55069751F05D9A100977235 /* img_index_01bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_01bg@2x.png"; sourceTree = "<group>"; };
+		F55069771F05D9AA00977235 /* img_index_01txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_01txt@2x.png"; sourceTree = "<group>"; };
+		F55069791F05D9B000977235 /* img_index_02bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_02bg@2x.png"; sourceTree = "<group>"; };
+		F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_02txt@2x.png"; sourceTree = "<group>"; };
+		F550697D1F05D9C700977235 /* img_index_03bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_03bg@2x.png"; sourceTree = "<group>"; };
+		F550697F1F05D9D000977235 /* img_index_03txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_03txt@2x.png"; sourceTree = "<group>"; };
 		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
 		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
 		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -507,8 +522,8 @@
 		F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */ = {
 			isa = PBXGroup;
 			children = (
-				F50373861EDFB377004EB2EB /* Random(随机数) */,
 				F50373771EDEAD11004EB2EB /* CodeCount(代码统计) */,
+				F50373861EDFB377004EB2EB /* Random(随机数) */,
 				F50373741EDEACD0004EB2EB /* JDCustomToolViewController.h */,
 				F50373751EDEACD0004EB2EB /* JDCustomToolViewController.m */,
 			);
@@ -528,12 +543,12 @@
 		F503737F1EDEBC75004EB2EB /* CustomTrans */ = {
 			isa = PBXGroup;
 			children = (
-				F50373801EDEBDCD004EB2EB /* JDCustomPushAnimation.h */,
-				F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */,
 				F50373831EDF9EA6004EB2EB /* JDCustomPopAnimation.h */,
 				F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */,
+				F50373801EDEBDCD004EB2EB /* JDCustomPushAnimation.h */,
+				F50373811EDEBDCD004EB2EB /* JDCustomPushAnimation.m */,
 			);
-			name = CustomTrans;
+			path = CustomTrans;
 			sourceTree = "<group>";
 		};
 		F50373861EDFB377004EB2EB /* Random(随机数) */ = {
@@ -543,25 +558,25 @@
 				F50373881EDFB3C3004EB2EB /* JDRealRandomViewController.m */,
 				F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */,
 			);
-			name = "Random(随机数)";
+			path = "Random(随机数)";
 			sourceTree = "<group>";
 		};
 		F513ED6A1F009ACC001C044C /* HubMessage */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = HubMessage;
+			path = HubMessage;
 			sourceTree = "<group>";
 		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
 				F51CF0901E8E41390035EF7A /* JDUtils.h */,
 				F51CF0911E8E41390035EF7A /* JDUtils.m */,
 				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
 				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
+				F51CF07D1E8DF3AF0035EF7A /* define.h */,
 			);
 			path = WJDToolKit;
 			sourceTree = "<group>";
@@ -591,6 +606,15 @@
 				F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */,
 			);
 			path = "AboutUs(关于我)";
+			sourceTree = "<group>";
+		};
+		F51FA1381F04C59700CC7041 /* GuidePage(引导页封装) */ = {
+			isa = PBXGroup;
+			children = (
+				F51FA1391F04D2E300CC7041 /* JDGuidePageView.h */,
+				F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */,
+			);
+			path = "GuidePage(引导页封装)";
 			sourceTree = "<group>";
 		};
 		F5223EE71EC3FDC500CDCBD8 /* PrinterLabel(打字机) */ = {
@@ -724,7 +748,7 @@
 				F540CD331EE6898900A9FCDA /* JDLocaNotificationViewController.h */,
 				F540CD341EE6898900A9FCDA /* JDLocaNotificationViewController.m */,
 			);
-			name = "LocaNotification(本地推送)";
+			path = "LocaNotification(本地推送)";
 			sourceTree = "<group>";
 		};
 		F541360C1EC985A6009E96B0 /* NewFunction(新功能) */ = {
@@ -797,6 +821,19 @@
 				F54BBB6C1EB86E1200AB92CC /* i5.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		F55069741F05D98100977235 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F550697F1F05D9D000977235 /* img_index_03txt@2x.png */,
+				F550697D1F05D9C700977235 /* img_index_03bg@2x.png */,
+				F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */,
+				F55069791F05D9B000977235 /* img_index_02bg@2x.png */,
+				F55069771F05D9AA00977235 /* img_index_01txt@2x.png */,
+				F55069751F05D9A100977235 /* img_index_01bg@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -885,6 +922,7 @@
 		F55E55531E85169700144D49 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F55069741F05D98100977235 /* images */,
 				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
 				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
 			);
@@ -1181,11 +1219,12 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */ = {
 			isa = PBXGroup;
 			children = (
-				F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
 				F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */,
 				F5FE819F1ED67A19008BD4F3 /* Contacts(通讯录信息) */,
 				F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */,
+				F51FA1381F04C59700CC7041 /* GuidePage(引导页封装) */,
+				F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */,
 				F541360C1EC985A6009E96B0 /* NewFunction(新功能) */,
 				F57D457D1E9CC8910073F6D6 /* QRSanner(二维码) */,
 				F57D45791E9CC7DC0073F6D6 /* SignListViewController(签字笔效果) */,
@@ -1485,8 +1524,7 @@
 				F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */,
 				F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */,
 			);
-			name = "StatusBarMessageView(状态栏提示信息)";
-			path = StatusBarMessageView;
+			path = "StatusBarMessageView(状态栏提示信息)";
 			sourceTree = "<group>";
 		};
 		F5DB4C1B1EA5BF11000D3A0F /* TouchIDTest(TouchID 功能) */ = {
@@ -1526,12 +1564,12 @@
 		F5FE81961ED55064008BD4F3 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				F55E553E1E850BB100144D49 /* AppDelegate.h */,
-				F55E553F1E850BB100144D49 /* AppDelegate.m */,
 				F540CD2F1EE674CD00A9FCDA /* AppDelegate+JDPush.h */,
 				F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */,
 				F595E6C51EEA898A000E15E9 /* AppDelegate+JDUserNotifications.h */,
 				F595E6C61EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m */,
+				F55E553E1E850BB100144D49 /* AppDelegate.h */,
+				F55E553F1E850BB100144D49 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1659,10 +1697,14 @@
 			files = (
 				F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */,
 				F54136441EC986DD009E96B0 /* 晴40x40@2x.png in Resources */,
+				F55069761F05D9A100977235 /* img_index_01bg@2x.png in Resources */,
+				F55069781F05D9AA00977235 /* img_index_01txt@2x.png in Resources */,
 				F54136511EC98704009E96B0 /* 天气29x29@2x.png in Resources */,
 				F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */,
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
 				F54136521EC98704009E96B0 /* 天气29x29@3x.png in Resources */,
+				F550697C1F05D9BF00977235 /* img_index_02txt@2x.png in Resources */,
+				F55069801F05D9D000977235 /* img_index_03txt@2x.png in Resources */,
 				F503738D1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */,
@@ -1678,6 +1720,7 @@
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
 				F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */,
 				F54136421EC986DD009E96B0 /* 晴29x29@2x.png in Resources */,
+				F550697A1F05D9B000977235 /* img_index_02bg@2x.png in Resources */,
 				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
 				F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */,
@@ -1697,6 +1740,7 @@
 				F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */,
 				F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
+				F550697E1F05D9C700977235 /* img_index_03bg@2x.png in Resources */,
 				F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
@@ -1853,6 +1897,7 @@
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */,
+				F51FA13B1F04D2E300CC7041 /* JDGuidePageView.m in Sources */,
 				F5C29F131ECC391000835E26 /* JDSnowView.m in Sources */,
 				F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */,
 				F57609161EADC51A000D0176 /* JDEntyptionView.m in Sources */,

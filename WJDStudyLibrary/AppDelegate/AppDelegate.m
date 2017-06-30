@@ -11,6 +11,9 @@
 #import "JDAuthorityManager.h"
 #import "AppDelegate+JDPush.h"
 #import "JDCustomNavigationController.h"
+#import "JDGuidePageViewController.h"
+#import "JDGuidePageView.h"
+
 @interface AppDelegate ()
 
 @end
@@ -25,21 +28,49 @@
     
     //请求权限
     [JDAuthorityManager requestAuthority];
-    
-    
+    //注册推送
     [self regisNotification];
     
-    //设置 rootViewController
     MainViewController *mVC =[[MainViewController alloc]init];
     JDCustomNavigationController *rootVC =[[JDCustomNavigationController alloc]initWithRootViewController:mVC];
     _window.rootViewController =rootVC;
+
+
+ 
     
     [_window makeKeyAndVisible];
     
+    if (![self isFirstLauch]) {
+        
+        
+        JDGuidePageView *guideView =[[JDGuidePageView alloc]initGuideViewWithImages:@[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"] ];
+        [_window addSubview:guideView];
+    }
     //给 launch 添加动画
     [self addLaunchAnimation];
     
     return YES;
+}
+
+
+#pragma mark - 判断是不是首次登录或者版本更新
+- (BOOL)isFirstLauch{
+    
+    //获取当前版本号
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
+    
+    //获取上次启动应用保存的appVersion
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:@"version"];
+    //版本升级或首次登录
+    if (version == nil || ![version isEqualToString:currentAppVersion]) {
+        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:@"version"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        return YES;
+    }else{
+        return NO;
+    }
+    
 }
 
 #pragma mark - 添加启动动画

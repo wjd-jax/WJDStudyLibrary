@@ -53,7 +53,7 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //[button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    [button setImage:JDGetImage(imageName) forState:UIControlStateNormal];
+    [button setImage:IMAGE_NAMED(imageName) forState:UIControlStateNormal];
     //[button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
