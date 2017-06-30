@@ -29,6 +29,7 @@
 - (instancetype)initGuideViewWithImages:(NSArray *)imageNames{
     
     self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kScreen_height)];
+    _isScrollOut = YES;
     self.images = imageNames;
     return self;
     
@@ -37,6 +38,8 @@
 - (instancetype)initGuideViewWithImages:(NSArray *)imageNames button:(UIButton *)button{
     
     self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kScreen_height)];
+    _isScrollOut = YES;
+    //一定要先赋值button因为后边要用到
     self.enterButton = button;
     self.images = imageNames;
     return self;
@@ -93,6 +96,10 @@
     [self addSubview:_page];
     
 }
+-(void)setIsShowPageView:(BOOL)isShowPageView
+{
+    _page.hidden = !isShowPageView;
+}
 
 - (UIButton *)getEnterButton
 {
@@ -114,6 +121,17 @@
     _enterButton = enterButton;
 }
 
+-(void)setCurrentColor:(UIColor *)currentColor
+{
+    _page.currentPageIndicatorTintColor = currentColor;
+}
+
+-(void)setNomalColor:(UIColor *)nomalColor
+{
+    _page.pageIndicatorTintColor = nomalColor;
+
+}
+
 #pragma mark - scrollView Delegate
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -122,7 +140,9 @@
     //如果是最后一页左滑
     if (cuttentIndex == self.images.count - 1) {
         if ([self isScrolltoLeft:scrollView]) {
-            [self hideGuideView];
+            if (_isScrollOut) {
+                [self hideGuideView];
+            }
         }
     }
 }

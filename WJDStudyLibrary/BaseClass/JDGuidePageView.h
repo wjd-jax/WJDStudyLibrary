@@ -26,7 +26,7 @@
 @property(nonatomic,assign)BOOL isShowPageView;
 
 /**
- 是否滑动到最后一页移除引导页
+ 是否滑动到最后一页移除引导页,默认是
  */
 @property(nonatomic,assign)BOOL isScrollOut;
 

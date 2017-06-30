@@ -35,15 +35,15 @@
     JDCustomNavigationController *rootVC =[[JDCustomNavigationController alloc]initWithRootViewController:mVC];
     _window.rootViewController =rootVC;
 
-
- 
-    
     [_window makeKeyAndVisible];
     
+    //引导页.一定要在[_window makeKeyAndVisible]之后调用
     if (![self isFirstLauch]) {
         
-        
         JDGuidePageView *guideView =[[JDGuidePageView alloc]initGuideViewWithImages:@[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"] ];
+        guideView.isShowPageView = YES;
+        guideView.isScrollOut = NO;
+        guideView.currentColor =[UIColor redColor];
         [_window addSubview:guideView];
     }
     //给 launch 添加动画
