@@ -38,9 +38,9 @@
     [_window makeKeyAndVisible];
     
     //引导页.一定要在[_window makeKeyAndVisible]之后调用
-    if (![self isFirstLauch]) {
-        
-        JDGuidePageView *guideView =[[JDGuidePageView alloc]initGuideViewWithImages:@[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"] ];
+    if ([self isFirstLauch]) {
+       
+        JDGuidePageView *guideView =[[JDGuidePageView alloc]initGuideViewWithImages:@[@"guide_01", @"guide_02", @"guide_03",@"guide_04"] ];
         guideView.isShowPageView = YES;
         guideView.isScrollOut = NO;
         guideView.currentColor =[UIColor redColor];

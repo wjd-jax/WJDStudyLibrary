@@ -81,6 +81,7 @@
 		F550697C1F05D9BF00977235 /* img_index_02txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */; };
 		F550697E1F05D9C700977235 /* img_index_03bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697D1F05D9C700977235 /* img_index_03bg@2x.png */; };
 		F55069801F05D9D000977235 /* img_index_03txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697F1F05D9D000977235 /* img_index_03txt@2x.png */; };
+		F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55069861F06448E00977235 /* JDGuideDemoViewController.m */; };
 		F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */; };
 		F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
@@ -291,6 +292,8 @@
 		F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_02txt@2x.png"; sourceTree = "<group>"; };
 		F550697D1F05D9C700977235 /* img_index_03bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_03bg@2x.png"; sourceTree = "<group>"; };
 		F550697F1F05D9D000977235 /* img_index_03txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_03txt@2x.png"; sourceTree = "<group>"; };
+		F55069851F06448E00977235 /* JDGuideDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideDemoViewController.h; sourceTree = "<group>"; };
+		F55069861F06448E00977235 /* JDGuideDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuideDemoViewController.m; sourceTree = "<group>"; };
 		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
 		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
 		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -657,6 +660,7 @@
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
 			isa = PBXGroup;
 			children = (
+				F55069811F0643D900977235 /* GuideViewTestViewController */,
 				F52C45271E96090A00D8DF62 /* GuideViewController */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F52C45111E94BA3500D8DF62 /* popViewListViewController */,
@@ -834,6 +838,15 @@
 				F55069751F05D9A100977235 /* img_index_01bg@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		F55069811F0643D900977235 /* GuideViewTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F55069851F06448E00977235 /* JDGuideDemoViewController.h */,
+				F55069861F06448E00977235 /* JDGuideDemoViewController.m */,
+			);
+			name = GuideViewTestViewController;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -1909,6 +1922,7 @@
 				F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
+				F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */,
 				F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
