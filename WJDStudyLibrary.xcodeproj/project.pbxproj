@@ -46,6 +46,10 @@
 		F52C45301E96263500D8DF62 /* JDGuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C452F1E96263500D8DF62 /* JDGuidePageViewController.m */; };
 		F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */; };
 		F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F538BF001ED7C28100CBD96F /* JDContactManager.m */; };
+		F53DABF71F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DABF61F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m */; };
+		F53DABFB1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DABFA1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m */; };
+		F53DAC001F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DABFE1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m */; };
+		F53DAC011F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53DABFF1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib */; };
 		F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */ = {isa = PBXBuildFile; fileRef = F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */; };
 		F540CD351EE6898900A9FCDA /* JDLocaNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F540CD341EE6898900A9FCDA /* JDLocaNotificationViewController.m */; };
 		F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */; };
@@ -250,6 +254,13 @@
 		F52C45341E97345700D8DF62 /* JDLayoutListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLayoutListViewController.m; sourceTree = "<group>"; };
 		F538BEFF1ED7C28100CBD96F /* JDContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDContactManager.h; sourceTree = "<group>"; };
 		F538BF001ED7C28100CBD96F /* JDContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDContactManager.m; sourceTree = "<group>"; };
+		F53DABF51F09E0DD00EEFAE5 /* JDAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAutoLayoutViewController.h; sourceTree = "<group>"; };
+		F53DABF61F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAutoLayoutViewController.m; sourceTree = "<group>"; };
+		F53DABF91F09E15900EEFAE5 /* JDAutoLayoutCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAutoLayoutCellViewController.h; sourceTree = "<group>"; };
+		F53DABFA1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAutoLayoutCellViewController.m; sourceTree = "<group>"; };
+		F53DABFD1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutTableViewCell.h; sourceTree = "<group>"; };
+		F53DABFE1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTableViewCell.m; sourceTree = "<group>"; };
+		F53DABFF1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutTableViewCell.xib; sourceTree = "<group>"; };
 		F540CD2F1EE674CD00A9FCDA /* AppDelegate+JDPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDPush.h"; sourceTree = "<group>"; };
 		F540CD301EE674CD00A9FCDA /* AppDelegate+JDPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDPush.m"; sourceTree = "<group>"; };
 		F540CD331EE6898900A9FCDA /* JDLocaNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLocaNotificationViewController.h; sourceTree = "<group>"; };
@@ -746,6 +757,36 @@
 			path = "浏览卡片";
 			sourceTree = "<group>";
 		};
+		F53DABF41F09DA9700EEFAE5 /* AutoLayoutView(自动布局) */ = {
+			isa = PBXGroup;
+			children = (
+				F53DABF81F09E11300EEFAE5 /* CellAutoLayout */,
+				F53DABF51F09E0DD00EEFAE5 /* JDAutoLayoutViewController.h */,
+				F53DABF61F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m */,
+			);
+			name = "AutoLayoutView(自动布局)";
+			sourceTree = "<group>";
+		};
+		F53DABF81F09E11300EEFAE5 /* CellAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F53DABFC1F09E3B300EEFAE5 /* View */,
+				F53DABF91F09E15900EEFAE5 /* JDAutoLayoutCellViewController.h */,
+				F53DABFA1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m */,
+			);
+			name = CellAutoLayout;
+			sourceTree = "<group>";
+		};
+		F53DABFC1F09E3B300EEFAE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F53DABFD1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.h */,
+				F53DABFE1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m */,
+				F53DABFF1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +997,7 @@
 		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F53DABF41F09DA9700EEFAE5 /* AutoLayoutView(自动布局) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F5A733191EC2F03A006CB68D /* Animation(动画效果) */,
 				F5C5DFC61EC45C6100A436E0 /* BBS_Web(学习网站) */,
@@ -1754,6 +1796,7 @@
 				F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
 				F550697E1F05D9C700977235 /* img_index_03bg@2x.png in Resources */,
+				F53DAC011F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib in Resources */,
 				F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */,
 				F5A0A6FE1EB1D6780084A032 /* JDKeyChianTestStoryboard.storyboard in Resources */,
 			);
@@ -1820,6 +1863,7 @@
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
+				F53DAC001F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m in Sources */,
 				F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
@@ -1845,6 +1889,7 @@
 				F5A1A71E1E977EAD0076CC78 /* JDFunctionListViewController.m in Sources */,
 				F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */,
 				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,
+				F53DABFB1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
@@ -1883,6 +1928,7 @@
 				F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */,
+				F53DABF71F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m in Sources */,
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
