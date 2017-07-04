@@ -12,6 +12,7 @@
 #import "JDMessageView.h"
 #import "JDAletView.h"
 #import "JDStatusBarMessageView.h"
+#import "JDActionSheetView.h"
 
 @implementation JDPopViewController
 
@@ -21,10 +22,12 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"通用分享弹出视图",@"ClassName":@"JDKnowledgeViewController"},
-                           @{@"title":@"仿QQ导航栏弹出提示框",@"ClassName":@"JDViewListViewController"},
-                           @{@"title":@"自定义AletView",@"ClassName":@"JDLayoutListViewController"},
-                           @{@"title":@"状态栏提示框",@"ClassName":@"JDViewListViewController"},
+    self.dataSoureArray =@[@{@"title":@"通用分享弹出视图",@"ClassName":@""},
+                           @{@"title":@"仿QQ导航栏弹出提示框",@"ClassName":@""},
+                           @{@"title":@"自定义AletView",@"ClassName":@""},
+                           @{@"title":@"状态栏提示框",@"ClassName":@""},
+                           @{@"title":@"仿微信弹出列表视图",@"ClassName":@""},
+                           
                            ];
 }
 
@@ -60,6 +63,13 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
         {
             [JDStatusBarMessageView showMessage:@"这是一个提示哦"];
 
+        }
+            break;
+        case 4:
+        {
+            [JDActionSheetView showActionSheetWithTitle:@"标题" cancelButtonTitle:@"取消" destructiveButtonTitle:@"删除" otherButtonTitles:@[@"选择1",@"选择2"] handler:^(JDActionSheetView *actionSheet, NSInteger index) {
+                
+            }];
         }
             break;
         default:
