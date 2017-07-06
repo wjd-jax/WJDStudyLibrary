@@ -13,6 +13,7 @@
 #import "JDAletView.h"
 #import "JDStatusBarMessageView.h"
 #import "JDActionSheetView.h"
+#import "JDSheetView.h"
 
 @implementation JDPopViewController
 
@@ -27,6 +28,7 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
                            @{@"title":@"自定义AletView",@"ClassName":@""},
                            @{@"title":@"状态栏提示框",@"ClassName":@""},
                            @{@"title":@"仿微信弹出列表视图",@"ClassName":@""},
+                           @{@"title":@"仿微信弹出列表视图(tableView实现)",@"ClassName":@""},
                            
                            ];
 }
@@ -68,6 +70,13 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
         case 4:
         {
             [JDActionSheetView showActionSheetWithTitle:@"标题" cancelButtonTitle:@"取消" destructiveButtonTitle:@"删除" otherButtonTitles:@[@"选择1",@"选择2"] handler:^(JDActionSheetView *actionSheet, NSInteger index) {
+                
+            }];
+        }
+            break;
+        case 5:
+        {
+            [JDSheetView ShowListWithItems:@[@"选择1",@"选择2"] didSelectRowBlock:^(NSUInteger index) {
                 
             }];
         }
