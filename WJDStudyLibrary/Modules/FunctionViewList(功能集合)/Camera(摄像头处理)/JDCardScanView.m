@@ -35,7 +35,6 @@
         
         // 添加扫描窗口
         [self addScaningWindow];
-        
         // 添加定时器
         [self addTimer];
     }
@@ -71,9 +70,9 @@
     
     [self.layer addSublayer:fillLayer];
     
-    CGFloat facePathWidth = iPhone5or5cor5sorSE? 125: (iPhone6or6sor7? 150: 180);
-    CGFloat facePathHeight = facePathWidth * 0.812;
-    CGRect rect = _IDCardScanningWindowLayer.frame;
+//    CGFloat facePathWidth = iPhone5or5cor5sorSE? 125: (iPhone6or6sor7? 150: 180);
+//    CGFloat facePathHeight = facePathWidth * 0.812;
+//    CGRect rect = _IDCardScanningWindowLayer.frame;
 //    self.facePathRect = (CGRect){CGRectGetMaxX(rect) - facePathWidth - 35,CGRectGetMaxY(rect) - facePathHeight - 25,facePathWidth,facePathHeight};
     
     // 提示标签
@@ -121,10 +120,11 @@
 }
 
 -(void)dealloc {
-    [_timer invalidate];
+
 }
 
 - (void)drawRect:(CGRect)rect {
+    
     rect = _IDCardScanningWindowLayer.frame;
     
 //    // 人像提示框
@@ -159,4 +159,15 @@
     
     CGContextStrokePath(context);
 }
+-(void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+    if (! newSuperview && _timer) {
+        // 销毁定时器
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
+
+
 @end

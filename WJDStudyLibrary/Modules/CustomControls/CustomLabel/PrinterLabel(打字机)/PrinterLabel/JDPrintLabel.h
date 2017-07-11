@@ -38,6 +38,5 @@ typedef void (^PrintLabelCompleteBlock)(void);
 @property(nonatomic,assign)PrintLabelCompleteBlock completeBlock;
 
 - (void)startPrint;
-- (void)stopPrint;
 
 @end

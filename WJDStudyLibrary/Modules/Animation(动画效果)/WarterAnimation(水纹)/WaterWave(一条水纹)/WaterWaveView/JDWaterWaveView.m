@@ -93,11 +93,17 @@
     
 }
 
-- (void)stopWave{
-    
-    [_waveDisplaylink invalidate];
-    _waveDisplaylink = nil;
+-(void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+    if (! newSuperview && _waveDisplaylink) {
+        // 销毁定时器
+        [_waveDisplaylink invalidate];
+        _waveDisplaylink = nil;
+    }
+
 }
+
 -(void)dealloc
 {
 

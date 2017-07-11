@@ -73,11 +73,6 @@
 }
 
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear: animated];
-    [waterWaveView stopWave];
-}
 -(void)dealloc
 {
     DLog(@"JDWaterWaveViewController.h界面释放了");

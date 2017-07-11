@@ -25,10 +25,4 @@
  */
 @property(nonatomic,assign)CGFloat waveW;
 
-
-/**
- !!!页面退出的时候必须调用,否则定时器无法销
- */
-- (void)stopWave;
-
 @end

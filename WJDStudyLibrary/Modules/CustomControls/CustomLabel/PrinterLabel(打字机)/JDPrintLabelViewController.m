@@ -35,13 +35,7 @@
     [_pLabel startPrint];
 }
 
-//这里很重要!!!!!
 
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [_pLabel stopPrint];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

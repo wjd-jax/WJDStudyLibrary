@@ -10,4 +10,5 @@
 
 @interface JDCardScanView : UIView
 
+
 @end

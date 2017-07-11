@@ -38,6 +38,7 @@
 // 是否打开手电筒
 @property (nonatomic,assign,getter = isTorchOn) BOOL torchOn;
 
+@property(nonatomic,retain)JDCardScanView *scanView;
 @end
 
 @implementation JDIDCardScanViewController
@@ -54,9 +55,8 @@
     
     [self.view.layer addSublayer:self.previewLayer];
     
-    //自定义扫描页面
-    JDCardScanView *scanView =[[JDCardScanView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:scanView];
+   _scanView  =[[JDCardScanView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:_scanView];
     
     // 添加rightBarButtonItem为打开／关闭手电筒
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(turnOnOrOffTorch)];
@@ -136,13 +136,14 @@
 #pragma mark 从输出的数据流捕捉单一的图像帧
 // AVCaptureVideoDataOutput获取实时图像，这个代理方法的回调频率很快，几乎与手机屏幕的刷新频率一样快
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
-    if ([self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]] || [self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]]) {
+    if ([self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]]
+        || [self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]]) {
+       
         CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
         
         if ([captureOutput isEqual:self.videoDataOutput]) {
             // 身份证信息识别
             [self IDCardRecognit:imageBuffer];
-            
         }
     } else {
         NSLog(@"输出格式不支持");
@@ -155,7 +156,8 @@
     CVBufferRetain(imageBuffer);
     
     // Lock the image buffer
-    if (CVPixelBufferLockBaseAddress(imageBuffer, 0) == kCVReturnSuccess) {
+    if (CVPixelBufferLockBaseAddress(imageBuffer, 0) == kCVReturnSuccess)
+    {
         size_t width= CVPixelBufferGetWidth(imageBuffer);// 1920
         size_t height = CVPixelBufferGetHeight(imageBuffer);// 1080
         
@@ -173,6 +175,7 @@
         memcpy(buffer, pixelAddress, sizeof(unsigned char) * width * height);
         
         unsigned char pResult[1024];
+        
         int ret = EXCARDS_RecoIDCardData(buffer, (int)width, (int)height, (int)rowBytes, (int)8, (char*)pResult, sizeof(pResult));
         if (ret <= 0) {
             NSLog(@"ret=[%d]", ret);
@@ -181,7 +184,6 @@
             
             // 播放一下“拍照”的声音，模拟拍照
             AudioServicesPlaySystemSound(1108);
-            
             if ([self.session isRunning]) {
                 [self.session stopRunning];
             }
@@ -195,11 +197,16 @@
             
             ctype = pResult[i++];
             
-            //            iDInfo.type = ctype;
+            //iDInfo.type = ctype;
+            
             while(i < ret){
                 ctype = pResult[i++];
                 for(xlen = 0; i < ret; ++i){
-                    if(pResult[i] == ' ') { ++i; break; }
+                    
+                    if(pResult[i] == ' ') {
+                        ++i;
+                        break;
+                    }
                     content[xlen++] = pResult[i];
                 }
                 
@@ -207,6 +214,7 @@
                 
                 if(xlen) {
                     NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+                    
                     if(ctype == 0x21) {
                         iDInfo.cardID = [NSString stringWithCString:(char *)content encoding:gbkEncoding];
                     } else if(ctype == 0x22) {

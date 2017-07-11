@@ -58,14 +58,12 @@
     }
 }
 
-/**
- 注意,一定要在页面退出的时候,调用停止,否则定时器一直会执行.
- */
--(void)stopPrint
+
+
+-(void)willMoveToSuperview:(UIView *)newSuperview
 {
-    
+    [super willMoveToSuperview:newSuperview];
     [prientTimer invalidate];
     prientTimer =nil;
 }
-
 @end
