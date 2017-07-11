@@ -24,6 +24,7 @@
 		F506269C1F0B3A7600602B6D /* JDActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F506269B1F0B3A7600602B6D /* JDActionSheetView.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
+		F510BDFA1F14AF8500CC184D /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F510BDF91F14AF8500CC184D /* libbankcard.a */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
@@ -90,7 +91,6 @@
 		F55087841F0E21A800350B1F /* JDSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55087831F0E21A800350B1F /* JDSheetView.m */; };
 		F55256291F1310A50080D0DE /* JDAppirater.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256281F1310A50080D0DE /* JDAppirater.m */; };
 		F552563D1F145CE90080D0DE /* JDOCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552563C1F145CE90080D0DE /* JDOCRViewController.m */; };
-		F55256441F145DC80080D0DE /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F55256431F145DC80080D0DE /* libbankcard.a */; };
 		F55256481F1460840080D0DE /* JDBandCardScanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */; };
 		F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552564A1F1461530080D0DE /* JDBankScanViewController.m */; };
 		F552564F1F1461B40080D0DE /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F552564E1F1461B40080D0DE /* OverlayView.m */; };
@@ -99,6 +99,9 @@
 		F552565D1F146D540080D0DE /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F552565B1F146D540080D0DE /* libexidcardios.a */; };
 		F55256601F1471AA0080D0DE /* JDIDCardScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */; };
 		F55256631F1473470080D0DE /* JDCardScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256621F1473470080D0DE /* JDCardScanView.m */; };
+		F55256661F14A8380080D0DE /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256651F14A8380080D0DE /* RectManager.m */; };
+		F552566A1F14A8FF0080D0DE /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256691F14A8FF0080D0DE /* UIImage+Extend.m */; };
+		F552566D1F14A91A0080D0DE /* BankCardSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = F552566C1F14A91A0080D0DE /* BankCardSearch.m */; };
 		F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */; };
 		F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
@@ -221,6 +224,10 @@
 		F506269B1F0B3A7600602B6D /* JDActionSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDActionSheetView.m; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
+		F510BDF51F14AF8500CC184D /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		F510BDF61F14AF8500CC184D /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		F510BDF81F14AF8500CC184D /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		F510BDF91F14AF8500CC184D /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
@@ -326,10 +333,6 @@
 		F55256281F1310A50080D0DE /* JDAppirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppirater.m; sourceTree = "<group>"; };
 		F552563B1F145CE90080D0DE /* JDOCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOCRViewController.h; sourceTree = "<group>"; };
 		F552563C1F145CE90080D0DE /* JDOCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDOCRViewController.m; sourceTree = "<group>"; };
-		F552563F1F145DC70080D0DE /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
-		F55256401F145DC70080D0DE /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
-		F55256421F145DC80080D0DE /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
-		F55256431F145DC80080D0DE /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
 		F55256461F1460840080D0DE /* JDBandCardScanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBandCardScanResultModel.h; sourceTree = "<group>"; };
 		F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBandCardScanResultModel.m; sourceTree = "<group>"; };
 		F55256491F1461530080D0DE /* JDBankScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBankScanViewController.h; sourceTree = "<group>"; };
@@ -346,6 +349,12 @@
 		F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIDCardScanViewController.m; sourceTree = "<group>"; };
 		F55256611F1473470080D0DE /* JDCardScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardScanView.h; sourceTree = "<group>"; };
 		F55256621F1473470080D0DE /* JDCardScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardScanView.m; sourceTree = "<group>"; };
+		F55256641F14A8380080D0DE /* RectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectManager.h; sourceTree = "<group>"; };
+		F55256651F14A8380080D0DE /* RectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectManager.m; sourceTree = "<group>"; };
+		F55256681F14A8FF0080D0DE /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		F55256691F14A8FF0080D0DE /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		F552566B1F14A91A0080D0DE /* BankCardSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardSearch.h; sourceTree = "<group>"; };
+		F552566C1F14A91A0080D0DE /* BankCardSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardSearch.m; sourceTree = "<group>"; };
 		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
 		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
 		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -517,9 +526,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */,
+				F510BDFA1F14AF8500CC184D /* libbankcard.a in Frameworks */,
 				F552565D1F146D540080D0DE /* libexidcardios.a in Frameworks */,
 				385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */,
-				F55256441F145DC80080D0DE /* libbankcard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +634,25 @@
 				F506269B1F0B3A7600602B6D /* JDActionSheetView.m */,
 			);
 			path = "JDActionSheetView(仿微信突出列表1)";
+			sourceTree = "<group>";
+		};
+		F510BDF41F14AF8500CC184D /* bank_io */ = {
+			isa = PBXGroup;
+			children = (
+				F510BDF51F14AF8500CC184D /* BankCard.h */,
+				F510BDF61F14AF8500CC184D /* exbankcard.h */,
+				F510BDF71F14AF8500CC184D /* exbankcardcore */,
+			);
+			path = bank_io;
+			sourceTree = "<group>";
+		};
+		F510BDF71F14AF8500CC184D /* exbankcardcore */ = {
+			isa = PBXGroup;
+			children = (
+				F510BDF81F14AF8500CC184D /* exbankcardcore.h */,
+				F510BDF91F14AF8500CC184D /* libbankcard.a */,
+			);
+			path = exbankcardcore;
 			sourceTree = "<group>";
 		};
 		F513ED6A1F009ACC001C044C /* HubMessage */ = {
@@ -956,11 +984,11 @@
 		F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */ = {
 			isa = PBXGroup;
 			children = (
+				F510BDF41F14AF8500CC184D /* bank_io */,
 				F55256491F1461530080D0DE /* JDBankScanViewController.h */,
 				F552564A1F1461530080D0DE /* JDBankScanViewController.m */,
 				F552564C1F1461910080D0DE /* view */,
 				F55256451F1460070080D0DE /* model */,
-				F552563E1F145DC70080D0DE /* bank_io */,
 			);
 			name = "BankCard(银行卡识别)";
 			sourceTree = "<group>";
@@ -980,6 +1008,7 @@
 		F552563A1F145CC10080D0DE /* IDCard(身份证识别) */ = {
 			isa = PBXGroup;
 			children = (
+				F55256671F14A8F00080D0DE /* Tool */,
 				F55256561F146D540080D0DE /* libexidcard */,
 				F55256521F146A3D0080D0DE /* Model */,
 				F55256511F146A320080D0DE /* View */,
@@ -987,25 +1016,6 @@
 				F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */,
 			);
 			name = "IDCard(身份证识别)";
-			sourceTree = "<group>";
-		};
-		F552563E1F145DC70080D0DE /* bank_io */ = {
-			isa = PBXGroup;
-			children = (
-				F552563F1F145DC70080D0DE /* BankCard.h */,
-				F55256401F145DC70080D0DE /* exbankcard.h */,
-				F55256411F145DC70080D0DE /* exbankcardcore */,
-			);
-			path = bank_io;
-			sourceTree = "<group>";
-		};
-		F55256411F145DC70080D0DE /* exbankcardcore */ = {
-			isa = PBXGroup;
-			children = (
-				F55256421F145DC80080D0DE /* exbankcardcore.h */,
-				F55256431F145DC80080D0DE /* libbankcard.a */,
-			);
-			path = exbankcardcore;
 			sourceTree = "<group>";
 		};
 		F55256451F1460070080D0DE /* model */ = {
@@ -1036,6 +1046,8 @@
 		F55256511F146A320080D0DE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F55256641F14A8380080D0DE /* RectManager.h */,
+				F55256651F14A8380080D0DE /* RectManager.m */,
 				F55256611F1473470080D0DE /* JDCardScanView.h */,
 				F55256621F1473470080D0DE /* JDCardScanView.m */,
 			);
@@ -1068,6 +1080,17 @@
 				F55256591F146D540080D0DE /* zocr0.lib */,
 			);
 			path = dicts;
+			sourceTree = "<group>";
+		};
+		F55256671F14A8F00080D0DE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F552566B1F14A91A0080D0DE /* BankCardSearch.h */,
+				F552566C1F14A91A0080D0DE /* BankCardSearch.m */,
+				F55256681F14A8FF0080D0DE /* UIImage+Extend.h */,
+				F55256691F14A8FF0080D0DE /* UIImage+Extend.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -2104,6 +2127,7 @@
 				F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */,
 				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
+				F552566A1F14A8FF0080D0DE /* UIImage+Extend.m in Sources */,
 				F55256631F1473470080D0DE /* JDCardScanView.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
@@ -2124,6 +2148,7 @@
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
+				F55256661F14A8380080D0DE /* RectManager.m in Sources */,
 				F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */,
 				F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */,
 				F55256551F146A4E0080D0DE /* JDIDCardModel.m in Sources */,
@@ -2165,6 +2190,7 @@
 				F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */,
 				F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
+				F552566D1F14A91A0080D0DE /* BankCardSearch.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
 				F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */,
 			);
@@ -2284,6 +2310,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33Y28YBGW2;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

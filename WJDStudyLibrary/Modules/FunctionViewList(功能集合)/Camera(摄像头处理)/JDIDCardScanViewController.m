@@ -29,16 +29,12 @@
 // 预览图层
 @property (nonatomic,strong) AVCaptureVideoPreviewLayer *previewLayer;
 
-// 人脸检测框区域
-@property (nonatomic,assign) CGRect faceDetectionFrame;
-
 // 队列
 @property (nonatomic,strong) dispatch_queue_t queue;
 
 // 是否打开手电筒
 @property (nonatomic,assign,getter = isTorchOn) BOOL torchOn;
 
-@property(nonatomic,retain)JDCardScanView *scanView;
 @end
 
 @implementation JDIDCardScanViewController
@@ -55,8 +51,8 @@
     
     [self.view.layer addSublayer:self.previewLayer];
     
-   _scanView  =[[JDCardScanView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:_scanView];
+    JDCardScanView *scanView = [[JDCardScanView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:scanView];
     
     // 添加rightBarButtonItem为打开／关闭手电筒
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(turnOnOrOffTorch)];
@@ -72,12 +68,6 @@
     // 每次展现AVCaptureViewController的界面时，都检查摄像头使用权限
     [self checkAuthorizationStatus];
 }
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
 - (void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillDisappear:animated];
@@ -138,7 +128,7 @@
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     if ([self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]]
         || [self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]]) {
-       
+        
         CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
         
         if ([captureOutput isEqual:self.videoDataOutput]) {

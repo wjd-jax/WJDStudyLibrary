@@ -1,52 +1,52 @@
 /************************************************************************\
- åŒ—äº¬æ˜“é“åšè¯†ç§‘æŠ€æœ‰é™å…¬å¸
- CopyRight (C) 2015
- 
- File name: exbankcard.h
- Function : é“¶è¡Œå¡è¯†åˆ«æ¥å£æ–‡ä»¶
- Author   : zjm@exocr.com
- Version  : 2015.03.1	V1.2
- ***************************************************************************/
+±±¾©Ò×µÀ²©Ê¶¿Æ¼¼ÓĞÏŞ¹«Ë¾
+CopyRight (C) 2015
+
+File name: exbankcard.h
+  Function : ÒøĞĞ¿¨Ê¶±ğ½Ó¿ÚÎÄ¼ş
+  Author   : zjm@exocr.com
+  Version  : 2015.03.1	V1.2
+***************************************************************************/
 
 #ifndef __EX_BANK_CARD_H__
 #define __EX_BANK_CARD_H__
 
-//æ‰“å¼€æ–‡ä»¶è¯†åˆ«ï¼Œç”¨äºè°ƒè¯•å’Œå¼€å‘ä½¿ç”¨
+//´ò¿ªÎÄ¼şÊ¶±ğ£¬ÓÃÓÚµ÷ÊÔºÍ¿ª·¢Ê¹ÓÃ
 #ifdef __cplusplus
 extern "C"
 #endif
 int BankCardRecoFile(const char *szImgFile, unsigned char *pbResult, int nMaxSize);
 
-//æ¥å£
-//24ä½è‰² RGBæˆ–è€…BGR è¯†åˆ«
+//½Ó¿Ú
+//24Î»É« RGB»òÕßBGR Ê¶±ğ
 #ifdef __cplusplus
 extern "C"
 #endif
 int BankCard24(unsigned char *pbResult, int nMaxSize, unsigned char *pbImg24, int iW, int iH, int iPitch, int iLft, int iTop, int iRgt, int iBtm);
 
-//æ¥å£
-//è¾“å…¥32(0xargb)ä½çš„å›¾åƒï¼Œè½¬æˆ24ä½çš„å›¾åƒï¼ŒAndroidç³»ç»Ÿç”¨
+//½Ó¿Ú
+//ÊäÈë32(0xargb)Î»µÄÍ¼Ïñ£¬×ª³É24Î»µÄÍ¼Ïñ£¬AndroidÏµÍ³ÓÃ
 #ifdef __cplusplus
 extern "C"
 #endif
 int BankCard32(unsigned char *pbResult, int nMaxSize, unsigned char *pbImg32, int iW, int iH, int iPitch, int iLft, int iTop, int iRgt, int iBtm);
 
-//æ¥å£
-//æ ¹æ®ImageFormat.NV21ç›´æ¥ç”¨æ¥è¯†åˆ«ï¼Œä¸ç»è¿‡javaå±‚çš„è½¬æ¢ï¼Œè¿™æ ·æé«˜å·¥ä½œæ•ˆç‡, javaå±‚è½¬åŒ–å¤ªæ…¢äº†
+//½Ó¿Ú
+//¸ù¾İImageFormat.NV21Ö±½ÓÓÃÀ´Ê¶±ğ£¬²»¾­¹ıjava²ãµÄ×ª»»£¬ÕâÑùÌá¸ß¹¤×÷Ğ§ÂÊ, java²ã×ª»¯Ì«ÂıÁË
 #ifdef __cplusplus
 extern "C"
 #endif
 int BankCardNV21(unsigned char *pbResult, int nMaxSize, unsigned char *pbY, unsigned char *pbVU, int iW, int iH, int iLft, int iTop, int iRgt, int iBtm);
 
-//æ¥å£
-//æ ¹æ®ImageFormat.NV12ç›´æ¥ç”¨æ¥è¯†åˆ«
+//½Ó¿Ú
+//¸ù¾İImageFormat.NV12Ö±½ÓÓÃÀ´Ê¶±ğ
 #ifdef __cplusplus
 extern "C"
 #endif
 int BankCardNV12(unsigned char *pbResult, int nMaxSize, unsigned char *pbY, unsigned char *pbUV, int iW, int iH, int iLft, int iTop, int iRgt, int iBtm);
 
-//æ¥å£
-//è·å–å¯¹ç„¦åˆ†æ•°
+//½Ó¿Ú
+//»ñÈ¡¶Ô½¹·ÖÊı
 #ifdef __cplusplus
 extern "C"
 #endif
