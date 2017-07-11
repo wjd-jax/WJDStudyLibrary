@@ -88,6 +88,17 @@
 		F55069801F05D9D000977235 /* img_index_03txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F550697F1F05D9D000977235 /* img_index_03txt@2x.png */; };
 		F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55069861F06448E00977235 /* JDGuideDemoViewController.m */; };
 		F55087841F0E21A800350B1F /* JDSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55087831F0E21A800350B1F /* JDSheetView.m */; };
+		F55256291F1310A50080D0DE /* JDAppirater.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256281F1310A50080D0DE /* JDAppirater.m */; };
+		F552563D1F145CE90080D0DE /* JDOCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552563C1F145CE90080D0DE /* JDOCRViewController.m */; };
+		F55256441F145DC80080D0DE /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F55256431F145DC80080D0DE /* libbankcard.a */; };
+		F55256481F1460840080D0DE /* JDBandCardScanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */; };
+		F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552564A1F1461530080D0DE /* JDBankScanViewController.m */; };
+		F552564F1F1461B40080D0DE /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F552564E1F1461B40080D0DE /* OverlayView.m */; };
+		F55256551F146A4E0080D0DE /* JDIDCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256541F146A4E0080D0DE /* JDIDCardModel.m */; };
+		F552565C1F146D540080D0DE /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = F55256591F146D540080D0DE /* zocr0.lib */; };
+		F552565D1F146D540080D0DE /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F552565B1F146D540080D0DE /* libexidcardios.a */; };
+		F55256601F1471AA0080D0DE /* JDIDCardScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */; };
+		F55256631F1473470080D0DE /* JDCardScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55256621F1473470080D0DE /* JDCardScanView.m */; };
 		F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */; };
 		F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */; };
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
@@ -224,8 +235,8 @@
 		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
 		F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutUsViewController.m; sourceTree = "<group>"; };
-		F51FA1391F04D2E300CC7041 /* JDGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JDGuidePageView.h; path = WJDStudyLibrary/BaseClass/JDGuidePageView.h; sourceTree = SOURCE_ROOT; };
-		F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JDGuidePageView.m; path = WJDStudyLibrary/BaseClass/JDGuidePageView.m; sourceTree = SOURCE_ROOT; };
+		F51FA1391F04D2E300CC7041 /* JDGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGuidePageView.h; sourceTree = "<group>"; };
+		F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDGuidePageView.m; sourceTree = "<group>"; };
 		F5223EE81EC3FE1700CDCBD8 /* JDPrintLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabelViewController.h; sourceTree = "<group>"; };
 		F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPrintLabelViewController.m; sourceTree = "<group>"; };
 		F5223EEC1EC3FE3D00CDCBD8 /* JDPrintLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPrintLabel.h; sourceTree = "<group>"; };
@@ -311,6 +322,30 @@
 		F55069861F06448E00977235 /* JDGuideDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGuideDemoViewController.m; sourceTree = "<group>"; };
 		F55087821F0E21A800350B1F /* JDSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDSheetView.h; sourceTree = "<group>"; };
 		F55087831F0E21A800350B1F /* JDSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDSheetView.m; sourceTree = "<group>"; };
+		F55256271F1310A50080D0DE /* JDAppirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAppirater.h; sourceTree = "<group>"; };
+		F55256281F1310A50080D0DE /* JDAppirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppirater.m; sourceTree = "<group>"; };
+		F552563B1F145CE90080D0DE /* JDOCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOCRViewController.h; sourceTree = "<group>"; };
+		F552563C1F145CE90080D0DE /* JDOCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDOCRViewController.m; sourceTree = "<group>"; };
+		F552563F1F145DC70080D0DE /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		F55256401F145DC70080D0DE /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		F55256421F145DC80080D0DE /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		F55256431F145DC80080D0DE /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
+		F55256461F1460840080D0DE /* JDBandCardScanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBandCardScanResultModel.h; sourceTree = "<group>"; };
+		F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBandCardScanResultModel.m; sourceTree = "<group>"; };
+		F55256491F1461530080D0DE /* JDBankScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBankScanViewController.h; sourceTree = "<group>"; };
+		F552564A1F1461530080D0DE /* JDBankScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBankScanViewController.m; sourceTree = "<group>"; };
+		F552564D1F1461B40080D0DE /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		F552564E1F1461B40080D0DE /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		F55256531F146A4E0080D0DE /* JDIDCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDIDCardModel.h; sourceTree = "<group>"; };
+		F55256541F146A4E0080D0DE /* JDIDCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIDCardModel.m; sourceTree = "<group>"; };
+		F55256571F146D540080D0DE /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		F55256591F146D540080D0DE /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		F552565A1F146D540080D0DE /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		F552565B1F146D540080D0DE /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		F552565E1F1471AA0080D0DE /* JDIDCardScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDIDCardScanViewController.h; sourceTree = "<group>"; };
+		F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIDCardScanViewController.m; sourceTree = "<group>"; };
+		F55256611F1473470080D0DE /* JDCardScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCardScanView.h; sourceTree = "<group>"; };
+		F55256621F1473470080D0DE /* JDCardScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCardScanView.m; sourceTree = "<group>"; };
 		F555B46B1EA0C7C200EF73BC /* JDQRimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRimageViewController.h; sourceTree = "<group>"; };
 		F555B46C1EA0C7C200EF73BC /* JDQRimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRimageViewController.m; sourceTree = "<group>"; };
 		F555B4701EA0C85E00EF73BC /* QRImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -482,7 +517,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */,
+				F552565D1F146D540080D0DE /* libexidcardios.a in Frameworks */,
 				385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */,
+				F55256441F145DC80080D0DE /* libbankcard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,8 +723,8 @@
 		F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */ = {
 			isa = PBXGroup;
 			children = (
-				F55069811F0643D900977235 /* GuideViewTestViewController */,
 				F52C45271E96090A00D8DF62 /* GuideViewController */,
+				F55069811F0643D900977235 /* GuideViewTestViewController */,
 				F52C45311E97340100D8DF62 /* LayoutViewList(布局视图列表) */,
 				F52C45111E94BA3500D8DF62 /* popViewListViewController */,
 				F52C450E1E94B52D00D8DF62 /* JDViewListViewController.h */,
@@ -699,9 +736,9 @@
 		F52C45111E94BA3500D8DF62 /* popViewListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F55087811F0E215F00350B1F /* JDSheetView */,
-				F50626991F0B3A4900602B6D /* JDActionSheetView(仿微信突出列表1) */,
 				F513ED6A1F009ACC001C044C /* HubMessage */,
+				F50626991F0B3A4900602B6D /* JDActionSheetView(仿微信突出列表1) */,
+				F55087811F0E215F00350B1F /* JDSheetView(仿微信选择列表tableView实现) */,
 				F5D2F8381ED2D6260063F18F /* StatusBarMessageView(状态栏提示信息) */,
 				F52C45231E94C91D00D8DF62 /* popAletView(自定义AletView) */,
 				F52C45151E94BBD500D8DF62 /* popViewStyle(通用分享视图) */,
@@ -781,7 +818,7 @@
 				F53DABF51F09E0DD00EEFAE5 /* JDAutoLayoutViewController.h */,
 				F53DABF61F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m */,
 			);
-			name = "AutoLayoutView(自动布局)";
+			path = "AutoLayoutView(自动布局)";
 			sourceTree = "<group>";
 		};
 		F53DABF81F09E11300EEFAE5 /* CellAutoLayout */ = {
@@ -791,7 +828,7 @@
 				F53DABF91F09E15900EEFAE5 /* JDAutoLayoutCellViewController.h */,
 				F53DABFA1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m */,
 			);
-			name = CellAutoLayout;
+			path = CellAutoLayout;
 			sourceTree = "<group>";
 		};
 		F53DABFC1F09E3B300EEFAE5 /* View */ = {
@@ -801,7 +838,7 @@
 				F53DABFE1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m */,
 				F53DABFF1F09E3D500EEFAE5 /* AutoLayoutTableViewCell.xib */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F540CD321EE6894500A9FCDA /* LocaNotification(本地推送) */ = {
@@ -888,14 +925,14 @@
 		F55069741F05D98100977235 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				F550697F1F05D9D000977235 /* img_index_03txt@2x.png */,
-				F550697D1F05D9C700977235 /* img_index_03bg@2x.png */,
-				F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */,
-				F55069791F05D9B000977235 /* img_index_02bg@2x.png */,
-				F55069771F05D9AA00977235 /* img_index_01txt@2x.png */,
 				F55069751F05D9A100977235 /* img_index_01bg@2x.png */,
+				F55069771F05D9AA00977235 /* img_index_01txt@2x.png */,
+				F55069791F05D9B000977235 /* img_index_02bg@2x.png */,
+				F550697B1F05D9BF00977235 /* img_index_02txt@2x.png */,
+				F550697D1F05D9C700977235 /* img_index_03bg@2x.png */,
+				F550697F1F05D9D000977235 /* img_index_03txt@2x.png */,
 			);
-			name = images;
+			path = images;
 			sourceTree = "<group>";
 		};
 		F55069811F0643D900977235 /* GuideViewTestViewController */ = {
@@ -904,16 +941,133 @@
 				F55069851F06448E00977235 /* JDGuideDemoViewController.h */,
 				F55069861F06448E00977235 /* JDGuideDemoViewController.m */,
 			);
-			name = GuideViewTestViewController;
+			path = GuideViewTestViewController;
 			sourceTree = "<group>";
 		};
-		F55087811F0E215F00350B1F /* JDSheetView */ = {
+		F55087811F0E215F00350B1F /* JDSheetView(仿微信选择列表tableView实现) */ = {
 			isa = PBXGroup;
 			children = (
 				F55087821F0E21A800350B1F /* JDSheetView.h */,
 				F55087831F0E21A800350B1F /* JDSheetView.m */,
 			);
-			path = JDSheetView;
+			path = "JDSheetView(仿微信选择列表tableView实现)";
+			sourceTree = "<group>";
+		};
+		F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */ = {
+			isa = PBXGroup;
+			children = (
+				F55256491F1461530080D0DE /* JDBankScanViewController.h */,
+				F552564A1F1461530080D0DE /* JDBankScanViewController.m */,
+				F552564C1F1461910080D0DE /* view */,
+				F55256451F1460070080D0DE /* model */,
+				F552563E1F145DC70080D0DE /* bank_io */,
+			);
+			name = "BankCard(银行卡识别)";
+			sourceTree = "<group>";
+		};
+		F55256391F145CB30080D0DE /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				F55256501F1465DC0080D0DE /* CameraTool */,
+				F552563A1F145CC10080D0DE /* IDCard(身份证识别) */,
+				F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */,
+				F552563B1F145CE90080D0DE /* JDOCRViewController.h */,
+				F552563C1F145CE90080D0DE /* JDOCRViewController.m */,
+			);
+			name = OCR;
+			sourceTree = "<group>";
+		};
+		F552563A1F145CC10080D0DE /* IDCard(身份证识别) */ = {
+			isa = PBXGroup;
+			children = (
+				F55256561F146D540080D0DE /* libexidcard */,
+				F55256521F146A3D0080D0DE /* Model */,
+				F55256511F146A320080D0DE /* View */,
+				F552565E1F1471AA0080D0DE /* JDIDCardScanViewController.h */,
+				F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */,
+			);
+			name = "IDCard(身份证识别)";
+			sourceTree = "<group>";
+		};
+		F552563E1F145DC70080D0DE /* bank_io */ = {
+			isa = PBXGroup;
+			children = (
+				F552563F1F145DC70080D0DE /* BankCard.h */,
+				F55256401F145DC70080D0DE /* exbankcard.h */,
+				F55256411F145DC70080D0DE /* exbankcardcore */,
+			);
+			path = bank_io;
+			sourceTree = "<group>";
+		};
+		F55256411F145DC70080D0DE /* exbankcardcore */ = {
+			isa = PBXGroup;
+			children = (
+				F55256421F145DC80080D0DE /* exbankcardcore.h */,
+				F55256431F145DC80080D0DE /* libbankcard.a */,
+			);
+			path = exbankcardcore;
+			sourceTree = "<group>";
+		};
+		F55256451F1460070080D0DE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F55256461F1460840080D0DE /* JDBandCardScanResultModel.h */,
+				F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F552564C1F1461910080D0DE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F552564D1F1461B40080D0DE /* OverlayView.h */,
+				F552564E1F1461B40080D0DE /* OverlayView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F55256501F1465DC0080D0DE /* CameraTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CameraTool;
+			sourceTree = "<group>";
+		};
+		F55256511F146A320080D0DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F55256611F1473470080D0DE /* JDCardScanView.h */,
+				F55256621F1473470080D0DE /* JDCardScanView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F55256521F146A3D0080D0DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F55256531F146A4E0080D0DE /* JDIDCardModel.h */,
+				F55256541F146A4E0080D0DE /* JDIDCardModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F55256561F146D540080D0DE /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				F55256571F146D540080D0DE /* commondef.h */,
+				F55256581F146D540080D0DE /* dicts */,
+				F552565A1F146D540080D0DE /* excards.h */,
+				F552565B1F146D540080D0DE /* libexidcardios.a */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		F55256581F146D540080D0DE /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				F55256591F146D540080D0DE /* zocr0.lib */,
+			);
+			path = dicts;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -1023,9 +1177,9 @@
 		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F53DABF41F09DA9700EEFAE5 /* AutoLayoutView(自动布局) */,
 				F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */,
 				F5A733191EC2F03A006CB68D /* Animation(动画效果) */,
+				F53DABF41F09DA9700EEFAE5 /* AutoLayoutView(自动布局) */,
 				F5C5DFC61EC45C6100A436E0 /* BBS_Web(学习网站) */,
 				F5A733211EC30437006CB68D /* CustomControls */,
 				F50373731EDEACA5004EB2EB /* CustomTool(常用工具) */,
@@ -1582,6 +1736,7 @@
 		F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */ = {
 			isa = PBXGroup;
 			children = (
+				F55256391F145CB30080D0DE /* OCR */,
 				F5BD73D51EC1C31C0015E18F /* FaceRecognition */,
 				F5C94D221EC16AD2004C1A1A /* OpenCVCamera */,
 				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
@@ -1629,6 +1784,8 @@
 			children = (
 				F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */,
 				F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */,
+				F55256271F1310A50080D0DE /* JDAppirater.h */,
+				F55256281F1310A50080D0DE /* JDAppirater.m */,
 			);
 			path = "AppstoreScore(Appstore 打分)";
 			sourceTree = "<group>";
@@ -1804,6 +1961,7 @@
 				F550697A1F05D9B000977235 /* img_index_02bg@2x.png in Resources */,
 				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
+				F552565C1F146D540080D0DE /* zocr0.lib in Resources */,
 				F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */,
 				F54136431EC986DD009E96B0 /* 晴29x29@3x.png in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
@@ -1916,9 +2074,12 @@
 				F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */,
 				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,
 				F53DABFB1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m in Sources */,
+				F552563D1F145CE90080D0DE /* JDOCRViewController.m in Sources */,
+				F552564F1F1461B40080D0DE /* OverlayView.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
+				F55256481F1460840080D0DE /* JDBandCardScanResultModel.m in Sources */,
 				F54BBB5D1EB8695900AB92CC /* JDCardLayoutViewController.m in Sources */,
 				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
 				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
@@ -1926,6 +2087,7 @@
 				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
 				F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */,
 				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
+				F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F55087841F0E21A800350B1F /* JDSheetView.m in Sources */,
 				F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */,
@@ -1942,6 +2104,7 @@
 				F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */,
 				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
+				F55256631F1473470080D0DE /* JDCardScanView.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
@@ -1963,6 +2126,7 @@
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
 				F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */,
 				F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */,
+				F55256551F146A4E0080D0DE /* JDIDCardModel.m in Sources */,
 				F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */,
 				F538BF011ED7C28100CBD96F /* JDContactManager.m in Sources */,
 				F59A5B071EC59602003D1E59 /* JDEmitterViewController.m in Sources */,
@@ -1970,6 +2134,7 @@
 				F50373821EDEBDCD004EB2EB /* JDCustomPushAnimation.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
 				F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */,
+				F55256601F1471AA0080D0DE /* JDIDCardScanViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
 				F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */,
 				F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */,
@@ -1995,6 +2160,7 @@
 				F59A5B131EC59E53003D1E59 /* JDHeadView.m in Sources */,
 				F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */,
 				F52C452D1E960B2200D8DF62 /* JDBaseTableViewController.m in Sources */,
+				F55256291F1310A50080D0DE /* JDAppirater.m in Sources */,
 				F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */,
 				F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */,
 				F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */,
@@ -2136,7 +2302,11 @@
 				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2175,7 +2345,11 @@
 				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

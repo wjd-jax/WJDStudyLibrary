@@ -60,8 +60,9 @@ static NSTimeInterval const kAnimationDuration = 0.3;
     if (![[UIApplication sharedApplication].keyWindow.subviews containsObject:self]) {
         [[UIApplication sharedApplication].keyWindow addSubview:self];
     }
-    
-    [UIView animateWithDuration:kAnimationDuration animations:^{
+    self.alpha = 0;
+    [UIView animateWithDuration:kAnimationDuration delay:0 usingSpringWithDamping:0.7f initialSpringVelocity:0.7f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.alpha = 1;
         self.tableView.frame = _tableViewShowFrame;
     } completion:^(BOOL finished) {
         
@@ -71,8 +72,10 @@ static NSTimeInterval const kAnimationDuration = 0.3;
 - (void)hide{
     
     [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.alpha = 0;
         self.tableView.frame = _tableViewHideFrame;
     } completion:^(BOOL finished) {
+        
         [self removeFromSuperview];
     }];
 }

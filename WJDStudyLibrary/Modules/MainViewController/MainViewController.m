@@ -25,7 +25,7 @@
     self.title =@"IOS 知识库";
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"临时页面",@"ClassName":@"JDPopViewController"},
+                           @{@"title":@"临时页面",@"ClassName":@"JDOCRViewController"},
                            @{@"title":@"知识大全",@"ClassName":@"JDKnowledgeViewController"},
                            @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
                            @{@"title":@"功能集合(直接拿来用)",@"ClassName":@"JDFunctionListViewController"},

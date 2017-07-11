@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:JDBankScanViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:JDBankScanViewController.m">
+   </FileRef>
+   <FileRef
       location = "group:WJDStudyLibrary.xcodeproj">
    </FileRef>
    <FileRef
