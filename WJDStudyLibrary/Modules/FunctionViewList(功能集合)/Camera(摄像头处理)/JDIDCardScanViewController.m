@@ -44,7 +44,14 @@
     
     // 初始化rect
     const char *thePath = [[[NSBundle mainBundle] resourcePath] UTF8String];
+    
+#if TARGET_IPHONE_SIMULATOR
+    int ret =0;
+    
+#else
     int ret = EXCARDS_Init(thePath);
+#endif
+    
     if (ret != 0) {
         NSLog(@"初始化失败：ret=%d", ret);
     }
@@ -166,7 +173,12 @@
         
         unsigned char pResult[1024];
         
+#if TARGET_IPHONE_SIMULATOR
+        int ret = 0;
+        
+#else
         int ret = EXCARDS_RecoIDCardData(buffer, (int)width, (int)height, (int)rowBytes, (int)8, (char*)pResult, sizeof(pResult));
+#endif
         if (ret <= 0) {
             NSLog(@"ret=[%d]", ret);
         } else {

@@ -138,8 +138,11 @@
 
 #pragma mark - 识别
 - (void)IDCardRecognit:(CVImageBufferRef)imageBuffer {
+   
+#if TARGET_IPHONE_SIMULATOR
     
-    CVBufferRetain(imageBuffer);
+#else
+       CVBufferRetain(imageBuffer);
     
     // 必须先锁定buffer才可以
     if (CVPixelBufferLockBaseAddress(imageBuffer, 0) == kCVReturnSuccess)
@@ -163,7 +166,8 @@
         int height = ceilf(height_t);
         
         unsigned char result [512];
-        
+        //如果编译报错// enable Testability 要设置为NO
+
         int resultLen = BankCardNV12(result, 512, pixelAddress, cbCrBuffer, width, height, rect.origin.x, rect.origin.y, rect.origin.x+rect.size.width, rect.origin.y+rect.size.height);
         
         if(resultLen > 0) {
@@ -210,6 +214,7 @@
         CVPixelBufferUnlockBaseAddress(imageBuffer, 0);
     }
     CVBufferRelease(imageBuffer);
+#endif
     
 }
 

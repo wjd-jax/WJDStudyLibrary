@@ -24,7 +24,8 @@
 		F506269C1F0B3A7600602B6D /* JDActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F506269B1F0B3A7600602B6D /* JDActionSheetView.m */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
-		F510BDFA1F14AF8500CC184D /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F510BDF91F14AF8500CC184D /* libbankcard.a */; };
+		F510BDFD1F14BEBE00CC184D /* JDFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */; };
+		F510BE0B1F14C43100CC184D /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F510BE0A1F14C43100CC184D /* libbankcard.a */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
@@ -224,10 +225,12 @@
 		F506269B1F0B3A7600602B6D /* JDActionSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDActionSheetView.m; sourceTree = "<group>"; };
 		F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsStoryboard.storyboard; sourceTree = "<group>"; };
 		F50D14D51ECAEC970076D84E /* sig1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sig1.jpg; sourceTree = "<group>"; };
-		F510BDF51F14AF8500CC184D /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
-		F510BDF61F14AF8500CC184D /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
-		F510BDF81F14AF8500CC184D /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
-		F510BDF91F14AF8500CC184D /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
+		F510BDFB1F14BEBE00CC184D /* JDFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireViewController.h; sourceTree = "<group>"; };
+		F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireViewController.m; sourceTree = "<group>"; };
+		F510BE061F14C43100CC184D /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		F510BE071F14C43100CC184D /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		F510BE091F14C43100CC184D /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		F510BE0A1F14C43100CC184D /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
@@ -526,7 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */,
-				F510BDFA1F14AF8500CC184D /* libbankcard.a in Frameworks */,
+				F510BE0B1F14C43100CC184D /* libbankcard.a in Frameworks */,
 				F552565D1F146D540080D0DE /* libexidcardios.a in Frameworks */,
 				385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */,
 			);
@@ -636,21 +639,21 @@
 			path = "JDActionSheetView(仿微信突出列表1)";
 			sourceTree = "<group>";
 		};
-		F510BDF41F14AF8500CC184D /* bank_io */ = {
+		F510BE051F14C43100CC184D /* bank_io */ = {
 			isa = PBXGroup;
 			children = (
-				F510BDF51F14AF8500CC184D /* BankCard.h */,
-				F510BDF61F14AF8500CC184D /* exbankcard.h */,
-				F510BDF71F14AF8500CC184D /* exbankcardcore */,
+				F510BE061F14C43100CC184D /* BankCard.h */,
+				F510BE071F14C43100CC184D /* exbankcard.h */,
+				F510BE081F14C43100CC184D /* exbankcardcore */,
 			);
 			path = bank_io;
 			sourceTree = "<group>";
 		};
-		F510BDF71F14AF8500CC184D /* exbankcardcore */ = {
+		F510BE081F14C43100CC184D /* exbankcardcore */ = {
 			isa = PBXGroup;
 			children = (
-				F510BDF81F14AF8500CC184D /* exbankcardcore.h */,
-				F510BDF91F14AF8500CC184D /* libbankcard.a */,
+				F510BE091F14C43100CC184D /* exbankcardcore.h */,
+				F510BE0A1F14C43100CC184D /* libbankcard.a */,
 			);
 			path = exbankcardcore;
 			sourceTree = "<group>";
@@ -984,7 +987,7 @@
 		F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */ = {
 			isa = PBXGroup;
 			children = (
-				F510BDF41F14AF8500CC184D /* bank_io */,
+				F510BE051F14C43100CC184D /* bank_io */,
 				F55256491F1461530080D0DE /* JDBankScanViewController.h */,
 				F552564A1F1461530080D0DE /* JDBankScanViewController.m */,
 				F552564C1F1461910080D0DE /* view */,
@@ -1714,6 +1717,8 @@
 				F56A91721ECD2D8500DA3388 /* JDRainViewController.m */,
 				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
 				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
+				F510BDFB1F14BEBE00CC184D /* JDFireViewController.h */,
+				F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1917,7 +1922,7 @@
 				TargetAttributes = {
 					F55E55371E850BB100144D49 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 33Y28YBGW2;
+						DevelopmentTeam = 75WWG8XJE9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -2098,6 +2103,7 @@
 				F5A733261EC30498006CB68D /* JDCustomButtonListViewController.m in Sources */,
 				F53DABFB1F09E15900EEFAE5 /* JDAutoLayoutCellViewController.m in Sources */,
 				F552563D1F145CE90080D0DE /* JDOCRViewController.m in Sources */,
+				F510BDFD1F14BEBE00CC184D /* JDFireViewController.m in Sources */,
 				F552564F1F1461B40080D0DE /* OverlayView.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
@@ -2308,7 +2314,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2334,6 +2340,7 @@
 					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/bank_io/exbankcardcore",
 					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/libexidcard",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2352,8 +2359,9 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 33Y28YBGW2;
+				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
