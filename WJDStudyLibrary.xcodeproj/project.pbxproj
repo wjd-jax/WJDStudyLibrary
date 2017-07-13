@@ -175,6 +175,7 @@
 		F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F151ECC39E700835E26 /* JDSnowViewController.m */; };
 		F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F181ECC3F0300835E26 /* JDFireworksView.m */; };
 		F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */; };
+		F5C37CDF1F15B9FD0029C773 /* JDUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */; };
 		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
 		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
 		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
@@ -493,6 +494,8 @@
 		F5C29F181ECC3F0300835E26 /* JDFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireworksView.m; sourceTree = "<group>"; };
 		F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFireworksViewController.h; sourceTree = "<group>"; };
 		F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireworksViewController.m; sourceTree = "<group>"; };
+		F5C37CDD1F15B9FD0029C773 /* JDUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUserDefault.h; sourceTree = "<group>"; };
+		F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUserDefault.m; sourceTree = "<group>"; };
 		F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransitionViewController.h; sourceTree = "<group>"; };
 		F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransitionViewController.m; sourceTree = "<group>"; };
 		F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideTestViewController.h; sourceTree = "<group>"; };
@@ -1116,6 +1119,15 @@
 			path = "QRIScan(二维码扫描)";
 			sourceTree = "<group>";
 		};
+		F555D92A1F17592900A14799 /* JDAuthorityManager */ = {
+			isa = PBXGroup;
+			children = (
+				F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */,
+				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
+			);
+			name = JDAuthorityManager;
+			sourceTree = "<group>";
+		};
 		F55E552F1E850BB100144D49 = {
 			isa = PBXGroup;
 			children = (
@@ -1192,6 +1204,7 @@
 		F55E55541E85171600144D49 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F5C37CDC1F15B9500029C773 /* EasyTool */,
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
@@ -1723,6 +1736,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		F5C37CDC1F15B9500029C773 /* EasyTool */ = {
+			isa = PBXGroup;
+			children = (
+				F5C37CDD1F15B9FD0029C773 /* JDUserDefault.h */,
+				F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */,
+			);
+			name = EasyTool;
+			sourceTree = "<group>";
+		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1851,8 +1873,7 @@
 		F5FE81981ED554A7008BD4F3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */,
-				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
+				F555D92A1F17592900A14799 /* JDAuthorityManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2106,6 +2127,7 @@
 				F510BDFD1F14BEBE00CC184D /* JDFireViewController.m in Sources */,
 				F552564F1F1461B40080D0DE /* OverlayView.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
+				F5C37CDF1F15B9FD0029C773 /* JDUserDefault.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
 				F55256481F1460840080D0DE /* JDBandCardScanResultModel.m in Sources */,

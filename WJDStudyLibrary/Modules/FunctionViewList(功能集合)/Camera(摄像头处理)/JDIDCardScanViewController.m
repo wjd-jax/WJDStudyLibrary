@@ -47,7 +47,7 @@
     
 #if TARGET_IPHONE_SIMULATOR
     int ret =0;
-    
+    DLog(@"%s",thePath);
 #else
     int ret = EXCARDS_Init(thePath);
 #endif
@@ -161,6 +161,7 @@
         CVPlanarPixelBufferInfo_YCbCrBiPlanar *planar = CVPixelBufferGetBaseAddress(imageBuffer);
         size_t offset = NSSwapBigIntToHost(planar->componentInfoY.offset);
         size_t rowBytes = NSSwapBigIntToHost(planar->componentInfoY.rowBytes);
+        DLog(@"%zu",rowBytes);
         unsigned char* baseAddress = (unsigned char *)CVPixelBufferGetBaseAddress(imageBuffer);
         unsigned char* pixelAddress = baseAddress + offset;
         

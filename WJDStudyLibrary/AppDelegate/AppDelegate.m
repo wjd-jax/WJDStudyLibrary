@@ -27,7 +27,7 @@
     _window.backgroundColor =[UIColor whiteColor];
     
     //请求权限
-    [JDAuthorityManager requestAuthority];
+    [JDAuthorityManager requestAllAuthority];
     //注册推送
     [self regisNotification];
     
