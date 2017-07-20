@@ -72,7 +72,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
 
 //设置 RGBA 颜色
 #define JDRGBColor(R,G,B,A) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:A]
-#define JDClearColor [UIColor clearColor];
+#define JDClearColor [UIColor clearColor]
+#define JDMainColor JDRGBColor(55,207,240,1)
 
 //弱引用/强引用
 #define JDWeakSelf(type) __weak typeof(type) weak##type = type;

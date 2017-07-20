@@ -10,9 +10,9 @@
 #import "MainViewController.h"
 #import "JDAuthorityManager.h"
 #import "AppDelegate+JDPush.h"
-#import "JDCustomNavigationController.h"
 #import "JDGuidePageViewController.h"
 #import "JDGuidePageView.h"
+#import "JDTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -26,20 +26,30 @@
     _window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor =[UIColor whiteColor];
     
+    
+#if DEBUG
+    
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    
+    id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+    [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
+    
+#endif
+    
     //请求权限
     [JDAuthorityManager requestAllAuthority];
     //注册推送
     [self regisNotification];
     
-    MainViewController *mVC =[[MainViewController alloc]init];
-    JDCustomNavigationController *rootVC =[[JDCustomNavigationController alloc]initWithRootViewController:mVC];
-    _window.rootViewController =rootVC;
+    JDTabBarController *rootVC =[[JDTabBarController alloc]init];
 
+    _window.rootViewController =rootVC;
+    
     [_window makeKeyAndVisible];
     
     //引导页.一定要在[_window makeKeyAndVisible]之后调用
     if ([self isFirstLauch]) {
-       
+        
         JDGuidePageView *guideView =[[JDGuidePageView alloc]initGuideViewWithImages:@[@"guide_01", @"guide_02", @"guide_03",@"guide_04"] ];
         guideView.isShowPageView = YES;
         guideView.isScrollOut = NO;
@@ -80,13 +90,16 @@
     
     //UIView *launchView = viewController.view;
     UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
+    
     //viewController.view.frame = [UIApplication sharedApplication].keyWindow.frame;
     [mainWindow addSubview:viewController.view];
     [self.window bringSubviewToFront:viewController.view];
     
     [UIView animateWithDuration:0.6f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        
         viewController.view.alpha = 0.0f;
         viewController.view.layer.transform = CATransform3DScale(CATransform3DIdentity, 2.0f, 2.0f, 1.0f);
+        
     } completion:^(BOOL finished) {
         [viewController.view removeFromSuperview];
     }];

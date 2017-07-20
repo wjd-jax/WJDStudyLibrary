@@ -47,7 +47,7 @@
     //修改了这个外观对象，相当于修改了整个项目中的外观
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     //设置导航栏背景颜色
-    [navigationBar setBarTintColor:JDRGBColor(55,207,240,1)];
+    [navigationBar setBarTintColor:JDMainColor];
     //设置NavigationBarItem文字的颜色
     [navigationBar setTintColor:[UIColor whiteColor]];
     //设置标题栏颜色

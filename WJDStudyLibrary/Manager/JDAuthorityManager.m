@@ -73,10 +73,10 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
         [self obtainCNContactAuthorizedStatus];             //通讯录
     }
     
-    if (![self isObtainEKEventAuthority]) {
-        
-        [self obtainEKEventAuthorizedStatus];               //日历
-    }
+//    if (![self isObtainEKEventAuthority]) {
+//        
+//        [self obtainEKEventAuthorizedStatus];               //日历
+//    }
 }
 
 #pragma mark - 定位
@@ -168,16 +168,7 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     MPMediaLibraryAuthorizationStatus authStatus = [MPMediaLibrary authorizationStatus];
     if (authStatus == MPMediaLibraryAuthorizationStatusNotDetermined) {
         [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status) {
-            if (status == MPMediaLibraryAuthorizationStatusNotDetermined) {
-                DLog(@"媒体资料库开启权限:未选择权限(NotDetermined)");
-            }else if (status == MPMediaLibraryAuthorizationStatusDenied){
-                DLog(@"媒体资料库开启权限:拒绝(enied)");
-            }else if (status == MPMediaLibraryAuthorizationStatusRestricted){
-                DLog(@"媒体资料库开启权限:未授权(Restricted)");
-            }else if (status == MPMediaLibraryAuthorizationStatusAuthorized){
-                DLog(@"媒体资料库开启权限:已授权(Authorized)");
-            }
-            
+            [self isObtainWithStatus:status];
         }];
     }
 }
@@ -196,15 +187,7 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
 + (void)obtainSFSpeechAuthorizedStatus{
     
     [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
-        if (status == SFSpeechRecognizerAuthorizationStatusNotDetermined) {
-            DLog(@"语音识别开启权限:未选择权限(NotDetermined)");
-        }else if (status == SFSpeechRecognizerAuthorizationStatusDenied){
-            DLog(@"语音识别开启权限:用户拒绝App使用(Denied)");
-        }else if (status == SFSpeechRecognizerAuthorizationStatusRestricted){
-            DLog(@"语音识别开启权限:未授权(Restricted)");
-        }else if (status == SFSpeechRecognizerAuthorizationStatusAuthorized){
-            DLog(@"语音识别开启权限:已授权(Authorized)");
-        }
+        [self isObtainWithStatus:status];
     }];
     
 }
@@ -398,9 +381,9 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
 + (void)ShowGranted:(BOOL)success
 {
     if (success == YES) {
-        DLog(@"运动与健身开启权限:成功");
+        DLog(@"开启权限:成功");
     }else{
-        DLog(@"运动与健身开启权限:失败");
+        DLog(@"开启权限:失败");
     }
 }
 
