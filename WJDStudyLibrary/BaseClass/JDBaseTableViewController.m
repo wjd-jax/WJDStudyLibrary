@@ -54,6 +54,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     UIViewController *vc =[[NSClassFromString(model.ClassName) alloc] init];
     vc.title =model.title;
     if (vc) {
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
@@ -64,6 +65,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
         
         UIViewController  *cardVC = [storyBoard instantiateViewControllerWithIdentifier:model.ClassName];
         if (cardVC) {
+            cardVC.hidesBottomBarWhenPushed =YES;
             [self.navigationController pushViewController:cardVC animated:YES];
             
         }

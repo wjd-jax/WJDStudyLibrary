@@ -46,7 +46,7 @@
 }
 
 
-// 在iOS7 之后，默认会把uitabBar上的系统图片渲染成蓝色
+// 在iOS7 之后，默认会把uitabBar上的系统图片渲染成蓝色,可以在Assets.xcassets中把图片的image set的Render as设置为Original image
 #pragma mark - 添加所有的子控制器
 - (void)setUpAllChildViewController
 {

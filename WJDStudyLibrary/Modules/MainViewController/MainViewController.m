@@ -22,7 +22,7 @@
 
   
     //
-    self.title =@"IOS 知识库";
+    self.navigationItem.title =@"IOS 知识库";
     self.dataSoureArray =@[
                            //用于测试的页面
                            @{@"title":@"临时页面",@"ClassName":@"JDFireViewController"},
