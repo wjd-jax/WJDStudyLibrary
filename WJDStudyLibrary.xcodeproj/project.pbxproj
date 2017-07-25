@@ -26,6 +26,8 @@
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F510BDFD1F14BEBE00CC184D /* JDFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */; };
 		F510BE0B1F14C43100CC184D /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F510BE0A1F14C43100CC184D /* libbankcard.a */; };
+		F511E3771F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */; };
+		F511E37A1F26E1EC005C02B3 /* JDBottomAlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F511E3791F26E1EC005C02B3 /* JDBottomAlignmentLabel.m */; };
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
@@ -236,6 +238,10 @@
 		F510BE071F14C43100CC184D /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
 		F510BE091F14C43100CC184D /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
 		F510BE0A1F14C43100CC184D /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
+		F511E3751F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBottomAligntLabelDemoViewController.h; sourceTree = "<group>"; };
+		F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBottomAligntLabelDemoViewController.m; sourceTree = "<group>"; };
+		F511E3781F26E1EC005C02B3 /* JDBottomAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBottomAlignmentLabel.h; sourceTree = "<group>"; };
+		F511E3791F26E1EC005C02B3 /* JDBottomAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBottomAlignmentLabel.m; sourceTree = "<group>"; };
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
@@ -671,6 +677,17 @@
 				F510BE0A1F14C43100CC184D /* libbankcard.a */,
 			);
 			path = exbankcardcore;
+			sourceTree = "<group>";
+		};
+		F511E3741F26E148005C02B3 /* BottomAligntLabel(底部对齐的Label) */ = {
+			isa = PBXGroup;
+			children = (
+				F511E3751F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.h */,
+				F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */,
+				F511E3781F26E1EC005C02B3 /* JDBottomAlignmentLabel.h */,
+				F511E3791F26E1EC005C02B3 /* JDBottomAlignmentLabel.m */,
+			);
+			name = "BottomAligntLabel(底部对齐的Label)";
 			sourceTree = "<group>";
 		};
 		F513ED6A1F009ACC001C044C /* HubMessage */ = {
@@ -1678,6 +1695,7 @@
 		F5A733221EC30472006CB68D /* CustomLabel */ = {
 			isa = PBXGroup;
 			children = (
+				F511E3741F26E148005C02B3 /* BottomAligntLabel(底部对齐的Label) */,
 				F5223EE71EC3FDC500CDCBD8 /* PrinterLabel(打字机) */,
 				F5A7332A1EC304EE006CB68D /* marqueeLabel(跑马灯) */,
 				F5A733271EC304DC006CB68D /* JDCustomLabelViewController.h */,
@@ -2158,6 +2176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F511E3771F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m in Sources */,
 				F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */,
 				F570E6DE1F203FA10029790B /* JDTabBarController.m in Sources */,
 				F50373851EDF9EA6004EB2EB /* JDCustomPopAnimation.m in Sources */,
@@ -2167,6 +2186,7 @@
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
 				F53DAC001F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m in Sources */,
 				F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */,
+				F511E37A1F26E1EC005C02B3 /* JDBottomAlignmentLabel.m in Sources */,
 				F52C45351E97345700D8DF62 /* JDLayoutListViewController.m in Sources */,
 				F52C451D1E94C02C00D8DF62 /* UIView+JDView.m in Sources */,
 				F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */,
@@ -2439,6 +2459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				USE_HEADERMAP = YES;
 			};
@@ -2482,6 +2503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				USE_HEADERMAP = YES;
 			};
