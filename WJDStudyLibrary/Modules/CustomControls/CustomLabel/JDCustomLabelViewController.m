@@ -19,7 +19,7 @@
     self.dataSoureArray =@[
                            @{@"title":@"跑马灯",@"ClassName":@"JDMarqueeViewController"},
                            @{@"title":@"打字机",@"ClassName":@"JDPrintLabelViewController"},
-                           @{@"title":@"跑马灯",@"ClassName":@"JDBottomAligntLabelDemoViewController"},
+                           @{@"title":@"底部对齐Label",@"ClassName":@"JDBottomAligntLabelDemoViewController"},
 
                            ];
 }

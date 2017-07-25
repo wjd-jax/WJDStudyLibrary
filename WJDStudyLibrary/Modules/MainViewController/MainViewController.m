@@ -36,7 +36,7 @@
                            @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
                            @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
                            @{@"title":@"学习网站",@"ClassName":@"JDStudyWebListViewController"},
-                           @{@"title":@"音视频播放",@"ClassName":@"JDStudyWebListViewController"},
+                           @{@"title":@"音视频播放",@"ClassName":@""},
                            @{@"title":@"常用工具集合",@"ClassName":@"JDCustomToolViewController"},
 
                            ];

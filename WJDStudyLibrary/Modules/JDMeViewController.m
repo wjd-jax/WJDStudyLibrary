@@ -9,10 +9,10 @@
 #import "JDMeViewController.h"
 
 @interface JDMeViewController ()
-<
-UITableViewDelegate,
-UITableViewDataSource
->
+//<
+//UITableViewDelegate,
+//UITableViewDataSource
+//>
 
 
 @end
