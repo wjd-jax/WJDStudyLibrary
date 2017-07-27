@@ -10,6 +10,11 @@ target “WJDStudyLibrary” do
     pod 'SDWebImage'
     pod 'OpenCV', '~> 3.0.0' #inhibit_warnings => true
     pod 'MLeaksFinder' #内存泄漏检测,无代码入侵,
+    
+    pod 'UMengUShare/Social/ReducedWeChat'
+    pod 'UMengUShare/Social/ReducedQQ'
+    pod 'UMengUShare/Social/ReducedSina'
+
     #pod 'OpenCV-Dynamic'
 
 end
