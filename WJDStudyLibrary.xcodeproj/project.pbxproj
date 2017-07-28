@@ -666,9 +666,9 @@
 		F510BE051F14C43100CC184D /* bank_io */ = {
 			isa = PBXGroup;
 			children = (
+				F510BE081F14C43100CC184D /* exbankcardcore */,
 				F510BE061F14C43100CC184D /* BankCard.h */,
 				F510BE071F14C43100CC184D /* exbankcard.h */,
-				F510BE081F14C43100CC184D /* exbankcardcore */,
 			);
 			path = bank_io;
 			sourceTree = "<group>";
@@ -685,12 +685,12 @@
 		F511E3741F26E148005C02B3 /* BottomAligntLabel(底部对齐的Label) */ = {
 			isa = PBXGroup;
 			children = (
-				F511E3751F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.h */,
-				F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */,
 				F511E3781F26E1EC005C02B3 /* JDBottomAlignmentLabel.h */,
 				F511E3791F26E1EC005C02B3 /* JDBottomAlignmentLabel.m */,
+				F511E3751F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.h */,
+				F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */,
 			);
-			name = "BottomAligntLabel(底部对齐的Label)";
+			path = "BottomAligntLabel(底部对齐的Label)";
 			sourceTree = "<group>";
 		};
 		F513ED6A1F009ACC001C044C /* HubMessage */ = {
@@ -1023,37 +1023,37 @@
 			isa = PBXGroup;
 			children = (
 				F510BE051F14C43100CC184D /* bank_io */,
+				F55256451F1460070080D0DE /* model */,
+				F552564C1F1461910080D0DE /* view */,
 				F55256491F1461530080D0DE /* JDBankScanViewController.h */,
 				F552564A1F1461530080D0DE /* JDBankScanViewController.m */,
-				F552564C1F1461910080D0DE /* view */,
-				F55256451F1460070080D0DE /* model */,
 			);
-			name = "BankCard(银行卡识别)";
+			path = "BankCard(银行卡识别)";
 			sourceTree = "<group>";
 		};
 		F55256391F145CB30080D0DE /* OCR */ = {
 			isa = PBXGroup;
 			children = (
+				F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */,
 				F55256501F1465DC0080D0DE /* CameraTool */,
 				F552563A1F145CC10080D0DE /* IDCard(身份证识别) */,
-				F55256381F145B9C0080D0DE /* BankCard(银行卡识别) */,
 				F552563B1F145CE90080D0DE /* JDOCRViewController.h */,
 				F552563C1F145CE90080D0DE /* JDOCRViewController.m */,
 			);
-			name = OCR;
+			path = OCR;
 			sourceTree = "<group>";
 		};
 		F552563A1F145CC10080D0DE /* IDCard(身份证识别) */ = {
 			isa = PBXGroup;
 			children = (
-				F55256671F14A8F00080D0DE /* Tool */,
-				F55256561F146D540080D0DE /* libexidcard */,
 				F55256521F146A3D0080D0DE /* Model */,
+				F55256671F14A8F00080D0DE /* Tool */,
 				F55256511F146A320080D0DE /* View */,
+				F55256561F146D540080D0DE /* libexidcard */,
 				F552565E1F1471AA0080D0DE /* JDIDCardScanViewController.h */,
 				F552565F1F1471AA0080D0DE /* JDIDCardScanViewController.m */,
 			);
-			name = "IDCard(身份证识别)";
+			path = "IDCard(身份证识别)";
 			sourceTree = "<group>";
 		};
 		F55256451F1460070080D0DE /* model */ = {
@@ -1062,7 +1062,7 @@
 				F55256461F1460840080D0DE /* JDBandCardScanResultModel.h */,
 				F55256471F1460840080D0DE /* JDBandCardScanResultModel.m */,
 			);
-			name = model;
+			path = model;
 			sourceTree = "<group>";
 		};
 		F552564C1F1461910080D0DE /* view */ = {
@@ -1071,25 +1071,25 @@
 				F552564D1F1461B40080D0DE /* OverlayView.h */,
 				F552564E1F1461B40080D0DE /* OverlayView.m */,
 			);
-			name = view;
+			path = view;
 			sourceTree = "<group>";
 		};
 		F55256501F1465DC0080D0DE /* CameraTool */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = CameraTool;
+			path = CameraTool;
 			sourceTree = "<group>";
 		};
 		F55256511F146A320080D0DE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F55256641F14A8380080D0DE /* RectManager.h */,
-				F55256651F14A8380080D0DE /* RectManager.m */,
 				F55256611F1473470080D0DE /* JDCardScanView.h */,
 				F55256621F1473470080D0DE /* JDCardScanView.m */,
+				F55256641F14A8380080D0DE /* RectManager.h */,
+				F55256651F14A8380080D0DE /* RectManager.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F55256521F146A3D0080D0DE /* Model */ = {
@@ -1098,14 +1098,14 @@
 				F55256531F146A4E0080D0DE /* JDIDCardModel.h */,
 				F55256541F146A4E0080D0DE /* JDIDCardModel.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F55256561F146D540080D0DE /* libexidcard */ = {
 			isa = PBXGroup;
 			children = (
-				F55256571F146D540080D0DE /* commondef.h */,
 				F55256581F146D540080D0DE /* dicts */,
+				F55256571F146D540080D0DE /* commondef.h */,
 				F552565A1F146D540080D0DE /* excards.h */,
 				F552565B1F146D540080D0DE /* libexidcardios.a */,
 			);
@@ -1128,7 +1128,7 @@
 				F55256681F14A8FF0080D0DE /* UIImage+Extend.h */,
 				F55256691F14A8FF0080D0DE /* UIImage+Extend.m */,
 			);
-			name = Tool;
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		F555B4691EA0C73500EF73BC /* QRImageMake(二维码生成) */ = {
@@ -1157,7 +1157,7 @@
 				F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */,
 				F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */,
 			);
-			name = JDAuthorityManager;
+			path = JDAuthorityManager;
 			sourceTree = "<group>";
 		};
 		F55A31B81F29DA6700246808 /* ShareManager */ = {
@@ -1166,7 +1166,7 @@
 				F55A31B91F29DCAE00246808 /* JDUMShareManager.h */,
 				F55A31BA1F29DCAE00246808 /* JDUMShareManager.m */,
 			);
-			name = ShareManager;
+			path = ShareManager;
 			sourceTree = "<group>";
 		};
 		F55E552F1E850BB100144D49 = {
@@ -1257,10 +1257,10 @@
 		F55E55571E85178700144D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F570E6E21F2045930029790B /* MyViewController */,
-				F570E6E11F20458F0029790B /* MessageViewController */,
 				F570E6E01F20458C0029790B /* FindViewController */,
 				F570E6DF1F2045890029790B /* HomeViewController */,
+				F570E6E11F20458F0029790B /* MessageViewController */,
+				F570E6E21F2045930029790B /* MyViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1281,7 +1281,7 @@
 				F570E6DC1F203FA10029790B /* JDTabBarController.h */,
 				F570E6DD1F203FA10029790B /* JDTabBarController.m */,
 			);
-			name = TabbarController;
+			path = TabbarController;
 			sourceTree = "<group>";
 		};
 		F570E6DB1F203F1A0029790B /* NavigationController */ = {
@@ -1290,7 +1290,7 @@
 				F5757EFD1F04A41200A8871F /* JDCustomNavigationController.h */,
 				F5757EFE1F04A41200A8871F /* JDCustomNavigationController.m */,
 			);
-			name = NavigationController;
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		F570E6DF1F2045890029790B /* HomeViewController */ = {
@@ -1310,7 +1310,7 @@
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
 				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
-			name = HomeViewController;
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		F570E6E01F20458C0029790B /* FindViewController */ = {
@@ -1319,7 +1319,7 @@
 				F570E6E91F20460E0029790B /* JDFindViewController.h */,
 				F570E6EA1F20460E0029790B /* JDFindViewController.m */,
 			);
-			name = FindViewController;
+			path = FindViewController;
 			sourceTree = "<group>";
 		};
 		F570E6E11F20458F0029790B /* MessageViewController */ = {
@@ -1328,7 +1328,7 @@
 				F570E6E61F2045F20029790B /* JDMessageViewController.h */,
 				F570E6E71F2045F20029790B /* JDMessageViewController.m */,
 			);
-			name = MessageViewController;
+			path = MessageViewController;
 			sourceTree = "<group>";
 		};
 		F570E6E21F2045930029790B /* MyViewController */ = {
@@ -1337,7 +1337,7 @@
 				F570E6E31F2045E50029790B /* JDMeViewController.h */,
 				F570E6E41F2045E50029790B /* JDMeViewController.m */,
 			);
-			name = MyViewController;
+			path = MyViewController;
 			sourceTree = "<group>";
 		};
 		F576090D1EADA789000D0176 /* Encryption(加密解密) */ = {
@@ -1822,14 +1822,14 @@
 			children = (
 				F59A5AFE1EC58E1B003D1E59 /* JDFireEmitterViewController.h */,
 				F59A5AFF1EC58E1B003D1E59 /* JDFireEmitterViewController.m */,
+				F510BDFB1F14BEBE00CC184D /* JDFireViewController.h */,
+				F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */,
 				F5C29F1A1ECC437F00835E26 /* JDFireworksViewController.h */,
 				F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */,
 				F56A91711ECD2D8500DA3388 /* JDRainViewController.h */,
 				F56A91721ECD2D8500DA3388 /* JDRainViewController.m */,
 				F5C29F141ECC39E700835E26 /* JDSnowViewController.h */,
 				F5C29F151ECC39E700835E26 /* JDSnowViewController.m */,
-				F510BDFB1F14BEBE00CC184D /* JDFireViewController.h */,
-				F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1840,7 +1840,7 @@
 				F5C37CDD1F15B9FD0029C773 /* JDUserDefault.h */,
 				F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */,
 			);
-			name = EasyTool;
+			path = EasyTool;
 			sourceTree = "<group>";
 		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
@@ -1884,8 +1884,8 @@
 		F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */ = {
 			isa = PBXGroup;
 			children = (
-				F55256391F145CB30080D0DE /* OCR */,
 				F5BD73D51EC1C31C0015E18F /* FaceRecognition */,
+				F55256391F145CB30080D0DE /* OCR */,
 				F5C94D221EC16AD2004C1A1A /* OpenCVCamera */,
 				F5C94D1F1EC169C9004C1A1A /* JDCameraFuctionViewController.h */,
 				F5C94D201EC169C9004C1A1A /* JDCameraFuctionViewController.m */,
@@ -1971,8 +1971,8 @@
 		F5FE81981ED554A7008BD4F3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F55A31B81F29DA6700246808 /* ShareManager */,
 				F555D92A1F17592900A14799 /* JDAuthorityManager */,
+				F55A31B81F29DA6700246808 /* ShareManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2465,8 +2465,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/bank_io/exbankcardcore",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/libexidcard",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/BankCard(银行卡识别)/bank_io/exbankcardcore\"",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/IDCard(身份证识别)/libexidcard\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
@@ -2511,8 +2511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/bank_io/exbankcardcore",
-					"$(PROJECT_DIR)/WJDStudyLibrary/Modules/FunctionViewList(功能集合)/Camera(摄像头处理)/libexidcard",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/BankCard(银行卡识别)/bank_io/exbankcardcore\"",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/IDCard(身份证识别)/libexidcard\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
