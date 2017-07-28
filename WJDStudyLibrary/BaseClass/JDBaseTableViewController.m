@@ -24,6 +24,16 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    //cell分割线向左移动15像素
+    
+    if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
 //  [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];
     
 }

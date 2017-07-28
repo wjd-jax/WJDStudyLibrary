@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
+                           @{@"title":@"我的简书",@"ClassName":@"http://www.jianshu.com/u/b68a84c0ced8"},
                            @{@"title":@"唐巧",@"ClassName":@"http://blog.devtang.com/blog/archives/"},
                            @{@"title":@"王巍",@"ClassName":@"http://www.onevcat.com"},
                            @{@"title":@"文顶顶",@"ClassName":@"http://www.cnblogs.com/wendingding/p/"},

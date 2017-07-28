@@ -19,7 +19,7 @@
 #import <MediaPlayer/MediaPlayer.h>             //媒体资料库
 #import <UserNotifications/UserNotifications.h> //推送权限
 #import <CoreBluetooth/CoreBluetooth.h>         //蓝牙权限
-
+#import <Speech/Speech.h>                       //语音识别
 
 static NSString *authorityStr =@"authority";
 
@@ -73,10 +73,10 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
         [self obtainCNContactAuthorizedStatus];             //通讯录
     }
     
-//    if (![self isObtainEKEventAuthority]) {
-//        
-//        [self obtainEKEventAuthorizedStatus];               //日历
-//    }
+    if (![self isObtainSpeechRecognizer]) {
+        
+        [self obtainSFSpeechAuthorizedStatus];               //语音识别
+    }
 }
 
 #pragma mark - 定位
@@ -145,9 +145,9 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
     [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
                           completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                          
+                              
                               [self ShowGranted:granted];
-
+                              
                           }];
     
 }
@@ -207,9 +207,9 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     
     EKEventStore *store = [[EKEventStore alloc]init];
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError * _Nullable error) {
-   
+        
         [self ShowGranted:granted];
-
+        
     }];
     
 }
@@ -251,9 +251,9 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
 + (void)obtainAVMediaVideoAuthorizedStatus{
     
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-    
+        
         [self ShowGranted:granted];
-
+        
     }];
     
 }
@@ -282,18 +282,18 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
         
         CNContactStore *contactStore = [[CNContactStore alloc] init];
         [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
-
+            
             [self ShowGranted:granted];
-
+            
         }];
     }
     else
     {
         ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-           
+            
             [self ShowGranted:granted];
-
+            
         });
     }
 }
@@ -313,7 +313,7 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {//麦克风权限
         
         [self ShowGranted:granted];
-
+        
     }];
 }
 
@@ -332,11 +332,29 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     EKEventStore *store = [[EKEventStore alloc]init];
     
     [store requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError * _Nullable error) {
-       
+        
         [self ShowGranted:granted];
-
+        
     }];
 }
+
+#pragma mark - 语音识别项权限
+/**
+ * @brief 是否开启语音识别事项权限
+ */
++ (BOOL)isObtainSpeechRecognizer{
+    
+    SFSpeechRecognizerAuthorizationStatus status =[SFSpeechRecognizer authorizationStatus];
+    return [self isObtainWithStatus:status];
+}
++ (void)obtainSpeechRecognizeAuthorizedStatus{
+    
+    [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
+        
+    }];
+}
+
+
 
 #pragma mark - 运动与健身
 /**
@@ -356,7 +374,7 @@ typedef NS_ENUM(NSInteger, JDAuthorizationStatus) {
     [health requestAuthorizationToShareTypes:nil readTypes:readObjectTypes completion:^(BOOL success, NSError * _Nullable error) {
         
         [self ShowGranted:success];
-    
+        
     }];
     
 }

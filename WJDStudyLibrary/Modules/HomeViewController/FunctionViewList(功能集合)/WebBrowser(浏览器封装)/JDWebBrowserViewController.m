@@ -266,8 +266,7 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
  */
 
 // 在发送请求之前，决定是否跳转
-
--(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     NSString *urlString =[[navigationAction.request URL] absoluteString];
     //注意对于url中的中文是无法解析的，需要进行url编码(指定编码类型为utf-8)
@@ -281,10 +280,9 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
         NSString *protocolHead =[urlComps objectAtIndex:0];
         DLog(@"协议头=%@",protocolHead);
     }
-    decisionHandler(WKNavigationActionPolicyAllow);
-    //拦截执行  decisionHandler(WKNavigationActionPolicyAllow);
-    
+    decisionHandler(WKNavigationActionPolicyAllow);//拦截执行
 }
+
 // 在收到响应后，决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler
 {

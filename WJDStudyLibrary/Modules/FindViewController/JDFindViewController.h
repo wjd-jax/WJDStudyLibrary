@@ -7,7 +7,8 @@
 //
 
 #import "JDBaseViewController.h"
+#import "JDBaseTableViewController.h"
 
-@interface JDFindViewController : JDBaseViewController
+@interface JDFindViewController : JDBaseTableViewController
 
 @end

@@ -31,7 +31,6 @@
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
-		F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */; };
 		F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUtils.m */; };
 		F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */; };
 		F51FA13B1F04D2E300CC7041 /* JDGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */; };
@@ -194,6 +193,9 @@
 		F5D2F83B1ED2D6A10063F18F /* JDStatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
+		F5DCA4481F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA4471F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m */; };
+		F5DCA44C1F2B11E100A1D5AC /* JDSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA44B1F2B11E100A1D5AC /* JDSpeechRecognizer.m */; };
+		F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5DCA4521F2B20E500A1D5AC /* test.mp3 */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
 		F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */; };
 		F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */; };
@@ -251,8 +253,6 @@
 		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
 		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
-		F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDKnowledgeViewController.h; sourceTree = "<group>"; };
-		F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDKnowledgeViewController.m; sourceTree = "<group>"; };
 		F51CF0901E8E41390035EF7A /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
 		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
@@ -536,6 +536,13 @@
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		F5DCA4431F2AEC5600A1D5AC /* WRNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		F5DCA4441F2AEC5600A1D5AC /* WRNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
+		F5DCA4461F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDVoiceRecognitionViewController.h; sourceTree = "<group>"; };
+		F5DCA4471F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDVoiceRecognitionViewController.m; sourceTree = "<group>"; };
+		F5DCA44A1F2B11E100A1D5AC /* JDSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDSpeechRecognizer.h; sourceTree = "<group>"; };
+		F5DCA44B1F2B11E100A1D5AC /* JDSpeechRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDSpeechRecognizer.m; sourceTree = "<group>"; };
+		F5DCA4521F2B20E500A1D5AC /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		F5E58B9E1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAppStoreScoreViewController.h; sourceTree = "<group>"; };
 		F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppStoreScoreViewController.m; sourceTree = "<group>"; };
 		F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebBrowserViewController.h; sourceTree = "<group>"; };
@@ -720,15 +727,6 @@
 				F51CF0801E8E06740035EF7A /* JDMainDataModel.m */,
 			);
 			path = MainDataModel;
-			sourceTree = "<group>";
-		};
-		F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */ = {
-			isa = PBXGroup;
-			children = (
-				F51CF08A1E8E27EB0035EF7A /* JDKnowledgeViewController.h */,
-				F51CF08B1E8E27EB0035EF7A /* JDKnowledgeViewController.m */,
-			);
-			path = "knowledgeViewController(知识库)";
 			sourceTree = "<group>";
 		};
 		F51CF0B61E8E492C0035EF7A /* AboutUs(关于我) */ = {
@@ -919,6 +917,7 @@
 		F541360C1EC985A6009E96B0 /* NewFunction(新功能) */ = {
 			isa = PBXGroup;
 			children = (
+				F5DCA4451F2B0CDB00A1D5AC /* VoiceRecognition */,
 				F54136101EC98631009E96B0 /* ChangeIconFunction(10.3更换图标功能) */,
 				F541360D1EC985EF009E96B0 /* JDNewFunctionViewController.h */,
 				F541360E1EC985EF009E96B0 /* JDNewFunctionViewController.m */,
@@ -1235,6 +1234,7 @@
 		F55E55531E85169700144D49 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F5DCA44D1F2B1B4700A1D5AC /* voices */,
 				F55069741F05D98100977235 /* images */,
 				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
 				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
@@ -1308,7 +1308,6 @@
 				F55E55581E85179400144D49 /* MainViewController */,
 				F57D456D1E9C77590073F6D6 /* NetworkingViewController(网络封装) */,
 				F52C450D1E94B4E500D8DF62 /* ViewShowViewController(视图列表) */,
-				F51CF0891E8E27960035EF7A /* knowledgeViewController(知识库) */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -1923,8 +1922,45 @@
 		F5DB4C251EA6078A000D3A0F /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F5DCA4421F2AEC5600A1D5AC /* WRNavigationBar */,
 			);
 			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		F5DCA4421F2AEC5600A1D5AC /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCA4431F2AEC5600A1D5AC /* WRNavigationBar.h */,
+				F5DCA4441F2AEC5600A1D5AC /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
+		F5DCA4451F2B0CDB00A1D5AC /* VoiceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCA4491F2B11AD00A1D5AC /* JDSpeechRecognizer */,
+				F5DCA4461F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.h */,
+				F5DCA4471F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m */,
+			);
+			path = VoiceRecognition;
+			sourceTree = "<group>";
+		};
+		F5DCA4491F2B11AD00A1D5AC /* JDSpeechRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCA44A1F2B11E100A1D5AC /* JDSpeechRecognizer.h */,
+				F5DCA44B1F2B11E100A1D5AC /* JDSpeechRecognizer.m */,
+			);
+			path = JDSpeechRecognizer;
+			sourceTree = "<group>";
+		};
+		F5DCA44D1F2B1B4700A1D5AC /* voices */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCA4521F2B20E500A1D5AC /* test.mp3 */,
+			);
+			path = voices;
 			sourceTree = "<group>";
 		};
 		F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */ = {
@@ -2081,6 +2117,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */,
 				F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */,
 				F54136441EC986DD009E96B0 /* 晴40x40@2x.png in Resources */,
 				F55069761F05D9A100977235 /* img_index_01bg@2x.png in Resources */,
@@ -2214,6 +2251,7 @@
 				F5A0A6F91EB1B6CE0084A032 /* JDKeyChainWapper.m in Sources */,
 				F555B46D1EA0C7C200EF73BC /* JDQRimageViewController.m in Sources */,
 				F5BBFFC51EBC71D600ACCC38 /* JDWaterFallLayoutCollectionViewCell.m in Sources */,
+				F5DCA4481F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m in Sources */,
 				F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */,
 				F57609221EADEF19000D0176 /* JDMD5Util.m in Sources */,
 				F5A0A6FC1EB1D6410084A032 /* JDKeyChianTestViewController.m in Sources */,
@@ -2244,6 +2282,7 @@
 				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
 				F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
+				F5DCA44C1F2B11E100A1D5AC /* JDSpeechRecognizer.m in Sources */,
 				F55087841F0E21A800350B1F /* JDSheetView.m in Sources */,
 				F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */,
 				F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */,
@@ -2278,7 +2317,6 @@
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
-				F51CF08C1E8E27EB0035EF7A /* JDKnowledgeViewController.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
 				F55256661F14A8380080D0DE /* RectManager.m in Sources */,
 				F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */,
@@ -2391,7 +2429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2438,7 +2476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

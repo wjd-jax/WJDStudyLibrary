@@ -90,6 +90,10 @@
 	<string>麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问设备相册</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>需要使用NFC</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>需要使用语音识别</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -94,5 +94,10 @@
  */
 + (void)obtainHKHealthAuthorizedStatus;
 
-
+#pragma mark - 语音识别项权限
+/**
+ * @brief 是否开启语音识别事项权限
+ */
++ (BOOL)isObtainSpeechRecognizer;
++ (void)obtainSpeechRecognizeAuthorizedStatus;
 @end

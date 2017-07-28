@@ -13,7 +13,7 @@
 
 @implementation UIFont (JDRuntimeFont)
 
-+(void)load{
++ (void)load{
     //获取替换后的类方法
     Method newMethod =class_getClassMethod([self class], @selector(adjustFont:));
     //获取需要替换的类方法
@@ -23,7 +23,7 @@
 
 }
 
-+(UIFont *)adjustFont:(CGFloat)fontSize{
++ (UIFont *)adjustFont:(CGFloat)fontSize{
     UIFont *newFont=nil;
     newFont = [UIFont adjustFont:fontSize * [UIScreen mainScreen].bounds.size.width/375];
     return newFont;
