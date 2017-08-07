@@ -27,6 +27,8 @@
                            @{@"title":@"获取手机信息",@"ClassName":@"IPhoneInfoStoryboard"},
                            @{@"title":@"通讯录封装",@"ClassName":@"ContactsStoryboard"},
                            @{@"title":@"本地推送(闹钟)",@"ClassName":@"JDLocaNotificationViewController"},
+                           @{@"title":@"加载动画",@"ClassName":@"JDLoadingDemoViewController"},
+
                            ];
 
 }

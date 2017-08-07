@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "rain.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "rain-dyn.png",
       "scale" : "2x"
     },
     {

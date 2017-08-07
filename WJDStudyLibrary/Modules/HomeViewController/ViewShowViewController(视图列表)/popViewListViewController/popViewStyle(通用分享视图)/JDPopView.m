@@ -17,7 +17,7 @@
 {
     self = [super init];
     if (self) {
-        self.backgroundColor =[UIColor greenColor];
+        self.backgroundColor =[UIColor whiteColor];
         self.frame =CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDHT, SCREEN_HEIGHT/2);
         UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap2)];
         [self addGestureRecognizer:tap];
@@ -30,13 +30,17 @@
     _callblock =block;
     UIWindow *window =[UIApplication sharedApplication].keyWindow;
     backView =[JDUtils createViewWithFrame:window.frame];
-    backView.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
+    backView.backgroundColor =JDRGBColor(0, 0, 0, 0.5);
+    backView.alpha = 0;
     [window addSubview:backView];
-    
     [window addSubview:self];
-    [UIView animateWithDuration:0.5 animations:^{
+    
+    [UIView animateWithDuration:0.25 delay:0  options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.originY =SCREEN_HEIGHT/2;
-    }];
+        backView.alpha = 1;
+    } completion:^(BOOL finished) {
+        
+    } ];
     
     UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
     [backView addGestureRecognizer:tap];
@@ -44,16 +48,19 @@
     
     
 }
+
 - (void)tap2
 {
     _callblock(@"点击弹出视图区域");
 }
+
 - (void)tap
 {
     DLog(@"取消弹出视图");
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
         self.originY =SCREEN_HEIGHT;
+        backView.alpha = 0;
         
     } completion:^(BOOL finished) {
         
