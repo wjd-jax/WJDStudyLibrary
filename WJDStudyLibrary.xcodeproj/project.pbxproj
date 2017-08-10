@@ -114,6 +114,8 @@
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
 		F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A916F1ECD2B7C00DA3388 /* JDRainView.m */; };
 		F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A91721ECD2D8500DA3388 /* JDRainViewController.m */; };
+		F56F1FB01F3BF379009CD3B8 /* JDAlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F1FAF1F3BF379009CD3B8 /* JDAlertViewManager.m */; };
+		F56F1FC41F3C02C9009CD3B8 /* JDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F1FC31F3C02C9009CD3B8 /* JDFileManager.m */; };
 		F570E6DE1F203FA10029790B /* JDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F570E6DD1F203FA10029790B /* JDTabBarController.m */; };
 		F570E6E51F2045E50029790B /* JDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F570E6E41F2045E50029790B /* JDMeViewController.m */; };
 		F570E6E81F2045F20029790B /* JDMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F570E6E71F2045F20029790B /* JDMessageViewController.m */; };
@@ -390,6 +392,10 @@
 		F56A916F1ECD2B7C00DA3388 /* JDRainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainView.m; sourceTree = "<group>"; };
 		F56A91711ECD2D8500DA3388 /* JDRainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRainViewController.h; sourceTree = "<group>"; };
 		F56A91721ECD2D8500DA3388 /* JDRainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRainViewController.m; sourceTree = "<group>"; };
+		F56F1FAE1F3BF379009CD3B8 /* JDAlertViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAlertViewManager.h; sourceTree = "<group>"; };
+		F56F1FAF1F3BF379009CD3B8 /* JDAlertViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAlertViewManager.m; sourceTree = "<group>"; };
+		F56F1FC21F3C02C9009CD3B8 /* JDFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFileManager.h; sourceTree = "<group>"; };
+		F56F1FC31F3C02C9009CD3B8 /* JDFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFileManager.m; sourceTree = "<group>"; };
 		F570E6DC1F203FA10029790B /* JDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTabBarController.h; sourceTree = "<group>"; };
 		F570E6DD1F203FA10029790B /* JDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTabBarController.m; sourceTree = "<group>"; };
 		F570E6E31F2045E50029790B /* JDMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMeViewController.h; sourceTree = "<group>"; };
@@ -1282,6 +1288,24 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
+		F56F1FAD1F3BF351009CD3B8 /* JDAlretViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				F56F1FAE1F3BF379009CD3B8 /* JDAlertViewManager.h */,
+				F56F1FAF1F3BF379009CD3B8 /* JDAlertViewManager.m */,
+			);
+			path = JDAlretViewManager;
+			sourceTree = "<group>";
+		};
+		F56F1FC11F3C02B4009CD3B8 /* JDFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F56F1FC21F3C02C9009CD3B8 /* JDFileManager.h */,
+				F56F1FC31F3C02C9009CD3B8 /* JDFileManager.m */,
+			);
+			path = JDFileManager;
+			sourceTree = "<group>";
+		};
 		F570E6DA1F203F110029790B /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2033,6 +2057,8 @@
 		F5FE81981ED554A7008BD4F3 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F56F1FC11F3C02B4009CD3B8 /* JDFileManager */,
+				F56F1FAD1F3BF351009CD3B8 /* JDAlretViewManager */,
 				F555D92A1F17592900A14799 /* JDAuthorityManager */,
 				F55A31B81F29DA6700246808 /* ShareManager */,
 			);
@@ -2324,6 +2350,7 @@
 				F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */,
 				F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */,
 				F576092A1EAF16F7000D0176 /* JDAESUtil.m in Sources */,
+				F56F1FC41F3C02C9009CD3B8 /* JDFileManager.m in Sources */,
 				F552566A1F14A8FF0080D0DE /* UIImage+Extend.m in Sources */,
 				F55256631F1473470080D0DE /* JDCardScanView.m in Sources */,
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
@@ -2343,6 +2370,7 @@
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
 				F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
+				F56F1FB01F3BF379009CD3B8 /* JDAlertViewManager.m in Sources */,
 				F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */,
 				F55256661F14A8380080D0DE /* RectManager.m in Sources */,
 				F5757EFF1F04A41200A8871F /* JDCustomNavigationController.m in Sources */,
