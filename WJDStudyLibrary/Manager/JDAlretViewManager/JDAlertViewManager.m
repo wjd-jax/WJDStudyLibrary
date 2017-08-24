@@ -27,6 +27,24 @@
     }
     if (actionNumber > 0) {
         for (NSUInteger i = 0; i < actionNumber; i++) {
+            
+            if ([actionTitle[i] isEqualToString:@"删除"]) {
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)  {
+                    actionHandler(action, i);
+                }];
+                [alertC addAction:action];
+                continue;
+            }
+            if ([actionTitle[i] isEqualToString:@"取消"]) {
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)  {
+                    actionHandler(action, i);
+                }];
+                [alertC addAction:action];
+                continue;
+            }
+            
             UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)  {
                 actionHandler(action, i);
             }];
@@ -44,7 +62,27 @@
                 actionHandler:(actionHandler)actionHandler {
     UIAlertController *alertC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
     if (actionNumber > 0) {
+        
+        
         for (NSUInteger i = 0; i < actionNumber; i++) {
+            
+            if ([actionTitle[i] isEqualToString:@"删除"]) {
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action)  {
+                    actionHandler(action, i);
+                }];
+                [alertC addAction:action];
+                continue;
+            }
+            if ([actionTitle[i] isEqualToString:@"取消"]) {
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)  {
+                    actionHandler(action, i);
+                }];
+                [alertC addAction:action];
+                continue;
+            }
+            
             UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)  {
                 actionHandler(action, i);
             }];

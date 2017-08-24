@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger,RequsetType){
     RequestTypeGet,
     RequestTypePost,
     RequestTypeUpLoad,
-    RequestTypeDownloadE
+    RequestTypeDownload,
 };
 
 /**

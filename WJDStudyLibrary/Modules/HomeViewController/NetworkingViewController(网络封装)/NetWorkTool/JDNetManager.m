@@ -160,7 +160,9 @@ NSString *const requestDataStateError = @"服务器返回失败状态";
         NSDictionary *requestDatat =(NSDictionary *)resultData;
         
         BOOL state = YES;       //APP 接口约定的返回数据成功或者失败的标志,比如requestDatat[@"state"]
-        
+//        errMsg = "<null>";
+//        reLogin = 0;
+//        success = 1;
         if (state) {
             //如果服务器返回的状态是成功则返回需要处理的数据,除去最外层的状态字段,比如requestDatat[@"result"]
             success(resultData,requestDatat);
