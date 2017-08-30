@@ -25,18 +25,18 @@
     self.navigationItem.title =@"IOS 知识库";
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"临时页面",@"ClassName":@"JDLoadingDemoViewController"},
-                           @{@"title":@"视图效果",@"ClassName":@"JDViewListViewController"},
-                           @{@"title":@"功能集合(直接拿来用)",@"ClassName":@"JDFunctionListViewController"},
-                           @{@"title":@"自动布局",@"ClassName":@"JDAutoLayoutViewController"},
-                           @{@"title":@"网络封装",@"ClassName":@"JDNetWorkingViewController"},
-                           @{@"title":@"加密解密",@"ClassName":@"JDEncryptionListViewController"},
-                           @{@"title":@"图像处理",@"ClassName":@"ImageProcessingStoryboard"},
-                           @{@"title":@"动画效果",@"ClassName":@"JDAnimationListViewController"},
-                           @{@"title":@"自定义控件",@"ClassName":@"JDCustomControlsViewController"},
-                           @{@"title":@"学习网站",@"ClassName":@"JDStudyWebListViewController"},
-                           @{@"title":@"音视频播放",@"ClassName":@""},
-                           @{@"title":@"常用工具集合",@"ClassName":@"JDCustomToolViewController"},
+                           @{@"title":@"临时页面",@"className":@"JDLoadingDemoViewController"},
+                           @{@"title":@"视图效果",@"className":@"JDViewListViewController"},
+                           @{@"title":@"功能集合(直接拿来用)",@"className":@"JDFunctionListViewController"},
+                           @{@"title":@"自动布局",@"className":@"JDAutoLayoutViewController"},
+                           @{@"title":@"网络封装",@"className":@"JDNetWorkingViewController"},
+                           @{@"title":@"加密解密",@"className":@"JDEncryptionListViewController"},
+                           @{@"title":@"图像处理",@"className":@"ImageProcessingStoryboard"},
+                           @{@"title":@"动画效果",@"className":@"JDAnimationListViewController"},
+                           @{@"title":@"自定义控件",@"className":@"JDCustomControlsViewController"},
+                           @{@"title":@"学习网站",@"className":@"JDStudyWebListViewController"},
+                           @{@"title":@"音视频播放",@"className":@""},
+                           @{@"title":@"常用工具集合",@"className":@"JDCustomToolViewController"},
 
                            ];
     

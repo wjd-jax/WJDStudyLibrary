@@ -43,7 +43,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     void (^configureCell)(UITableViewCell*, JDMainDataModel *) = ^(UITableViewCell* cell, JDMainDataModel *model) {
 
         cell.textLabel.text =model.title;
-        cell.detailTextLabel.text =model.ClassName;
+        cell.detailTextLabel.text =model.className;
         cell.contentView.backgroundColor =JDRandomColor;
         
     };
@@ -61,7 +61,7 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     JDMainDataModel *model =[_dataArray objectAtIndex:indexPath.row];
     
-    UIViewController *vc =[[NSClassFromString(model.ClassName) alloc] init];
+    UIViewController *vc =[[NSClassFromString(model.className) alloc] init];
     vc.title =model.title;
     if (vc) {
         vc.hidesBottomBarWhenPushed = YES;
@@ -69,11 +69,11 @@ static NSString *mainCellIdentifier = @"mainCellIdentifier";
         return;
     }
     NSRange range;
-    range = [model.ClassName rangeOfString:@"Storyboard"];
+    range = [model.className rangeOfString:@"Storyboard"];
     if (range.location != NSNotFound) {
-        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:model.ClassName bundle:nil];
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:model.className bundle:nil];
         
-        UIViewController  *cardVC = [storyBoard instantiateViewControllerWithIdentifier:model.ClassName];
+        UIViewController  *cardVC = [storyBoard instantiateViewControllerWithIdentifier:model.className];
         if (cardVC) {
             cardVC.hidesBottomBarWhenPushed =YES;
             [self.navigationController pushViewController:cardVC animated:YES];

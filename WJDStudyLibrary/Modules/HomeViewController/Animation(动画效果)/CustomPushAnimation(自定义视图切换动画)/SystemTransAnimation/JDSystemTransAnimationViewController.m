@@ -47,17 +47,17 @@ typedef NS_ENUM(NSInteger,PushType) {
     
     
     self.dataSoureArray =@[
-                           @{@"title":@"淡入淡出",@"ClassName":@"fade"},
-                           @{@"title":@"推挤",@"ClassName":@"push"},
-                           @{@"title":@"揭开",@"ClassName":@"reveal"},
-                           @{@"title":@"覆盖",@"ClassName":@"moveIn"},
-                           @{@"title":@"立方体",@"ClassName":@"cube"},
-                           @{@"title":@"吮吸",@"ClassName":@"suckEffect"},
-                           @{@"title":@"翻转",@"ClassName":@"oglFlip"},
-                           @{@"title":@"波纹",@"ClassName":@"rippleEffect"},
-                           @{@"title":@"反翻页",@"ClassName":@"pageCurl"},
-                           @{@"title":@"开镜头",@"ClassName":@"cameraIrisHollowOpen"},
-                           @{@"title":@"关镜头",@"ClassName":@"cameraIrisHollowClose"},
+                           @{@"title":@"淡入淡出",@"className":@"fade"},
+                           @{@"title":@"推挤",@"className":@"push"},
+                           @{@"title":@"揭开",@"className":@"reveal"},
+                           @{@"title":@"覆盖",@"className":@"moveIn"},
+                           @{@"title":@"立方体",@"className":@"cube"},
+                           @{@"title":@"吮吸",@"className":@"suckEffect"},
+                           @{@"title":@"翻转",@"className":@"oglFlip"},
+                           @{@"title":@"波纹",@"className":@"rippleEffect"},
+                           @{@"title":@"反翻页",@"className":@"pageCurl"},
+                           @{@"title":@"开镜头",@"className":@"cameraIrisHollowOpen"},
+                           @{@"title":@"关镜头",@"className":@"cameraIrisHollowClose"},
                            
                            ];
 }

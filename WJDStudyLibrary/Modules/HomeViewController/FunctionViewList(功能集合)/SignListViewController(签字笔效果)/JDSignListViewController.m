@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"自然签名",@"ClassName":@"JDSignViewController"},
-                           @{@"title":@"毛笔签名",@"ClassName":@"JDBruchViewController"},
+    self.dataSoureArray =@[@{@"title":@"自然签名",@"className":@"JDSignViewController"},
+                           @{@"title":@"毛笔签名",@"className":@"JDBruchViewController"},
                            ];}
 
  

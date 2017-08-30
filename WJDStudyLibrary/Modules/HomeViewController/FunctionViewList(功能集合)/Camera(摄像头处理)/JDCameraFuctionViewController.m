@@ -16,10 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"OpenCV实时图像处理",@"ClassName":@"JDOpenCVCameraViewController"},
-                           @{@"title":@"摄像头滤镜",@"ClassName":@"JDasdCodeImageViewController"},
-                           @{@"title":@"人脸识别功能(CIDetector)",@"ClassName":@"JDFaceRecognitionViewController"},
-                           @{@"title":@"OCR扫描",@"ClassName":@"JDOCRViewController"},
+    self.dataSoureArray =@[@{@"title":@"OpenCV实时图像处理",@"className":@"JDOpenCVCameraViewController"},
+                           @{@"title":@"摄像头滤镜",@"className":@"JDasdCodeImageViewController"},
+                           @{@"title":@"人脸识别功能(CIDetector)",@"className":@"JDFaceRecognitionViewController"},
+                           @{@"title":@"OCR扫描",@"className":@"JDOCRViewController"},
                            
                            ];
 }

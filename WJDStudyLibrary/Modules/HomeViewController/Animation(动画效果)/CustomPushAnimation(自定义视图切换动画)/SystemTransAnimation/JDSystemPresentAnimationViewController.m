@@ -21,10 +21,10 @@
     
     
     self.dataSoureArray =@[
-                           @{@"title":@"默认方式，竖向上推",@"ClassName":@"UIModalTransitionStyleCoverVertical"},
-                           @{@"title":@"水平反转",@"ClassName":@"UIModalTransitionStyleFlipHorizontal"},
-                           @{@"title":@"隐出隐现",@"ClassName":@"UIModalTransitionStyleCrossDissolve"},
-                           @{@"title":@"部分翻页效果",@"ClassName":@"UIModalTransitionStylePartialCurl"},
+                           @{@"title":@"默认方式，竖向上推",@"className":@"UIModalTransitionStyleCoverVertical"},
+                           @{@"title":@"水平反转",@"className":@"UIModalTransitionStyleFlipHorizontal"},
+                           @{@"title":@"隐出隐现",@"className":@"UIModalTransitionStyleCrossDissolve"},
+                           @{@"title":@"部分翻页效果",@"className":@"UIModalTransitionStylePartialCurl"},
                            
                            ];
 }

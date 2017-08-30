@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"自定义 Push转场动画",@"ClassName":@""},
-                           @{@"title":@"自定义 Present转场动画",@"ClassName":@""},
+                           @{@"title":@"自定义 Push转场动画",@"className":@""},
+                           @{@"title":@"自定义 Present转场动画",@"className":@""},
                            ];
     
     //自定义导航栏控制器 push 动画的代理

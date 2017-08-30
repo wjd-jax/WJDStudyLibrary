@@ -18,8 +18,8 @@
     [super viewDidLoad];
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"代码统计",@"ClassName":@"CodeCountStoryboard"},
-                           @{@"title":@"随机数",@"ClassName":@"RealRandomStoryboard"},
+                           @{@"title":@"代码统计",@"className":@"CodeCountStoryboard"},
+                           @{@"title":@"随机数",@"className":@"RealRandomStoryboard"},
                            ];
     
 }

@@ -23,12 +23,12 @@ static NSString *tableViewCellIdentifer = @"TableViewCellID";
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"通用分享弹出视图",@"ClassName":@""},
-                           @{@"title":@"仿QQ导航栏弹出提示框",@"ClassName":@""},
-                           @{@"title":@"自定义AletView",@"ClassName":@""},
-                           @{@"title":@"状态栏提示框",@"ClassName":@""},
-                           @{@"title":@"仿微信弹出列表视图",@"ClassName":@""},
-                           @{@"title":@"仿微信弹出列表视图(tableView实现)",@"ClassName":@""},
+    self.dataSoureArray =@[@{@"title":@"通用分享弹出视图",@"className":@""},
+                           @{@"title":@"仿QQ导航栏弹出提示框",@"className":@""},
+                           @{@"title":@"自定义AletView",@"className":@""},
+                           @{@"title":@"状态栏提示框",@"className":@""},
+                           @{@"title":@"仿微信弹出列表视图",@"className":@""},
+                           @{@"title":@"仿微信弹出列表视图(tableView实现)",@"className":@""},
                            
                            ];
 }

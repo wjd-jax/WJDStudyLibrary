@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"简单的Cell高度自适应",@"ClassName":@"JDAutoLayoutCellViewController"},
+                           @{@"title":@"简单的Cell高度自适应",@"className":@"JDAutoLayoutCellViewController"},
 
                            ];
     

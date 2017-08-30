@@ -17,12 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"水纹",@"ClassName":@"JDWaterAnimationListViewController"},
-                           @{@"title":@"转场动画",@"ClassName":@"JDCustomTransitionViewController"},
-                           @{@"title":@"基本动画",@"ClassName":@"JDBaseAnimationViewController"},
-                           @{@"title":@"粒子动画",@"ClassName":@"JDEmitterViewController"},
-                           @{@"title":@"绘制动画",@"ClassName":@"JDDrawLineViewController"},
-                           @{@"title":@"轨迹动画CAKeyframeAnimation",@"ClassName":@"JDCAKeyframeAnimationViewController"},
+                           @{@"title":@"水纹",@"className":@"JDWaterAnimationListViewController"},
+                           @{@"title":@"转场动画",@"className":@"JDCustomTransitionViewController"},
+                           @{@"title":@"基本动画",@"className":@"JDBaseAnimationViewController"},
+                           @{@"title":@"粒子动画",@"className":@"JDEmitterViewController"},
+                           @{@"title":@"绘制动画",@"className":@"JDDrawLineViewController"},
+                           @{@"title":@"轨迹动画CAKeyframeAnimation",@"className":@"JDCAKeyframeAnimationViewController"},
 
                            ];
 }

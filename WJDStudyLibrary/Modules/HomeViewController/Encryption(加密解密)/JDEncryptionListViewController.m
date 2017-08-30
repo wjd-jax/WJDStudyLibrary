@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"加密解密",@"ClassName":@"JDEvntyptionViewController"},
-                           @{@"title":@"动态生成密钥对",@"ClassName":@"KeyPairStoryboard"},
-                           @{@"title":@"keyChain 存储用户名密码",@"ClassName":@"JDKeyChianTestStoryboard"}];
+    self.dataSoureArray =@[@{@"title":@"加密解密",@"className":@"JDEvntyptionViewController"},
+                           @{@"title":@"动态生成密钥对",@"className":@"KeyPairStoryboard"},
+                           @{@"title":@"keyChain 存储用户名密码",@"className":@"JDKeyChianTestStoryboard"}];
     // Do any additional setup after loading the view.
 }
 

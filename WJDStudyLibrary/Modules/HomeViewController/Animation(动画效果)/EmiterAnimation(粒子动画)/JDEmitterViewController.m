@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"蜡烛火焰",@"ClassName":@"JDFireEmitterViewController"},
-                           @{@"title":@"下雨",@"ClassName":@"JDRainViewController"},
-                           @{@"title":@"下雪动画",@"ClassName":@"JDSnowViewController"},
-                           @{@"title":@"烟花动画",@"ClassName":@"JDFireworksViewController"},
-                           @{@"title":@"火焰动画",@"ClassName":@"JDFireViewController"},
+                           @{@"title":@"蜡烛火焰",@"className":@"JDFireEmitterViewController"},
+                           @{@"title":@"下雨",@"className":@"JDRainViewController"},
+                           @{@"title":@"下雪动画",@"className":@"JDSnowViewController"},
+                           @{@"title":@"烟花动画",@"className":@"JDFireworksViewController"},
+                           @{@"title":@"火焰动画",@"className":@"JDFireViewController"},
 
 
                            ];}

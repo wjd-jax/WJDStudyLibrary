@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"浏览卡片",@"ClassName":@"JDCardLayoutStoryboard"},
-                           @{@"title":@"瀑布流布局视图",@"ClassName":@"JDWaterFallLayoutViewController"}];
+    self.dataSoureArray =@[@{@"title":@"浏览卡片",@"className":@"JDCardLayoutStoryboard"},
+                           @{@"title":@"瀑布流布局视图",@"className":@"JDWaterFallLayoutViewController"}];
 
 }
 

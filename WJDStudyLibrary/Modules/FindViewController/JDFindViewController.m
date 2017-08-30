@@ -16,9 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray = @[@{@"title":@"小知识点",@"ClassName":@"JDPopViewntroller"},
-                            @{@"title":@"UI相关",@"ClassName":@"JDGuidewController"}];}
+    self.dataSoureArray = @[@{@"title":@"GitHub优秀封装库",@"className":@"JDGitHubListTableViewController"},
+                            @{@"title":@"小知识点",@"className":@""},
+                            @{@"title":@"UI相关",@"className":@""}];
+    
+}
 
- 
+
 
 @end

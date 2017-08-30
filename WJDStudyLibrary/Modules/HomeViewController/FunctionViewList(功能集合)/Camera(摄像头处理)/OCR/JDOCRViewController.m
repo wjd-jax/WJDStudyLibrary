@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSoureArray =@[@{@"title":@"银行卡识别",@"ClassName":@"JDBankScanViewController"},
-                           @{@"title":@"身份证识别",@"ClassName":@"JDIDCardScanViewController"},
+    self.dataSoureArray =@[@{@"title":@"银行卡识别",@"className":@"JDBankScanViewController"},
+                           @{@"title":@"身份证识别",@"className":@"JDIDCardScanViewController"},
 
                            ];
 }

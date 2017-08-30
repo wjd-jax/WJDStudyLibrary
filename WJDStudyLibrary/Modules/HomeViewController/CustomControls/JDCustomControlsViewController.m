@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"标签",@"ClassName":@"JDCustomLabelViewController"},
-                           @{@"title":@"按钮",@"ClassName":@"JDCustomButtonListViewController"},
+                           @{@"title":@"标签",@"className":@"JDCustomLabelViewController"},
+                           @{@"title":@"按钮",@"className":@"JDCustomButtonListViewController"},
                            ];}
 
  

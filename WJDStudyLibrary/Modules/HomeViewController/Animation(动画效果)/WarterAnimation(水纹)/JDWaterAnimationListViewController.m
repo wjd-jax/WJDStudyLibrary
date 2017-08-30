@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"一条波纹",@"ClassName":@"JDWaterWaveViewController"},
-                           @{@"title":@"待续",@"ClassName":@"JDConViewController"},
+                           @{@"title":@"一条波纹",@"className":@"JDWaterWaveViewController"},
+                           @{@"title":@"待续",@"className":@"JDConViewController"},
                            
                            ];}
 

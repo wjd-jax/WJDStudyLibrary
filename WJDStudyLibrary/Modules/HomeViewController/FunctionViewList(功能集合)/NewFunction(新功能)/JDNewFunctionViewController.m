@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"10.3动态更换图标功能",@"ClassName":@"JDChangeIconViewController"},
-                           @{@"title":@"IOS10语音识别",@"ClassName":@"JDVoiceRecognitionViewController"},
-                           @{@"title":@"待添加",@"ClassName":@""},
+                           @{@"title":@"10.3动态更换图标功能",@"className":@"JDChangeIconViewController"},
+                           @{@"title":@"IOS10语音识别",@"className":@"JDVoiceRecognitionViewController"},
+                           @{@"title":@"待添加",@"className":@""},
                            
                            ];}
 

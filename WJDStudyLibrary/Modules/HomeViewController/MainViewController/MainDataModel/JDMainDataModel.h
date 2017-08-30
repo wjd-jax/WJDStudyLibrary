@@ -10,6 +10,8 @@
 
 @interface JDMainDataModel : JDBaseModel
 
-@property(nonatomic,copy)NSString *title;
-@property(nonatomic,copy)NSString *ClassName;
+@property(nonatomic,copy)NSString *title;               //标题
+@property(nonatomic,copy)NSString *className;           //类名
+@property(nonatomic,copy)NSString *info;                //额外信息
+
 @end

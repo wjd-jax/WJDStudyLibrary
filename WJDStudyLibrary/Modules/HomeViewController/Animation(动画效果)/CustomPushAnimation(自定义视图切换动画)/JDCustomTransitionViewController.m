@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSoureArray =@[
-                           @{@"title":@"系统TransAnimation动画",@"ClassName":@"JDSystemTransAnimationViewController"},
-                           @{@"title":@"自定义转场动画",@"ClassName":@"JDCustomTransAnimationViewController"},
-                           @{@"title":@"系统Present转场动画",@"ClassName":@"JDSystemPresentAnimationViewController"},
+                           @{@"title":@"系统TransAnimation动画",@"className":@"JDSystemTransAnimationViewController"},
+                           @{@"title":@"自定义转场动画",@"className":@"JDCustomTransAnimationViewController"},
+                           @{@"title":@"系统Present转场动画",@"className":@"JDSystemPresentAnimationViewController"},
 
                            ];
 }
