@@ -28,6 +28,7 @@
                            @{@"title":@"通讯录封装",@"className":@"ContactsStoryboard"},
                            @{@"title":@"本地推送(闹钟)",@"className":@"JDLocaNotificationViewController"},
                            @{@"title":@"加载动画",@"className":@"JDLoadingDemoViewController"},
+                           @{@"title":@"系统分享功能",@"className":@"JDSocialShareTableViewController"},
 
                            ];
 

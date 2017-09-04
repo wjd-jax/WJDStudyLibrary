@@ -16,7 +16,7 @@
 
 @end
 
-typedef void (^Cancel)();
+typedef void (^Cancel)(void);
 typedef void (^SelectBlock)(JDContactModel *model);
 typedef void (^ContactsArrayBlock)(NSArray *contactsArray);
 

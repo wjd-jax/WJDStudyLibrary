@@ -35,7 +35,7 @@
 }
 
 #pragma mark - 处理用户点击推送
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
 {
     NSString *categoryIdentify = response.notification.request.content.categoryIdentifier;
     if ([categoryIdentify isEqualToString:@"closeCategory"]) {

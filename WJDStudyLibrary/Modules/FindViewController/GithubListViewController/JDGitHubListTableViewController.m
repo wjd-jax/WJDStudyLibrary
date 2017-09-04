@@ -25,6 +25,8 @@
                               @{@"title":@"LBXScan",@"className":@"二维码、扫码、扫一扫、ZXing、ZBar、iOS系统AVFoundation扫码封装，扫码界面效果封装",@"info":@"https://github.com/MxABC/LBXScan"},
                             
                             @{@"title":@"IQKeyboardManager",@"className":@"Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more.",@"info":@"https://github.com/hackiftekhar/IQKeyboardManager"},
+                            
+                               @{@"title":@"SDCycleScrollView",@"className":@"C无限循环图片、文字轮播器。",@"info":@"https://github.com/gsdios/SDCycleScrollView"},
 
                        ];
     

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^OkClick)();
+typedef void(^OkClick)(void);
 
 @interface AFBrushBoard : UIImageView
 

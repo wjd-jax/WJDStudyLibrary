@@ -8,7 +8,7 @@
 
 #import "JDBaseViewController.h"
 
-typedef void (^DidSelectedEnter)();
+typedef void (^DidSelectedEnter)(void);
 
 @interface JDGuidePageViewController : JDBaseViewController
 

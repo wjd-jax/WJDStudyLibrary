@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
-typedef void(^OkClick)();
+typedef void(^OkClick)(void);
 
 @interface TZSignView : GLKView
 
