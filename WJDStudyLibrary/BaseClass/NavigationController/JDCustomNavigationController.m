@@ -17,10 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
     //重写了leftbarItem之后,需要添加如下方法才能重新启用右滑返回
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.interactivePopGestureRecognizer.delegate = nil;
     }
+    
     // Do any additional setup after loading the view.
 }
 
@@ -96,6 +99,7 @@
     return [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]style:UIBarButtonItemStylePlain target:self action:@selector(popSelf)];
     
 }
+
 -(void)popSelf
 {
     [self popViewControllerAnimated:YES];

@@ -26,7 +26,6 @@
     _window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor =[UIColor whiteColor];
     
-    
 #if DEBUG
     
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"

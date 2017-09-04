@@ -37,7 +37,6 @@
 		F520D7DE1F5D27D4005D2070 /* IFMShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F520D7C51F5D24E7005D2070 /* IFMShareItem.m */; };
 		F520D7DF1F5D27D4005D2070 /* IFMShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F520D7C71F5D24E7005D2070 /* IFMShareItemCell.m */; };
 		F520D7E01F5D27D4005D2070 /* IFMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = F520D7C91F5D24E7005D2070 /* IFMShareView.m */; };
-		F520D7E11F5D27D4005D2070 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA4441F2AEC5600A1D5AC /* WRNavigationBar.m */; };
 		F520D7E21F5D2814005D2070 /* IFMShareImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F520D7C31F5D24E7005D2070 /* IFMShareImage.bundle */; };
 		F5223EEA1EC3FE1700CDCBD8 /* JDPrintLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EE91EC3FE1700CDCBD8 /* JDPrintLabelViewController.m */; };
 		F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5223EED1EC3FE3D00CDCBD8 /* JDPrintLabel.m */; };
@@ -566,8 +565,6 @@
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
 		F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTouchIDViewController.m; sourceTree = "<group>"; };
 		F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		F5DCA4431F2AEC5600A1D5AC /* WRNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
-		F5DCA4441F2AEC5600A1D5AC /* WRNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		F5DCA4461F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDVoiceRecognitionViewController.h; sourceTree = "<group>"; };
 		F5DCA4471F2B0D2900A1D5AC /* JDVoiceRecognitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDVoiceRecognitionViewController.m; sourceTree = "<group>"; };
 		F5DCA44A1F2B11E100A1D5AC /* JDSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDSpeechRecognizer.h; sourceTree = "<group>"; };
@@ -2025,18 +2022,8 @@
 			isa = PBXGroup;
 			children = (
 				F520D7C21F5D24E7005D2070 /* IFMShare */,
-				F5DCA4421F2AEC5600A1D5AC /* WRNavigationBar */,
 			);
 			path = ThirdLibrary;
-			sourceTree = "<group>";
-		};
-		F5DCA4421F2AEC5600A1D5AC /* WRNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				F5DCA4431F2AEC5600A1D5AC /* WRNavigationBar.h */,
-				F5DCA4441F2AEC5600A1D5AC /* WRNavigationBar.m */,
-			);
-			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
 		F5DCA4451F2B0CDB00A1D5AC /* VoiceRecognition */ = {
@@ -2335,7 +2322,6 @@
 				F520D7DE1F5D27D4005D2070 /* IFMShareItem.m in Sources */,
 				F520D7DF1F5D27D4005D2070 /* IFMShareItemCell.m in Sources */,
 				F520D7E01F5D27D4005D2070 /* IFMShareView.m in Sources */,
-				F520D7E11F5D27D4005D2070 /* WRNavigationBar.m in Sources */,
 				F511E3771F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m in Sources */,
 				F52C45141E94BA5500D8DF62 /* JDPopViewController.m in Sources */,
 				F570E6DE1F203FA10029790B /* JDTabBarController.m in Sources */,
