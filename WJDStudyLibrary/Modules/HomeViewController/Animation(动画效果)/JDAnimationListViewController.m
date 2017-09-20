@@ -22,11 +22,10 @@
                            @{@"title":@"基本动画",@"className":@"JDBaseAnimationViewController"},
                            @{@"title":@"粒子动画",@"className":@"JDEmitterViewController"},
                            @{@"title":@"绘制动画",@"className":@"JDDrawLineViewController"},
-                           @{@"title":@"轨迹动画CAKeyframeAnimation",@"className":@"JDCAKeyframeAnimationViewController"},
-
+                           @{@"title":@"列表加载动画",@"className":@"JDShowTableViewController"},
                            ];
 }
 
- 
+
 
 @end

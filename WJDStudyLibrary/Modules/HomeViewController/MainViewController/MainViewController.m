@@ -25,7 +25,7 @@
     self.navigationItem.title =@"IOS 知识库";
     self.dataSoureArray =@[
                            //用于测试的页面
-                           @{@"title":@"临时页面",@"className":@"JDSocialShareTableViewController"},
+                           @{@"title":@"临时页面",@"className":@"JDShowTableViewController"},
                            @{@"title":@"视图效果",@"className":@"JDViewListViewController"},
                            @{@"title":@"功能集合(直接拿来用)",@"className":@"JDFunctionListViewController"},
                            @{@"title":@"自动布局",@"className":@"JDAutoLayoutViewController"},

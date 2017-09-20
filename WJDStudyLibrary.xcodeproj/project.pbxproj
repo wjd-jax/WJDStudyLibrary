@@ -87,6 +87,10 @@
 		F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6A1EB86E1200AB92CC /* i3.jpg */; };
 		F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6B1EB86E1200AB92CC /* i4.jpg */; };
 		F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54BBB6C1EB86E1200AB92CC /* i5.jpg */; };
+		F54D9CC31F70BCE300758D79 /* JDTableViewAnimationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D9CC21F70BCE300758D79 /* JDTableViewAnimationListController.m */; };
+		F54D9CC61F710B8800758D79 /* JDShowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D9CC51F710B8800758D79 /* JDShowTableViewController.m */; };
+		F54D9CCE1F710D6200758D79 /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D9CC91F710D2D00758D79 /* TableViewAnimationKit.m */; };
+		F54D9CCF1F710D6200758D79 /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D9CCD1F710D2D00758D79 /* UITableView+XSAnimationKit.m */; };
 		F55069761F05D9A100977235 /* img_index_01bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069751F05D9A100977235 /* img_index_01bg@2x.png */; };
 		F55069781F05D9AA00977235 /* img_index_01txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069771F05D9AA00977235 /* img_index_01txt@2x.png */; };
 		F550697A1F05D9B000977235 /* img_index_02bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F55069791F05D9B000977235 /* img_index_02bg@2x.png */; };
@@ -352,6 +356,16 @@
 		F54BBB6A1EB86E1200AB92CC /* i3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpg; sourceTree = "<group>"; };
 		F54BBB6B1EB86E1200AB92CC /* i4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i4.jpg; sourceTree = "<group>"; };
 		F54BBB6C1EB86E1200AB92CC /* i5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i5.jpg; sourceTree = "<group>"; };
+		F54D9CC11F70BCE300758D79 /* JDTableViewAnimationListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTableViewAnimationListController.h; sourceTree = "<group>"; };
+		F54D9CC21F70BCE300758D79 /* JDTableViewAnimationListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDTableViewAnimationListController.m; sourceTree = "<group>"; };
+		F54D9CC41F710B8800758D79 /* JDShowTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDShowTableViewController.h; sourceTree = "<group>"; };
+		F54D9CC51F710B8800758D79 /* JDShowTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDShowTableViewController.m; sourceTree = "<group>"; };
+		F54D9CC81F710D2D00758D79 /* TableViewAnimationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
+		F54D9CC91F710D2D00758D79 /* TableViewAnimationKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
+		F54D9CCA1F710D2D00758D79 /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
+		F54D9CCB1F710D2D00758D79 /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
+		F54D9CCC1F710D2D00758D79 /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
+		F54D9CCD1F710D2D00758D79 /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
 		F55069751F05D9A100977235 /* img_index_01bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_01bg@2x.png"; sourceTree = "<group>"; };
 		F55069771F05D9AA00977235 /* img_index_01txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_01txt@2x.png"; sourceTree = "<group>"; };
 		F55069791F05D9B000977235 /* img_index_02bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_index_02bg@2x.png"; sourceTree = "<group>"; };
@@ -1035,6 +1049,31 @@
 				F54BBB6C1EB86E1200AB92CC /* i5.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		F54D9CC01F70BC9E00758D79 /* TableViewAnimaiton */ = {
+			isa = PBXGroup;
+			children = (
+				F54D9CC71F710D2D00758D79 /* TableViewAnimationKit */,
+				F54D9CC11F70BCE300758D79 /* JDTableViewAnimationListController.h */,
+				F54D9CC21F70BCE300758D79 /* JDTableViewAnimationListController.m */,
+				F54D9CC41F710B8800758D79 /* JDShowTableViewController.h */,
+				F54D9CC51F710B8800758D79 /* JDShowTableViewController.m */,
+			);
+			path = TableViewAnimaiton;
+			sourceTree = "<group>";
+		};
+		F54D9CC71F710D2D00758D79 /* TableViewAnimationKit */ = {
+			isa = PBXGroup;
+			children = (
+				F54D9CC81F710D2D00758D79 /* TableViewAnimationKit.h */,
+				F54D9CC91F710D2D00758D79 /* TableViewAnimationKit.m */,
+				F54D9CCA1F710D2D00758D79 /* TableViewAnimationKitConfig.h */,
+				F54D9CCB1F710D2D00758D79 /* TableViewAnimationKitHeaders.h */,
+				F54D9CCC1F710D2D00758D79 /* UITableView+XSAnimationKit.h */,
+				F54D9CCD1F710D2D00758D79 /* UITableView+XSAnimationKit.m */,
+			);
+			path = TableViewAnimationKit;
 			sourceTree = "<group>";
 		};
 		F55069741F05D98100977235 /* images */ = {
@@ -1750,6 +1789,7 @@
 		F5A733191EC2F03A006CB68D /* Animation(动画效果) */ = {
 			isa = PBXGroup;
 			children = (
+				F54D9CC01F70BC9E00758D79 /* TableViewAnimaiton */,
 				F59A5AF51EC5661F003D1E59 /* BaseAnimation(基础动画) */,
 				F59A5B0C1EC59D92003D1E59 /* CAkeyframeAnimation(轨迹动画) */,
 				F5A7331A1EC2F054006CB68D /* CustomPushAnimation(自定义视图切换动画) */,
@@ -2319,6 +2359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54D9CCE1F710D6200758D79 /* TableViewAnimationKit.m in Sources */,
+				F54D9CCF1F710D6200758D79 /* UITableView+XSAnimationKit.m in Sources */,
 				F520D7DE1F5D27D4005D2070 /* IFMShareItem.m in Sources */,
 				F520D7DF1F5D27D4005D2070 /* IFMShareItemCell.m in Sources */,
 				F520D7E01F5D27D4005D2070 /* IFMShareView.m in Sources */,
@@ -2444,6 +2486,7 @@
 				F5223EEE1EC3FE3D00CDCBD8 /* JDPrintLabel.m in Sources */,
 				F5BBFFB31EBC68A000ACCC38 /* JDWaterFallLayoutViewController.m in Sources */,
 				F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */,
+				F54D9CC31F70BCE300758D79 /* JDTableViewAnimationListController.m in Sources */,
 				F5C98AFC1F2F01C60068284B /* JDLoadingDemoViewController.m in Sources */,
 				F57609101EADA805000D0176 /* JDEncryptionListViewController.m in Sources */,
 				F59A5B0F1EC59DC9003D1E59 /* JDCAKeyframeAnimationViewController.m in Sources */,
@@ -2464,6 +2507,7 @@
 				F55069871F06448E00977235 /* JDGuideDemoViewController.m in Sources */,
 				F540CD311EE674CD00A9FCDA /* AppDelegate+JDPush.m in Sources */,
 				F5A7332D1EC30585006CB68D /* JDMarqueeViewController.m in Sources */,
+				F54D9CC61F710B8800758D79 /* JDShowTableViewController.m in Sources */,
 				F552566D1F14A91A0080D0DE /* BankCardSearch.m in Sources */,
 				F5A1A7221E977F3E0076CC78 /* JDSignViewController.m in Sources */,
 				F5BD73D81EC1C37A0015E18F /* JDFaceRecognitionViewController.m in Sources */,
