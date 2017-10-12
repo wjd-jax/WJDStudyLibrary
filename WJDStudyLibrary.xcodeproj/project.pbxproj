@@ -195,6 +195,7 @@
 		F5C37CDF1F15B9FD0029C773 /* JDUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */; };
 		F5C4B9671F8F0CB10084A84D /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B9661F8F0CB10084A84D /* JDHubMessageView.m */; };
 		F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B96D1F8F13F10084A84D /* MyHTTPConnection.m */; };
+		F5C4B9861F8F1B390084A84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C4B9721F8F15120084A84D /* LaunchScreen.storyboard */; };
 		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
 		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
 		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
@@ -2315,6 +2316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C4B9861F8F1B390084A84D /* LaunchScreen.storyboard in Resources */,
 				F520D7E21F5D2814005D2070 /* IFMShareImage.bundle in Resources */,
 				F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */,
 				F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */,
