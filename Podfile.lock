@@ -14,16 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - FBRetainCycleDetector (0.1.3)
+  - CocoaAsyncSocket (7.6.1)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
   - MJExtension (3.0.13)
-  - MLeaksFinder (0.2.1):
-    - FBRetainCycleDetector
   - OpenCV (3.0.0)
   - OpenSSL (1.0.210)
   - Reachability (3.2)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
   - UMengUShare/Core (6.4.5):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.5)
@@ -36,8 +43,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaHTTPServer (~> 2.3)
   - MJExtension
-  - MLeaksFinder
   - OpenCV (~> 3.0.0)
   - OpenSSL
   - Reachability
@@ -48,15 +55,16 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
   OpenCV: be07c02f0d8f125f1d40d261e66a66cb66ece3b3
   OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
   UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
 
-PODFILE CHECKSUM: b94c8a39faa305145b38426841014daf703422cc
+PODFILE CHECKSUM: 9863599bb4aea31e598990eabb7d89aed4ac33ba
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

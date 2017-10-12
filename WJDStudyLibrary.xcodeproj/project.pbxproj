@@ -118,7 +118,6 @@
 		F55E553D1E850BB100144D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553C1E850BB100144D49 /* main.m */; };
 		F55E55401E850BB100144D49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E553F1E850BB100144D49 /* AppDelegate.m */; };
 		F55E55481E850BB100144D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E55471E850BB100144D49 /* Assets.xcassets */; };
-		F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55E55491E850BB100144D49 /* LaunchScreen.storyboard */; };
 		F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E555A1E851B0D00144D49 /* MainViewController.m */; };
 		F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A916F1ECD2B7C00DA3388 /* JDRainView.m */; };
 		F56A91731ECD2D8500DA3388 /* JDRainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56A91721ECD2D8500DA3388 /* JDRainViewController.m */; };
@@ -194,6 +193,8 @@
 		F5C29F191ECC3F0300835E26 /* JDFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F181ECC3F0300835E26 /* JDFireworksView.m */; };
 		F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */; };
 		F5C37CDF1F15B9FD0029C773 /* JDUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */; };
+		F5C4B9671F8F0CB10084A84D /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B9661F8F0CB10084A84D /* JDHubMessageView.m */; };
+		F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B96D1F8F13F10084A84D /* MyHTTPConnection.m */; };
 		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
 		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
 		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
@@ -261,7 +262,6 @@
 		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
-		F51CF0821E8E07200035EF7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseModel.h; sourceTree = "<group>"; };
 		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
@@ -412,7 +412,6 @@
 		F55E553E1E850BB100144D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55E553F1E850BB100144D49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F55E55471E850BB100144D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F55E554A1E850BB100144D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F55E554C1E850BB100144D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E55591E851B0D00144D49 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F55E555A1E851B0D00144D49 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -556,6 +555,32 @@
 		F5C29F1B1ECC437F00835E26 /* JDFireworksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFireworksViewController.m; sourceTree = "<group>"; };
 		F5C37CDD1F15B9FD0029C773 /* JDUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUserDefault.h; sourceTree = "<group>"; };
 		F5C37CDE1F15B9FD0029C773 /* JDUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUserDefault.m; sourceTree = "<group>"; };
+		F5C4B9651F8F0CB10084A84D /* JDHubMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDHubMessageView.h; sourceTree = "<group>"; };
+		F5C4B9661F8F0CB10084A84D /* JDHubMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDHubMessageView.m; sourceTree = "<group>"; };
+		F5C4B96A1F8F13E40084A84D /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F5C4B96B1F8F13E40084A84D /* upload.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = upload.html; sourceTree = "<group>"; };
+		F5C4B96C1F8F13F10084A84D /* MyHTTPConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
+		F5C4B96D1F8F13F10084A84D /* MyHTTPConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
+		F5C4B96E1F8F14120084A84D /* ZBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTool.m; sourceTree = "<group>"; };
+		F5C4B96F1F8F14130084A84D /* ZBTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTool.h; sourceTree = "<group>"; };
+		F5C4B9701F8F14F20084A84D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5C4B9721F8F15120084A84D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5C4B9731F8F15460084A84D /* 晴29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴29x29@3x.png"; sourceTree = "<group>"; };
+		F5C4B9741F8F15470084A84D /* 晴29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴29x29@2x.png"; sourceTree = "<group>"; };
+		F5C4B9751F8F15470084A84D /* 晴40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴40x40@2x.png"; sourceTree = "<group>"; };
+		F5C4B9761F8F15470084A84D /* 晴20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴20x20@2x.png"; sourceTree = "<group>"; };
+		F5C4B9771F8F15480084A84D /* 晴20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴20x20@3x.png"; sourceTree = "<group>"; };
+		F5C4B9781F8F15480084A84D /* 晴40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴40x40@3x.png"; sourceTree = "<group>"; };
+		F5C4B9791F8F15490084A84D /* 晴60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴60x60@2x.png"; sourceTree = "<group>"; };
+		F5C4B97A1F8F15490084A84D /* 晴60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴60x60@3x.png"; sourceTree = "<group>"; };
+		F5C4B97B1F8F15510084A84D /* 天气60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@2x.png"; sourceTree = "<group>"; };
+		F5C4B97C1F8F15510084A84D /* 天气60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气60x60@3x.png"; sourceTree = "<group>"; };
+		F5C4B97D1F8F15510084A84D /* 天气20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气20x20@2x.png"; sourceTree = "<group>"; };
+		F5C4B97E1F8F15520084A84D /* 天气40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@3x.png"; sourceTree = "<group>"; };
+		F5C4B97F1F8F15520084A84D /* 天气20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气20x20@3x.png"; sourceTree = "<group>"; };
+		F5C4B9801F8F15520084A84D /* 天气29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@3x.png"; sourceTree = "<group>"; };
+		F5C4B9811F8F15530084A84D /* 天气29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@2x.png"; sourceTree = "<group>"; };
+		F5C4B9821F8F15530084A84D /* 天气40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@2x.png"; sourceTree = "<group>"; };
 		F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransitionViewController.h; sourceTree = "<group>"; };
 		F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransitionViewController.m; sourceTree = "<group>"; };
 		F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideTestViewController.h; sourceTree = "<group>"; };
@@ -741,13 +766,6 @@
 			path = "BottomAligntLabel(底部对齐的Label)";
 			sourceTree = "<group>";
 		};
-		F513ED6A1F009ACC001C044C /* HubMessage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HubMessage;
-			sourceTree = "<group>";
-		};
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,7 +882,7 @@
 		F52C45111E94BA3500D8DF62 /* popViewListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F513ED6A1F009ACC001C044C /* HubMessage */,
+				F5C4B9641F8F0CA60084A84D /* HubMessage */,
 				F50626991F0B3A4900602B6D /* JDActionSheetView(仿微信弹出列表1) */,
 				F55087811F0E215F00350B1F /* JDSheetView(仿微信选择列表tableView实现) */,
 				F5D2F8381ED2D6260063F18F /* StatusBarMessageView(状态栏提示信息) */,
@@ -1001,6 +1019,22 @@
 		F54136371EC986D2009E96B0 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				F5C4B97D1F8F15510084A84D /* 天气20x20@2x.png */,
+				F5C4B97F1F8F15520084A84D /* 天气20x20@3x.png */,
+				F5C4B9811F8F15530084A84D /* 天气29x29@2x.png */,
+				F5C4B9801F8F15520084A84D /* 天气29x29@3x.png */,
+				F5C4B9821F8F15530084A84D /* 天气40x40@2x.png */,
+				F5C4B97E1F8F15520084A84D /* 天气40x40@3x.png */,
+				F5C4B97B1F8F15510084A84D /* 天气60x60@2x.png */,
+				F5C4B97C1F8F15510084A84D /* 天气60x60@3x.png */,
+				F5C4B9761F8F15470084A84D /* 晴20x20@2x.png */,
+				F5C4B9771F8F15480084A84D /* 晴20x20@3x.png */,
+				F5C4B9741F8F15470084A84D /* 晴29x29@2x.png */,
+				F5C4B9731F8F15460084A84D /* 晴29x29@3x.png */,
+				F5C4B9751F8F15470084A84D /* 晴40x40@2x.png */,
+				F5C4B9781F8F15480084A84D /* 晴40x40@3x.png */,
+				F5C4B9791F8F15490084A84D /* 晴60x60@2x.png */,
+				F5C4B97A1F8F15490084A84D /* 晴60x60@3x.png */,
 				F54136481EC98704009E96B0 /* 天气20x20@2x.png */,
 				F54136491EC98704009E96B0 /* 天气20x20@3x.png */,
 				F541364A1EC98704009E96B0 /* 天气29x29@2x.png */,
@@ -1278,15 +1312,15 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F55E55541E85171600144D49 /* Utils(工具类) */,
 				F5FE81961ED55064008BD4F3 /* AppDelegate */,
-				F55E55521E85166900144D49 /* BaseClass */,
-				F5FE81971ED553BA008BD4F3 /* Define */,
-				F5FE81981ED554A7008BD4F3 /* Manager */,
-				F55E55571E85178700144D49 /* Modules */,
-				F55E55531E85169700144D49 /* Resource */,
+				F5DB4C251EA6078A000D3A0F /* ThirdLibrary(三方库) */,
+				F55E55521E85166900144D49 /* BaseClass(基类) */,
+				F5FE81971ED553BA008BD4F3 /* Define(定义) */,
+				F5FE81981ED554A7008BD4F3 /* Manager(管理器) */,
+				F55E55571E85178700144D49 /* Modules(模块) */,
+				F55E55531E85169700144D49 /* Resource(资源库) */,
 				F55E553B1E850BB100144D49 /* Supporting Files */,
-				F5DB4C251EA6078A000D3A0F /* ThirdLibrary */,
-				F55E55541E85171600144D49 /* Utils */,
 			);
 			path = WJDStudyLibrary;
 			sourceTree = "<group>";
@@ -1297,15 +1331,16 @@
 				F54136371EC986D2009E96B0 /* Icons */,
 				F55E55471E850BB100144D49 /* Assets.xcassets */,
 				F55E554C1E850BB100144D49 /* Info.plist */,
-				F55E55491E850BB100144D49 /* LaunchScreen.storyboard */,
-				F51CF0821E8E07200035EF7A /* PrefixHeader.pch */,
+				F5C4B9721F8F15120084A84D /* LaunchScreen.storyboard */,
+				F5C4B9701F8F14F20084A84D /* PrefixHeader.pch */,
 				F5A0A6FF1EB1E1800084A032 /* WJDStudyLibrary.entitlements */,
 				F55E553C1E850BB100144D49 /* main.m */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
+			path = "../Supporting Files";
 			sourceTree = "<group>";
 		};
-		F55E55521E85166900144D49 /* BaseClass */ = {
+		F55E55521E85166900144D49 /* BaseClass(基类) */ = {
 			isa = PBXGroup;
 			children = (
 				F570E6DB1F203F1A0029790B /* NavigationController */,
@@ -1317,10 +1352,10 @@
 				F51CF0861E8E26780035EF7A /* JDBaseViewController.h */,
 				F51CF0871E8E26780035EF7A /* JDBaseViewController.m */,
 			);
-			path = BaseClass;
+			path = "BaseClass(基类)";
 			sourceTree = "<group>";
 		};
-		F55E55531E85169700144D49 /* Resource */ = {
+		F55E55531E85169700144D49 /* Resource(资源库) */ = {
 			isa = PBXGroup;
 			children = (
 				F5DCA44D1F2B1B4700A1D5AC /* voices */,
@@ -1328,12 +1363,13 @@
 				F52AB6CC1E88B169008DD642 /* ArrayDataSource.h */,
 				F52AB6CD1E88B169008DD642 /* ArrayDataSource.m */,
 			);
-			path = Resource;
+			path = "Resource(资源库)";
 			sourceTree = "<group>";
 		};
-		F55E55541E85171600144D49 /* Utils */ = {
+		F55E55541E85171600144D49 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				F5C4B9681F8F13BD0084A84D /* WifiUploadTool */,
 				F5C98AF21F2EE0DD0068284B /* LoadingView */,
 				F5C37CDC1F15B9500029C773 /* EasyTool */,
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
@@ -1341,10 +1377,10 @@
 				F51CF07C1E8DF3800035EF7A /* WJDToolKit */,
 				F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */,
 			);
-			path = Utils;
+			path = "Utils(工具类)";
 			sourceTree = "<group>";
 		};
-		F55E55571E85178700144D49 /* Modules */ = {
+		F55E55571E85178700144D49 /* Modules(模块) */ = {
 			isa = PBXGroup;
 			children = (
 				F570E6E01F20458C0029790B /* FindViewController */,
@@ -1352,7 +1388,7 @@
 				F570E6E11F20458F0029790B /* MessageViewController */,
 				F570E6E21F2045930029790B /* MyViewController */,
 			);
-			path = Modules;
+			path = "Modules(模块)";
 			sourceTree = "<group>";
 		};
 		F55E55581E85179400144D49 /* MainViewController */ = {
@@ -1963,6 +1999,36 @@
 			path = EasyTool;
 			sourceTree = "<group>";
 		};
+		F5C4B9641F8F0CA60084A84D /* HubMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4B9651F8F0CB10084A84D /* JDHubMessageView.h */,
+				F5C4B9661F8F0CB10084A84D /* JDHubMessageView.m */,
+			);
+			path = HubMessage;
+			sourceTree = "<group>";
+		};
+		F5C4B9681F8F13BD0084A84D /* WifiUploadTool */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4B96F1F8F14130084A84D /* ZBTool.h */,
+				F5C4B96E1F8F14120084A84D /* ZBTool.m */,
+				F5C4B96C1F8F13F10084A84D /* MyHTTPConnection.h */,
+				F5C4B96D1F8F13F10084A84D /* MyHTTPConnection.m */,
+				F5C4B9691F8F13E40084A84D /* web */,
+			);
+			path = WifiUploadTool;
+			sourceTree = "<group>";
+		};
+		F5C4B9691F8F13E40084A84D /* web */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4B96A1F8F13E40084A84D /* index.html */,
+				F5C4B96B1F8F13E40084A84D /* upload.html */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2058,12 +2124,12 @@
 			path = "TouchIDTest(TouchID 功能)";
 			sourceTree = "<group>";
 		};
-		F5DB4C251EA6078A000D3A0F /* ThirdLibrary */ = {
+		F5DB4C251EA6078A000D3A0F /* ThirdLibrary(三方库) */ = {
 			isa = PBXGroup;
 			children = (
 				F520D7C21F5D24E7005D2070 /* IFMShare */,
 			);
-			path = ThirdLibrary;
+			path = "ThirdLibrary(三方库)";
 			sourceTree = "<group>";
 		};
 		F5DCA4451F2B0CDB00A1D5AC /* VoiceRecognition */ = {
@@ -2126,15 +2192,15 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		F5FE81971ED553BA008BD4F3 /* Define */ = {
+		F5FE81971ED553BA008BD4F3 /* Define(定义) */ = {
 			isa = PBXGroup;
 			children = (
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
 			);
-			path = Define;
+			path = "Define(定义)";
 			sourceTree = "<group>";
 		};
-		F5FE81981ED554A7008BD4F3 /* Manager */ = {
+		F5FE81981ED554A7008BD4F3 /* Manager(管理器) */ = {
 			isa = PBXGroup;
 			children = (
 				F56F1FC11F3C02B4009CD3B8 /* JDFileManager */,
@@ -2142,7 +2208,7 @@
 				F555D92A1F17592900A14799 /* JDAuthorityManager */,
 				F55A31B81F29DA6700246808 /* ShareManager */,
 			);
-			path = Manager;
+			path = "Manager(管理器)";
 			sourceTree = "<group>";
 		};
 		F5FE81991ED66EEA008BD4F3 /* iPhoneInfo(手机信息) */ = {
@@ -2287,7 +2353,6 @@
 				F54136501EC98704009E96B0 /* 天气20x20@3x.png in Resources */,
 				F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */,
 				F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */,
-				F55E554B1E850BB100144D49 /* LaunchScreen.storyboard in Resources */,
 				F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */,
 				F541364F1EC98704009E96B0 /* 天气20x20@2x.png in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
@@ -2313,13 +2378,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJDStudyLibrary-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9BECD02103148093BEF25196 /* [CP] Embed Pods Frameworks */ = {
@@ -2343,9 +2411,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2359,6 +2430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */,
 				F54D9CCE1F710D6200758D79 /* TableViewAnimationKit.m in Sources */,
 				F54D9CCF1F710D6200758D79 /* UITableView+XSAnimationKit.m in Sources */,
 				F520D7DE1F5D27D4005D2070 /* IFMShareItem.m in Sources */,
@@ -2423,6 +2495,7 @@
 				F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */,
 				F54BBB651EB86CED00AB92CC /* JDCardLayoutCollectionViewCell.m in Sources */,
 				F5DCA44C1F2B11E100A1D5AC /* JDSpeechRecognizer.m in Sources */,
+				F5C4B9671F8F0CB10084A84D /* JDHubMessageView.m in Sources */,
 				F55087841F0E21A800350B1F /* JDSheetView.m in Sources */,
 				F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */,
 				F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */,
@@ -2515,18 +2588,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F55E55491E850BB100144D49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F55E554A1E850BB100144D49 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F55E554D1E850BB100144D49 /* Debug */ = {
@@ -2645,7 +2706,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -2656,13 +2718,13 @@
 					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
-				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/BankCard(银行卡识别)/bank_io/exbankcardcore\"",
-					"\"$(SRCROOT)/WJDStudyLibrary/Modules/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/IDCard(身份证识别)/libexidcard\"",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules(模块)/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/BankCard(银行卡识别)/bank_io/exbankcardcore\"",
+					"\"$(SRCROOT)/WJDStudyLibrary/Modules(模块)/HomeViewController/FunctionViewList(功能集合)/Camera(摄像头处理)/OCR/IDCard(身份证识别)/libexidcard\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuying.WJDStudyLibrary;
@@ -2691,7 +2753,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/WJDStudyLibrary/Supporting Files/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -2702,7 +2765,7 @@
 					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
-				INFOPLIST_FILE = "WJDStudyLibrary/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
