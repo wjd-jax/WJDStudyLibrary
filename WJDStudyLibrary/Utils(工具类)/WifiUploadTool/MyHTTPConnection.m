@@ -9,6 +9,7 @@
 #import "MultipartMessageHeaderField.h"
 #import "HTTPDynamicFileResponse.h"
 #import "HTTPFileResponse.h"
+#import "JDAlertViewManager.h"
 
 // Log levels : off, error, warn, info, verbose
 // Other flags: trace
@@ -90,7 +91,6 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 	
 	if ([method isEqualToString:@"POST"] && [path isEqualToString:@"/upload.html"])
 	{
-
 		// this method will generate response with links to uploaded file
 		NSMutableString* filesStr = [[NSMutableString alloc] init];
 
@@ -111,6 +111,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 	return [super httpResponseForMethod:method URI:path];
 }
 
+//这个函数可以拿到上传文件大小
 - (void)prepareForBodyWithSize:(UInt64)contentLength
 {
 	HTTPLogTrace();
@@ -135,34 +136,34 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 //-----------------------------------------------------------------
 #pragma mark multipart form data parser delegate
 
-
 - (void) processStartOfPartWithHeader:(MultipartMessageHeader*) header {
 	// in this sample, we are not interested in parts, other then file parts.
-	// check content disposition to find out filename
+	// 筛选找出我们需要的文件名
 
     MultipartMessageHeaderField* disposition = [header.fields objectForKey:@"Content-Disposition"];
 	NSString* filename = [[disposition.params objectForKey:@"filename"] lastPathComponent];
 
     if ( (nil == filename) || [filename isEqualToString: @""] ) {
-        // it's either not a file part, or
-		// an empty form sent. we won't handle it.
+        //如果文件是另一个,或者文件名不存在,忽略
 		return;
-	}    
-//	NSString* uploadDirPath = [[config documentRoot] stringByAppendingPathComponent:@"upload"];
-
-//	BOOL isDir = YES;
-//	if (![[NSFileManager defaultManager]fileExistsAtPath:uploadDirPath isDirectory:&isDir ]) {
-//		[[NSFileManager defaultManager]createDirectoryAtPath:uploadDirPath withIntermediateDirectories:YES attributes:nil error:nil];
-//	}
+	}
+    else{
+       
+    }
 	
     
     NSString *uploadDirPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     
     NSString* filePath = [uploadDirPath stringByAppendingPathComponent: filename];
+    
+    
     if( [[NSFileManager defaultManager] fileExistsAtPath:filePath] ) {
+        //文件存在
         storeFile = nil;
     }
+    
     else {
+        
 		HTTPLogVerbose(@"Saving file to %@", filePath);
 		if(![[NSFileManager defaultManager] createDirectoryAtPath:uploadDirPath withIntermediateDirectories:true attributes:nil error:nil]) {
 			HTTPLogError(@"Could not create directory at path: %@", filePath);
@@ -170,38 +171,44 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 		if(![[NSFileManager defaultManager] createFileAtPath:filePath contents:nil attributes:nil]) {
 			HTTPLogError(@"Could not create file at path: %@", filePath);
 		}
+        
 		storeFile = [NSFileHandle fileHandleForWritingAtPath:filePath];
 		[uploadedFiles addObject: [NSString stringWithFormat:@"/upload/%@", filename]];
     }
 }
 
 
-- (void) processContent:(NSData*) data WithHeader:(MultipartMessageHeader*) header 
-{
+- (void)processContent:(NSData*) data WithHeader:(MultipartMessageHeader*) header{
 	// here we just write the output from parser to the file.
-	if( storeFile ) {
+	if(storeFile) {
 		[storeFile writeData:data];
-        NSLog(@"????");
 	}
 }
 
-- (void) processEndOfPartWithHeader:(MultipartMessageHeader*) header
-{
+//
+- (void)processEndOfPartWithHeader:(MultipartMessageHeader*) header{
 	// as the file part is over, we close the file.
 	[storeFile closeFile];
-	storeFile = nil;
+        storeFile = nil;
+    
+    MultipartMessageHeaderField* disposition = [header.fields objectForKey:@"Content-Disposition"];
+    NSString* filename = [[disposition.params objectForKey:@"filename"] lastPathComponent];
+    
+    if (filename.length>0) {
+        [JDAlertViewManager alertWithTitle:@"收到文件" message:filename textFieldNumber:0 actionNumber:1 actionTitles:@[@"确定"] textFieldHandler:nil actionHandler:^(UIAlertAction *action, NSUInteger index) {
+            
+        }];
+
+    }
+   
 }
 
-- (void) processPreambleData:(NSData*) data 
-{
+- (void)processPreambleData:(NSData*) data {
     // if we are interested in preamble data, we could process it here.
-
 }
 
-- (void) processEpilogueData:(NSData*) data 
-{
+- (void)processEpilogueData:(NSData*) data {
     // if we are interested in epilogue data, we could process it here.
-
 }
 
 @end

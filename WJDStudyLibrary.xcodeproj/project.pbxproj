@@ -21,6 +21,9 @@
 		F50373851EDF9EA6004EB2EB /* JDCustomPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373841EDF9EA6004EB2EB /* JDCustomPopAnimation.m */; };
 		F50373891EDFB3C3004EB2EB /* JDRealRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373881EDFB3C3004EB2EB /* JDRealRandomViewController.m */; };
 		F503738D1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F503738C1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard */; };
+		F50A96EA1F8F31FB0049F23A /* ZBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B96E1F8F14120084A84D /* ZBTool.m */; };
+		F50A96EB1F8F32A90049F23A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F5C4B96A1F8F13E40084A84D /* index.html */; };
+		F50A96EC1F8F32A90049F23A /* upload.html in Resources */ = {isa = PBXBuildFile; fileRef = F5C4B96B1F8F13E40084A84D /* upload.html */; };
 		F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50CCBB61ED6C5C7005256B0 /* ContactsStoryboard.storyboard */; };
 		F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50D14D51ECAEC970076D84E /* sig1.jpg */; };
 		F510BDFD1F14BEBE00CC184D /* JDFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F510BDFC1F14BEBE00CC184D /* JDFireViewController.m */; };
@@ -196,6 +199,7 @@
 		F5C4B9671F8F0CB10084A84D /* JDHubMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B9661F8F0CB10084A84D /* JDHubMessageView.m */; };
 		F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B96D1F8F13F10084A84D /* MyHTTPConnection.m */; };
 		F5C4B9861F8F1B390084A84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C4B9721F8F15120084A84D /* LaunchScreen.storyboard */; };
+		F5C4B98A1F8F30580084A84D /* JDWifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C4B9891F8F30580084A84D /* JDWifiViewController.m */; };
 		F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */; };
 		F5C5DFBC1EC439A000A436E0 /* JDGuideTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBB1EC439A000A436E0 /* JDGuideTestViewController.m */; };
 		F5C5DFC01EC43B0500A436E0 /* JDGuiewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5DFBF1EC43B0500A436E0 /* JDGuiewManager.m */; };
@@ -582,6 +586,8 @@
 		F5C4B9801F8F15520084A84D /* 天气29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@3x.png"; sourceTree = "<group>"; };
 		F5C4B9811F8F15530084A84D /* 天气29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气29x29@2x.png"; sourceTree = "<group>"; };
 		F5C4B9821F8F15530084A84D /* 天气40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气40x40@2x.png"; sourceTree = "<group>"; };
+		F5C4B9881F8F30580084A84D /* JDWifiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDWifiViewController.h; sourceTree = "<group>"; };
+		F5C4B9891F8F30580084A84D /* JDWifiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDWifiViewController.m; sourceTree = "<group>"; };
 		F5C5DFB61EC42DD200A436E0 /* JDCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTransitionViewController.h; sourceTree = "<group>"; };
 		F5C5DFB71EC42DD200A436E0 /* JDCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTransitionViewController.m; sourceTree = "<group>"; };
 		F5C5DFBA1EC439A000A436E0 /* JDGuideTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGuideTestViewController.h; sourceTree = "<group>"; };
@@ -1384,8 +1390,8 @@
 		F55E55571E85178700144D49 /* Modules(模块) */ = {
 			isa = PBXGroup;
 			children = (
-				F570E6E01F20458C0029790B /* FindViewController */,
 				F570E6DF1F2045890029790B /* HomeViewController */,
+				F570E6E01F20458C0029790B /* FindViewController */,
 				F570E6E11F20458F0029790B /* MessageViewController */,
 				F570E6E21F2045930029790B /* MyViewController */,
 			);
@@ -1744,6 +1750,7 @@
 		F5A1A71B1E977E540076CC78 /* FunctionViewList(功能集合) */ = {
 			isa = PBXGroup;
 			children = (
+				F5C4B9871F8F30370084A84D /* WifiLoad */,
 				F520D7CA1F5D250F005D2070 /* SocialShareDemo */,
 				F5C98AF91F2F01B00068284B /* LoadingDemo */,
 				F5E58B9D1EBAF87A00BA60AB /* AppstoreScore(Appstore 打分) */,
@@ -2028,6 +2035,15 @@
 				F5C4B96B1F8F13E40084A84D /* upload.html */,
 			);
 			path = web;
+			sourceTree = "<group>";
+		};
+		F5C4B9871F8F30370084A84D /* WifiLoad */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4B9881F8F30580084A84D /* JDWifiViewController.h */,
+				F5C4B9891F8F30580084A84D /* JDWifiViewController.m */,
+			);
+			path = WifiLoad;
 			sourceTree = "<group>";
 		};
 		F5C5DFB91EC4398600A436E0 /* CuideView(引导页封装) */ = {
@@ -2316,6 +2332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50A96EB1F8F32A90049F23A /* index.html in Resources */,
+				F50A96EC1F8F32A90049F23A /* upload.html in Resources */,
 				F5C4B9861F8F1B390084A84D /* LaunchScreen.storyboard in Resources */,
 				F520D7E21F5D2814005D2070 /* IFMShareImage.bundle in Resources */,
 				F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */,
@@ -2432,6 +2450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50A96EA1F8F31FB0049F23A /* ZBTool.m in Sources */,
 				F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */,
 				F54D9CCE1F710D6200758D79 /* TableViewAnimationKit.m in Sources */,
 				F54D9CCF1F710D6200758D79 /* UITableView+XSAnimationKit.m in Sources */,
@@ -2482,6 +2501,7 @@
 				F552564F1F1461B40080D0DE /* OverlayView.m in Sources */,
 				F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */,
 				F5C37CDF1F15B9FD0029C773 /* JDUserDefault.m in Sources */,
+				F5C4B98A1F8F30580084A84D /* JDWifiViewController.m in Sources */,
 				F55E55401E850BB100144D49 /* AppDelegate.m in Sources */,
 				F570E6E51F2045E50029790B /* JDMeViewController.m in Sources */,
 				F52C45261E94C95500D8DF62 /* JDAletView.m in Sources */,
