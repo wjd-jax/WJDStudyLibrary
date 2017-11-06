@@ -13,6 +13,8 @@
 #import "JDGuidePageViewController.h"
 #import "JDGuidePageView.h"
 #import "JDTabBarController.h"
+#import <UIImageView+WebCache.h>
+#import "JDImageCacheManager.h"
 
 @interface AppDelegate ()
 
@@ -35,6 +37,8 @@
     
 #endif
     
+  UIImage *image =   [[JDImageCacheManager shareInstance] getImageCacheWithURLString:@"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png"];
+    DLog(@"%@",image);
     //请求权限
     [JDAuthorityManager requestAllAuthority];
     //注册推送
@@ -82,7 +86,7 @@
     
 }
 
-#pragma mark - 添加启动动画
+#pragma mark - 添加启动动画(此方法要在rootviewcontroller之后添加)
 - (void)addLaunchAnimation
 {
     UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
@@ -94,7 +98,14 @@
     [mainWindow addSubview:viewController.view];
     [self.window bringSubviewToFront:viewController.view];
     
-    [UIView animateWithDuration:0.6f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    //添加广告图
+    /*
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDHT, 300)];
+    NSString *str = @"http://upload-images.jianshu.io/upload_images/746057-6e83c64b3e1ec4d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240";
+    [imageV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"default1.jpg"]];
+    [viewController.view addSubview:imageV];
+    */
+    [UIView animateWithDuration:0.6f delay:2 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         
         viewController.view.alpha = 0.0f;
         viewController.view.layer.transform = CATransform3DScale(CATransform3DIdentity, 2.0f, 2.0f, 1.0f);

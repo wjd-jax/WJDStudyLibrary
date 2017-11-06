@@ -30,6 +30,8 @@
                             @{@"title":@"SDCycleScrollView",@"className":@"C无限循环图片、文字轮播器。",@"info":@"https://github.com/gsdios/SDCycleScrollView/blob/master/README.md"},
                             
                             @{@"title":@"PPBadgeView",@"className":@"iOS自定义Badge组件, 支持UIView, UITabBarItem, UIBarButtonItem",@"info":@"https://github.com/jkpang/PPBadgeView/blob/master/README.md"},
+                       
+                            @{@"title":@"iCarousel",@"className":@"A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS",@"info":@"https://github.com/nicklockwood/iCarousel/blob/master/README.md"},
                             
                             ];
     

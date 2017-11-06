@@ -43,5 +43,8 @@ target “WJDStudyLibrary” do
     
     # iOS自定义Badge组件, 支持UIView, UITabBarItem, UIBarButtonItem
     pod 'PPBadgeView'
+    
+    #FMDB对象化封装
+    pod 'LKDBHelper'
 end
 

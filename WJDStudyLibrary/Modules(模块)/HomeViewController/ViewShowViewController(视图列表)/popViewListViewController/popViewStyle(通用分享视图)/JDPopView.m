@@ -32,8 +32,10 @@
     backView =[JDUtils createViewWithFrame:window.frame];
     backView.backgroundColor =JDRGBColor(0, 0, 0, 0.5);
     backView.alpha = 0;
-    [window addSubview:backView];
-    [window addSubview:self];
+    [self addSubview:backView];
+
+   [window addSubview:self];
+  
     
     [UIView animateWithDuration:0.25 delay:0  options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.originY =SCREEN_HEIGHT/2;

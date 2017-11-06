@@ -13,10 +13,10 @@
 + (void)alertWithTitle:(NSString *)title
                message:(NSString *)message
        textFieldNumber:(NSUInteger)textFieldNumber
-          actionNumber:(NSUInteger)actionNumber
           actionTitles:(NSArray *)actionTitle
       textFieldHandler:(textFieldHandler)textFieldHandler
          actionHandler:(actionHandler)actionHandler {
+    
     UIAlertController *alertC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     if (textFieldNumber > 0) {
         for (int i = 0; i < textFieldNumber; i++) {
@@ -25,8 +25,8 @@
             }];
         }
     }
-    if (actionNumber > 0) {
-        for (NSUInteger i = 0; i < actionNumber; i++) {
+    if (actionTitle.count > 0) {
+        for (NSUInteger i = 0; i < actionTitle.count; i++) {
             
             if ([actionTitle[i] isEqualToString:@"删除"]) {
                 
@@ -57,14 +57,14 @@
 
 + (void)actionSheettWithTitle:(NSString *)title
                       message:(NSString *)message
-                 actionNumber:(NSUInteger)actionNumber
                  actionTitles:(NSArray *)actionTitle
                 actionHandler:(actionHandler)actionHandler {
+    
     UIAlertController *alertC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
-    if (actionNumber > 0) {
+    if (actionTitle.count > 0) {
         
         
-        for (NSUInteger i = 0; i < actionNumber; i++) {
+        for (NSUInteger i = 0; i < actionTitle.count; i++) {
             
             if ([actionTitle[i] isEqualToString:@"删除"]) {
                 
@@ -95,3 +95,4 @@
 
 
 @end
+

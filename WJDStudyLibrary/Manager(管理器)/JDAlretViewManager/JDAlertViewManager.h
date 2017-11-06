@@ -28,7 +28,6 @@ typedef void(^textFieldHandler)(UITextField *textField, NSUInteger index);
 + (void)alertWithTitle:(NSString *)title
                message:(NSString *)message
        textFieldNumber:(NSUInteger)textFieldNumber
-          actionNumber:(NSUInteger)actionNumber
           actionTitles:(NSArray *)actionTitle
       textFieldHandler:(textFieldHandler)textFieldHandler
          actionHandler:(actionHandler)actionHandler;
@@ -45,9 +44,9 @@ typedef void(^textFieldHandler)(UITextField *textField, NSUInteger index);
  */
 + (void)actionSheettWithTitle:(NSString *)title
                       message:(NSString *)message
-                 actionNumber:(NSUInteger)actionNumber
                  actionTitles:(NSArray *)actionTitle
                 actionHandler:(actionHandler)actionHandler;
 
 
 @end
+

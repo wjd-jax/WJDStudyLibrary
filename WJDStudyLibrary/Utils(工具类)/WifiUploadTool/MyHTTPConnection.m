@@ -195,7 +195,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
     NSString* filename = [[disposition.params objectForKey:@"filename"] lastPathComponent];
     
     if (filename.length>0) {
-        [JDAlertViewManager alertWithTitle:@"收到文件" message:filename textFieldNumber:0 actionNumber:1 actionTitles:@[@"确定"] textFieldHandler:nil actionHandler:^(UIAlertAction *action, NSUInteger index) {
+        [JDAlertViewManager alertWithTitle:@"收到文件" message:filename textFieldNumber:0 actionTitles:@[@"确定"] textFieldHandler:nil actionHandler:^(UIAlertAction *action, NSUInteger index) {
             
         }];
 

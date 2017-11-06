@@ -146,6 +146,7 @@
 		F57D45781E9C7F280073F6D6 /* JDNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D45771E9C7F280073F6D6 /* JDNetManager.m */; };
 		F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */; };
 		F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */; };
+		F58940AA1FA9634900EA2721 /* JDImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F58940A91FA9634900EA2721 /* JDImageCacheManager.m */; };
 		F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = F595E6C61EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m */; };
 		F59A5AEC1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */; };
 		F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */; };
@@ -210,6 +211,7 @@
 		F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C94D241EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm */; };
 		F5C98AF51F2EF46B0068284B /* JDLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C98AF41F2EF46B0068284B /* JDLoadingView.m */; };
 		F5C98AFC1F2F01C60068284B /* JDLoadingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C98AFB1F2F01C60068284B /* JDLoadingDemoViewController.m */; };
+		F5D194541FA05547003E7430 /* JDJSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D194531FA05547003E7430 /* JDJSONTool.m */; };
 		F5D2F83B1ED2D6A10063F18F /* JDStatusBarMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */; };
 		F5DB4C1E1EA5BF40000D3A0F /* JDTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB4C1D1EA5BF40000D3A0F /* JDTouchIDViewController.m */; };
 		F5DB4C201EA5C03D000D3A0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */; };
@@ -468,6 +470,8 @@
 		F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSignListViewController.m; sourceTree = "<group>"; };
 		F57D457E1E9CC8CF0073F6D6 /* JDQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRScannerViewController.h; sourceTree = "<group>"; };
 		F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRScannerViewController.m; sourceTree = "<group>"; };
+		F58940A81FA9634900EA2721 /* JDImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDImageCacheManager.h; sourceTree = "<group>"; };
+		F58940A91FA9634900EA2721 /* JDImageCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDImageCacheManager.m; sourceTree = "<group>"; };
 		F595E6C51EEA898A000E15E9 /* AppDelegate+JDUserNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDUserNotifications.h"; sourceTree = "<group>"; };
 		F595E6C61EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDUserNotifications.m"; sourceTree = "<group>"; };
 		F59A5AEA1EC54ABB003D1E59 /* JDWaterAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterAnimationListViewController.h; sourceTree = "<group>"; };
@@ -606,6 +610,8 @@
 		F5C98AF41F2EF46B0068284B /* JDLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLoadingView.m; sourceTree = "<group>"; };
 		F5C98AFA1F2F01C60068284B /* JDLoadingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLoadingDemoViewController.h; sourceTree = "<group>"; };
 		F5C98AFB1F2F01C60068284B /* JDLoadingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLoadingDemoViewController.m; sourceTree = "<group>"; };
+		F5D194521FA05547003E7430 /* JDJSONTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDJSONTool.h; sourceTree = "<group>"; };
+		F5D194531FA05547003E7430 /* JDJSONTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDJSONTool.m; sourceTree = "<group>"; };
 		F5D2F8391ED2D6A10063F18F /* JDStatusBarMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarMessageView.h; sourceTree = "<group>"; };
 		F5D2F83A1ED2D6A10063F18F /* JDStatusBarMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarMessageView.m; sourceTree = "<group>"; };
 		F5DB4C1C1EA5BF40000D3A0F /* JDTouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTouchIDViewController.h; sourceTree = "<group>"; };
@@ -645,6 +651,7 @@
 		1E97615D406F75866E9BCA8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F55E55391E850BB100144D49 /* Products */,
 				F5DB4C1F1EA5C03D000D3A0F /* LocalAuthentication.framework */,
 				9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */,
 			);
@@ -1303,7 +1310,6 @@
 			children = (
 				1E97615D406F75866E9BCA8A /* Frameworks */,
 				30AAE074C66D79F4927A89A1 /* Pods */,
-				F55E55391E850BB100144D49 /* Products */,
 				F55E553A1E850BB100144D49 /* WJDStudyLibrary */,
 			);
 			sourceTree = "<group>";
@@ -1376,8 +1382,10 @@
 		F55E55541E85171600144D49 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				F58940A71FA958E900EA2721 /* LoadingView */,
+				F58940A61FA958D500EA2721 /* ImageCacheManager */,
+				F5D194511FA05523003E7430 /* JSONTool */,
 				F5C4B9681F8F13BD0084A84D /* WifiUploadTool */,
-				F5C98AF21F2EE0DD0068284B /* LoadingView */,
 				F5C37CDC1F15B9500029C773 /* EasyTool */,
 				F59A5AF91EC5682E003D1E59 /* RuntimeAdjustFont(字体适配) */,
 				F528DDFA1EA486EE00F0E500 /* TimeFomatTool(时间格式转化) */,
@@ -1615,6 +1623,24 @@
 				F5BB00191EC0667F00ACCC38 /* JDCodeImageViewController.m */,
 			);
 			path = "QRSanner(二维码)";
+			sourceTree = "<group>";
+		};
+		F58940A61FA958D500EA2721 /* ImageCacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				F58940A81FA9634900EA2721 /* JDImageCacheManager.h */,
+				F58940A91FA9634900EA2721 /* JDImageCacheManager.m */,
+			);
+			path = ImageCacheManager;
+			sourceTree = "<group>";
+		};
+		F58940A71FA958E900EA2721 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F5C98AF31F2EF46B0068284B /* JDLoadingView.h */,
+				F5C98AF41F2EF46B0068284B /* JDLoadingView.m */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */ = {
@@ -2105,15 +2131,6 @@
 			path = OpenCVCamera;
 			sourceTree = "<group>";
 		};
-		F5C98AF21F2EE0DD0068284B /* LoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				F5C98AF31F2EF46B0068284B /* JDLoadingView.h */,
-				F5C98AF41F2EF46B0068284B /* JDLoadingView.m */,
-			);
-			name = LoadingView;
-			sourceTree = "<group>";
-		};
 		F5C98AF91F2F01B00068284B /* LoadingDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -2121,6 +2138,15 @@
 				F5C98AFB1F2F01C60068284B /* JDLoadingDemoViewController.m */,
 			);
 			name = LoadingDemo;
+			sourceTree = "<group>";
+		};
+		F5D194511FA05523003E7430 /* JSONTool */ = {
+			isa = PBXGroup;
+			children = (
+				F5D194521FA05547003E7430 /* JDJSONTool.h */,
+				F5D194531FA05547003E7430 /* JDJSONTool.m */,
+			);
+			path = JSONTool;
 			sourceTree = "<group>";
 		};
 		F5D2F8381ED2D6260063F18F /* StatusBarMessageView(状态栏提示信息) */ = {
@@ -2474,6 +2500,7 @@
 				F5A129BC1F56A4A5005E3350 /* JDActionSheetView.m in Sources */,
 				F50373761EDEACD0004EB2EB /* JDCustomToolViewController.m in Sources */,
 				F541360F1EC985EF009E96B0 /* JDNewFunctionViewController.m in Sources */,
+				F5D194541FA05547003E7430 /* JDJSONTool.m in Sources */,
 				F57D45741E9C7AF30073F6D6 /* JDNetClinet.m in Sources */,
 				F54136131EC98667009E96B0 /* JDChangeIconViewController.m in Sources */,
 				F52C45221E94C55200D8DF62 /* JDMessageView.m in Sources */,
@@ -2539,6 +2566,7 @@
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
+				F58940AA1FA9634900EA2721 /* JDImageCacheManager.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
 				F50373721EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m in Sources */,
 				F59A5AFC1EC56889003D1E59 /* UIFont+JDRuntimeFont.m in Sources */,
