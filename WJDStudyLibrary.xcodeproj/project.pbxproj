@@ -147,6 +147,7 @@
 		F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457B1E9CC80F0073F6D6 /* JDSignListViewController.m */; };
 		F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */; };
 		F58940AA1FA9634900EA2721 /* JDImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F58940A91FA9634900EA2721 /* JDImageCacheManager.m */; };
+		F58A48BA1FB1C448007CD680 /* JDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A48B91FB1C448007CD680 /* JDDeviceUtils.m */; };
 		F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = F595E6C61EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m */; };
 		F59A5AEC1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEB1EC54ABB003D1E59 /* JDWaterAnimationListViewController.m */; };
 		F59A5AF01EC54B1E003D1E59 /* JDWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A5AEF1EC54B1E003D1E59 /* JDWaterWaveViewController.m */; };
@@ -472,6 +473,8 @@
 		F57D457F1E9CC8CF0073F6D6 /* JDQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRScannerViewController.m; sourceTree = "<group>"; };
 		F58940A81FA9634900EA2721 /* JDImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDImageCacheManager.h; sourceTree = "<group>"; };
 		F58940A91FA9634900EA2721 /* JDImageCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDImageCacheManager.m; sourceTree = "<group>"; };
+		F58A48B81FB1C448007CD680 /* JDDeviceUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDDeviceUtils.h; sourceTree = "<group>"; };
+		F58A48B91FB1C448007CD680 /* JDDeviceUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDDeviceUtils.m; sourceTree = "<group>"; };
 		F595E6C51EEA898A000E15E9 /* AppDelegate+JDUserNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDUserNotifications.h"; sourceTree = "<group>"; };
 		F595E6C61EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDUserNotifications.m"; sourceTree = "<group>"; };
 		F59A5AEA1EC54ABB003D1E59 /* JDWaterAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWaterAnimationListViewController.h; sourceTree = "<group>"; };
@@ -1382,6 +1385,7 @@
 		F55E55541E85171600144D49 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				F58A48B71FB1C415007CD680 /* DeviceUtils */,
 				F58940A71FA958E900EA2721 /* LoadingView */,
 				F58940A61FA958D500EA2721 /* ImageCacheManager */,
 				F5D194511FA05523003E7430 /* JSONTool */,
@@ -1641,6 +1645,15 @@
 				F5C98AF41F2EF46B0068284B /* JDLoadingView.m */,
 			);
 			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		F58A48B71FB1C415007CD680 /* DeviceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				F58A48B81FB1C448007CD680 /* JDDeviceUtils.h */,
+				F58A48B91FB1C448007CD680 /* JDDeviceUtils.m */,
+			);
+			path = DeviceUtils;
 			sourceTree = "<group>";
 		};
 		F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */ = {
@@ -2566,6 +2579,7 @@
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
+				F58A48BA1FB1C448007CD680 /* JDDeviceUtils.m in Sources */,
 				F58940AA1FA9634900EA2721 /* JDImageCacheManager.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,
 				F50373721EDE9286004EB2EB /* JDSystemPresentAnimationViewController.m in Sources */,
