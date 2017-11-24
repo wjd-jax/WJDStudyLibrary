@@ -1656,6 +1656,13 @@
 			path = DeviceUtils;
 			sourceTree = "<group>";
 		};
+		F58B06AC1FC7A34E00DF36B5 /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestViewController;
+			sourceTree = "<group>";
+		};
 		F59A5AE91EC54A71003D1E59 /* WarterAnimation(水纹) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1910,6 +1917,7 @@
 		F5A733221EC30472006CB68D /* CustomLabel */ = {
 			isa = PBXGroup;
 			children = (
+				F58B06AC1FC7A34E00DF36B5 /* TestViewController */,
 				F511E3741F26E148005C02B3 /* BottomAligntLabel(底部对齐的Label) */,
 				F5223EE71EC3FDC500CDCBD8 /* PrinterLabel(打字机) */,
 				F5A7332A1EC304EE006CB68D /* marqueeLabel(跑马灯) */,

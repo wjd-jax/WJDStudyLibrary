@@ -144,7 +144,7 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
 - (UIProgressView *)progressView
 {
     if (!_progressView) {
-        _progressView =[[UIProgressView alloc]initWithFrame:CGRectMake(0, NavigationBar_HEIGHT, SCREEN_WIDHT, 12)];
+        _progressView =[[UIProgressView alloc]initWithFrame:CGRectMake(0, Navigation_HEIGHT, SCREEN_WIDHT, 12)];
         _progressView.tintColor =[UIColor greenColor];
         _progressView.trackTintColor =[UIColor whiteColor];
     }

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>IOS知识库</string>
+	<string>IOS模块库</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIcons</key>
@@ -73,6 +73,8 @@
 	<string>1.2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>需要使用NFC</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -90,8 +92,6 @@
 	<string>麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问设备相册</string>
-	<key>NFCReaderUsageDescription</key>
-	<string>需要使用NFC</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>需要使用语音识别</string>
 	<key>UILaunchStoryboardName</key>
@@ -100,6 +100,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

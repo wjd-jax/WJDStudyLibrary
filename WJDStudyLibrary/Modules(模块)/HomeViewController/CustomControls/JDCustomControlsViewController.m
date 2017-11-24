@@ -19,7 +19,9 @@
     self.dataSoureArray =@[
                            @{@"title":@"标签",@"className":@"JDCustomLabelViewController"},
                            @{@"title":@"按钮",@"className":@"JDCustomButtonListViewController"},
-                           ];}
+                           ];
+    
+}
 
  
 

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CocoaAsyncSocket (7.6.1)
+  - CocoaAsyncSocket (7.6.2)
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
@@ -24,33 +24,43 @@ PODS:
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
-  - GCDWebServer (3.4.1):
-    - GCDWebServer/Core (= 3.4.1)
-  - GCDWebServer/Core (3.4.1)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - LKDBHelper (2.4.7):
+    - LKDBHelper/standard (= 2.4.7)
+  - LKDBHelper/standard (2.4.7):
+    - FMDB
   - MJExtension (3.0.13)
   - OpenCV (3.0.0)
   - OpenSSL (1.0.210)
+  - PPBadgeView (2.0.0)
   - Reachability (3.2)
-  - SDWebImage (4.1.2):
-    - SDWebImage/Core (= 4.1.2)
-  - SDWebImage/Core (4.1.2)
-  - UMengUShare/Core (6.4.5):
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - UMengUShare/Core (6.4.6):
     - UMengUShare/Network
-  - UMengUShare/Network (6.4.5)
-  - UMengUShare/Social/ReducedQQ (6.4.5):
+  - UMengUShare/Network (6.4.6)
+  - UMengUShare/Social/ReducedQQ (6.4.6):
     - UMengUShare/Core
-  - UMengUShare/Social/ReducedSina (6.4.5):
+  - UMengUShare/Social/ReducedSina (6.4.6):
     - UMengUShare/Core
-  - UMengUShare/Social/ReducedWeChat (6.4.5):
+  - UMengUShare/Social/ReducedWeChat (6.4.6):
     - UMengUShare/Core
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaHTTPServer (~> 2.3)
   - GCDWebServer
+  - LKDBHelper
   - MJExtension
   - OpenCV (~> 3.0.0)
   - OpenSSL
+  - PPBadgeView
   - Reachability
   - SDWebImage
   - UMengUShare/Social/ReducedQQ
@@ -59,17 +69,20 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
   CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  GCDWebServer: 1db60034fe0e78a4a8524bd6c7cd97cd3c589870
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  LKDBHelper: a6c63147491654da18f72212f80d67db3a27289c
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   OpenCV: be07c02f0d8f125f1d40d261e66a66cb66ece3b3
   OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
+  PPBadgeView: 2448a69475d313641f0f53dc283e183ecefeeab8
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
-  UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  UMengUShare: fdbbf86353976727af26a66e9a84314ecb59c816
 
-PODFILE CHECKSUM: a0187376dadf657ca94741ca2e972675c4e624e7
+PODFILE CHECKSUM: ebdc5b4561386db6ff0e32b179bd25ccf230f289
 
 COCOAPODS: 1.3.1
