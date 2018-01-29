@@ -2350,7 +2350,7 @@
 								enabled = 0;
 							};
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -2769,7 +2769,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
@@ -2816,7 +2815,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
