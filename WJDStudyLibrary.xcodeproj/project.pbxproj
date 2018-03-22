@@ -221,6 +221,7 @@
 		F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5DCA4521F2B20E500A1D5AC /* test.mp3 */; };
 		F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */; };
 		F5E58BA41EBB1B8100BA60AB /* JDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */; };
+		F5E69AE2203EA97D009BFA00 /* JDCardInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E69AE1203EA97D009BFA00 /* JDCardInfoView.m */; };
 		F5FE819B1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */; };
 		F5FE819E1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */; };
 		F5FE81A61ED67ADC008BD4F3 /* JDContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE81A51ED67ADC008BD4F3 /* JDContactsViewController.m */; };
@@ -629,6 +630,8 @@
 		F5E58B9F1EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAppStoreScoreViewController.m; sourceTree = "<group>"; };
 		F5E58BA21EBB1B8100BA60AB /* JDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebBrowserViewController.h; sourceTree = "<group>"; };
 		F5E58BA31EBB1B8100BA60AB /* JDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebBrowserViewController.m; sourceTree = "<group>"; };
+		F5E69AE0203EA97D009BFA00 /* JDCardInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCardInfoView.h; sourceTree = "<group>"; };
+		F5E69AE1203EA97D009BFA00 /* JDCardInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCardInfoView.m; sourceTree = "<group>"; };
 		F5FE819A1ED66F1F008BD4F3 /* IPhoneInfoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhoneInfoStoryboard.storyboard; sourceTree = "<group>"; };
 		F5FE819C1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDIPhoneInfoViewController.h; sourceTree = "<group>"; };
 		F5FE819D1ED66F4B008BD4F3 /* JDIPhoneInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDIPhoneInfoViewController.m; sourceTree = "<group>"; };
@@ -1497,6 +1500,7 @@
 		F570E6E21F2045930029790B /* MyViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F5E69ADF203EA953009BFA00 /* view */,
 				F570E6E31F2045E50029790B /* JDMeViewController.h */,
 				F570E6E41F2045E50029790B /* JDMeViewController.m */,
 			);
@@ -2243,6 +2247,15 @@
 			path = "WebBrowser(浏览器封装)";
 			sourceTree = "<group>";
 		};
+		F5E69ADF203EA953009BFA00 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F5E69AE0203EA97D009BFA00 /* JDCardInfoView.h */,
+				F5E69AE1203EA97D009BFA00 /* JDCardInfoView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F5FE81961ED55064008BD4F3 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2587,6 +2600,7 @@
 				F55E555B1E851B0D00144D49 /* MainViewController.m in Sources */,
 				F503736C1EDE6E32004EB2EB /* JDCustomTransAnimationViewController.m in Sources */,
 				F57D45801E9CC8CF0073F6D6 /* JDQRScannerViewController.m in Sources */,
+				F5E69AE2203EA97D009BFA00 /* JDCardInfoView.m in Sources */,
 				F58A48BA1FB1C448007CD680 /* JDDeviceUtils.m in Sources */,
 				F58940AA1FA9634900EA2721 /* JDImageCacheManager.m in Sources */,
 				F5A1A7301E9B2D520076CC78 /* TZSignView.m in Sources */,

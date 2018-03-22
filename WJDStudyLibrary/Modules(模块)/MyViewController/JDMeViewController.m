@@ -7,6 +7,7 @@
 //
 
 #import "JDMeViewController.h"
+#import "JDCardInfoView.h"
 
 @interface JDMeViewController ()
 //<
@@ -21,7 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createUI];
+   
+}
+- (void)createUI{
+    //个人名片
+    JDCardInfoView *cardView = [[JDCardInfoView alloc]init];
+    [self.view addSubview:cardView];
     
 }
+
 
 @end
