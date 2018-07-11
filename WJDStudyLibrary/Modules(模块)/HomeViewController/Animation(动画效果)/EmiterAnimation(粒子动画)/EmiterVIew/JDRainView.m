@@ -28,7 +28,7 @@
     rainflake.velocity          = 0;      //加速度
     rainflake.yAcceleration     = 200;      //重力
     rainflake.contents          = (id)[UIImage imageNamed:@"rain"].CGImage;
-    rainflake.color             = JDRGBColor(0, 0, 0, 0.05).CGColor;
+    rainflake.color             = JDRGBAColor(0, 0, 0, 0.05).CGColor;
     rainflake.alphaSpeed        =+ 0.1;
     
     rainflake.lifetime          = 2.3;        //生命周期

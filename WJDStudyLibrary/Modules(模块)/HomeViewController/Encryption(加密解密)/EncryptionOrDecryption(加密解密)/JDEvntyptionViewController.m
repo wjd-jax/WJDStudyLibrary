@@ -42,7 +42,7 @@
     _encryptionView.type =_type;
     _encryptionView = [[[NSBundle mainBundle] loadNibNamed:@"EnvtyptionView" owner:self options:nil] firstObject];
     _encryptionView.delegate =self;
-    _encryptionView.frame = CGRectMake(0, 64, SCREEN_WIDHT, SCREEN_HEIGHT-64);
+    _encryptionView.frame = CGRectMake(0, 64, KSCREEN_WIDTH, KSCREEN_HEIGHT-64);
     [self.view addSubview:_encryptionView];
     
     UIBarButtonItem *rightBarItem =[JDUIFactory createTextBarButtonWithTitle:@"设置加密方式" Target:self Action:@selector(setClick)];

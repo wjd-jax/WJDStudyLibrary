@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    JDBottomAlignmentLabel *view = [[JDBottomAlignmentLabel alloc]initWithFrame:CGRectMake(20, 100, SCREEN_WIDHT-40, 40)];
+    JDBottomAlignmentLabel *view = [[JDBottomAlignmentLabel alloc]initWithFrame:CGRectMake(20, 100, KSCREEN_WIDTH-40, 40)];
     
     [self.view addSubview:view];
     [view addText:@"这是" Font:[UIFont systemFontOfSize:12] TextColor:[UIColor blueColor] IsChinese:YES];

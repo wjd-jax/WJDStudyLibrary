@@ -135,12 +135,12 @@
 {
     
     _pageControl.numberOfPages =_coverImageNames.count;
-    self.pagingScrollView.contentSize =CGSizeMake(SCREEN_WIDHT*_scrollViewPages.count, SCREEN_HEIGHT);
+    self.pagingScrollView.contentSize =CGSizeMake(KSCREEN_WIDTH*_scrollViewPages.count, KSCREEN_HEIGHT);
     
     for (int i =0; i<_scrollViewPages.count; i++) {
         
         UIImageView *imageView = [_scrollViewPages objectAtIndex:i];
-        imageView.frame =CGRectOffset(imageView.frame, i*SCREEN_WIDHT, 0);
+        imageView.frame =CGRectOffset(imageView.frame, i*KSCREEN_WIDTH, 0);
         [_pagingScrollView addSubview:imageView];
     }
     
@@ -187,8 +187,8 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSInteger index =scrollView.contentOffset.x/SCREEN_WIDHT;
-    CGFloat alpha = 1 - ((scrollView.contentOffset.x - index * SCREEN_WIDHT) / SCREEN_WIDHT);
+    NSInteger index =scrollView.contentOffset.x/KSCREEN_WIDTH;
+    CGFloat alpha = 1 - ((scrollView.contentOffset.x - index * KSCREEN_WIDTH) / KSCREEN_WIDTH);
     if (_backgroundViews.count >index) {
         
         UIImageView *imageView =[_backgroundViews objectAtIndex:index];

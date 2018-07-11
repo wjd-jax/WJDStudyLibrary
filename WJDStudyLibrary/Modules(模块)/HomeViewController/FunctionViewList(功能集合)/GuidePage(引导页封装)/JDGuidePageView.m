@@ -9,7 +9,7 @@
 #import "JDGuidePageView.h"
 
 
-#define kScreen_height  [[UIScreen mainScreen] bounds].size.height
+#define kKSCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
 #define kScreen_width   [[UIScreen mainScreen] bounds].size.width
 
 @interface JDGuidePageView ()<UIScrollViewDelegate>
@@ -28,7 +28,7 @@
 
 - (instancetype)initGuideViewWithImages:(NSArray *)imageNames{
     
-    self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kScreen_height)];
+    self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kKSCREEN_HEIGHT)];
     _isScrollOut = YES;
     self.images = imageNames;
     return self;
@@ -37,7 +37,7 @@
 
 - (instancetype)initGuideViewWithImages:(NSArray *)imageNames button:(UIButton *)button{
     
-    self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kScreen_height)];
+    self =[[JDGuidePageView alloc]initWithFrame:CGRectMake(0, 0, kScreen_width, kKSCREEN_HEIGHT)];
     _isScrollOut = YES;
     //一定要先赋值button因为后边要用到
     self.enterButton = button;
@@ -61,7 +61,7 @@
 
 - (void)createUI {
     
-    _launchScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, kScreen_height)];
+    _launchScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreen_width, kKSCREEN_HEIGHT)];
     _launchScrollView.showsHorizontalScrollIndicator = NO;
     _launchScrollView.bounces = NO;
     _launchScrollView.pagingEnabled = YES;
@@ -75,9 +75,9 @@
 {
     _images = images;
     
-    _launchScrollView.contentSize = CGSizeMake(kScreen_width * images.count, kScreen_height);
+    _launchScrollView.contentSize = CGSizeMake(kScreen_width * images.count, kKSCREEN_HEIGHT);
     for (int i = 0; i < images.count; i ++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * kScreen_width, 0, kScreen_width, kScreen_height)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * kScreen_width, 0, kScreen_width, kKSCREEN_HEIGHT)];
         imageView.image = [UIImage imageNamed:images[i]];
         [_launchScrollView addSubview:imageView];
         
@@ -88,7 +88,7 @@
             imageView.userInteractionEnabled = YES;
         }
     }
-    _page = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kScreen_height - 50, kScreen_width, 30)];
+    _page = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kKSCREEN_HEIGHT - 50, kScreen_width, 30)];
     _page.numberOfPages = images.count;
     _page.backgroundColor = [UIColor clearColor];
     _page.currentPage = 0;
@@ -110,7 +110,7 @@
         _enterButton.layer.cornerRadius = 5;
         [_enterButton setTitle:@"点击进入" forState:UIControlStateNormal];
     }
-    _enterButton.center = CGPointMake(kScreen_width/2, kScreen_height-80);
+    _enterButton.center = CGPointMake(kScreen_width/2, kKSCREEN_HEIGHT-80);
     [_enterButton addTarget:self action:@selector(enterBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     return _enterButton;

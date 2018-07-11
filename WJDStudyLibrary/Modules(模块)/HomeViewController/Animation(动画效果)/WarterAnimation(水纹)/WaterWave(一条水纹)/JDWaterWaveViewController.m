@@ -20,17 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    waterWaveView =[[JDWaterWaveView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDHT, SCREEN_HEIGHT/2)];
+    waterWaveView =[[JDWaterWaveView alloc]initWithFrame:CGRectMake(0, 64, KSCREEN_WIDTH, KSCREEN_HEIGHT/2)];
     [self.view addSubview:waterWaveView];
     
-    UISlider  *slider1 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(waterWaveView.frame)+50, SCREEN_WIDHT-70, 10)];
+    UISlider  *slider1 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(waterWaveView.frame)+50, KSCREEN_WIDTH-70, 10)];
     [slider1 addTarget:self action:@selector(slider1Update:) forControlEvents:UIControlEventValueChanged];
     slider1.minimumValue =waterWaveView.waveSpeed;
     slider1.maximumValue =waterWaveView.waveSpeed*2;
 
     [self.view addSubview:slider1];
     
-    UISlider  *slider2 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(slider1.frame)+50, SCREEN_WIDHT-70, 10)];
+    UISlider  *slider2 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(slider1.frame)+50, KSCREEN_WIDTH-70, 10)];
     slider2.minimumValue =waterWaveView.waveW;
     slider2.maximumValue =waterWaveView.waveW*2;
 
@@ -38,7 +38,7 @@
     
     [self.view addSubview:slider2];
     
-    UISlider  *slider3 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(slider2.frame)+50, SCREEN_WIDHT-70, 10)];
+    UISlider  *slider3 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(slider2.frame)+50, KSCREEN_WIDTH-70, 10)];
     slider3.minimumValue =waterWaveView.waveA;
     slider3.maximumValue =waterWaveView.waveA*2;
 

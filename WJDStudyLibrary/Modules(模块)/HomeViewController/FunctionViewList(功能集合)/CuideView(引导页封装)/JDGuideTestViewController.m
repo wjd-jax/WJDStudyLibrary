@@ -31,7 +31,7 @@
 }
 - (void)createUI {
     
-    UIView *view =[[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, SCREEN_HEIGHT/2)];
+    UIView *view =[[UIView alloc]initWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGHT/2)];
     [self.view addSubview:view];
     
     _firstImageView =[JDUIFactory createImageViewWithFrame:CGRectMake(300, 100, 40, 40) ImageName:@"apple"];

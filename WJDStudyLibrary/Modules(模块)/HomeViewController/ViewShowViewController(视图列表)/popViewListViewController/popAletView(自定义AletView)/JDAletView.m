@@ -29,7 +29,7 @@
         _callBack =callBack;
         _title =title;
         _desc =desc;
-        frame =CGRectMake(0, 0, SCREEN_WIDHT/2, 180);
+        frame =CGRectMake(0, 0, KSCREEN_WIDTH/2, 180);
         self.frame =frame;
         self.clipsToBounds =YES;
         [self createUI];

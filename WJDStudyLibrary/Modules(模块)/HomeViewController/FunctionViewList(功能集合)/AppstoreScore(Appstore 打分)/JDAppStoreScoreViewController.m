@@ -26,16 +26,16 @@
     storeProductViewController.delegate =self;
     
     UIButton *button1 =[JDUIFactory  createSystemButtonWithFrame:CGRectMake(10, 50+64, 400, 30) Target:self Action:@selector(buttonClick1) Title:@"跳转到Appstore打开评分"];
-    button1.centerX =SCREEN_WIDHT/2;
+    button1.centerX =KSCREEN_WIDTH/2;
     [self.view addSubview:button1];
     
     UIButton *button2 =[JDUIFactory  createSystemButtonWithFrame:CGRectMake(10, 50+64+60, 400, 30) Target:self Action:@selector(buttonClick2) Title:@"APP内部打开页面跳转到评分"];
-    button2.centerX =SCREEN_WIDHT/2;
+    button2.centerX =KSCREEN_WIDTH/2;
     
     [self.view addSubview:button2];
     
     UIButton *button3 =[JDUIFactory  createSystemButtonWithFrame:CGRectMake(10, 100+64+60, 400, 30) Target:self Action:@selector(buttonClick3) Title:@"APP内打开评分弹框(IOS10.3之后的方法)"];
-    button3.centerX =SCREEN_WIDHT/2;
+    button3.centerX =KSCREEN_WIDTH/2;
     
     [self.view addSubview:button3];
     

@@ -22,7 +22,7 @@
     UIImageView *v =[JDUIFactory createImageViewWithFrame:self.view.bounds ImageName:@"bg_002"];
     [self.view addSubview:v];
 //
-    JDRainView *rainView =[[JDRainView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDHT, SCREEN_HEIGHT-64)];
+    JDRainView *rainView =[[JDRainView alloc]initWithFrame:CGRectMake(0, 64, KSCREEN_WIDTH, KSCREEN_HEIGHT-64)];
     rainView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:rainView];
 }

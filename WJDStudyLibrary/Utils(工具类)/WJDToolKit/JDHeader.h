@@ -10,7 +10,7 @@
 #define JDHeader_h
 #ifdef __OBJC__
 
-#import "define.h"
+#import "JDDefine.h"
 #import "JDUIFactory.h"
 #import "UIView+JDView.h"
 

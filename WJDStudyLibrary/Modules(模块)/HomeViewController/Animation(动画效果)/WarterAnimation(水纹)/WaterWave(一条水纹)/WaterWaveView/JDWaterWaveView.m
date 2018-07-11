@@ -51,7 +51,7 @@
 - (void)addLayer {
    
     //设置闭环颜色
-    _waveLayer.fillColor =JDRGBColor(73, 142, 178, 0.5).CGColor;
+    _waveLayer.fillColor =JDRGBAColor(73, 142, 178, 0.5).CGColor;
     //设置边缘线的颜色
     //_firstWaveLayer.strokeColor =[UIColor blueColor].CGColor;
     

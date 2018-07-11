@@ -15,7 +15,7 @@
 +(void)showMessage:(NSString *)message withView:(UIView *)view
 {
     UIView *showview =  [[UIView alloc]init];
-    showview.backgroundColor = JDRGBColor(0, 0, 0, 0.8);
+    showview.backgroundColor = JDRGBAColor(0, 0, 0, 0.8);
     showview.frame = CGRectZero;
     
     showview.alpha = 1.0f;
@@ -37,7 +37,7 @@
     [showview addSubview:label];
     //提示框的位置
     showview.frame = CGRectMake(0, 0, labelSize.width+21*2, labelSize.height+21*2);
-    showview.center =CGPointMake(SCREEN_WIDHT/2, SCREEN_HEIGHT/2);
+    showview.center =CGPointMake(KSCREEN_WIDTH/2, KSCREEN_HEIGHT/2);
     label.center = CGPointMake(showview.frame.size.width/2, showview.frame.size.height/2);
     [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         showview.alpha = 0;

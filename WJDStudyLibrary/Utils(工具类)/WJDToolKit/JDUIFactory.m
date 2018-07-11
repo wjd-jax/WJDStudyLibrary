@@ -7,7 +7,7 @@
 //
 
 #import "JDUIFactory.h"
-#import "define.h"
+#import "JDDefine.h"
 
 @implementation JDUIFactory
 
@@ -88,7 +88,7 @@
     [button setFrame:frame];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setImage:IMAGE_NAMED(imageName) forState:UIControlStateNormal];
+    [button setImage:JDIMAGE_NAMED(imageName) forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
