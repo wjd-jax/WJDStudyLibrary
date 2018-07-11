@@ -46,11 +46,11 @@
     
     [self.view addSubview:slider3];
     
-    UILabel *label1 =[JDUtils createLabelWithFrame:CGRectMake(0, 0, 50, 50) Font:14 Text:@"速度"];
+    UILabel *label1 =[JDUIFactory createLabelWithFrame:CGRectMake(0, 0, 50, 50) FontSize:14 Text:@"速度"];
     label1.centerY =slider1.centerY;
-    UILabel *label2 =[JDUtils createLabelWithFrame:CGRectMake(0, 0, 50, 50) Font:14 Text:@"周期"];
+    UILabel *label2 =[JDUIFactory createLabelWithFrame:CGRectMake(0, 0, 50, 50) FontSize:14 Text:@"周期"];
     label2.centerY =slider2.centerY;
-    UILabel *label3 =[JDUtils createLabelWithFrame:CGRectMake(0, 0, 50, 50) Font:14 Text:@"振幅"];
+    UILabel *label3 =[JDUIFactory createLabelWithFrame:CGRectMake(0, 0, 50, 50) FontSize:14 Text:@"振幅"];
     label3.centerY =slider3.centerY;
     [self.view addSubview:label1];
     [self.view addSubview:label2];

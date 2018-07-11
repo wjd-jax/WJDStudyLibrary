@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title =@"touchID";
-    UIButton *button =[JDUtils createSystemButtonWithFrame:CGRectMake(0, 0, 150, 30) Target:self Action:@selector(buttonClick) Title:@"验证 TouchID"];
+    UIButton *button =[JDUIFactory createSystemButtonWithFrame:CGRectMake(0, 0, 150, 30) Target:self Action:@selector(buttonClick) Title:@"验证 TouchID"];
     button.center =self.view.center;
     [self.view addSubview:button];
     // Do any additional setup after loading the view.

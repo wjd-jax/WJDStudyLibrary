@@ -21,7 +21,7 @@
     [self performSelector:@selector(loadData) withObject:nil afterDelay:0.5];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
-    self.navigationItem.rightBarButtonItem = [JDUtils createTextBarButtonWithTitle:@"Again" Target:self Action:@selector(loadData)];
+    self.navigationItem.rightBarButtonItem = [JDUIFactory createTextBarButtonWithTitle:@"Again" Target:self Action:@selector(loadData)];
 }
 
 - (void)loadData {

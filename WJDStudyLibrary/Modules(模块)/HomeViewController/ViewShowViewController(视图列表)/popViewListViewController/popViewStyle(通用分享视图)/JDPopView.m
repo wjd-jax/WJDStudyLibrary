@@ -29,7 +29,7 @@
 {
     _callblock =block;
     UIWindow *window =[UIApplication sharedApplication].keyWindow;
-    backView =[JDUtils createViewWithFrame:window.frame];
+    backView =[JDUIFactory createViewWithFrame:window.frame];
     backView.backgroundColor =JDRGBColor(0, 0, 0, 0.5);
     backView.alpha = 0;
     [self addSubview:backView];

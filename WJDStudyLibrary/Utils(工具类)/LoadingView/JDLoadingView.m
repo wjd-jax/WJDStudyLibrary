@@ -34,7 +34,7 @@ static JDLoadingView *loadView;
     [self.layer addSublayer:replicatorLayer];
     
     //旋转图片
-    UIImageView *imageView =[JDUtils createImageViewWithFrame:CGRectMake(0, 0, 50, 50) ImageName:@"loading"];
+    UIImageView *imageView =[JDUIFactory createImageViewWithFrame:CGRectMake(0, 0, 50, 50) ImageName:@"loading"];
     imageView.center = self.center;
     [self addSubview:imageView];
     

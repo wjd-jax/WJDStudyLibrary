@@ -28,7 +28,7 @@
     
 
     
-    UIButton *button =[JDUtils createSystemButtonWithFrame:CGRectMake(30, CGRectGetMaxY(textView.frame)+10, 100, 30) Target:self Action:@selector(fileRecd) Title:@"识别语音文件"];
+    UIButton *button =[JDUIFactory createSystemButtonWithFrame:CGRectMake(30, CGRectGetMaxY(textView.frame)+10, 100, 30) Target:self Action:@selector(fileRecd) Title:@"识别语音文件"];
     [self.view addSubview:button];
     
     UIButton *voiceButton =[UIButton buttonWithType:UIButtonTypeSystem];

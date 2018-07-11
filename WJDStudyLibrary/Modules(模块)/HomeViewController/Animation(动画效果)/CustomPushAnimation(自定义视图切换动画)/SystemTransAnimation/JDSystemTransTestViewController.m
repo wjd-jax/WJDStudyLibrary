@@ -18,7 +18,7 @@
     
     [super viewDidLoad];
     
-    UIButton *button =[JDUtils createSystemButtonWithFrame:CGRectMake(0, 0, 100, 30) Target:self Action:@selector(backClick) Title:@"返回"];
+    UIButton *button =[JDUIFactory createSystemButtonWithFrame:CGRectMake(0, 0, 100, 30) Target:self Action:@selector(backClick) Title:@"返回"];
     button.backgroundColor =[UIColor whiteColor];
     button.center = self.view.center;
     [self.view addSubview:button];

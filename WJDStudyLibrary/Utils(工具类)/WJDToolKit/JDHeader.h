@@ -11,7 +11,7 @@
 #ifdef __OBJC__
 
 #import "define.h"
-#import "JDUtils.h"
+#import "JDUIFactory.h"
 #import "UIView+JDView.h"
 
 #endif

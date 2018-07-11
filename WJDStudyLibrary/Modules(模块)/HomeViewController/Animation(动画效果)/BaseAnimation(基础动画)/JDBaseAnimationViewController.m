@@ -20,7 +20,7 @@
     /**------------------------旋转动画-------------------------------------*/
     
     //以 中心x 轴 翻转
-    UIImageView *rorationImageViewX =[JDUtils createImageViewWithFrame:CGRectMake(20, 100, 70, 70) ImageName:@"apple"];
+    UIImageView *rorationImageViewX =[JDUIFactory createImageViewWithFrame:CGRectMake(20, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationImageViewX];
     //设置layer坐标系的中心点默认是(0.5,0.5)
     //rorationImageViewX.layer.anchorPoint =CGPointMake(0, 0.5);
@@ -33,7 +33,7 @@
     [rorationImageViewX.layer addAnimation:rorationAnimX forKey:@"rotationAnimX"];
     
     //以 中心y 轴 翻转
-    UIImageView *rorationImageViewY =[JDUtils createImageViewWithFrame:CGRectMake(150, 100, 70, 70) ImageName:@"apple"];
+    UIImageView *rorationImageViewY =[JDUIFactory createImageViewWithFrame:CGRectMake(150, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationImageViewY];
     
     CABasicAnimation *rorationAnimY =[CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
@@ -45,7 +45,7 @@
     [rorationImageViewY.layer addAnimation:rorationAnimY forKey:@"rotationAnimX"];
     
     //以 中心 z 轴 翻转
-    UIImageView *rorationViewZ = [JDUtils createImageViewWithFrame:CGRectMake(280, 100, 70, 70) ImageName:@"apple"];
+    UIImageView *rorationViewZ = [JDUIFactory createImageViewWithFrame:CGRectMake(280, 100, 70, 70) ImageName:@"apple"];
     [self.view addSubview:rorationViewZ];
     
     CABasicAnimation *rotationAnimZ = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -56,7 +56,7 @@
     [rorationViewZ.layer addAnimation:rotationAnimZ forKey:@"rotationAnimZ"];
     
     /**------------------------移动动画-------------------------------------*/
-    UIImageView *moveView = [JDUtils createImageViewWithFrame:CGRectMake(20, 240, 70, 70) ImageName:@"apple"];
+    UIImageView *moveView = [JDUIFactory createImageViewWithFrame:CGRectMake(20, 240, 70, 70) ImageName:@"apple"];
     [self.view addSubview:moveView];
     
     CABasicAnimation *moveAnimation =[CABasicAnimation animationWithKeyPath:@"position"];

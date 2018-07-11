@@ -45,7 +45,7 @@
     _encryptionView.frame = CGRectMake(0, 64, SCREEN_WIDHT, SCREEN_HEIGHT-64);
     [self.view addSubview:_encryptionView];
     
-    UIBarButtonItem *rightBarItem =[JDUtils createTextBarButtonWithTitle:@"设置加密方式" Target:self Action:@selector(setClick)];
+    UIBarButtonItem *rightBarItem =[JDUIFactory createTextBarButtonWithTitle:@"设置加密方式" Target:self Action:@selector(setClick)];
     self.navigationItem.rightBarButtonItem =rightBarItem;
     
     // Do any additional setup after loading the view.

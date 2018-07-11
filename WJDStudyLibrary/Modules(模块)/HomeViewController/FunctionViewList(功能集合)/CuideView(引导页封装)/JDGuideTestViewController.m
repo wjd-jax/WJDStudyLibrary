@@ -34,13 +34,13 @@
     UIView *view =[[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, SCREEN_HEIGHT/2)];
     [self.view addSubview:view];
     
-    _firstImageView =[JDUtils createImageViewWithFrame:CGRectMake(300, 100, 40, 40) ImageName:@"apple"];
+    _firstImageView =[JDUIFactory createImageViewWithFrame:CGRectMake(300, 100, 40, 40) ImageName:@"apple"];
     [view addSubview:_firstImageView];
     
-    _secondButton =[JDUtils createSystemButtonWithFrame:CGRectMake(100, 400, 150, 30) Target:self Action:@selector(buttonclick) Title:@"这是一个按钮"];
+    _secondButton =[JDUIFactory createSystemButtonWithFrame:CGRectMake(100, 400, 150, 30) Target:self Action:@selector(buttonclick) Title:@"这是一个按钮"];
     [self.view addSubview:_secondButton];
     
-    _thirdLabel =[JDUtils createLabelWithFrame:CGRectMake(20, 200, 200, 30) Font:16 Text:@"这是一段文字"];
+    _thirdLabel =[JDUIFactory createLabelWithFrame:CGRectMake(20, 200, 200, 30) FontSize:16 Text:@"这是一段文字"];
     [_thirdLabel sizeToFit];
     [self.view addSubview:_thirdLabel];
     

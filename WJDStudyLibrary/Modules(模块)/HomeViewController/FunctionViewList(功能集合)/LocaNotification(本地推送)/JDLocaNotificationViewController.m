@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *sysbuton =[JDUtils createSystemButtonWithFrame:CGRectMake(0, 0, 200, 20) Target:self Action:@selector(starClick) Title:@"点击添加一个推送"];
+    UIButton *sysbuton =[JDUIFactory createSystemButtonWithFrame:CGRectMake(0, 0, 200, 20) Target:self Action:@selector(starClick) Title:@"点击添加一个推送"];
     sysbuton.center = self.view.center;
     [self.view addSubview:sysbuton];
 }

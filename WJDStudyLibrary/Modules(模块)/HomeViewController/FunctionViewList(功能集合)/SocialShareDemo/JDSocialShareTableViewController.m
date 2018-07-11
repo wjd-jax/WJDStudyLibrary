@@ -134,10 +134,10 @@
 
 //添加分享的内容
 - (IFMShareView *)addShareContent:(IFMShareView *)shareView{
+    
     [shareView addText:@"分享测试"];
     [shareView addURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     [shareView addImage:[UIImage imageNamed:@"share_alipay"]];
-    
     return shareView;
 }
 

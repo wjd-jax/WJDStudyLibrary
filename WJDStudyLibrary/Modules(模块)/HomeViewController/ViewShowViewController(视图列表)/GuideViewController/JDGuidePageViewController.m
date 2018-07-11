@@ -76,7 +76,7 @@
 - (void)createEnterButton {
     
     if (!_enterButton) {
-        _enterButton =[JDUtils createButtonWithFrame:[self frameOfEnterButton] ImageName:nil Target:self Action:@selector(enter:) Title:NSLocalizedString(@"Enter", @"进入应用")];
+        _enterButton =[JDUIFactory createButtonWithFrame:[self frameOfEnterButton] ImageName:nil Target:self Action:@selector(enter:) Title:NSLocalizedString(@"Enter", @"进入应用")];
         JDViewSetRadius(_enterButton, 5);
         [_enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
@@ -124,7 +124,7 @@
     
     for (int i = 0; i<names.count; i++) {
         
-        UIImageView *imageView =[JDUtils createImageViewWithFrame:self.view.bounds ImageName:[names objectAtIndex:i]];
+        UIImageView *imageView =[JDUIFactory createImageViewWithFrame:self.view.bounds ImageName:[names objectAtIndex:i]];
         [tmpArray addObject:imageView];
     }
     
