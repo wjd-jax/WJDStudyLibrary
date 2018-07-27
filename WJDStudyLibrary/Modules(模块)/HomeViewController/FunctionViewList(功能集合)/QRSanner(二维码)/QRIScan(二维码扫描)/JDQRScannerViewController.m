@@ -60,7 +60,7 @@
     self.navigationItem.rightBarButtonItem = right;
     
     //扫描界面
-    _scanView = [[ScanView alloc]initWithFrame:CGRectMake(0, 64, KSCREEN_WIDTH, KSCREEN_HEIGHT-64)];
+    _scanView = [[ScanView alloc]initWithFrame:CGRectMake(0, JD_NavTopHeight, KSCREEN_WIDTH, KSCREEN_HEIGHT-64)];
     _scanRect =_scanView.scanRect;
     [self.view addSubview:_scanView];
     

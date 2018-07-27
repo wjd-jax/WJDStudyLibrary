@@ -25,7 +25,7 @@
     storeProductViewController =[[SKStoreProductViewController alloc]init];
     storeProductViewController.delegate =self;
     
-    UIButton *button1 =[JDUIFactory  createSystemButtonWithFrame:CGRectMake(10, 50+64, 400, 30) Target:self Action:@selector(buttonClick1) Title:@"跳转到Appstore打开评分"];
+    UIButton *button1 =[JDUIFactory  createSystemButtonWithFrame:CGRectMake(10, 50+JD_NavTopHeight, 400, 30) Target:self Action:@selector(buttonClick1) Title:@"跳转到Appstore打开评分"];
     button1.centerX =KSCREEN_WIDTH/2;
     [self.view addSubview:button1];
     

@@ -48,8 +48,10 @@
 
 
 - (void)aboutClick {
-    JDAboutUsViewController *avc =[[JDAboutUsViewController alloc]init];
-    [self.navigationController pushViewController:avc animated:YES];
+    
+    [JDCommonTool pushViewControllerWithStoryName:@"Storyboard" ViewControllerName:@"JDAboutUsViewController" fromNavigationController:self.navigationController];
+    
+   
 }
 
 @end

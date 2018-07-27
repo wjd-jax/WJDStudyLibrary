@@ -13,6 +13,7 @@
 #import "JDDefine.h"
 #import "JDUIFactory.h"
 #import "UIView+JDView.h"
+#import "JDCommonTool.h"
 
 #endif
 

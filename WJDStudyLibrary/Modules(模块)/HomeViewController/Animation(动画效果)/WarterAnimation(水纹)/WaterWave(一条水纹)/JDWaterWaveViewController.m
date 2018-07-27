@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    waterWaveView =[[JDWaterWaveView alloc]initWithFrame:CGRectMake(0, 64, KSCREEN_WIDTH, KSCREEN_HEIGHT/2)];
+    waterWaveView =[[JDWaterWaveView alloc]initWithFrame:CGRectMake(0, JD_NavTopHeight, KSCREEN_WIDTH, KSCREEN_HEIGHT/2)];
     [self.view addSubview:waterWaveView];
     
     UISlider  *slider1 =[[UISlider alloc]initWithFrame:CGRectMake(50, CGRectGetMaxY(waterWaveView.frame)+50, KSCREEN_WIDTH-70, 10)];

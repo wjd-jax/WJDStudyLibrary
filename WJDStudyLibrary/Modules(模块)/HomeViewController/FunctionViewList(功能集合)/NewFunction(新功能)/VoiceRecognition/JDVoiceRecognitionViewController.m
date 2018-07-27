@@ -21,7 +21,7 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    textView =[[UITextView alloc]initWithFrame:CGRectMake(10, 70, KSCREEN_WIDTH-20, 300)];
+    textView =[[UITextView alloc]initWithFrame:CGRectMake(10, JD_NavTopHeight, KSCREEN_WIDTH-20, 300)];
     textView.backgroundColor = JDCOLOR_FROM_RGB_OxFF_ALPHA(0xd1efd6, 0.5);
     textView.font =[UIFont systemFontOfSize:18];
     [self.view addSubview:textView];
