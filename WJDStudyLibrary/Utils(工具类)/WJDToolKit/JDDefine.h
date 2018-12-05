@@ -51,7 +51,7 @@
 
 //获取沙盒 Document
 #define kPathDocument   \
-[NSSearchPathForDirectoriesInDomains(NSdocumentDirectory, NSUserDomainMask, YES) firstObject];
+[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
 
 //获取沙盒 Cache
 #define kPathCache      \

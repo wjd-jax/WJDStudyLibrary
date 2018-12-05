@@ -23,7 +23,7 @@
  //对象转化为字典(忽略属性说明,因为安卓没做好,临时添加的处理)
 
  @param obj 对象
- @return 子弹
+ @return 字典
  */
 + (NSDictionary*)coverToDictionaryFromObject:(id)obj;
 

@@ -25,12 +25,12 @@
     NSArray *backgroundImageNames = @[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"];
     
     _gpvc =[[JDGuidePageViewController alloc]initWithCoverImageNames:coverImageNames backgroundImageNames:backgroundImageNames];
-//    _gpvc =[[JDGuidePageViewController alloc]initWithCoverImageNames:backgroundImageNames];
+
     [self.view addSubview:_gpvc.view];
     
     JDWeakSelf(self);
     _gpvc.didSelectedEnter = ^(){
-//        weakself.view =nil;
+
         [weakself.navigationController popViewControllerAnimated:YES];
         weakself.navigationController.navigationBarHidden = NO;
 
