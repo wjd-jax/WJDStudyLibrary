@@ -53,15 +53,15 @@
     
     // self.debug = YES;
     
-    _mixPoint = CGPointMake(SCREEN_WIDHT,SCREEN_HEIGHT);
+    _mixPoint = CGPointMake(KSCREEN_WIDTH,KSCREEN_HEIGHT);
     
    // self.backgroundColor = [UIColor colorWithPatternImage:JDGetImage(@"background")];
     self.userInteractionEnabled = YES;
     // 添加清楚Button
-    UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(0,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(okButtonClick) Title:@"确定"];
+    UIButton *button =[JDUIFactory createButtonWithFrame:CGRectMake(0,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(okButtonClick) Title:@"确定"];
     button.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
     [self addSubview:button];
-    UIButton *cleanBtn = [JDUtils createButtonWithFrame:CGRectMake(SCREEN_WIDHT/2,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(cleanBtnDidClick) Title:@"清除"];
+    UIButton *cleanBtn = [JDUIFactory createButtonWithFrame:CGRectMake(KSCREEN_WIDTH/2,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(cleanBtnDidClick) Title:@"清除"];
     cleanBtn.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
     [self addSubview:cleanBtn];
     
@@ -98,7 +98,7 @@
     self.lastImage =nil;
     self.image =nil;
     [self.points removeAllObjects];
-    _mixPoint =CGPointMake(SCREEN_WIDHT, SCREEN_HEIGHT);
+    _mixPoint =CGPointMake(KSCREEN_WIDTH, KSCREEN_HEIGHT);
     _maxPoint =CGPointMake(0, 0);
     
 }

@@ -29,19 +29,19 @@
     
     //判断是否支持更换图标
     if (![[UIApplication sharedApplication] supportsAlternateIcons]) {
-        UILabel *label =[JDUtils createLabelWithFrame:CGRectMake(100, 100, 200, 30) Font:15 Text:@"当前系统不支持更换图标"];
+        UILabel *label =[JDUIFactory createLabelWithFrame:CGRectMake(100, 100, 200, 30) FontSize:15 Text:@"当前系统不支持更换图标"];
         [self.view addSubview:label];
     }
     else
     {
-        UIButton *button =[JDUtils createSystemButtonWithFrame:CGRectMake(100, 140, 150, 30) Target:self Action:@selector(buttonClick1) Title:@"更换晴天图标"];
+        UIButton *button =[JDUIFactory createSystemButtonWithFrame:CGRectMake(100, 140, 150, 30) Target:self Action:@selector(buttonClick1) Title:@"更换晴天图标"];
         
         [self.view addSubview:button];
         
-        UIButton *button2 =[JDUtils createSystemButtonWithFrame:CGRectMake(100, 240, 150, 30) Target:self Action:@selector(buttonClick2) Title:@"更换天气图标"];
+        UIButton *button2 =[JDUIFactory createSystemButtonWithFrame:CGRectMake(100, 240, 150, 30) Target:self Action:@selector(buttonClick2) Title:@"更换天气图标"];
         [self.view addSubview:button2];
         
-        UIButton *button3 =[JDUtils createSystemButtonWithFrame:CGRectMake(100, 340, 150, 30) Target:self Action:@selector(buttonClick3) Title:@"还原图标"];
+        UIButton *button3 =[JDUIFactory createSystemButtonWithFrame:CGRectMake(100, 340, 150, 30) Target:self Action:@selector(buttonClick3) Title:@"还原图标"];
         [self.view addSubview:button3];
     }
 }

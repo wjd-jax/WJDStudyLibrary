@@ -21,21 +21,21 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    textView =[[UITextView alloc]initWithFrame:CGRectMake(10, 70, SCREEN_WIDHT-20, 300)];
+    textView =[[UITextView alloc]initWithFrame:CGRectMake(10, JD_NavTopHeight, KSCREEN_WIDTH-20, 300)];
     textView.backgroundColor = JDCOLOR_FROM_RGB_OxFF_ALPHA(0xd1efd6, 0.5);
     textView.font =[UIFont systemFontOfSize:18];
     [self.view addSubview:textView];
     
 
     
-    UIButton *button =[JDUtils createSystemButtonWithFrame:CGRectMake(30, CGRectGetMaxY(textView.frame)+10, 100, 30) Target:self Action:@selector(fileRecd) Title:@"识别语音文件"];
+    UIButton *button =[JDUIFactory createSystemButtonWithFrame:CGRectMake(30, CGRectGetMaxY(textView.frame)+10, 100, 30) Target:self Action:@selector(fileRecd) Title:@"识别语音文件"];
     [self.view addSubview:button];
     
     UIButton *voiceButton =[UIButton buttonWithType:UIButtonTypeSystem];
     [voiceButton setTitle:@"长按录音,松开结束" forState:UIControlStateNormal];
     [voiceButton setTitle:@"松手结束" forState:UIControlStateHighlighted];
     voiceButton.frame = CGRectMake(0, 0, 200, 70);
-    voiceButton.center = CGPointMake(SCREEN_WIDHT/2, SCREEN_HEIGHT-100);
+    voiceButton.center = CGPointMake(KSCREEN_WIDTH/2, KSCREEN_HEIGHT-100);
     voiceButton.backgroundColor = JDCOLOR_FROM_RGB_OxFF_ALPHA(0xd1efd6, 1);
     [voiceButton addTarget:self action:@selector(touchDown:) forControlEvents:UIControlEventTouchDown];
     [voiceButton addTarget:self action:@selector(touchUpInside:) forControlEvents:UIControlEventTouchUpInside];    [self.view addSubview:voiceButton];

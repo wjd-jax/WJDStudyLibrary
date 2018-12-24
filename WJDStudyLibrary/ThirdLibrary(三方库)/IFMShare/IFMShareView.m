@@ -194,7 +194,7 @@
     
     //动画前置控件位置
     if (_containView) {
-        _containView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, height);
+        _containView.frame = CGRectMake(0, KSCREEN_HEIGHT, SCREEN_WIDTH, height);
     }
     if (_headerView) {
         _headerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, _headerView.frame.size.height);
@@ -223,7 +223,7 @@
     //执行动画
     [UIView animateWithDuration:0.25 animations:^{
         if (_containView) {
-            _containView.frame = CGRectMake(0, SCREEN_HEIGHT - height, SCREEN_WIDTH, height);
+            _containView.frame = CGRectMake(0, KSCREEN_HEIGHT - height, SCREEN_WIDTH, height);
         }
         
         zhezhaoView.alpha = 0.6;
@@ -249,7 +249,7 @@
         zhezhaoView.alpha = 0;
         
         if (_containView) {
-            _containView.frame = CGRectMake(0, SCREEN_HEIGHT,SCREEN_WIDTH, _containView.frame.size.height);
+            _containView.frame = CGRectMake(0, KSCREEN_HEIGHT,SCREEN_WIDTH, _containView.frame.size.height);
         }
         
     } completion:^(BOOL finished) {

@@ -22,14 +22,14 @@
 +(void)showMessage:(NSString *)message withView:(UIView *)view
 {
     
-    UIView *showView =[JDUtils createViewWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, StatusBar_HEIGHT)];
+    UIView *showView =[JDUIFactory createViewWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, JD_StatusBarHeight)];
     showView.backgroundColor =[UIColor blueColor];
     showView.tag =10000;
     [view addSubview:showView];
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(delayMethod) userInfo:nil repeats:YES];
     [timer fire];
     
-    UILabel *messageLabel =[JDUtils createLabelWithFrame:CGRectMake(0, 0, SCREEN_WIDHT, StatusBar_HEIGHT) Font:12 Text:message];
+    UILabel *messageLabel =[JDUIFactory createLabelWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, JD_StatusBarHeight) FontSize:12 Text:message];
     messageLabel.textAlignment =NSTextAlignmentCenter;
     messageLabel.font =[UIFont boldSystemFontOfSize:12];
     [showView addSubview:messageLabel];

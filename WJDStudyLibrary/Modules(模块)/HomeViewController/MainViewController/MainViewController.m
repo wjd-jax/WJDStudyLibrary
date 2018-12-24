@@ -41,15 +41,17 @@
                            ];
     
     
-    UIBarButtonItem *rightButton =[JDUtils createTextBarButtonWithTitle:@"关于" Target:self Action:@selector(aboutClick)];
+    UIBarButtonItem *rightButton =[JDUIFactory createTextBarButtonWithTitle:@"关于" Target:self Action:@selector(aboutClick)];
     self.navigationItem.rightBarButtonItem =rightButton;
 }
 
 
 
 - (void)aboutClick {
-    JDAboutUsViewController *avc =[[JDAboutUsViewController alloc]init];
-    [self.navigationController pushViewController:avc animated:YES];
+    
+    [JDCommonTool pushViewControllerWithStoryName:@"Storyboard" ViewControllerName:@"JDAboutUsViewController" fromNavigationController:self.navigationController];
+    
+   
 }
 
 @end

@@ -12,7 +12,7 @@
 
 
 #define XS_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
-#define XS_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define XS_KSCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
 @interface TableViewAnimationKit ()
 
@@ -86,7 +86,7 @@
     
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [tableView.visibleCells objectAtIndex:i];
-        cell.transform = CGAffineTransformMakeTranslation(0, - XS_SCREEN_HEIGHT);
+        cell.transform = CGAffineTransformMakeTranslation(0, - XS_KSCREEN_HEIGHT);
         [UIView animateWithDuration:0.3 delay:(cells.count - i)*(totalTime/cells.count) options:0 animations:^{
             cell.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
@@ -141,7 +141,7 @@
     
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [tableView.visibleCells objectAtIndex:i];
-        cell.transform = CGAffineTransformMakeTranslation(0,  XS_SCREEN_HEIGHT);
+        cell.transform = CGAffineTransformMakeTranslation(0,  XS_KSCREEN_HEIGHT);
         [UIView animateWithDuration:0.35 delay:i*(totalTime/cells.count) options:UIViewAnimationOptionCurveEaseOut animations:^{
             cell.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
@@ -156,7 +156,7 @@
     for (int i = 0; i < cells.count; i++) {
         UITableViewCell *cell = [cells objectAtIndex:i];
         cell.layer.opacity = 0.7;
-        cell.layer.transform = CATransform3DMakeTranslation(0, -XS_SCREEN_HEIGHT, 20);
+        cell.layer.transform = CATransform3DMakeTranslation(0, -XS_KSCREEN_HEIGHT, 20);
         NSTimeInterval totalTime = 1.0;
         
         [UIView animateWithDuration:0.4 delay:i*(totalTime/cells.count) usingSpringWithDamping:0.65 initialSpringVelocity:1/0.65 options:UIViewAnimationOptionCurveEaseIn animations:^{

@@ -29,7 +29,7 @@
         _callBack =callBack;
         _title =title;
         _desc =desc;
-        frame =CGRectMake(0, 0, SCREEN_WIDHT/2, 180);
+        frame =CGRectMake(0, 0, KSCREEN_WIDTH/2, 180);
         self.frame =frame;
         self.clipsToBounds =YES;
         [self createUI];
@@ -41,19 +41,19 @@
 }
 - (void)createUI
 {
-    titleLabel =[JDUtils createLabelWithFrame:CGRectMake(0, 0, self.sizeWidth, self.sizeHeight/3) Font:14 Text:_title];
+    titleLabel =[JDUIFactory createLabelWithFrame:CGRectMake(0, 0, self.sizeWidth, self.sizeHeight/3) FontSize:14 Text:_title];
     titleLabel.textAlignment =NSTextAlignmentCenter;
     [self addSubview:titleLabel];
     
-    UIView *lineView =[JDUtils createViewWithFrame:CGRectMake(20, self.sizeHeight/3, self.sizeWidth-40, 1)];
+    UIView *lineView =[JDUIFactory createViewWithFrame:CGRectMake(20, self.sizeHeight/3, self.sizeWidth-40, 1)];
     lineView.backgroundColor =[UIColor grayColor];
     [self addSubview:lineView];
     
-    descLabel =[JDUtils createLabelWithFrame:CGRectMake(0, titleLabel.sizeHeight, self.sizeWidth, self.sizeHeight/3) Font:12 Text:_desc];
+    descLabel =[JDUIFactory createLabelWithFrame:CGRectMake(0, titleLabel.sizeHeight, self.sizeWidth, self.sizeHeight/3) FontSize:12 Text:_desc];
     descLabel.textAlignment =NSTextAlignmentCenter;
     [self addSubview:descLabel];
     
-    UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(0, self.sizeHeight/3*2, self.sizeWidth, self.sizeHeight/3) ImageName:nil Target:self Action:@selector(button) Title:@"确定"];
+    UIButton *button =[JDUIFactory createButtonWithFrame:CGRectMake(0, self.sizeHeight/3*2, self.sizeWidth, self.sizeHeight/3) ImageName:nil Target:self Action:@selector(button) Title:@"确定"];
     button.backgroundColor =[UIColor grayColor];
     [self addSubview:button];
     
@@ -66,7 +66,7 @@
 - (void)show
 {
     UIWindow *window =[UIApplication sharedApplication].keyWindow;
-    backView =[JDUtils createViewWithFrame:window.frame];
+    backView =[JDUIFactory createViewWithFrame:window.frame];
     backView.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
     [window addSubview:backView];
     [window addSubview:self];

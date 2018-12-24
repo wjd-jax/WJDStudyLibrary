@@ -26,7 +26,7 @@
 +(void)showMessage:(NSString *)message withView:(UIView *)view
 {
     
-    UIView *showView =[JDUtils createViewWithFrame:CGRectZero];
+    UIView *showView =[JDUIFactory createViewWithFrame:CGRectZero];
     showView.backgroundColor =[UIColor whiteColor];
     showView.alpha =0;
     JDViewSetRadius(showView, 5);
@@ -34,8 +34,8 @@
 
     
     //提示框的位置
-    showView.frame = CGRectMake(0, -NavigationBar_HEIGHT, SCREEN_WIDHT, NavigationBar_HEIGHT+StatusBar_HEIGHT);
-    UILabel *messageLabel =[JDUtils createLabelWithFrame:CGRectMake(0, StatusBar_HEIGHT, SCREEN_WIDHT, NavigationBar_HEIGHT) Font:14 Text:message];
+    showView.frame = CGRectMake(0, -JD_NavBarHeight, KSCREEN_WIDTH, JD_NavBarHeight+JD_StatusBarHeight);
+    UILabel *messageLabel =[JDUIFactory createLabelWithFrame:CGRectMake(0, JD_StatusBarHeight, KSCREEN_WIDTH, JD_NavBarHeight) FontSize:14 Text:message];
     [showView addSubview:messageLabel];
     messageLabel.textAlignment =NSTextAlignmentCenter;
     
@@ -46,7 +46,7 @@
         
     }completion:^(BOOL finished) {
         [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
-            showView.sizeHeight =-NavigationBar_HEIGHT;
+            showView.sizeHeight =-JD_NavBarHeight;
             showView.alpha =0;
             
         } completion:^(BOOL finished) {

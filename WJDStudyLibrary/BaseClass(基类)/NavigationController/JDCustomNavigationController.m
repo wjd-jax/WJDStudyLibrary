@@ -7,7 +7,6 @@
 //
 
 #import "JDCustomNavigationController.h"
-#import "define.h"
 
 @interface JDCustomNavigationController ()
 

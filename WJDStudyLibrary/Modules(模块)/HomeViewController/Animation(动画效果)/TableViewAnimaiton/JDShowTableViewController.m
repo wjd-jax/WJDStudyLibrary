@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.dataSoureArray = @[@{@"title":@"左侧飞出",@"className":@""},
                             @{@"title":@"下落渐显",@"className":@""},
                             @{@"title":@"快速下落",@"className":@""},

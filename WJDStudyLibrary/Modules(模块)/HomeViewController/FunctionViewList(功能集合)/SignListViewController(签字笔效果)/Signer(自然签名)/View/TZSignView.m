@@ -174,10 +174,10 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         
         _mixPoint =CGPointMake(self.bounds.size.width, self.bounds.size.height);
         _maxPoint =CGPointMake(0, 0);
-        UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(0,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(okButtonClick) Title:@"确定"];
+        UIButton *button =[JDUIFactory createButtonWithFrame:CGRectMake(0,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(okButtonClick) Title:@"确定"];
         button.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
         [self addSubview:button];
-        UIButton *cleanBtn = [JDUtils createButtonWithFrame:CGRectMake(SCREEN_WIDHT/2,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(erase) Title:@"清除"];
+        UIButton *cleanBtn = [JDUIFactory createButtonWithFrame:CGRectMake(KSCREEN_WIDTH/2,self.frame.size.height-50, self.frame.size.width/2, 50) ImageName:nil Target:self Action:@selector(erase) Title:@"清除"];
         cleanBtn.backgroundColor =[UIColor colorWithWhite:0.5 alpha:0.5];
         [self addSubview:cleanBtn];
     }

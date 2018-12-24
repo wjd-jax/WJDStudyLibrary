@@ -21,7 +21,7 @@
 
 - (void)createUI{
     
-    UIView *cardView  = [[UIView alloc]initWithFrame: CGRectMake(10, Navigation_HEIGHT + 10, SCREEN_WIDHT-20, (SCREEN_WIDHT-20)/2)];
+    UIView *cardView  = [[UIView alloc]initWithFrame: CGRectMake(10, JD_NavTopHeight + 10, KSCREEN_WIDTH-20, (KSCREEN_WIDTH-20)/2)];
     cardView.backgroundColor  = JDCOLOR_FROM_RGB_OxFF_ALPHA(0xfde2b1, 1);
     cardView.layer.cornerRadius = 5;
     //    JDViewSetRadius(cardView, 10)

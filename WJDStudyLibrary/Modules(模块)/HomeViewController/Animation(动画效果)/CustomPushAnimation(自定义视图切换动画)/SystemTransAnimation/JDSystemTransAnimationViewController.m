@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger,PushType) {
     
     _pushType = Type_Push;
     
-    UIBarButtonItem *rightBarItem =[JDUtils createTextBarButtonWithTitle:@"转场类型" Target:self Action:@selector(rightBarItemClick)];
+    UIBarButtonItem *rightBarItem =[JDUIFactory createTextBarButtonWithTitle:@"转场类型" Target:self Action:@selector(rightBarItemClick)];
     self.navigationItem.rightBarButtonItem = rightBarItem;
     
     _typeArray = @[

@@ -26,7 +26,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
     
     [super viewDidLoad];
     
-    UIBarButtonItem *rightBarButton =[JDUtils createTextBarButtonWithTitle:@"通讯录" Target:self Action:@selector(requestContact)];
+    UIBarButtonItem *rightBarButton =[JDUIFactory createTextBarButtonWithTitle:@"通讯录" Target:self Action:@selector(requestContact)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
     //tableView
     
@@ -47,7 +47,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
         });
     }];
     
-    UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(SCREEN_WIDHT-100, SCREEN_HEIGHT-100, 80, 80) ImageName:nil Target:self Action:@selector(addPersion) Title:@"添加"];
+    UIButton *button =[JDUIFactory createButtonWithFrame:CGRectMake(KSCREEN_WIDTH-100, KSCREEN_HEIGHT-100, 80, 80) ImageName:nil Target:self Action:@selector(addPersion) Title:@"添加"];
     JDViewSetRadius(button, button.sizeWidth/2);
     [button setBackgroundImage:[self buttonImageFromColor:JDCOLOR_FROM_RGB_OxFF_ALPHA(0xdae8a6, 1)] forState:UIControlStateNormal];
     [self.view addSubview:button];

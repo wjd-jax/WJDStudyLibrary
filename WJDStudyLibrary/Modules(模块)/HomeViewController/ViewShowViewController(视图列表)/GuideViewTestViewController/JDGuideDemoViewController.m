@@ -33,13 +33,13 @@
 
 - (void)createUI {
     
-    UIImageView *imageView =[JDUtils createImageViewWithFrame:self.view.bounds ImageName:@"home_bgImage"];
+    UIImageView *imageView =[JDUIFactory createImageViewWithFrame:self.view.bounds ImageName:@"home_bgImage"];
     [self.view addSubview:imageView];
     
-    UILabel *label =[JDUtils createLabelWithFrame:CGRectMake(130, 100, 200, 30) Font:24 Text:@"哇!首页出来了"];
+    UILabel *label =[JDUIFactory createLabelWithFrame:CGRectMake(130, 100, 200, 30) FontSize:24 Text:@"哇!首页出来了"];
     [imageView addSubview:label];
     
-    UIButton *button =[JDUtils createButtonWithFrame:CGRectMake(SCREEN_WIDHT-100, SCREEN_HEIGHT-50, 80, 30) ImageName:nil Target:self Action:@selector(onceMore) Title:@"再看一遍!"];
+    UIButton *button =[JDUIFactory createButtonWithFrame:CGRectMake(KSCREEN_WIDTH-100, KSCREEN_HEIGHT-50, 80, 30) ImageName:nil Target:self Action:@selector(onceMore) Title:@"再看一遍!"];
     [imageView addSubview:button];
     imageView.userInteractionEnabled =YES;
     

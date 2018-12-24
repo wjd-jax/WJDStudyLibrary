@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F67a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,47 +19,44 @@
                         <viewControllerLayoutGuide type="bottom" id="d6q-S8-lK0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z2M-Rb-2lK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前目录下代码行数:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeq-GS-NzW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前目录下代码行数:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeq-GS-NzW">
                                 <rect key="frame" x="16" y="230" width="161" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-rX-saA">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-rX-saA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="eUZ-wc-BcQ"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*********" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSK-GZ-XpT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*********" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSK-GZ-XpT">
                                 <rect key="frame" x="200" y="230" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="l4Y-dF-f4R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.65098039220000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写需要统计的Mac目录代码路径" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwo-Lp-LNM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写需要统计的Mac目录代码路径" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwo-Lp-LNM">
                                 <rect key="frame" x="16" y="144" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请在模拟器中运行,并连接 Xcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gg-BY-h0C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在模拟器中运行,并连接 Xcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gg-BY-h0C">
                                 <rect key="frame" x="63" y="83" width="249" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.1225710356" blue="0.34287822350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-HG-ruk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-HG-ruk">
                                 <rect key="frame" x="156" y="289" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="开始统计"/>
                                 <connections>
                                     <action selector="beginClick:" destination="wwJ-D7-D9T" eventType="touchUpInside" id="ZOZ-Cv-JGz"/>
@@ -66,6 +64,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="centerX" secondItem="cvs-rX-saA" secondAttribute="centerX" id="0R7-A6-lVE"/>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="centerX" secondItem="xmd-HG-ruk" secondAttribute="centerX" id="6IU-YK-xKU"/>
+                            <constraint firstItem="cvs-rX-saA" firstAttribute="leading" secondItem="z2M-Rb-2lK" secondAttribute="leading" id="8AX-86-tTL"/>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="top" secondItem="cvs-rX-saA" secondAttribute="bottom" constant="39" id="FS8-H8-7xa"/>
+                            <constraint firstItem="Bwo-Lp-LNM" firstAttribute="leading" secondItem="z2M-Rb-2lK" secondAttribute="leadingMargin" id="Fr3-eM-PCz"/>
+                            <constraint firstItem="xmd-HG-ruk" firstAttribute="top" secondItem="qeq-GS-NzW" secondAttribute="bottom" constant="38" id="J0o-iQ-REE"/>
+                            <constraint firstItem="Bwo-Lp-LNM" firstAttribute="trailing" secondItem="GSK-GZ-XpT" secondAttribute="trailing" id="LfN-D6-sAM"/>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="centerX" secondItem="Bwo-Lp-LNM" secondAttribute="centerX" id="M3u-e9-Bbw"/>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="top" secondItem="z2M-Rb-2lK" secondAttribute="top" constant="83" id="i8K-hG-oS2"/>
+                            <constraint firstItem="qeq-GS-NzW" firstAttribute="baseline" secondItem="GSK-GZ-XpT" secondAttribute="baseline" id="lry-cz-26n"/>
+                            <constraint firstItem="qeq-GS-NzW" firstAttribute="top" secondItem="Bwo-Lp-LNM" secondAttribute="bottom" constant="56" id="nz5-gX-INr"/>
+                            <constraint firstItem="Bwo-Lp-LNM" firstAttribute="top" secondItem="9gg-BY-h0C" secondAttribute="bottom" constant="40" id="ozA-3p-JLx"/>
+                            <constraint firstItem="9gg-BY-h0C" firstAttribute="centerX" secondItem="z2M-Rb-2lK" secondAttribute="centerX" id="z5e-Tm-ukm"/>
+                            <constraint firstItem="Bwo-Lp-LNM" firstAttribute="leading" secondItem="qeq-GS-NzW" secondAttribute="leading" id="zf1-X7-FwA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="GSK-GZ-XpT" id="Vmy-XT-wE1"/>

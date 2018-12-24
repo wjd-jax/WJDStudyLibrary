@@ -80,7 +80,7 @@ JDSHAREINSTANCE_FOR_CLASS(JDGuiewManager);
     [self.bgView addSubview:imageView];
     
     
-    UILabel *lable = [JDUtils createLabelWithFrame:CGRectZero Font:14 Text:tip];
+    UILabel *lable = [JDUIFactory createLabelWithFrame:CGRectZero FontSize:14 Text:tip];
     lable.textColor = [UIColor whiteColor];
     //使用代码布局 需要将这个属性设置为NO
     lable.translatesAutoresizingMaskIntoConstraints = NO;

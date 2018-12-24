@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
+		75F1884C2109A1AD007A58DF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F1884B2109A1AD007A58DF /* Storyboard.storyboard */; };
+		75F1884F2109A4E8007A58DF /* JDCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1884E2109A4E8007A58DF /* JDCommonTool.m */; };
 		F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */; };
 		F503735B1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */; };
 		F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */; };
@@ -33,7 +35,7 @@
 		F51CF0811E8E06740035EF7A /* JDMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0801E8E06740035EF7A /* JDMainDataModel.m */; };
 		F51CF0851E8E20F10035EF7A /* JDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0841E8E20F10035EF7A /* JDBaseModel.m */; };
 		F51CF0881E8E26780035EF7A /* JDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0871E8E26780035EF7A /* JDBaseViewController.m */; };
-		F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUtils.m */; };
+		F51CF0921E8E41390035EF7A /* JDUIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0911E8E41390035EF7A /* JDUIFactory.m */; };
 		F51CF0B91E8E49700035EF7A /* JDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */; };
 		F51FA13B1F04D2E300CC7041 /* JDGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51FA13A1F04D2E300CC7041 /* JDGuidePageView.m */; };
 		F520D7CD1F5D255D005D2070 /* JDSocialShareTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F520D7CC1F5D255D005D2070 /* JDSocialShareTableViewController.m */; };
@@ -230,6 +232,10 @@
 /* Begin PBXFileReference section */
 		4A772027928B504D3F317DD9 /* Pods-WJDStudyLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		542968496BC8E7C2E72510A3 /* Pods-WJDStudyLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJDStudyLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJDStudyLibrary/Pods-WJDStudyLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		75F00A88208832C300A6446B /* JDStyleDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDStyleDefines.h; sourceTree = "<group>"; };
+		75F1884B2109A1AD007A58DF /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		75F1884D2109A4E8007A58DF /* JDCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommonTool.h; sourceTree = "<group>"; };
+		75F1884E2109A4E8007A58DF /* JDCommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCommonTool.m; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthorityManager.h; sourceTree = "<group>"; };
 		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
@@ -268,15 +274,15 @@
 		F511E3761F26E190005C02B3 /* JDBottomAligntLabelDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBottomAligntLabelDemoViewController.m; sourceTree = "<group>"; };
 		F511E3781F26E1EC005C02B3 /* JDBottomAlignmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBottomAlignmentLabel.h; sourceTree = "<group>"; };
 		F511E3791F26E1EC005C02B3 /* JDBottomAlignmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBottomAlignmentLabel.m; sourceTree = "<group>"; };
-		F51CF07D1E8DF3AF0035EF7A /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDDefine.h; sourceTree = "<group>"; };
 		F51CF07F1E8E06740035EF7A /* JDMainDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataModel.h; sourceTree = "<group>"; };
 		F51CF0801E8E06740035EF7A /* JDMainDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataModel.m; sourceTree = "<group>"; };
 		F51CF0831E8E20F10035EF7A /* JDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseModel.h; sourceTree = "<group>"; };
 		F51CF0841E8E20F10035EF7A /* JDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseModel.m; sourceTree = "<group>"; };
 		F51CF0861E8E26780035EF7A /* JDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseViewController.h; sourceTree = "<group>"; };
 		F51CF0871E8E26780035EF7A /* JDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseViewController.m; sourceTree = "<group>"; };
-		F51CF0901E8E41390035EF7A /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
-		F51CF0911E8E41390035EF7A /* JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUtils.m; sourceTree = "<group>"; };
+		F51CF0901E8E41390035EF7A /* JDUIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUIFactory.h; sourceTree = "<group>"; };
+		F51CF0911E8E41390035EF7A /* JDUIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUIFactory.m; sourceTree = "<group>"; };
 		F51CF0B71E8E49700035EF7A /* JDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAboutUsViewController.h; sourceTree = "<group>"; };
 		F51CF0B81E8E49700035EF7A /* JDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAboutUsViewController.m; sourceTree = "<group>"; };
 		F51FA1391F04D2E300CC7041 /* JDGuidePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGuidePageView.h; sourceTree = "<group>"; };
@@ -673,6 +679,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		75F1884A2109A19A007A58DF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				75F1884B2109A1AD007A58DF /* Storyboard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,11 +804,13 @@
 			isa = PBXGroup;
 			children = (
 				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
-				F51CF0901E8E41390035EF7A /* JDUtils.h */,
-				F51CF0911E8E41390035EF7A /* JDUtils.m */,
+				F51CF0901E8E41390035EF7A /* JDUIFactory.h */,
+				F51CF0911E8E41390035EF7A /* JDUIFactory.m */,
 				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
 				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
-				F51CF07D1E8DF3AF0035EF7A /* define.h */,
+				F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */,
+				75F1884D2109A4E8007A58DF /* JDCommonTool.h */,
+				75F1884E2109A4E8007A58DF /* JDCommonTool.m */,
 			);
 			path = WJDToolKit;
 			sourceTree = "<group>";
@@ -1331,6 +1347,7 @@
 		F55E553A1E850BB100144D49 /* WJDStudyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				75F1884A2109A19A007A58DF /* StoryBoard */,
 				F55E55541E85171600144D49 /* Utils(工具类) */,
 				F5FE81961ED55064008BD4F3 /* AppDelegate */,
 				F5DB4C251EA6078A000D3A0F /* ThirdLibrary(三方库) */,
@@ -2273,6 +2290,7 @@
 			isa = PBXGroup;
 			children = (
 				F57D45751E9C7EDF0073F6D6 /* NetDefines.h */,
+				75F00A88208832C300A6446B /* JDStyleDefines.h */,
 			);
 			path = "Define(定义)";
 			sourceTree = "<group>";
@@ -2348,7 +2366,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JD;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = wangjundong;
 				TargetAttributes = {
 					F55E55371E850BB100144D49 = {
@@ -2426,6 +2444,7 @@
 				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
 				F552565C1F146D540080D0DE /* zocr0.lib in Resources */,
+				75F1884C2109A1AD007A58DF /* Storyboard.storyboard in Resources */,
 				F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */,
 				F54136431EC986DD009E96B0 /* 晴29x29@3x.png in Resources */,
 				F54BBB6F1EB86E1200AB92CC /* i3.jpg in Resources */,
@@ -2525,6 +2544,7 @@
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
+				75F1884F2109A4E8007A58DF /* JDCommonTool.m in Sources */,
 				F53DAC001F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m in Sources */,
 				F5C29F161ECC39E700835E26 /* JDSnowViewController.m in Sources */,
 				F511E37A1F26E1EC005C02B3 /* JDBottomAlignmentLabel.m in Sources */,
@@ -2572,7 +2592,7 @@
 				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
 				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
 				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
-				F51CF0921E8E41390035EF7A /* JDUtils.m in Sources */,
+				F51CF0921E8E41390035EF7A /* JDUIFactory.m in Sources */,
 				F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */,
 				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
 				F552564B1F1461530080D0DE /* JDBankScanViewController.m in Sources */,
@@ -2689,6 +2709,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2696,6 +2717,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2742,6 +2764,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2749,6 +2772,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2783,6 +2807,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
@@ -2829,6 +2854,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 75WWG8XJE9;
 				ENABLE_BITCODE = NO;
