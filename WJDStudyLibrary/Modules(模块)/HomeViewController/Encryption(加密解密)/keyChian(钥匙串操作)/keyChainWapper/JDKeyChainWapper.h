@@ -20,8 +20,8 @@
  
  @return idfv字符串
  */
-+ (NSString *)getIDFV;
-+ (BOOL)resetUUID;
++(NSString *)getKCID;
++ (BOOL)resetKCID;
 
 /**
  save username and password to keychain

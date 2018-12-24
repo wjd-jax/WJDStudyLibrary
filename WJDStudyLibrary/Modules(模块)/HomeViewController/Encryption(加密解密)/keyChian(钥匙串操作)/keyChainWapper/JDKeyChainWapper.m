@@ -52,20 +52,20 @@ static NSData *base64_decode(NSString *str){
     return data;
 }
 #pragma mark - 保存在Keychian中的IDFV
-+(NSString *)getIDFV
++(NSString *)getKCID
 {
-    NSString *uuid =[self loadStringDataWithIdentifier:@"JD_UUID"];
-    if (!uuid) {
-        NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        [self saveStringWithdIdentifier:@"JD_UUID" data:idfv];
-        uuid =idfv;
+    NSString *KCID =[self loadStringDataWithIdentifier:@"JD_KCID"];
+    if (!KCID) {
+        NSString *uuid = [NSUUID UUID].UUIDString;
+        [self saveStringWithdIdentifier:@"JD_KCID" data:uuid];
+        KCID =uuid;
     }
-    return uuid;
+    return KCID;
 }
 
-+ (BOOL)resetUUID
++ (BOOL)resetKCID
 {
-    NSMutableDictionary *keychainQuery = [self getKeychainQuery:@"JD_UUID" accessGroup:nil];
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:@"JD_KCID" accessGroup:nil];
     SecItemDelete((CFDictionaryRef)keychainQuery);
     return YES;
 }
