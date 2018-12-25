@@ -10,7 +10,7 @@
 #import "UIImageView+WebCache.h"
 
 @interface JDWaterFallLayoutCollectionViewCell ()
-@property(nonatomic,retain)UIImageView *imageView;
+@property(nonatomic, strong) UIImageView *imageView;
 @end
 @implementation JDWaterFallLayoutCollectionViewCell
 

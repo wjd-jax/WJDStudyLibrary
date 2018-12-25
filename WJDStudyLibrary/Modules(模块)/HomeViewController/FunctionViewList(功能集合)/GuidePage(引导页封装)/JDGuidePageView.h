@@ -13,12 +13,12 @@
 /**
  选中的page指示器颜色,默认灰色
  */
-@property(nonatomic,retain)UIColor *currentColor;
+@property(nonatomic, strong) UIColor *currentColor;
 
 /**
  非当前页page圆点的颜色,默认白色
  */
-@property(nonatomic,retain)UIColor *nomalColor;
+@property(nonatomic, strong) UIColor *nomalColor;
 
 /**
  是否显示小圆点

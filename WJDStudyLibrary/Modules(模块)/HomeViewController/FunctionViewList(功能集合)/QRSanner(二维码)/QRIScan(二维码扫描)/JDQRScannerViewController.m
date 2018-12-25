@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, assign) CGRect scanRect;
-@property (nonatomic, retain) ScanView *scanView;
+@property (nonatomic,  strong)  ScanView *scanView;
 @property (nonatomic, strong) CIDetector *detector;
 
 @end

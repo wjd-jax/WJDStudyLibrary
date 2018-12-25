@@ -10,9 +10,9 @@
 
 @interface JDGuidePageViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic,retain) UIScrollView *pagingScrollView;
+@property (nonatomic, strong)  UIScrollView *pagingScrollView;
 @property (nonatomic,strong) UIPageControl *pageControl;
-@property (nonatomic,retain) UIButton *enterButton;
+@property (nonatomic, strong)  UIButton *enterButton;
 @property (nonatomic,strong) NSArray *backgroundViews;
 @property (nonatomic,strong) NSArray *scrollViewPages;
 

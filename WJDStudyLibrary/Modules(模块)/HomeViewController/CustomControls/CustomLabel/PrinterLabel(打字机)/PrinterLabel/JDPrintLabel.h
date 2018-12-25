@@ -26,7 +26,7 @@ typedef void (^PrintLabelCompleteBlock)(void);
 /**
  显示字体的颜色
  */
-@property (nonatomic,retain)UIColor *prientColor;
+@property (nonatomic, strong) UIColor *prientColor;
 
 /**
  *	是否有打印的声音,默认为 YES

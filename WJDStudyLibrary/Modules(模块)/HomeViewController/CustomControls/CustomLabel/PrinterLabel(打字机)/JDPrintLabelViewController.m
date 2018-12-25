@@ -11,7 +11,7 @@
 
 @interface JDPrintLabelViewController ()
 
-@property (nonatomic,retain)JDPrintLabel *pLabel;
+@property (nonatomic, strong) JDPrintLabel *pLabel;
 @end
 
 @implementation JDPrintLabelViewController

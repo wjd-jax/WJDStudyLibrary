@@ -26,7 +26,7 @@
 
 @interface JDEvntyptionViewController ()<EntyptDelegate>
 
-@property(nonatomic,retain)__block JDEntyptionView *encryptionView;
+@property(nonatomic, strong) __block JDEntyptionView *encryptionView;
 @property(nonatomic,assign)__block EncryptionType type;
 @property(nonatomic,copy)NSString *key;
 @property(nonatomic,copy)NSString *ret;

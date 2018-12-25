@@ -12,7 +12,7 @@
 @interface JDContactModel :NSObject
 
 @property(nonatomic,copy)NSString *name;
-@property(nonatomic,retain)NSArray *phoneNumArray;
+@property(nonatomic, strong) NSArray *phoneNumArray;
 
 @end
 

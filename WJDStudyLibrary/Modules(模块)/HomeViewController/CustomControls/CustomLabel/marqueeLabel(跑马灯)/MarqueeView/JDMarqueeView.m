@@ -15,8 +15,8 @@ const int num = 3;
 
 @property (nonatomic,copy) NSString *msg; //需要展示的消息
 @property (nonatomic,assign) CGFloat textW; //文字长度
-@property (nonatomic,retain) UILabel *firstLabel; //跑马灯的两个 label
-@property (nonatomic,retain) UILabel *secondLabel;
+@property (nonatomic, strong)  UILabel *firstLabel; //跑马灯的两个 label
+@property (nonatomic, strong)  UILabel *secondLabel;
 
 @end
 

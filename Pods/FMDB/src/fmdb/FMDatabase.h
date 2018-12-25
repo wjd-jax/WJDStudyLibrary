@@ -1328,7 +1328,7 @@ typedef NS_ENUM(int, SqliteValueType) {
 
 /** SQL statement */
 
-@property (atomic, retain) NSString *query;
+@property (atomic,  strong)  NSString *query;
 
 /** SQLite sqlite3_stmt
  

@@ -12,7 +12,7 @@
 @interface JDImageProcessingViewController ()<UIPickerViewDelegate,UIPickerViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (nonatomic,retain)NSArray *filterNameArray;
+@property (nonatomic, strong) NSArray *filterNameArray;
 @end
 
 @implementation JDImageProcessingViewController

@@ -13,11 +13,11 @@ static NSString *homeURL =@"https://www.jianshu.com";//@"http://naotu.baidu.com"
 //static int barHeight =49;
 @interface JDWebBrowserViewController ()<WKNavigationDelegate,WKUIDelegate,UIScrollViewDelegate>
 
-@property(nonatomic,retain) UIProgressView *progressView;
-@property(nonatomic,retain) WKWebView *webView;
-@property(nonatomic,retain) UIToolbar *toolBar;
+@property(nonatomic, strong)  UIProgressView *progressView;
+@property(nonatomic, strong)  WKWebView *webView;
+@property(nonatomic, strong)  UIToolbar *toolBar;
 @property(nonatomic,copy) NSString *urlString;
-@property(nonatomic,retain) UITextField *navTextfield;
+@property(nonatomic, strong)  UITextField *navTextfield;
 @property(nonatomic,assign) BOOL debug;
 
 @end

@@ -14,11 +14,11 @@
 
 @interface JDGuidePageView ()<UIScrollViewDelegate>
 
-@property(nonatomic,retain)UIScrollView  *launchScrollView;
-@property(nonatomic,retain)UIPageControl *page;
-@property(nonatomic,retain)UIButton *enterButton;
+@property(nonatomic, strong) UIScrollView  *launchScrollView;
+@property(nonatomic, strong) UIPageControl *page;
+@property(nonatomic, strong) UIButton *enterButton;
 
-@property(nonatomic,retain)NSArray *images;
+@property(nonatomic, strong) NSArray *images;
 
 @end
 

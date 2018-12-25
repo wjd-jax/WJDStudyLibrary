@@ -10,8 +10,8 @@
 
 
 @interface JDFireEmitterView ()
-@property (nonatomic,retain) CAEmitterLayer *fireEmitter;   //发射器
-@property (nonatomic,retain) UIImageView *candleImageView;  //蜡烛
+@property (nonatomic, strong)  CAEmitterLayer *fireEmitter;   //发射器
+@property (nonatomic, strong)  UIImageView *candleImageView;  //蜡烛
 @end
 
 @implementation JDFireEmitterView
