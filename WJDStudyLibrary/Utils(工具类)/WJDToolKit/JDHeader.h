@@ -8,14 +8,18 @@
 
 #ifndef JDHeader_h
 #define JDHeader_h
+
 #ifdef __OBJC__
 
 #import "JDDefine.h"
 #import "JDUIFactory.h"
 #import "UIView+JDView.h"
 #import "JDCommonTool.h"
+#import "JDColorsHeaders.h"
+#import "JDFrameHeader.h"
 
 #endif
 
-
 #endif /* JDHeader_h */
+
+

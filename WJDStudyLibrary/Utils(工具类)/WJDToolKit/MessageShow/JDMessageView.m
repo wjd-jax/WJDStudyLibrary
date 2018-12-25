@@ -10,6 +10,7 @@
 
 @implementation JDMessageView
 
+
 + (void)showMessage:(NSString *)message
 {
     

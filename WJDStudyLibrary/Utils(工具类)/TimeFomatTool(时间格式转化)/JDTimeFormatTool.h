@@ -26,5 +26,7 @@
  @param oldFormatSting 需要格式化的字符串格式
  @return 格式化的字符串
  */
-+ (NSString *)coverToTimeFormatStringWithFormatingSting:(NSString *)formatSting WithTimeSting:(NSString *)timeSting andCurrerntFormat:(NSString *)oldFormatSting;
++ (NSString *)coverToTimeFormatStringWithFormatingSting:(NSString *)formatSting
+                                          WithTimeSting:(NSString *)timeSting
+                                      andCurrerntFormat:(NSString *)oldFormatSting;
 @end

@@ -237,6 +237,9 @@
 		75F1884D2109A4E8007A58DF /* JDCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommonTool.h; sourceTree = "<group>"; };
 		75F1884E2109A4E8007A58DF /* JDCommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCommonTool.m; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A509395F21D222230016A961 /* JDColorsHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDColorsHeaders.h; sourceTree = "<group>"; };
+		A509396421D2277C0016A961 /* JDFrameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFrameHeader.h; sourceTree = "<group>"; };
+		A509396521D227D10016A961 /* JDFontSizeHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFontSizeHeaders.h; sourceTree = "<group>"; };
 		F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthorityManager.h; sourceTree = "<group>"; };
 		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
 		F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDPropertyCode.h"; sourceTree = "<group>"; };
@@ -687,6 +690,44 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		A509396021D222690016A961 /* MessageShow */ = {
+			isa = PBXGroup;
+			children = (
+				F52C45201E94C55200D8DF62 /* JDMessageView.h */,
+				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
+			);
+			path = MessageShow;
+			sourceTree = "<group>";
+		};
+		A509396121D2227E0016A961 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				A509395F21D222230016A961 /* JDColorsHeaders.h */,
+				F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */,
+				A509396421D2277C0016A961 /* JDFrameHeader.h */,
+				A509396521D227D10016A961 /* JDFontSizeHeaders.h */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		A509396221D2229A0016A961 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF0901E8E41390035EF7A /* JDUIFactory.h */,
+				F51CF0911E8E41390035EF7A /* JDUIFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A509396321D222A90016A961 /* ViewExtern */ = {
+			isa = PBXGroup;
+			children = (
+				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
+				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
+			);
+			path = ViewExtern;
+			sourceTree = "<group>";
+		};
 		F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,12 +844,11 @@
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				A509396321D222A90016A961 /* ViewExtern */,
+				A509396221D2229A0016A961 /* Factory */,
+				A509396121D2227E0016A961 /* Defines */,
+				A509396021D222690016A961 /* MessageShow */,
 				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
-				F51CF0901E8E41390035EF7A /* JDUIFactory.h */,
-				F51CF0911E8E41390035EF7A /* JDUIFactory.m */,
-				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
-				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
-				F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */,
 				75F1884D2109A4E8007A58DF /* JDCommonTool.h */,
 				75F1884E2109A4E8007A58DF /* JDCommonTool.m */,
 			);
@@ -943,8 +983,6 @@
 		F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */ = {
 			isa = PBXGroup;
 			children = (
-				F52C45201E94C55200D8DF62 /* JDMessageView.h */,
-				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
 			);
 			path = "popViewStyle2(仿QQ提示)";
 			sourceTree = "<group>";
@@ -1405,7 +1443,7 @@
 		F55E55541E85171600144D49 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				F58A48B71FB1C415007CD680 /* DeviceUtils */,
+				F58A48B71FB1C415007CD680 /* DeviceUtils(判断设备) */,
 				F58940A71FA958E900EA2721 /* LoadingView */,
 				F58940A61FA958D500EA2721 /* ImageCacheManager */,
 				F5D194511FA05523003E7430 /* JSONTool */,
@@ -1668,13 +1706,13 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		F58A48B71FB1C415007CD680 /* DeviceUtils */ = {
+		F58A48B71FB1C415007CD680 /* DeviceUtils(判断设备) */ = {
 			isa = PBXGroup;
 			children = (
 				F58A48B81FB1C448007CD680 /* JDDeviceUtils.h */,
 				F58A48B91FB1C448007CD680 /* JDDeviceUtils.m */,
 			);
-			path = DeviceUtils;
+			path = "DeviceUtils(判断设备)";
 			sourceTree = "<group>";
 		};
 		F58B06AC1FC7A34E00DF36B5 /* TestViewController */ = {
@@ -2829,7 +2867,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2876,7 +2914,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
