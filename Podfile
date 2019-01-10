@@ -1,5 +1,6 @@
 platform:ios, ‘8.0’
-inhibit_all_warnings!
+
+inhibit_all_warnings!#这句话去掉三方库里边的所有警告
 
 target “WJDStudyLibrary” do
     

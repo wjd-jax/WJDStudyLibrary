@@ -20,7 +20,8 @@
                            @{@"title":@"摄像头滤镜",@"className":@"JDasdCodeImageViewController"},
                            @{@"title":@"人脸识别功能(CIDetector)",@"className":@"JDFaceRecognitionViewController"},
                            @{@"title":@"OCR扫描",@"className":@"JDOCRViewController"},
-                           
+                           @{@"title":@"自定义身份证拍照",@"className":@"JDCameraViewController"}
+
                            ];
 }
 
