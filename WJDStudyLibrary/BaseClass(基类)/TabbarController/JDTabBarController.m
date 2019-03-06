@@ -20,10 +20,10 @@
 
 @property(nonatomic,strong) NSMutableArray *items;
 
-@property(nonatomic,retain) MainViewController *home;
-@property(nonatomic,retain) JDMessageViewController *message;
-@property(nonatomic,retain) JDFindViewController *discover;
-@property(nonatomic,retain) JDMeViewController *me;
+@property(nonatomic, strong)  MainViewController *home;
+@property(nonatomic, strong)  JDMessageViewController *message;
+@property(nonatomic, strong)  JDFindViewController *discover;
+@property(nonatomic, strong)  JDMeViewController *me;
 
 @end
 

@@ -25,6 +25,6 @@
 /**
  模型数组
  */
-@property(nonatomic,retain)NSArray *dataArray;
+@property(nonatomic, strong) NSArray *dataArray;
 
 @end

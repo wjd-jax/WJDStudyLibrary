@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger,PushType) {
 
 @interface JDSystemTransAnimationViewController ()
 
-@property(nonatomic,retain)NSArray *typeArray;
+@property(nonatomic, strong) NSArray *typeArray;
 @property(nonatomic,assign)PushType pushType;
 
 @end

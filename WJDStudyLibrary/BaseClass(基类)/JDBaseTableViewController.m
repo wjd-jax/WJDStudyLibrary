@@ -13,7 +13,7 @@ const int cellHeight = 60;
 
 @interface JDBaseTableViewController ()
 
-@property (nonatomic, retain) ArrayDataSource *arrayDataSource;
+@property (nonatomic,  strong)  ArrayDataSource *arrayDataSource;
 @end
 
 static NSString *mainCellIdentifier = @"mainCellIdentifier";

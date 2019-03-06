@@ -11,9 +11,9 @@
 
 @interface JDGuideTestViewController ()
 
-@property(nonatomic,retain)UIImageView *firstImageView;
-@property(nonatomic,retain)UIButton *secondButton;
-@property(nonatomic,retain)UILabel *thirdLabel;
+@property(nonatomic, strong) UIImageView *firstImageView;
+@property(nonatomic, strong) UIButton *secondButton;
+@property(nonatomic, strong) UILabel *thirdLabel;
 @end
 
 @implementation JDGuideTestViewController

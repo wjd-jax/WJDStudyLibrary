@@ -10,7 +10,7 @@
 
 @interface ArrayDataSource ()
 
-@property(nonatomic,retain)NSArray *items;
+@property(nonatomic, strong) NSArray *items;
 @property(nonatomic,copy)NSString *cellIdentifier;
 @property(nonatomic,copy)configureCell configureCellBlock;
 @end

@@ -11,8 +11,8 @@
 
 @interface JDSocialShareTableViewController ()
 
-@property(nonatomic, retain) NSMutableArray *shareArray;
-@property(nonatomic, retain) NSMutableArray *functionArray;
+@property(nonatomic,  strong)  NSMutableArray *shareArray;
+@property(nonatomic,  strong)  NSMutableArray *functionArray;
 
 @end
 

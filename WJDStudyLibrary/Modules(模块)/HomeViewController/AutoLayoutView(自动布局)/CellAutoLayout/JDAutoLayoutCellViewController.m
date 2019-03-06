@@ -23,9 +23,9 @@
 
 @interface JDAutoLayoutCellViewController ()<UITableViewDelegate>
 
-@property(nonatomic,retain)UITableView *tableView;
-@property(nonatomic,retain)ArrayDataSource *dataSource;
-@property(nonatomic,retain)NSArray *dataArray;
+@property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) ArrayDataSource *dataSource;
+@property(nonatomic, strong) NSArray *dataArray;
 
 @end
 

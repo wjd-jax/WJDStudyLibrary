@@ -13,8 +13,8 @@
 
 @interface JDWifiViewController ()
 
-@property(nonatomic,retain)HTTPServer *httpServer;
-@property(nonatomic,retain)UILabel *httpLabel;
+@property(nonatomic, strong) HTTPServer *httpServer;
+@property(nonatomic, strong) UILabel *httpLabel;
 @end
 
 @implementation JDWifiViewController

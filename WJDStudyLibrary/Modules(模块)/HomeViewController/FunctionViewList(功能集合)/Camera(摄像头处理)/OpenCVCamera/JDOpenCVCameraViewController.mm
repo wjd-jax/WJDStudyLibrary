@@ -15,7 +15,7 @@ using namespace cv;
 
 @interface JDOpenCVCameraViewController ()<CvVideoCameraDelegate>
 
-@property(nonatomic,retain)UIImageView *imageView;
+@property(nonatomic, strong) UIImageView *imageView;
 
 @property cv::Mat cvImage;
 @property CvVideoCamera *videoCamera;

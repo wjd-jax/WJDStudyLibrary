@@ -13,8 +13,8 @@
 @interface JDContactsViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic,retain) ArrayDataSource *arrayDataSource;
-@property(nonatomic,retain)NSArray *dataArray;
+@property(nonatomic, strong)  ArrayDataSource *arrayDataSource;
+@property(nonatomic, strong) NSArray *dataArray;
 
 @end
 

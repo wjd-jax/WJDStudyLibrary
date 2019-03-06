@@ -10,6 +10,23 @@
 		385A6D94421B8B9AE6A67ED5 /* libPods-WJDStudyLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */; };
 		75F1884C2109A1AD007A58DF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F1884B2109A1AD007A58DF /* Storyboard.storyboard */; };
 		75F1884F2109A4E8007A58DF /* JDCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1884E2109A4E8007A58DF /* JDCommonTool.m */; };
+		A5A5EE0121E7276C00312DB5 /* MSCTakeFacePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EDEC21E7276C00312DB5 /* MSCTakeFacePictureView.m */; };
+		A5A5EE0221E7276C00312DB5 /* MSCTakePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EDED21E7276C00312DB5 /* MSCTakePictureView.m */; };
+		A5A5EE0321E7276C00312DB5 /* MSCShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EDEF21E7276C00312DB5 /* MSCShowPictureViewController.m */; };
+		A5A5EE0421E7276C00312DB5 /* mine_kaluli_flashlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF121E7276C00312DB5 /* mine_kaluli_flashlight@3x.png */; };
+		A5A5EE0521E7276C00312DB5 /* camera-switch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF221E7276C00312DB5 /* camera-switch@2x.png */; };
+		A5A5EE0621E7276C00312DB5 /* camera-switch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF321E7276C00312DB5 /* camera-switch@3x.png */; };
+		A5A5EE0721E7276C00312DB5 /* mine_kaluli_flashlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF421E7276C00312DB5 /* mine_kaluli_flashlight@2x.png */; };
+		A5A5EE0821E7276C00312DB5 /* mine_kaluli_fanmian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF521E7276C00312DB5 /* mine_kaluli_fanmian@3x.png */; };
+		A5A5EE0921E7276C00312DB5 /* mine_kaluli_zhengmian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF621E7276C00312DB5 /* mine_kaluli_zhengmian@3x.png */; };
+		A5A5EE0A21E7276C00312DB5 /* mine_kaluli_take@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF721E7276C00312DB5 /* mine_kaluli_take@3x.png */; };
+		A5A5EE0B21E7276C00312DB5 /* mine_kaluli_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF821E7276C00312DB5 /* mine_kaluli_take@2x.png */; };
+		A5A5EE0C21E7276C00312DB5 /* mine_kaluli_zhengmian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDF921E7276C00312DB5 /* mine_kaluli_zhengmian@2x.png */; };
+		A5A5EE0D21E7276C00312DB5 /* mine_kaluli_fanmian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A5EDFA21E7276C00312DB5 /* mine_kaluli_fanmian@2x.png */; };
+		A5A5EE0E21E7276C00312DB5 /* MSCTakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EDFB21E7276C00312DB5 /* MSCTakePictureViewController.m */; };
+		A5A5EE0F21E7276C00312DB5 /* MSCTakeDriverPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EDFD21E7276C00312DB5 /* MSCTakeDriverPictureView.m */; };
+		A5A5EE1021E7276C00312DB5 /* MSCTakeBacePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EE0021E7276C00312DB5 /* MSCTakeBacePictureView.m */; };
+		A5A5EE1321E727C100312DB5 /* JDCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A5EE1221E727C100312DB5 /* JDCameraViewController.m */; };
 		F50373571ED92BF6004EB2EB /* JDAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */; };
 		F503735B1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F503735A1ED96FB6004EB2EB /* NSObject+JDPropertyCode.m */; };
 		F50373691EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50373681EDE6E18004EB2EB /* JDSystemTransAnimationViewController.m */; };
@@ -237,6 +254,33 @@
 		75F1884D2109A4E8007A58DF /* JDCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCommonTool.h; sourceTree = "<group>"; };
 		75F1884E2109A4E8007A58DF /* JDCommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCommonTool.m; sourceTree = "<group>"; };
 		9F564847DDC126FA9870C8F1 /* libPods-WJDStudyLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJDStudyLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A509395F21D222230016A961 /* JDColorsHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDColorsHeaders.h; sourceTree = "<group>"; };
+		A509396421D2277C0016A961 /* JDFrameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFrameHeader.h; sourceTree = "<group>"; };
+		A509396521D227D10016A961 /* JDFontSizeHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFontSizeHeaders.h; sourceTree = "<group>"; };
+		A5A5EDEA21E7276C00312DB5 /* MSCTakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCTakePictureViewController.h; sourceTree = "<group>"; };
+		A5A5EDEB21E7276C00312DB5 /* MSCTakeBacePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCTakeBacePictureView.h; sourceTree = "<group>"; };
+		A5A5EDEC21E7276C00312DB5 /* MSCTakeFacePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCTakeFacePictureView.m; sourceTree = "<group>"; };
+		A5A5EDED21E7276C00312DB5 /* MSCTakePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCTakePictureView.m; sourceTree = "<group>"; };
+		A5A5EDEE21E7276C00312DB5 /* MSCTakeDriverPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCTakeDriverPictureView.h; sourceTree = "<group>"; };
+		A5A5EDEF21E7276C00312DB5 /* MSCShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCShowPictureViewController.m; sourceTree = "<group>"; };
+		A5A5EDF121E7276C00312DB5 /* mine_kaluli_flashlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_flashlight@3x.png"; sourceTree = "<group>"; };
+		A5A5EDF221E7276C00312DB5 /* camera-switch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-switch@2x.png"; sourceTree = "<group>"; };
+		A5A5EDF321E7276C00312DB5 /* camera-switch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-switch@3x.png"; sourceTree = "<group>"; };
+		A5A5EDF421E7276C00312DB5 /* mine_kaluli_flashlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_flashlight@2x.png"; sourceTree = "<group>"; };
+		A5A5EDF521E7276C00312DB5 /* mine_kaluli_fanmian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_fanmian@3x.png"; sourceTree = "<group>"; };
+		A5A5EDF621E7276C00312DB5 /* mine_kaluli_zhengmian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_zhengmian@3x.png"; sourceTree = "<group>"; };
+		A5A5EDF721E7276C00312DB5 /* mine_kaluli_take@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_take@3x.png"; sourceTree = "<group>"; };
+		A5A5EDF821E7276C00312DB5 /* mine_kaluli_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_take@2x.png"; sourceTree = "<group>"; };
+		A5A5EDF921E7276C00312DB5 /* mine_kaluli_zhengmian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_zhengmian@2x.png"; sourceTree = "<group>"; };
+		A5A5EDFA21E7276C00312DB5 /* mine_kaluli_fanmian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mine_kaluli_fanmian@2x.png"; sourceTree = "<group>"; };
+		A5A5EDFB21E7276C00312DB5 /* MSCTakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCTakePictureViewController.m; sourceTree = "<group>"; };
+		A5A5EDFC21E7276C00312DB5 /* MSCShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCShowPictureViewController.h; sourceTree = "<group>"; };
+		A5A5EDFD21E7276C00312DB5 /* MSCTakeDriverPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCTakeDriverPictureView.m; sourceTree = "<group>"; };
+		A5A5EDFE21E7276C00312DB5 /* MSCTakePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCTakePictureView.h; sourceTree = "<group>"; };
+		A5A5EDFF21E7276C00312DB5 /* MSCTakeFacePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCTakeFacePictureView.h; sourceTree = "<group>"; };
+		A5A5EE0021E7276C00312DB5 /* MSCTakeBacePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCTakeBacePictureView.m; sourceTree = "<group>"; };
+		A5A5EE1121E727C100312DB5 /* JDCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCameraViewController.h; sourceTree = "<group>"; };
+		A5A5EE1221E727C100312DB5 /* JDCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCameraViewController.m; sourceTree = "<group>"; };
 		F50373551ED92BF6004EB2EB /* JDAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthorityManager.h; sourceTree = "<group>"; };
 		F50373561ED92BF6004EB2EB /* JDAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAuthorityManager.m; sourceTree = "<group>"; };
 		F50373591ED96FB6004EB2EB /* NSObject+JDPropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JDPropertyCode.h"; sourceTree = "<group>"; };
@@ -687,6 +731,83 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		A509396021D222690016A961 /* MessageShow */ = {
+			isa = PBXGroup;
+			children = (
+				F52C45201E94C55200D8DF62 /* JDMessageView.h */,
+				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
+			);
+			path = MessageShow;
+			sourceTree = "<group>";
+		};
+		A509396121D2227E0016A961 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				A509395F21D222230016A961 /* JDColorsHeaders.h */,
+				F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */,
+				A509396421D2277C0016A961 /* JDFrameHeader.h */,
+				A509396521D227D10016A961 /* JDFontSizeHeaders.h */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		A509396221D2229A0016A961 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F51CF0901E8E41390035EF7A /* JDUIFactory.h */,
+				F51CF0911E8E41390035EF7A /* JDUIFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A509396321D222A90016A961 /* ViewExtern */ = {
+			isa = PBXGroup;
+			children = (
+				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
+				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
+			);
+			path = ViewExtern;
+			sourceTree = "<group>";
+		};
+		A5A5EDE921E7276C00312DB5 /* MSCTakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A5A5EE1121E727C100312DB5 /* JDCameraViewController.h */,
+				A5A5EE1221E727C100312DB5 /* JDCameraViewController.m */,
+				A5A5EDEA21E7276C00312DB5 /* MSCTakePictureViewController.h */,
+				A5A5EDEB21E7276C00312DB5 /* MSCTakeBacePictureView.h */,
+				A5A5EDEC21E7276C00312DB5 /* MSCTakeFacePictureView.m */,
+				A5A5EDED21E7276C00312DB5 /* MSCTakePictureView.m */,
+				A5A5EDEE21E7276C00312DB5 /* MSCTakeDriverPictureView.h */,
+				A5A5EDEF21E7276C00312DB5 /* MSCShowPictureViewController.m */,
+				A5A5EDF021E7276C00312DB5 /* image */,
+				A5A5EDFB21E7276C00312DB5 /* MSCTakePictureViewController.m */,
+				A5A5EDFC21E7276C00312DB5 /* MSCShowPictureViewController.h */,
+				A5A5EDFD21E7276C00312DB5 /* MSCTakeDriverPictureView.m */,
+				A5A5EDFE21E7276C00312DB5 /* MSCTakePictureView.h */,
+				A5A5EDFF21E7276C00312DB5 /* MSCTakeFacePictureView.h */,
+				A5A5EE0021E7276C00312DB5 /* MSCTakeBacePictureView.m */,
+			);
+			path = MSCTakePhoto;
+			sourceTree = "<group>";
+		};
+		A5A5EDF021E7276C00312DB5 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A5A5EDF121E7276C00312DB5 /* mine_kaluli_flashlight@3x.png */,
+				A5A5EDF221E7276C00312DB5 /* camera-switch@2x.png */,
+				A5A5EDF321E7276C00312DB5 /* camera-switch@3x.png */,
+				A5A5EDF421E7276C00312DB5 /* mine_kaluli_flashlight@2x.png */,
+				A5A5EDF521E7276C00312DB5 /* mine_kaluli_fanmian@3x.png */,
+				A5A5EDF621E7276C00312DB5 /* mine_kaluli_zhengmian@3x.png */,
+				A5A5EDF721E7276C00312DB5 /* mine_kaluli_take@3x.png */,
+				A5A5EDF821E7276C00312DB5 /* mine_kaluli_take@2x.png */,
+				A5A5EDF921E7276C00312DB5 /* mine_kaluli_zhengmian@2x.png */,
+				A5A5EDFA21E7276C00312DB5 /* mine_kaluli_fanmian@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		F50373581ED96F6D004EB2EB /* propertyCode(自动生成model 属性) */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,12 +924,11 @@
 		F51CF07C1E8DF3800035EF7A /* WJDToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				A509396321D222A90016A961 /* ViewExtern */,
+				A509396221D2229A0016A961 /* Factory */,
+				A509396121D2227E0016A961 /* Defines */,
+				A509396021D222690016A961 /* MessageShow */,
 				F52C451E1E94C17600D8DF62 /* JDHeader.h */,
-				F51CF0901E8E41390035EF7A /* JDUIFactory.h */,
-				F51CF0911E8E41390035EF7A /* JDUIFactory.m */,
-				F52C451B1E94C02C00D8DF62 /* UIView+JDView.h */,
-				F52C451C1E94C02C00D8DF62 /* UIView+JDView.m */,
-				F51CF07D1E8DF3AF0035EF7A /* JDDefine.h */,
 				75F1884D2109A4E8007A58DF /* JDCommonTool.h */,
 				75F1884E2109A4E8007A58DF /* JDCommonTool.m */,
 			);
@@ -943,8 +1063,6 @@
 		F52C451F1E94C51900D8DF62 /* popViewStyle2(仿QQ提示) */ = {
 			isa = PBXGroup;
 			children = (
-				F52C45201E94C55200D8DF62 /* JDMessageView.h */,
-				F52C45211E94C55200D8DF62 /* JDMessageView.m */,
 			);
 			path = "popViewStyle2(仿QQ提示)";
 			sourceTree = "<group>";
@@ -1405,7 +1523,7 @@
 		F55E55541E85171600144D49 /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				F58A48B71FB1C415007CD680 /* DeviceUtils */,
+				F58A48B71FB1C415007CD680 /* DeviceUtils(判断设备) */,
 				F58940A71FA958E900EA2721 /* LoadingView */,
 				F58940A61FA958D500EA2721 /* ImageCacheManager */,
 				F5D194511FA05523003E7430 /* JSONTool */,
@@ -1668,13 +1786,13 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		F58A48B71FB1C415007CD680 /* DeviceUtils */ = {
+		F58A48B71FB1C415007CD680 /* DeviceUtils(判断设备) */ = {
 			isa = PBXGroup;
 			children = (
 				F58A48B81FB1C448007CD680 /* JDDeviceUtils.h */,
 				F58A48B91FB1C448007CD680 /* JDDeviceUtils.m */,
 			);
-			path = DeviceUtils;
+			path = "DeviceUtils(判断设备)";
 			sourceTree = "<group>";
 		};
 		F58B06AC1FC7A34E00DF36B5 /* TestViewController */ = {
@@ -2155,6 +2273,7 @@
 		F5C94D1E1EC1689F004C1A1A /* Camera(摄像头处理) */ = {
 			isa = PBXGroup;
 			children = (
+				A5A5EDE921E7276C00312DB5 /* MSCTakePhoto */,
 				F5BD73D51EC1C31C0015E18F /* FaceRecognition */,
 				F55256391F145CB30080D0DE /* OCR */,
 				F5C94D221EC16AD2004C1A1A /* OpenCVCamera */,
@@ -2413,12 +2532,15 @@
 				F50A96EB1F8F32A90049F23A /* index.html in Resources */,
 				F50A96EC1F8F32A90049F23A /* upload.html in Resources */,
 				F5C4B9861F8F1B390084A84D /* LaunchScreen.storyboard in Resources */,
+				A5A5EE0821E7276C00312DB5 /* mine_kaluli_fanmian@3x.png in Resources */,
 				F520D7E21F5D2814005D2070 /* IFMShareImage.bundle in Resources */,
 				F5DCA4531F2B20F400A1D5AC /* test.mp3 in Resources */,
 				F54136461EC986DD009E96B0 /* 晴60x60@2x.png in Resources */,
+				A5A5EE0D21E7276C00312DB5 /* mine_kaluli_fanmian@2x.png in Resources */,
 				F54136441EC986DD009E96B0 /* 晴40x40@2x.png in Resources */,
 				F55069761F05D9A100977235 /* img_index_01bg@2x.png in Resources */,
 				F55069781F05D9AA00977235 /* img_index_01txt@2x.png in Resources */,
+				A5A5EE0721E7276C00312DB5 /* mine_kaluli_flashlight@2x.png in Resources */,
 				F54136511EC98704009E96B0 /* 天气29x29@2x.png in Resources */,
 				F5BBFFB81EBC69BB00ACCC38 /* 1.plist in Resources */,
 				F54BBB711EB86E1200AB92CC /* i5.jpg in Resources */,
@@ -2428,6 +2550,7 @@
 				F503738D1EDFB44E004EB2EB /* RealRandomStoryboard.storyboard in Resources */,
 				F54BBB6E1EB86E1200AB92CC /* i2.jpg in Resources */,
 				F50D14D61ECAEC970076D84E /* sig1.jpg in Resources */,
+				A5A5EE0621E7276C00312DB5 /* camera-switch@3x.png in Resources */,
 				F5BB6EDE1EB09A4200A0BF6A /* KeyPairStoryboard.storyboard in Resources */,
 				F5C5DFC51EC4466200A436E0 /* guide3@3x.png in Resources */,
 				F54136471EC986DD009E96B0 /* 晴60x60@3x.png in Resources */,
@@ -2435,14 +2558,18 @@
 				F54BBB701EB86E1200AB92CC /* i4.jpg in Resources */,
 				F5BBFFB91EBC69BB00ACCC38 /* 2.plist in Resources */,
 				F5BBFFCD1EC010E900ACCC38 /* YFShopCell.xib in Resources */,
+				A5A5EE0B21E7276C00312DB5 /* mine_kaluli_take@2x.png in Resources */,
 				F54136531EC98704009E96B0 /* 天气40x40@2x.png in Resources */,
+				A5A5EE0421E7276C00312DB5 /* mine_kaluli_flashlight@3x.png in Resources */,
 				F54136451EC986DD009E96B0 /* 晴40x40@3x.png in Resources */,
 				F54BBB6D1EB86E1200AB92CC /* i1.jpg in Resources */,
 				F503737C1EDEAD5C004EB2EB /* CodeCountStoryboard.storyboard in Resources */,
 				F54136421EC986DD009E96B0 /* 晴29x29@2x.png in Resources */,
+				A5A5EE0C21E7276C00312DB5 /* mine_kaluli_zhengmian@2x.png in Resources */,
 				F550697A1F05D9B000977235 /* img_index_02bg@2x.png in Resources */,
 				F54136411EC986DD009E96B0 /* 晴20x20@3x.png in Resources */,
 				F5C5DFC41EC4466200A436E0 /* guide3@2x.png in Resources */,
+				A5A5EE0A21E7276C00312DB5 /* mine_kaluli_take@3x.png in Resources */,
 				F552565C1F146D540080D0DE /* zocr0.lib in Resources */,
 				75F1884C2109A1AD007A58DF /* Storyboard.storyboard in Resources */,
 				F54136401EC986DD009E96B0 /* 晴20x20@2x.png in Resources */,
@@ -2452,6 +2579,7 @@
 				F54136501EC98704009E96B0 /* 天气20x20@3x.png in Resources */,
 				F54136551EC98704009E96B0 /* 天气60x60@3x.png in Resources */,
 				F54136591EC99454009E96B0 /* 天气40x40@3x.png in Resources */,
+				A5A5EE0521E7276C00312DB5 /* camera-switch@2x.png in Resources */,
 				F50CCBB71ED6C5C7005256B0 /* ContactsStoryboard.storyboard in Resources */,
 				F541364F1EC98704009E96B0 /* 天气20x20@2x.png in Resources */,
 				F55E55481E850BB100144D49 /* Assets.xcassets in Resources */,
@@ -2459,6 +2587,7 @@
 				F54BBB5A1EB8693400AB92CC /* JDCardLayoutStoryboard.storyboard in Resources */,
 				F555B4711EA0C85E00EF73BC /* QRImageStoryboard.storyboard in Resources */,
 				F5223EF11EC4006800CDCBD8 /* printerVoice.wav in Resources */,
+				A5A5EE0921E7276C00312DB5 /* mine_kaluli_zhengmian@3x.png in Resources */,
 				F54136541EC98704009E96B0 /* 天气60x60@2x.png in Resources */,
 				F5A733181EC2A17A006CB68D /* ImageProcessingStoryboard.storyboard in Resources */,
 				F550697E1F05D9C700977235 /* img_index_03bg@2x.png in Resources */,
@@ -2532,6 +2661,7 @@
 				F50A96EA1F8F31FB0049F23A /* ZBTool.m in Sources */,
 				F5C4B9831F8F18B50084A84D /* MyHTTPConnection.m in Sources */,
 				F54D9CCE1F710D6200758D79 /* TableViewAnimationKit.m in Sources */,
+				A5A5EE0221E7276C00312DB5 /* MSCTakePictureView.m in Sources */,
 				F54D9CCF1F710D6200758D79 /* UITableView+XSAnimationKit.m in Sources */,
 				F520D7DE1F5D27D4005D2070 /* IFMShareItem.m in Sources */,
 				F520D7DF1F5D27D4005D2070 /* IFMShareItemCell.m in Sources */,
@@ -2543,6 +2673,7 @@
 				F5E58BA01EBAF8DB00BA60AB /* JDAppStoreScoreViewController.m in Sources */,
 				F52C452A1E96093C00D8DF62 /* JDGuideViewController.m in Sources */,
 				F5A733291EC304DC006CB68D /* JDCustomLabelViewController.m in Sources */,
+				A5A5EE0E21E7276C00312DB5 /* MSCTakePictureViewController.m in Sources */,
 				F5A733201EC30423006CB68D /* JDCustomControlsViewController.m in Sources */,
 				75F1884F2109A4E8007A58DF /* JDCommonTool.m in Sources */,
 				F53DAC001F09E3D500EEFAE5 /* AutoLayoutTableViewCell.m in Sources */,
@@ -2592,6 +2723,7 @@
 				F5BBFFCC1EC010E900ACCC38 /* YFShopCell.m in Sources */,
 				F5BB001A1EC0667F00ACCC38 /* JDCodeImageViewController.m in Sources */,
 				F5BB00171EC0543F00ACCC38 /* JDQRCodeWapper.m in Sources */,
+				A5A5EE0121E7276C00312DB5 /* MSCTakeFacePictureView.m in Sources */,
 				F51CF0921E8E41390035EF7A /* JDUIFactory.m in Sources */,
 				F5C29F1C1ECC437F00835E26 /* JDFireworksViewController.m in Sources */,
 				F59A5B001EC58E1B003D1E59 /* JDFireEmitterViewController.m in Sources */,
@@ -2603,6 +2735,7 @@
 				F595E6C71EEA898A000E15E9 /* AppDelegate+JDUserNotifications.m in Sources */,
 				F59A5B0B1EC59847003D1E59 /* JDDrawLineViewController.m in Sources */,
 				F54BBB611EB86AE600AB92CC /* JDCardFlowLayout.m in Sources */,
+				A5A5EE1021E7276C00312DB5 /* MSCTakeBacePictureView.m in Sources */,
 				F5A733131EC29CA7006CB68D /* UIImage+JDImage.m in Sources */,
 				F5A1A72D1E9B2D450076CC78 /* AFBrushBoard.m in Sources */,
 				F5C94D251EC16AFA004C1A1A /* JDOpenCVCameraViewController.mm in Sources */,
@@ -2630,11 +2763,13 @@
 				F57D457C1E9CC80F0073F6D6 /* JDSignListViewController.m in Sources */,
 				F5BBFFBE1EBC6AC000ACCC38 /* JDShopModel.m in Sources */,
 				F576092E1EAF2A49000D0176 /* JDDESUtil.m in Sources */,
+				A5A5EE1321E727C100312DB5 /* JDCameraViewController.m in Sources */,
 				F56A91701ECD2B7C00DA3388 /* JDRainView.m in Sources */,
 				F57D45701E9C77D10073F6D6 /* JDNetWorkingViewController.m in Sources */,
 				F5C5DFB81EC42DD200A436E0 /* JDCustomTransitionViewController.m in Sources */,
 				F53DABF71F09E0DD00EEFAE5 /* JDAutoLayoutViewController.m in Sources */,
 				F5BB001E1EC0693900ACCC38 /* ScanView.m in Sources */,
+				A5A5EE0321E7276C00312DB5 /* MSCShowPictureViewController.m in Sources */,
 				F503736F1EDE762E004EB2EB /* JDSystemTransTestViewController.m in Sources */,
 				F52C45101E94B52D00D8DF62 /* JDViewListViewController.m in Sources */,
 				F56F1FB01F3BF379009CD3B8 /* JDAlertViewManager.m in Sources */,
@@ -2651,6 +2786,7 @@
 				F50373821EDEBDCD004EB2EB /* JDCustomPushAnimation.m in Sources */,
 				F59A5AF41EC556FE003D1E59 /* JDWaterWaveView.m in Sources */,
 				F59A5AF81EC56666003D1E59 /* JDBaseAnimationViewController.m in Sources */,
+				A5A5EE0F21E7276C00312DB5 /* MSCTakeDriverPictureView.m in Sources */,
 				F520D7CD1F5D255D005D2070 /* JDSocialShareTableViewController.m in Sources */,
 				F55256601F1471AA0080D0DE /* JDIDCardScanViewController.m in Sources */,
 				F52AB6CE1E88B169008DD642 /* ArrayDataSource.m in Sources */,
@@ -2829,7 +2965,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2876,7 +3012,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

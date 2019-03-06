@@ -24,8 +24,8 @@
  */
 @property(nonatomic,assign)CGFloat waterWaveWidth;
 
-@property(nonatomic,retain)CAShapeLayer *waveLayer;        //
-@property(nonatomic,retain)CADisplayLink *waveDisplaylink;  //定时器(与屏幕刷新频率一致)
+@property(nonatomic, strong) CAShapeLayer *waveLayer;        //
+@property(nonatomic, strong) CADisplayLink *waveDisplaylink;  //定时器(与屏幕刷新频率一致)
 
 @end
 

@@ -10,7 +10,7 @@
 #import "JDGuidePageViewController.h"
 
 @interface JDGuideViewController ()
-@property(nonatomic,retain)JDGuidePageViewController *gpvc;
+@property(nonatomic, strong) JDGuidePageViewController *gpvc;
 @end
 
 @implementation JDGuideViewController

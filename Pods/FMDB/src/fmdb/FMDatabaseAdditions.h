@@ -230,7 +230,7 @@ NS_ASSUME_NONNULL_BEGIN
  @see setApplicationIDString:
  */
 
-@property (nonatomic, retain) NSString *applicationIDString;
+@property (nonatomic,  strong)  NSString *applicationIDString;
 
 #endif
 
