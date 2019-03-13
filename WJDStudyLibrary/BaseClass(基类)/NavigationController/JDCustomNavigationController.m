@@ -19,8 +19,10 @@
     
 
     //重写了leftbarItem之后,需要添加如下方法才能重新启用右滑返回
+    //注意,这个操作会有一个很恶心的bug,就是rootviewcontroller也会响应右滑手势,从而倒是页面卡死,解决方式是拦截右滑手势,判断是否是root,如果是就不执行手势
+    __weak typeof(self) weakself = self;
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.delegate = nil;
+        self.interactivePopGestureRecognizer.delegate = (id)weakself;
     }
     
     // Do any additional setup after loading the view.
@@ -104,4 +106,15 @@
     [self popViewControllerAnimated:YES];
 }
 
+//
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        // 屏蔽调用rootViewController的滑动返回手势
+        if (self.viewControllers.count < 2 || self.visibleViewController == [self.viewControllers objectAtIndex:0]) {
+            return NO;
+        }
+    }
+    return YES;
+}
 @end
