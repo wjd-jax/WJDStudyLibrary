@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    self.navigationBar.hidden = NO;
     //重写了leftbarItem之后,需要添加如下方法才能重新启用右滑返回
     //注意,这个操作会有一个很恶心的bug,就是rootviewcontroller也会响应右滑手势,从而倒是页面卡死,解决方式是拦截右滑手势,判断是否是root,如果是就不执行手势
     __weak typeof(self) weakself = self;
@@ -25,8 +25,10 @@
         self.interactivePopGestureRecognizer.delegate = (id)weakself;
     }
     
+    
     // Do any additional setup after loading the view.
 }
+
 
 /* 某个页面导航栏透明,文字不透明
  - (void)viewWillAppear:(BOOL)animated
@@ -55,7 +57,7 @@
     //设置NavigationBarItem文字的颜色
     [navigationBar setTintColor:[UIColor whiteColor]];
     //设置标题栏颜色
-    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName : [UIFont systemFontOfSize:18]};
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:18]};
     
     /*
      //设置导航栏文字的主题
@@ -81,12 +83,11 @@
 }
 
 //重写push后返回按钮的文字,文字可以为空字符串.
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     //修改返回文字
     viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
     //全部修改返回按钮,但是会失去右滑返回的手势
-    if (viewController.navigationItem.leftBarButtonItem ==nil && self.viewControllers.count >=1) {
+    if (viewController.navigationItem.leftBarButtonItem == nil && self.viewControllers.count >= 1) {
         
         viewController.navigationItem.leftBarButtonItem = [self creatBackButton];
     }
@@ -94,15 +95,11 @@
     [super pushViewController:viewController animated:animated];
 }
 
-
--(UIBarButtonItem *)creatBackButton
-{
-    return [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]style:UIBarButtonItemStylePlain target:self action:@selector(popSelf)];
-    
+- (UIBarButtonItem *)creatBackButton {
+    return [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(popSelf)];
 }
 
--(void)popSelf
-{
+- (void)popSelf {
     [self popViewControllerAnimated:YES];
 }
 
@@ -117,4 +114,7 @@
     }
     return YES;
 }
+
+
+
 @end
